@@ -4,6 +4,9 @@ Everyday life, the knowledge bypass my brain and go thru. I used to note them to
 
 These are what I learnt everyday, organized by Github Issue. If you are interested in this idea, please follow #til and support us.
 
+**New TIL**: https://github.com/tieubao/til/issues/new
+**Dashboard**: https://github.com/tieubao/til/issues
+
 # About Me
 
 - Me: https://www.linkedin.com/in/tieubao
