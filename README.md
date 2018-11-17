@@ -9,5 +9,5 @@ These are what I've learned everyday, organized by Github Issue. If you are inte
 
 # About Me
 
-- Me: https://www.linkedin.com/in/tieubao
+- LinkedIn: https://www.linkedin.com/in/nntruonghan
 - Blog: http://tieubao.me/writing
