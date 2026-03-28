@@ -1,37 +1,47 @@
 ---
 title: "Claude Code Hook Schema - Decision Field Values Per Event Type"
 date: 2026-03-28
-captured: 2026-03-28T05:14:48.508Z
-tags: ["claude-code", "hooks", "debugging", "til"]
-source: "Claude Code session - fixing Stop hook validation error in github-mcp-worker project"
+captured: 2026-03-28T05:25:45.974Z
+tags: ["claude-code", "hooks", "debugging"]
+source: "Claude Code session - github-mcp-worker project, fixing Stop hook validation error"
 ---
-## The Gotcha
+## Context
 
-Claude Code hooks have different valid `decision` values depending on the hook event type. Using the wrong value causes a JSON validation error that surfaces to the user.
+While building a knowledge capture pipeline for the `github-mcp-worker` project, a Stop hook was configured in Claude Code's `settings.json` to remind Claude to check for learning moments at the end of each response. The hook started throwing `JSON validation failed: Hook JSON output validation failed` errors on every prompt submission, surfacing a noisy error banner that obscured the actual conversation.
 
-## Valid Values by Hook Type
+## The Problem
 
-| Hook Event | Field | Valid Values |
+The Stop hook was outputting `"decision": "allow"` in its JSON response:
+
+```json
+{"decision": "allow", "reason": "LEARNING CAPTURE CHECK: ..."}
+```
+
+Claude Code rejected this with `Invalid input`. The error message showed the expected schema, but the valid values weren't immediately obvious because the schema lists multiple hook event types with different field names and values.
+
+## What I Found
+
+Claude Code hooks have **different valid `decision` values depending on the hook event type**. The field names and accepted values are not interchangeable:
+
+| Hook Event | Decision Field | Valid Values |
 |---|---|---|
 | **Stop** | `decision` | `"approve"` or `"block"` |
 | **PreToolUse** | `permissionDecision` | `"allow"`, `"deny"`, or `"ask"` |
-| **PostToolUse** | n/a | No decision field, uses `additionalContext` |
-| **UserPromptSubmit** | n/a | No decision field, uses `additionalContext` |
+| **PostToolUse** | n/a | No decision field; uses `additionalContext` |
+| **UserPromptSubmit** | n/a | No decision field; uses `additionalContext` |
 
-## How to Spot
-
-If you see `Hook JSON output validation failed` with `Invalid input`, check whether your `decision` field value matches the hook event type. Common mistake: using `"allow"` (a PreToolUse value) in a Stop hook instead of `"approve"`.
-
-## Example Fix
+The confusion comes from the fact that `"allow"` is a valid value in the system, just not for Stop hooks. It belongs to `PreToolUse`'s `permissionDecision` field. The fix was a one-character change:
 
 ```json
-// WRONG - Stop hook with PreToolUse value
+// Before (wrong -- PreToolUse value in a Stop hook)
 {"decision": "allow", "reason": "..."}
 
-// RIGHT - Stop hook with correct value
+// After (correct -- Stop hook value)
 {"decision": "approve", "reason": "..."}
 ```
 
-## Key Insight
+The `reason` field in a Stop hook surfaces as context in the conversation, making it useful for injecting behavioral reminders (like "check for learning moments"). But the `decision` field must still use the correct enum or the hook errors out visibly every time.
 
-The `reason` field in a Stop hook surfaces as context in the conversation, making it useful for injecting reminders (like "check for learning moments"). But the `decision` field must still be valid or the hook errors out visibly.
+## How to Spot This
+
+Any time a Claude Code hook throws `Hook JSON output validation failed` with `Invalid input`, check whether the `decision` or `permissionDecision` field value matches the hook event type. The most common mistake is mixing up `"allow"` (PreToolUse) with `"approve"` (Stop).
