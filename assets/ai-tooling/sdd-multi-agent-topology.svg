@@ -1,0 +1,150 @@
+<svg width="680" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" style="background:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- Phase labels -->
+<text x="40" y="62" font-size="12" fill="#888">Phase 1</text>
+<text x="40" y="78" font-size="12" fill="#888">Think</text>
+<text x="40" y="192" font-size="12" fill="#888">Phase 2</text>
+<text x="40" y="208" font-size="12" fill="#888">Spec</text>
+<text x="40" y="372" font-size="12" fill="#888">Phase 3</text>
+<text x="40" y="388" font-size="12" fill="#888">Build</text>
+<text x="40" y="592" font-size="12" fill="#888">Phase 4</text>
+<text x="40" y="608" font-size="12" fill="#888">Review</text>
+<text x="40" y="782" font-size="12" fill="#888">Phase 5</text>
+<text x="40" y="798" font-size="12" fill="#888">Ship</text>
+
+<!-- Separators -->
+<line x1="100" y1="130" x2="640" y2="130" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 4"/>
+<line x1="100" y1="290" x2="640" y2="290" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 4"/>
+<line x1="100" y1="530" x2="640" y2="530" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 4"/>
+<line x1="100" y1="720" x2="640" y2="720" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 4"/>
+
+<!-- PHASE 1 -->
+<rect x="120" y="44" width="140" height="56" rx="8" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text x="190" y="62" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">/start</text>
+<text x="190" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Bootstrap router</text>
+
+<line x1="260" y1="72" x2="310" y2="72" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="310" y="44" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="380" y="62" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/think</text>
+<text x="380" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Challenge idea</text>
+
+<line x1="450" y1="72" x2="500" y2="72" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="500" y="44" width="120" height="56" rx="8" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text x="560" y="62" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Human gate</text>
+<text x="560" y="82" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Build or kill?</text>
+
+<!-- PHASE 2 -->
+<rect x="140" y="170" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="210" y="188" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/spec</text>
+<text x="210" y="208" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Generate spec</text>
+
+<line x1="280" y1="198" x2="330" y2="198" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="330" y="170" width="160" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="410" y="188" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Spec verifier</text>
+<text x="410" y="208" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">4 adversarial agents</text>
+
+<line x1="490" y1="198" x2="540" y2="198" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="540" y="170" width="100" height="56" rx="8" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text x="590" y="188" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Approve</text>
+<text x="590" y="208" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Human gate</text>
+
+<!-- Retry arrow spec -->
+<path d="M410 226 L410 258 L210 258 L210 226" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="310" y="272" text-anchor="middle" font-size="12" fill="#888">Revise spec</text>
+
+<!-- PHASE 3 -->
+<rect x="120" y="320" width="180" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="210" y="338" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/execute orchestrator</text>
+<text x="210" y="358" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Parse spec, dispatch</text>
+
+<line x1="300" y1="340" x2="370" y2="410" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="300" y1="348" x2="370" y2="448" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="370" y="392" width="130" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="435" y="414" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#042C53">Worker A</text>
+
+<rect x="370" y="446" width="130" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="435" y="468" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#042C53">Worker B</text>
+
+<text x="520" y="430" font-size="12" fill="#888">Independent</text>
+<text x="520" y="446" font-size="12" fill="#888">tasks (parallel)</text>
+
+<line x1="435" y1="436" x2="435" y2="490" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="435" y1="490" x2="295" y2="490" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="140" y="470" width="155" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="218" y="488" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Task verifier</text>
+<text x="218" y="508" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Spec + tests + lint</text>
+
+<!-- Retry loop -->
+<path d="M140 498 L115 498 L115 414 L170 414" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="105" y="456" text-anchor="end" font-size="12" fill="#888">Retry</text>
+<text x="105" y="470" text-anchor="end" font-size="12" fill="#888">max 2x</text>
+
+<rect x="140" y="400" width="130" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="205" y="422" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">Fix subagent</text>
+
+<rect x="540" y="470" width="100" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="590" y="488" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#4A1B0C">Escalate</text>
+<text x="590" y="508" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#993C1D">After 2 fails</text>
+
+<line x1="295" y1="510" x2="540" y2="510" stroke="#888" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="418" y="524" text-anchor="middle" font-size="12" fill="#888">Still failing</text>
+
+<!-- PHASE 4 -->
+<rect x="140" y="570" width="160" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="220" y="588" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Review verifier</text>
+<text x="220" y="608" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Security + arch</text>
+
+<line x1="300" y1="598" x2="360" y2="598" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="360" y="570" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="430" y="588" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Test verifier</text>
+<text x="430" y="608" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Full suite pass</text>
+
+<line x1="500" y1="598" x2="540" y2="598" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="540" y="570" width="100" height="56" rx="8" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text x="590" y="588" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">Approve</text>
+<text x="590" y="608" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Human gate</text>
+
+<path d="M360 626 L250 670 L180 670 L140 626" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text x="250" y="686" text-anchor="middle" font-size="12" fill="#888">Fix issues, re-review</text>
+
+<!-- PHASE 5 -->
+<rect x="160" y="760" width="120" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="220" y="778" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/docs</text>
+<text x="220" y="798" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Update docs</text>
+
+<line x1="280" y1="788" x2="330" y2="788" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="330" y="760" width="120" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="390" y="778" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/ship</text>
+<text x="390" y="798" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Commit + PR</text>
+
+<line x1="450" y1="788" x2="500" y2="788" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="500" y="760" width="120" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="560" y="778" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">/retro</text>
+<text x="560" y="798" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Capture lessons</text>
+
+<!-- Legend -->
+<rect x="120" y="850" width="520" height="60" rx="8" fill="#F8F7F4" stroke="#ddd" stroke-width="0.5"/>
+<rect x="140" y="864" width="16" height="12" rx="3" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="162" y="874" font-size="12" fill="#444">Commands</text>
+<rect x="240" y="864" width="16" height="12" rx="3" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="262" y="874" font-size="12" fill="#444">Verifier agents</text>
+<rect x="375" y="864" width="16" height="12" rx="3" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="397" y="874" font-size="12" fill="#444">Worker agents</text>
+<rect x="500" y="864" width="16" height="12" rx="3" fill="#F1EFE8" stroke="#888" stroke-width="0.5"/>
+<text x="522" y="874" font-size="12" fill="#444">Human gates</text>
+</svg>
