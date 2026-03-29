@@ -1,40 +1,52 @@
 ---
 title: "Commands vs hooks vs skills decision framework"
 date: 2026-03-29
-captured: 2026-03-29T07:19:48.536Z
+captured: 2026-03-29T07:47:58.912Z
 tags: ["claude-code", "hooks", "commands", "skills", "architecture"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
 ---
-## The mapping problem
+Claude Code has three extension mechanisms. The choice between them determines whether a behavior is enforced, suggested, or autonomous. Getting this wrong is the #1 kit design mistake.
 
-Claude Code hooks provide enforcement. Commands provide workflow. Skills provide autonomy. Most kits use one mechanism. The best kits use all three for different purposes.
+## The decision question
 
-## Decision framework
+Ask: "What happens if this doesn't run?"
 
-| Question | Mechanism | Why |
-|----------|-----------|-----|
-| Should this happen every time, no exceptions? | Hook | 100% enforcement via exit code 2 |
-| Does this need human judgment on when to run? | Command | User invokes at the right moment |
-| Should Claude decide when to apply this? | Skill | Claude reads SKILL.md and activates contextually |
+| Answer | Mechanism | Why |
+|--------|-----------|-----|
+| Something irreversible happens (data loss, security breach, pushed to main) | **Hook** (exit 2) | Must be deterministic. 100% enforcement. |
+| The output is worse but nothing breaks | **Skill** (Claude-triggered) | Claude applies it when relevant. No human action needed. |
+| Nothing happens until the human decides it's time | **Command** (human-triggered) | User invokes at the right moment in their workflow. |
 
-## Concrete examples from dwarves-kit
+## Concrete mappings from dwarves-kit
 
-| Feature | Mechanism | Rationale |
-|---------|-----------|-----------|
-| Block rm -rf | Hook (PreToolUse) | Never optional, must be deterministic |
-| Generate spec from intent | Command (/spec) | User decides when to plan |
-| Fetch API docs before coding | Skill (get-api-docs) | Claude should check docs autonomously |
-| Challenge an idea | Command (/think) | User decides when to question assumptions |
-| Auto-format on file write | Hook (PostToolUse) | Should happen every time, no exceptions |
-| Check context readiness | Hook (SessionStart) | Should inject context automatically every session |
-| Warn on spec drift | Hook (PreToolUse) | Soft enforcement (allow + context warning, not block) |
-| Anti-rationalization | Hook (Stop) | Must catch cop-outs deterministically |
-| Code review | Command (/review) | User decides when to review |
+| Feature | Mechanism | Why this level of strictness |
+|---------|-----------|---------------------------|
+| Block rm -rf | Hook (PreToolUse, exit 2) | Irreversible. Must block every time. |
+| Block push to main | Hook (PreToolUse, exit 2) | Irreversible. Convention compliance isn't optional. |
+| Catch premature "done" | Hook (Stop, exit 2) | Claude rationalizing costs hours of wasted review cycles. |
+| Auto-format on write | Hook (PostToolUse, exit 0) | Should happen every time, but non-blocking (formatter failure shouldn't stop work). |
+| Warn on unplanned files | Hook (PreToolUse, allow + context) | Soft enforcement. Warn but don't block. |
+| Inject project context | Hook (SessionStart) | Must happen automatically at session start. |
+| Fetch API docs before coding | Skill (get-api-docs) | Claude should check docs autonomously when it detects API work. |
+| Generate spec from intent | Command (/spec) | User decides when to plan. |
+| Paranoid code review | Command (/review) | User decides when to review. |
+| Challenge an idea | Command (/think) | User decides when to question assumptions. |
 
-## The gradient
+## The strictness gradient
 
-Hooks are the strictest (deterministic, blocks actions). Commands are medium (user-triggered, Claude follows the prompt). Skills are the loosest (Claude decides if and when to apply). Place each feature at the right level of strictness. Don't over-hook (creates friction) or under-hook (creates risk).
+```
+Hooks ──────────── Commands ──────────── Skills
+(deterministic)     (user-triggered)      (Claude-triggered)
+exit 2 = blocks     human invokes         Claude decides
+100% compliance     when needed           if/when to apply
+```
 
-## The trap to avoid
+## The trap
 
-Putting safety rules in CLAUDE.md instead of hooks. "Don't push to main" in CLAUDE.md is followed ~70% of the time. The same rule as a PreToolUse hook with exit code 2 is followed 100%. If a rule matters enough to write down, ask: "can I live with 30% non-compliance?" If no, it needs a hook.
+Putting safety rules in CLAUDE.md instead of hooks. "Don't push to main" in CLAUDE.md is followed ~70% of the time. As a PreToolUse hook with exit 2, it's followed 100%. The 30% gap is where production incidents live.
+
+The reverse trap is also real: over-hooking. If you hook everything, every tool call is gated and sessions feel sluggish. Hook only what's irreversible or has high cost-of-failure. Everything else is commands (human judgment) or skills (Claude judgment).
+
+## When this framework breaks down
+
+When you need conditional strictness. Example: "block push to main on production repos, allow it on personal projects." The hook doesn't know which type of repo it's in. Solutions: path-scoped rules (.claude/rules/ with YAML frontmatter), environment variables checked inside the hook, or project-level settings.json overriding user-level settings.json.
