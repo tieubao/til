@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 21 note(s). Last updated: 2026-03-29
+> Auto-generated index of 24 note(s). Last updated: 2026-03-29
 
 ## ai
 
@@ -11,6 +11,7 @@
 - [Ai dev stack 8 layer model march 2026](ai-tooling/ai-dev-stack-8-layer-model-march-2026.md)
 - [Ai dev stack 8 layer model with tool evaluations march 2026](ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md)
 - [Autoresearch the karpathy loop pattern](ai-tooling/autoresearch-the-karpathy-loop-pattern.md)
+- [Building a claude code workflow kit from extracted patterns](ai-tooling/building-a-claude-code-workflow-kit-from-extracted-patterns.md)
 - [Claude code ecosystem repo evaluations for kit building](ai-tooling/claude-code-ecosystem-repo-evaluations-for-kit-building.md)
 - [Claude code hook lifecycle and event system](ai-tooling/claude-code-hook-lifecycle-and-event-system.md)
 - [Claudekit evaluation and unique features](ai-tooling/claudekit-evaluation-and-unique-features.md)
@@ -19,6 +20,8 @@
 - [Compaction defense patterns for claude code sessions](ai-tooling/compaction-defense-patterns-for-claude-code-sessions.md)
 - [Context hub vs context7 vs the context layer ecosystem](ai-tooling/context-hub-vs-context7-vs-the-context-layer-ecosystem.md)
 - [Dwarves kit design philosophy and architecture](ai-tooling/dwarves-kit-design-philosophy-and-architecture.md)
+- [Kit self assessment against its own philosophy](ai-tooling/kit-self-assessment-against-its-own-philosophy.md)
+- [Prompt improvement as a learning technique](ai-tooling/prompt-improvement-as-a-learning-technique.md)
 - [Tool evaluation 5 question rubric](ai-tooling/tool-evaluation-5-question-rubric.md)
 
 ## claude-code
