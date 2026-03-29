@@ -1,85 +1,92 @@
 ---
 title: "Claude Code hook lifecycle and event system"
 date: 2026-03-29
-captured: 2026-03-29T07:18:53.706Z
+captured: 2026-03-29T07:46:58.981Z
 tags: ["claude-code", "hooks", "lifecycle", "agent-engineering"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
 ---
-## Overview
+Claude Code exposes 21 lifecycle hook events that fire at specific points during a session. Hooks are the enforcement layer: unlike CLAUDE.md rules (followed ~70% of the time), a hook with exit code 2 is followed 100% of the time.
 
-Claude Code has 21 lifecycle hook events across 4 handler types. Hooks are deterministic automation points -- unlike CLAUDE.md rules (followed ~70% of the time), hooks with exit code 2 are enforced 100% of the time.
+## The mental model
 
-## Hook events by category
+Think of hooks as interceptors at every decision point in the agent loop. The agent thinks, picks a tool, runs it, gets results, decides to stop or continue. Hooks can intercept before tool execution (gate it), after tool execution (validate it), and at the stop decision (force continuation).
 
-**Session layer:**
-- `Setup` -- fires on `--init` or `--maintenance` CLI flags
-- `SessionStart` -- startup, resume, clear, compact. stdout becomes Claude's context.
-- `SessionEnd` -- exit, sigint, error
+## Events by where they fire
 
-**Prompt layer:**
-- `UserPromptSubmit` -- before Claude processes user input. stdout injected as context.
+**Session boundaries** -- setup, teardown, context management:
 
-**Tool layer:**
-- `PreToolUse` -- before tool runs. Can allow, deny, or ask via `hookSpecificOutput.permissionDecision`. Matchers: Bash, Edit, Write, Read, Glob, Grep, Agent, WebFetch, WebSearch, MCP tools.
-- `PermissionRequest` -- when permission dialog would show. Can auto-approve or deny.
-- `PostToolUse` -- after successful tool execution. Matcher on tool name.
-- `PostToolUseFailure` -- after tool error.
+| Event | When | Key behavior |
+|-------|------|-------------|
+| Setup | `--init` or `--maintenance` CLI flags | One-time project initialization |
+| SessionStart | Startup, resume, clear, compact | stdout becomes Claude's context (critical for injection) |
+| SessionEnd | Exit, sigint, error | Cleanup, logging |
+| PreCompact | Before conversation compaction | Last chance to save state before summarization |
 
-**Agent layer:**
-- `SubagentStart`, `SubagentStop` -- subagent lifecycle
-- `Stop` -- when agent finishes response. Exit 2 forces continuation.
+**User input** -- before Claude processes a prompt:
 
-**Maintenance:**
-- `PreCompact` -- before conversation compaction
-- `Notification` -- async, non-blocking system notifications
+| Event | When | Key behavior |
+|-------|------|-------------|
+| UserPromptSubmit | User hits enter | Can inject context (stdout) or block the prompt |
 
-**Newer events:**
-- `Elicitation`, `ElicitationResult` (v2.1.76+) -- intercept MCP server elicitation
-- `TeammateIdle`, `TaskCompleted`, `ConfigChange`
+**Tool execution** -- the core agent loop:
+
+| Event | When | Key behavior |
+|-------|------|-------------|
+| PreToolUse | After Claude picks a tool, before running it | Can allow, deny, or modify tool input. The only hook that blocks tool execution. |
+| PermissionRequest | When permission dialog would show | Can auto-approve or deny on behalf of user |
+| PostToolUse | After tool succeeds | Validate output, run formatters, log results |
+| PostToolUseFailure | After tool fails | Error logging, retry logic |
+
+**Agent control** -- subagents and completion:
+
+| Event | When | Key behavior |
+|-------|------|-------------|
+| SubagentStart / SubagentStop | Subagent lifecycle | Hooks fire recursively for subagent tool calls too |
+| Stop | Agent finishes response | Exit 2 forces continuation. Must guard against infinite loops via `stop_hook_active`. |
+| Notification | Async alerts | Non-blocking. Good for desktop notifications. |
+
+## The exit code contract
+
+This is the single most important thing to understand:
+
+| Exit code | Meaning | What happens |
+|-----------|---------|-------------|
+| 0 | Success | Proceed. stdout visible in transcript. For SessionStart/UserPromptSubmit, stdout is injected as context. |
+| 1 | Non-blocking error | stderr shown to user. Action STILL proceeds. Warning only. |
+| 2 | Block | Action cancelled. stderr routed to the model. This is the only real enforcement. |
+
+Every security hook MUST use exit 2, not exit 1. Exit 1 logs a warning. Exit 2 actually stops the action.
 
 ## 4 handler types
 
-| Type | Use case | Latency |
-|------|----------|---------|
-| command | Shell scripts, fastest, most debuggable | <100ms typical |
-| http | POST to external endpoints | Network-dependent |
-| prompt | Single-turn LLM evaluation (e.g., Haiku) | 2-5s |
-| agent | Spawns subagent with tool access | 10-30s |
+| Type | What it is | When to use | Latency |
+|------|-----------|-------------|---------|
+| command | Shell script, reads JSON from stdin | Fast checks, pattern matching, file operations | <100ms |
+| http | POST to an endpoint | Team-wide enforcement via shared server | Network-dependent |
+| prompt | Single-turn LLM evaluation | Semantic judgment (is this rationalization?) | 2-5s, costs tokens |
+| agent | Spawns subagent with tool access | Deep verification requiring codebase analysis | 10-30s |
 
-## Exit code semantics
+Start with command hooks. Graduate to prompt hooks only when grep patterns aren't accurate enough.
 
-- Exit 0: success, proceed. stdout visible in transcript mode. For SessionStart and UserPromptSubmit, stdout is injected as Claude's context.
-- Exit 1: non-blocking error. stderr shown to user. Action still proceeds. Warning only.
-- Exit 2: BLOCKS the action. stderr routed to the model. Only real enforcement mechanism.
+## JSON output contracts
 
-## JSON output contract
+Each event type has its own output format. The three you'll use most:
 
-PreToolUse uses `hookSpecificOutput`:
+**PreToolUse** (allow/deny/modify):
 ```json
-{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "allow|deny|ask", "permissionDecisionReason": "string"}}
+{"hookSpecificOutput": {"hookEventName": "PreToolUse", "permissionDecision": "allow|deny|ask"}}
 ```
 
-Stop/SubagentStop uses top-level `decision`:
+**Stop** (force continuation):
 ```json
 {"decision": "block", "reason": "Finish what you started."}
 ```
 
-SessionStart/UserPromptSubmit uses `additionalContext`:
+**SessionStart** (inject context):
 ```json
 {"additionalContext": "Branch: main. Spec found. 3 uncommitted files."}
 ```
 
-## Key design insight
+## The performance constraint
 
-The critical distinction: PreToolUse is the only hook that can block tool execution. Use it for safety gates and mandatory review enforcement. PostToolUse hooks validate after the fact -- they cannot undo actions. Stop hooks can force continuation but cannot undo completed work. Structure accordingly: critical checks in PreToolUse, cleanup in PostToolUse, completion validation in Stop.
-
-## Performance budget
-
-Each hook runs synchronously. Total hook execution time adds to every matched tool call. Threshold: if a hook adds more than 500ms per matched action, sessions feel sluggish. Profile with `time` before deploying. The `stop_hook_active` guard is essential for Stop hooks to prevent infinite loops.
-
-## Config locations (priority order)
-
-1. `~/.claude/settings.json` -- user-level, highest priority
-2. `.claude/settings.json` -- project-level, committed to git
-3. `.claude/settings.local.json` -- local project, git-ignored
-4. Skill/agent YAML frontmatter -- scoped to component lifecycle
+Hooks run synchronously. Total hook execution time adds to every matched tool call. If a PostToolUse hook adds 500ms+ to every file edit, sessions feel sluggish. Profile with `time` before deploying. Ten fast hooks outperform two slow ones.
