@@ -1,0 +1,63 @@
+<svg width="680" viewBox="0 0 680 780" xmlns="http://www.w3.org/2000/svg" style="background:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+
+<!-- Phase 1 -->
+<rect x="40" y="30" width="600" height="220" rx="16" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="60" y="56" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Phase 1: Verification pipeline (this week)</text>
+
+<rect x="60" y="76" width="260" height="56" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="190" y="94" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">task-verifier.md</text>
+<text x="190" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Custom subagent</text>
+
+<rect x="340" y="76" width="280" height="56" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="480" y="94" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">execute.md (updated)</text>
+<text x="480" y="114" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Verify after each task</text>
+
+<rect x="60" y="148" width="260" height="56" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="190" y="166" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">fix-agent.md</text>
+<text x="190" y="186" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Retry on verification fail</text>
+
+<rect x="340" y="148" width="280" height="56" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="480" y="166" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#04342C">Retry loop (max 2)</text>
+<text x="480" y="186" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">Then escalate to human</text>
+
+<!-- Phase 2 -->
+<rect x="40" y="280" width="600" height="220" rx="16" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="60" y="306" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">Phase 2: Bootstrap + routing (next week)</text>
+
+<rect x="60" y="326" width="260" height="56" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="190" y="344" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">start.md</text>
+<text x="190" y="364" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Project state detector</text>
+
+<rect x="340" y="326" width="280" height="56" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="480" y="344" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">context-readiness (v2)</text>
+<text x="480" y="364" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Suggest next command</text>
+
+<rect x="60" y="398" width="260" height="56" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="190" y="416" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">path-scoped rules/</text>
+<text x="190" y="436" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Per-directory conventions</text>
+
+<rect x="340" y="398" width="280" height="56" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text x="480" y="416" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#26215C">PHILOSOPHY.md (v2)</text>
+<text x="480" y="436" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#534AB7">Document new patterns</text>
+
+<!-- Phase 3 -->
+<rect x="40" y="530" width="600" height="220" rx="16" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="60" y="556" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">Phase 3: Parallel + coordination (month 2+)</text>
+
+<rect x="60" y="576" width="260" height="56" rx="8" fill="#FAC775" stroke="#854F0B" stroke-width="0.5"/>
+<text x="190" y="594" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">Agent Teams mode</text>
+<text x="190" y="614" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">Fan-out for parallel tasks</text>
+
+<rect x="340" y="576" width="280" height="56" rx="8" fill="#FAC775" stroke="#854F0B" stroke-width="0.5"/>
+<text x="480" y="594" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">execute-parallel.md</text>
+<text x="480" y="614" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">Worktree isolation</text>
+
+<rect x="60" y="648" width="260" height="56" rx="8" fill="#FAC775" stroke="#854F0B" stroke-width="0.5"/>
+<text x="190" y="666" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">review-team.md</text>
+<text x="190" y="686" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">Parallel reviewers</text>
+
+<rect x="340" y="648" width="280" height="56" rx="8" fill="#FAC775" stroke="#854F0B" stroke-width="0.5"/>
+<text x="480" y="666" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#412402">Shared task list</text>
+<text x="480" y="686" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">Cross-agent state</text>
+
+</svg>
