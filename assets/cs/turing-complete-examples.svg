@@ -1,0 +1,34 @@
+<svg width="680" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+    .ts { font-size: 12px; fill: #5F5E5A; }
+  </style>
+  <text class="th" x="340" y="36" text-anchor="middle">Turing complete = can simulate a Turing machine</text>
+  <!-- Teal header -->
+  <rect x="40" y="70" width="280" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="th" x="180" y="92" text-anchor="middle" dominant-baseline="central" fill="#085041">Turing complete</text>
+  <!-- Coral header -->
+  <rect x="360" y="70" width="280" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="th" x="500" y="92" text-anchor="middle" dominant-baseline="central" fill="#712B13">NOT Turing complete</text>
+  <!-- Row 1 -->
+  <rect x="40" y="130" width="280" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="180" y="152" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Python, JavaScript, C, Java</text>
+  <rect x="360" y="130" width="280" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="ts" x="500" y="152" text-anchor="middle" dominant-baseline="central" fill="#993C1D">HTML, CSS, JSON, regex</text>
+  <!-- Row 2 -->
+  <rect x="40" y="190" width="280" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="180" y="212" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Excel (with formulas)</text>
+  <rect x="360" y="190" width="280" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="ts" x="500" y="212" text-anchor="middle" dominant-baseline="central" fill="#993C1D">A basic calculator</text>
+  <!-- Row 3 -->
+  <rect x="40" y="250" width="280" height="44" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+  <text class="ts" x="180" y="272" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Conway's Game of Life</text>
+  <rect x="360" y="250" width="280" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text class="ts" x="500" y="272" text-anchor="middle" dominant-baseline="central" fill="#993C1D">SQL (without extensions)</text>
+  <!-- Footer text -->
+  <text class="ts" x="180" y="320" text-anchor="middle">Has loops + conditional branching</text>
+  <text class="ts" x="180" y="338" text-anchor="middle">+ unbounded memory</text>
+  <text class="ts" x="500" y="320" text-anchor="middle">Missing at least one of</text>
+  <text class="ts" x="500" y="338" text-anchor="middle">those three ingredients</text>
+</svg>
