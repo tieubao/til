@@ -1,7 +1,7 @@
 ---
 title: "Starship prompt configuration best practices"
 date: 2026-04-03
-captured: 2026-04-03T17:59:39.128Z
+captured: 2026-04-03T18:38:14.880Z
 tags: ["starship", "fish", "terminal", "dotfiles", "catppuccin"]
 source: "Claude web session on dotfiles planning"
 ---
@@ -15,25 +15,33 @@ Don't build from scratch. Pick a preset that matches your terminal theme, then t
 starship preset catppuccin-powerline -o ~/.config/starship.toml
 ```
 
-Available presets: `nerd-font-symbols`, `pure-preset`, `pastel-powerline`, `tokyo-night`, `gruvbox-rainbow`, `catppuccin-powerline`, `jetpack`, `plain-text-symbols`.
+Available official presets (built into CLI): `nerd-font-symbols`, `pure-preset`, `pastel-powerline`, `tokyo-night`, `gruvbox-rainbow`, `catppuccin-powerline`, `jetpack`, `plain-text-symbols`, `bracketed-segments`, `no-runtime-versions`, `no-empty-icons`.
 
 ### Theme and icons are independent
 
 The palette section only defines color names. The `symbol` field in each module defines the icon. You can have catppuccin colors with zero Nerd Font icons by setting `symbol = ""` or `symbol = "text "` on each module.
 
-To go fully icon-free: use `plain-text-symbols` preset as a base, then override colors with your catppuccin palette. Or just set symbols manually:
-
 ```toml
 [git_branch]
 symbol = ""         # no icon, just the branch name
 
-[nodejs]
-symbol = "node "    # plain text instead of nerd font glyph
-
 [character]
-success_symbol = "[>](bold green)"
-error_symbol = "[>](bold red)"
+success_symbol = "[ツ](mauve)"    # custom cursor
+error_symbol = "[ツ](red)"
 ```
+
+### $fill trick for single-line right-alignment
+
+`right_format` only works on the cursor line in two-line prompts. For single-line prompts with right-aligned content, use the `$fill` module instead:
+
+```toml
+format = """$directory$git_branch$git_status$character$fill$time"""
+
+[fill]
+symbol = " "
+```
+
+This pushes everything after `$fill` to the right edge. One line, path+git on the left, time on the right. Learned from amanhimself.dev's Starship config post.
 
 ### Performance tuning
 
@@ -51,55 +59,29 @@ Use `starship timings` to find slow modules. Common offenders:
 - **package**: reads package.json/Cargo.toml for version. Rarely useful in prompt.
 - **git_status in huge repos**: git operations can timeout in repos >1GB.
 
-Best practice: if you use `mise` for version management, remove `$version` from all language modules. Mise handles versions; showing them in the prompt is redundant and slow.
+Best practice: if you use `mise` for version management, disable all language modules entirely. Mise handles versions; the prompt doesn't need to show them.
 
 ### Disable aggressively
 
-Starship has 60+ modules. Most people need 5-8. Disable everything you don't actively use:
+Starship has 60+ modules. Most people need 5-8. Disable everything you don't actively use. In our dotfiles config, only 6 modules are active: directory, git_branch, git_status, git_state, cmd_duration, character, fill, time.
 
-```toml
-[package]
-disabled = true    # slow, rarely useful
+### Preset comparison (ranked by visual weight)
 
-[aws]
-disabled = true    # only if you switch profiles
+**Minimal (no Nerd Font needed):**
+- `pure-preset`: two-line, blue dir, gray branch, purple cursor. Quietest.
+- `plain-text-symbols`: default layout, text icons instead of glyphs.
+- `bracketed-segments`: each segment in [brackets]. Structured but clean.
+- monochrome (community): all gray tones, zero color.
 
-[gcloud]
-disabled = true
+**Medium:**
+- `jetpack`: future default. Shows "on"/"via" connectors. $ cursor.
+- `no-runtime-versions`: default minus language versions. Good for mise users.
 
-[battery]
-disabled = true
-
-[username]
-disabled = true    # unless SSH
-
-[hostname]
-disabled = true    # unless SSH
-```
-
-### Two-line prompt
-
-Info on top line, cursor on bottom. This prevents the cursor from jumping left/right as you cd between repos:
-
-```toml
-format = """
-$directory $git_branch $git_status
-$line_break
-$character"""
-```
-
-### Right-side prompt
-
-Fish supports `right_format` natively. Put low-priority info there:
-
-```toml
-right_format = """$time"""
-
-[time]
-disabled = false
-format = "[$time]($style)"
-time_format = "%H:%M"
-```
+**Heavy (needs Nerd Font):**
+- `pastel-powerline`: colored pill segments, pastel palette.
+- `tokyo-night`: muted blue-gray segments. Calmest powerline.
+- `gruvbox-rainbow`: warm retro (orange/yellow/green). Distinctive.
+- `catppuccin-powerline`: full catppuccin rainbow. Most colorful.
 
 ### Fish integration
 
@@ -112,19 +94,20 @@ starship init fish | source
 ### Debugging
 
 ```bash
-starship explain     # what each module shows
-starship timings     # performance per module
+starship explain       # what each module shows
+starship timings       # performance per module
 starship print-config  # dump effective config
 STARSHIP_LOG=debug starship prompt  # verbose logs
 ```
 
-### Key design decisions for the dwarvesf/dotfiles config
+### Final config for dwarvesf/dotfiles
 
-- Catppuccin Mocha palette (matches Ghostty theme)
-- Zero Nerd Font icons (plain ASCII: `>`, `go`, `py`, `rs`, `node`)
-- Two-line prompt: info on top, cursor on bottom
-- Right side: time only
-- Language modules show label only (no version, since mise manages versions)
-- cmd_duration only when >500ms
-- ~30 modules explicitly disabled for performance
+- Single-line prompt (not two-line)
+- Pure-preset base layout (minimal, no connector words)
+- Catppuccin Mocha palette
+- `ツ` cursor in mauve (red on error, green in vim mode)
+- `$fill` for right-aligned time
+- Zero Nerd Font icons
+- ~35 modules explicitly disabled
+- Only active: directory, git_branch, git_status, git_state, cmd_duration, character, fill, time
 - scan_timeout=30, command_timeout=500
