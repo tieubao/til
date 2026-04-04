@@ -1,13 +1,13 @@
 ---
 title: "The Three Gates - What Elders Screen For"
 date: 2026-04-04
-captured: 2026-04-04T19:18:07.343Z
+captured: 2026-04-04T19:31:45.071Z
 tags: ["wealth-series", "character-test", "trust", "mentorship", "book-v8"]
-source: "Claude.ai session - V8 book framework, grounded in V3 cross-cultural research"
+source: "Claude.ai session - V8 book framework"
 ---
 # The Three Gates: What Older/Wealthier People Screen For
 
-![The three gates to the inner circle](../assets/wealth/02-three-gates-inner-circle.svg)
+![The three gates to the inner circle](https://assets.han-ws.workers.dev/i/2026/04/wealth-02-three-gates-inner-circle.svg)
 
 Older/wealthier people run invisible tests on everyone they spend time with. These tests are drawn from traditions spanning 2,300+ years (Chanakya's testing protocol, Zeng Guofan's Bing Jian, Korean nunchi, Omi merchant graduated trust). The tests sort people into categories: "nice but no signal," "wants something," or "thinking independently, worth watching."
 
@@ -55,8 +55,6 @@ Say "I don't know" freely. Rarer and more valuable than most people realize. The
 
 ## Gate 3: Role clarity (the mindset shift)
 
-The hardest part: you're the youngest at the table but the dynamic is unclear.
-
 ### Key mindset shift
 You are there to extract judgment, not receive instructions. The Arab majlis model: absorb through exposure, don't obey.
 
@@ -71,10 +69,7 @@ You are there to extract judgment, not receive instructions. The Arab majlis mod
 - "Can you introduce me to [person]?"
 - "How do I get into [their industry]?"
 
-### The share-before-you-ask principle
-Offer your own observation before requesting theirs. Even a wrong one. When you offer a slightly contrarian read, you signal independent thinking.
-
 ### Handling "do this for me" moments
-- Genuine capability test: do it excellently (Chanakya's competence test)
+- Genuine capability test: do it excellently
 - One-time busywork: do it gracefully, but don't let it become the pattern
 - Consistent staff treatment: redirect by bringing something next time that only a peer could provide
