@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 42 note(s). Last updated: 2026-04-04
+> Auto-generated index of 41 note(s). Last updated: 2026-04-04
 
 ## ai
 
