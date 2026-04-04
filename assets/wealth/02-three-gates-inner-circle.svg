@@ -1,0 +1,93 @@
+<svg width="100%" viewBox="0 0 680 880">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:currentColor" x="340" y="30" text-anchor="middle">The three gates to the inner circle</text>
+<text style="font-family:sans-serif;font-size:12px;fill:gray" x="340" y="50" text-anchor="middle">What older/wealthier people screen for (whether you know it or not)</text>
+
+<!-- Gate 1 container -->
+<rect x="40" y="72" width="600" height="230" rx="16" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="340" y="98" text-anchor="middle">Gate 1: Character test (passive observation)</text>
+
+<!-- Gate 1 items -->
+<rect x="60" y="112" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="146" y="134" text-anchor="middle">Who you serve</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="146" y="152" text-anchor="middle">Others first, or yourself?</text>
+
+<rect x="254" y="112" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="340" y="134" text-anchor="middle">How you treat staff</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="340" y="152" text-anchor="middle">The waiter test (Bing Jian)</text>
+
+<rect x="448" y="112" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="534" y="134" text-anchor="middle">Where your eyes go</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="534" y="152" text-anchor="middle">Phone out = attention fails</text>
+
+<rect x="60" y="196" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="146" y="218" text-anchor="middle">Under pressure</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="146" y="236" text-anchor="middle">Alcohol, conflict, bad news</text>
+
+<rect x="254" y="196" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="340" y="218" text-anchor="middle">Confidentiality</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="340" y="236" text-anchor="middle">Does shared info travel?</text>
+
+<rect x="448" y="196" width="172" height="64" rx="8" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#085041" x="534" y="218" text-anchor="middle">Ambiguity response</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#0F6E56" x="534" y="236" text-anchor="middle">Freeze, clarify, or barrel?</text>
+
+<!-- Arrow between gates -->
+<line x1="340" y1="302" x2="340" y2="330" stroke="#534AB7" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<!-- Gate 2 container -->
+<rect x="40" y="332" width="600" height="230" rx="16" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="340" y="358" text-anchor="middle">Gate 2: Value test (active assessment)</text>
+
+<rect x="60" y="372" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="146" y="394" text-anchor="middle">Signal, not presence</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="146" y="412" text-anchor="middle">Bring intel they lack</text>
+
+<rect x="254" y="372" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="340" y="394" text-anchor="middle">Independent thought</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="340" y="412" text-anchor="middle">Disagree with nuance</text>
+
+<rect x="448" y="372" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="534" y="394" text-anchor="middle">Useful introductions</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="534" y="412" text-anchor="middle">Connect people well</text>
+
+<rect x="60" y="456" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="146" y="478" text-anchor="middle">Consistent generosity</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="146" y="496" text-anchor="middle">Share same-day, no strings</text>
+
+<rect x="254" y="456" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="340" y="478" text-anchor="middle">Follow-through</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="340" y="496" text-anchor="middle">Small promises, always kept</text>
+
+<rect x="448" y="456" width="172" height="64" rx="8" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#3C3489" x="534" y="478" text-anchor="middle">Honest calibration</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#534AB7" x="534" y="496" text-anchor="middle">Say "I don't know" freely</text>
+
+<!-- Arrow between gates -->
+<line x1="340" y1="562" x2="340" y2="590" stroke="#D85A30" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<!-- Gate 3 container -->
+<rect x="40" y="592" width="600" height="230" rx="16" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#712B13" x="340" y="618" text-anchor="middle">Gate 3: Role clarity (the mindset shift)</text>
+
+<rect x="60" y="632" width="270" height="64" rx="8" fill="#F5C4B3" stroke="#993C1D" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#712B13" x="195" y="654" text-anchor="middle">Trap: nodding along</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#993C1D" x="195" y="672" text-anchor="middle">Signals subordinate, not peer potential</text>
+
+<rect x="350" y="632" width="270" height="64" rx="8" fill="#F5C4B3" stroke="#993C1D" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#712B13" x="485" y="654" text-anchor="middle">Move: ask judgment questions</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#993C1D" x="485" y="672" text-anchor="middle">Extract reasoning, not just facts</text>
+
+<rect x="60" y="716" width="270" height="64" rx="8" fill="#F5C4B3" stroke="#993C1D" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#712B13" x="195" y="738" text-anchor="middle">Trap: waiting for instructions</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#993C1D" x="195" y="756" text-anchor="middle">Frames you as employee</text>
+
+<rect x="350" y="716" width="270" height="64" rx="8" fill="#F5C4B3" stroke="#993C1D" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#712B13" x="485" y="738" text-anchor="middle">Move: share what you see</text>
+<text style="font-family:sans-serif;font-size:12px;fill:#993C1D" x="485" y="756" text-anchor="middle">Offer a read they didn't ask for</text>
+
+<!-- Result -->
+<rect x="120" y="810" width="440" height="48" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text style="font-family:sans-serif;font-size:14px;font-weight:500;fill:#2C2C2A" x="340" y="838" text-anchor="middle">Result: they stop seeing "young person" and start seeing "future partner"</text>
+</svg>
