@@ -77,7 +77,6 @@
 - [How to sit at the table the thesis](wealth/how-to-sit-at-the-table-the-thesis.md)
 - [The 12 month progression deposit to partnership](wealth/the-12-month-progression-deposit-to-partnership.md)
 - [The three gates what elders screen for](wealth/the-three-gates-what-elders-screen-for.md)
-- [V8 book spec how to sit at the table](wealth/v8-book-spec-how-to-sit-at-the-table.md)
 
 ## youtube
 
