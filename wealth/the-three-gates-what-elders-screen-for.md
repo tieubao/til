@@ -1,13 +1,15 @@
 ---
 title: "The Three Gates - What Elders Screen For"
 date: 2026-04-04
-captured: 2026-04-04T19:00:13.361Z
+captured: 2026-04-04T19:18:07.343Z
 tags: ["wealth-series", "character-test", "trust", "mentorship", "book-v8"]
 source: "Claude.ai session - V8 book framework, grounded in V3 cross-cultural research"
 ---
 # The Three Gates: What Older/Wealthier People Screen For
 
-Older/wealthier people run invisible tests on everyone they spend time with. These tests are drawn from traditions spanning 2,300+ years. The tests sort people into categories: "nice but no signal," "wants something," or "thinking independently, worth watching."
+![The three gates to the inner circle](../assets/wealth/02-three-gates-inner-circle.svg)
+
+Older/wealthier people run invisible tests on everyone they spend time with. These tests are drawn from traditions spanning 2,300+ years (Chanakya's testing protocol, Zeng Guofan's Bing Jian, Korean nunchi, Omi merchant graduated trust). The tests sort people into categories: "nice but no signal," "wants something," or "thinking independently, worth watching."
 
 ## Gate 1: Character test (passive observation)
 
