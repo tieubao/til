@@ -1,13 +1,13 @@
 ---
 title: "How to Sit at the Table - The Thesis"
 date: 2026-04-04
-captured: 2026-04-04T19:17:29.362Z
+captured: 2026-04-04T19:31:10.214Z
 tags: ["wealth-series", "mentorship", "opportunity", "deal-flow", "book-v8"]
 source: "Claude.ai session - origin conversation for V8 book project"
 ---
 # How to Sit at the Table - The Thesis
 
-![Opportunity lens vs money lens](../assets/wealth/01-opportunity-lens-vs-money-lens.svg)
+![Opportunity lens vs money lens](https://assets.han-ws.workers.dev/i/2026/04/wealth-01-opportunity-lens-vs-money-lens.svg)
 
 ## Core thesis
 
