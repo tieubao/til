@@ -1,11 +1,13 @@
 ---
 title: "The 12-Month Progression - Deposit to Partnership"
 date: 2026-04-04
-captured: 2026-04-04T19:00:44.218Z
+captured: 2026-04-04T19:18:36.951Z
 tags: ["wealth-series", "trust-building", "progression", "mentorship", "book-v8"]
 source: "Claude.ai session - V8 book framework"
 ---
 # The 12-Month Progression: From Deposit to Partnership
+
+![Pre-game protocol and 12-month progression](../assets/wealth/03-pregame-and-progression.svg)
 
 There is a predictable timeline for how trust builds with older/wealthier people. Most people quit in month 2-3 because nothing visible is happening. Understanding the phases prevents premature quitting.
 
@@ -54,13 +56,6 @@ Three reasons:
 1. **Invisible progress**: nothing comes back for weeks. They conclude the approach is broken and start pitching (kills it) or stop showing up (kills it slower).
 2. **Failed confidentiality test**: one piece of shared info gets repeated. The door closes silently. Nobody tells you why.
 3. **Pleasant and forgettable**: they show up, listen, are nice, and bring zero signal. The most common failure mode.
-
-## Timescale variations
-
-The phases are the same regardless. What changes is clock speed:
-- Same industry, weekly contact: 3-6 months compressed
-- Cross-sector, quarterly meetings: 2+ years
-- The sequence never changes: deposit, recognition, integration, partnership
 
 ## Pre-game protocol (10 minutes before any high-stakes interaction)
 
