@@ -1,0 +1,71 @@
+<svg width="680" viewBox="0 0 680 820" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;background:#fff">
+<text x="40" y="32" font-size="18" font-weight="500" fill="#1C1917">Enterprise trust ladder</text>
+<text x="40" y="52" font-size="13" fill="#78716C">Same three gates, mapped to the enterprise director relationship</text>
+
+<!-- Ladder line -->
+<line x1="52" y1="80" x2="52" y2="480" stroke="#E7E5E4" stroke-width="2"/>
+
+<!-- Rung 1 -->
+<circle cx="52" cy="92" r="7" fill="#fff" stroke="#888780" stroke-width="2"/>
+<text x="72" y="86" font-size="10" font-weight="500" fill="#888780" letter-spacing="0.4">COLD CONTACT</text>
+<text x="72" y="102" font-size="13" font-weight="500" fill="#1C1917">They don't know you yet</text>
+<text x="72" y="118" font-size="12" fill="#78716C">Make yourself useful before asking. Share a relevant insight.</text>
+
+<!-- Rung 2 -->
+<circle cx="52" cy="160" r="7" fill="#fff" stroke="#0F6E56" stroke-width="2"/>
+<text x="72" y="154" font-size="10" font-weight="500" fill="#0F6E56" letter-spacing="0.4">PILOT DEAL / SMALL TEST</text>
+<text x="72" y="170" font-size="13" font-weight="500" fill="#1C1917">The Mitsui gate: they gave you a small order</text>
+<text x="72" y="186" font-size="12" fill="#78716C">Most important moment. Meet terms exactly. One failure resets to zero.</text>
+
+<!-- Rung 3 -->
+<circle cx="52" cy="228" r="7" fill="#fff" stroke="#534AB7" stroke-width="2"/>
+<text x="72" y="222" font-size="10" font-weight="500" fill="#534AB7" letter-spacing="0.4">REPEAT ENGAGEMENT</text>
+<text x="72" y="238" font-size="13" font-weight="500" fill="#1C1917">They came back. Character tests are running.</text>
+<text x="72" y="254" font-size="12" fill="#78716C">Do you deliver bad news proactively? Treat their junior team well?</text>
+
+<!-- Rung 4 -->
+<circle cx="52" cy="296" r="7" fill="#fff" stroke="#185FA5" stroke-width="2"/>
+<text x="72" y="290" font-size="10" font-weight="500" fill="#185FA5" letter-spacing="0.4">TRUSTED VENDOR</text>
+<text x="72" y="306" font-size="13" font-weight="500" fill="#1C1917">Reliable but interchangeable. Still a line item.</text>
+<text x="72" y="322" font-size="12" fill="#78716C">Where most companies get stuck permanently. Comfortable plateau.</text>
+
+<!-- Rung 5 -->
+<circle cx="52" cy="364" r="7" fill="#fff" stroke="#D85A30" stroke-width="2"/>
+<text x="72" y="358" font-size="10" font-weight="500" fill="#D85A30" letter-spacing="0.4">STRATEGIC PARTNER</text>
+<text x="72" y="374" font-size="13" font-weight="500" fill="#1C1917">They ask what you think before deciding.</text>
+<text x="72" y="390" font-size="12" fill="#78716C">You see real problems, not scope documents. They defend you to procurement.</text>
+
+<!-- Divider -->
+<line x1="40" y1="420" x2="640" y2="420" stroke="#E7E5E4" stroke-width="1"/>
+
+<!-- Pilot deal response protocol -->
+<text x="40" y="450" font-size="16" font-weight="500" fill="#1C1917">Pilot deal response protocol</text>
+<text x="40" y="468" font-size="12" fill="#78716C">Delivery is 40% of evaluation. Process is the other 60%.</text>
+
+<!-- Response items -->
+<rect x="40" y="484" width="600" height="44" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="502" font-size="12" font-weight="500" fill="#1C1917">1. Over-deliver on scope, under-deliver on drama</text>
+<text x="54" y="518" font-size="11" fill="#78716C">10-15% more than scoped, quietly. Don't invoice for extra. The pilot is seed-planting.</text>
+
+<rect x="40" y="536" width="600" height="44" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="554" font-size="12" font-weight="500" fill="#1C1917">2. Communicate like a partner, not a vendor</text>
+<text x="54" y="570" font-size="11" fill="#78716C">Proactive updates before being asked. Share intel outside scope.</text>
+
+<rect x="40" y="588" width="600" height="44" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="606" font-size="12" font-weight="500" fill="#1C1917">3. Surface problems early, with a proposed solution</text>
+<text x="54" y="622" font-size="11" fill="#78716C">"This timeline is at risk, here is why, here is what I recommend."</text>
+
+<rect x="40" y="640" width="600" height="44" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="658" font-size="12" font-weight="500" fill="#1C1917">4. Deliver the insight, not just the output</text>
+<text x="54" y="674" font-size="11" fill="#78716C">Noticed a scaling problem during the work? Tell them. That's the partner move.</text>
+
+<rect x="40" y="692" width="600" height="44" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="710" font-size="12" font-weight="500" fill="#1C1917">5. Follow up with the nemawashi debrief</text>
+<text x="54" y="726" font-size="11" fill="#78716C">"What worked, what didn't, what would you want different?" Then incorporate visibly.</text>
+
+<!-- Anti-patterns header -->
+<text x="40" y="766" font-size="14" font-weight="500" fill="#A32D2D">Enterprise anti-patterns that keep you a vendor forever</text>
+
+<text x="40" y="788" font-size="11" fill="#78716C">Optimizing for the invoice / Telling them what they want to hear / Only talking to your buyer</text>
+<text x="40" y="806" font-size="11" fill="#78716C">Disappearing between engagements / Surprising them in front of their people</text>
+</svg>
