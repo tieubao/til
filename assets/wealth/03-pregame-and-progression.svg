@@ -1,0 +1,74 @@
+<svg width="680" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" style="font-family:sans-serif;background:#fff">
+<text x="40" y="32" font-size="18" font-weight="500" fill="#1C1917">Pre-game protocol</text>
+<text x="40" y="52" font-size="13" fill="#78716C">Run this checklist before every dinner, coffee, or event. Takes 10 minutes.</text>
+
+<!-- Row 1 -->
+<rect x="40" y="72" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="94" font-size="13" font-weight="500" fill="#1C1917">Research their recent moves</text>
+<text x="54" y="114" font-size="11" fill="#78716C">One deal, one decision, one public statement.</text>
+
+<rect x="350" y="72" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="364" y="94" font-size="13" font-weight="500" fill="#1C1917">Prepare one signal to bring</text>
+<text x="364" y="114" font-size="11" fill="#78716C">A trend, a data point, a connection you noticed.</text>
+
+<!-- Row 2 -->
+<rect x="40" y="148" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="170" font-size="13" font-weight="500" fill="#1C1917">Prepare one judgment question</text>
+<text x="54" y="190" font-size="11" fill="#78716C">"What would you watch for if..." not "What should I do..."</text>
+
+<rect x="350" y="148" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="364" y="170" font-size="13" font-weight="500" fill="#1C1917">Set your phone to silent, in bag</text>
+<text x="364" y="190" font-size="11" fill="#78716C">Not vibrate. Not face-down on table. Gone.</text>
+
+<!-- Row 3 -->
+<rect x="40" y="224" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="54" y="246" font-size="13" font-weight="500" fill="#1C1917">Know your constraint</text>
+<text x="54" y="266" font-size="11" fill="#78716C">Drinking limit decided before arrival, not after.</text>
+
+<rect x="350" y="224" width="290" height="64" rx="8" fill="#F7F6F5" stroke="#E7E5E4" stroke-width="0.5"/>
+<text x="364" y="246" font-size="13" font-weight="500" fill="#1C1917">Kill every ask in your head</text>
+<text x="364" y="266" font-size="11" fill="#78716C">No pitch, no request. Goal: they want a next meeting.</text>
+
+<!-- Divider -->
+<line x1="40" y1="316" x2="640" y2="316" stroke="#E7E5E4" stroke-width="1"/>
+
+<!-- 12-month progression header -->
+<text x="40" y="348" font-size="18" font-weight="500" fill="#1C1917">The 12-month progression</text>
+<text x="40" y="368" font-size="13" fill="#78716C">Most people quit in month 2-3 because nothing visible is happening.</text>
+
+<!-- Phase bars -->
+<rect x="40" y="388" width="140" height="36" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="110" y="410" font-size="12" font-weight="500" fill="#085041" text-anchor="middle">Month 1-3</text>
+
+<rect x="190" y="388" width="140" height="36" rx="6" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="260" y="410" font-size="12" font-weight="500" fill="#3C3489" text-anchor="middle">Month 4-6</text>
+
+<rect x="340" y="388" width="140" height="36" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="410" y="410" font-size="12" font-weight="500" fill="#712B13" text-anchor="middle">Month 7-9</text>
+
+<rect x="490" y="388" width="150" height="36" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="565" y="410" font-size="12" font-weight="500" fill="#0C447C" text-anchor="middle">Month 10-12+</text>
+
+<!-- Phase labels -->
+<text x="110" y="444" font-size="11" fill="#0F6E56" text-anchor="middle">Deposit</text>
+<text x="110" y="458" font-size="10" fill="#78716C" text-anchor="middle">Being observed</text>
+
+<text x="260" y="444" font-size="11" fill="#534AB7" text-anchor="middle">Recognition</text>
+<text x="260" y="458" font-size="10" fill="#78716C" text-anchor="middle">Active testing begins</text>
+
+<text x="410" y="444" font-size="11" fill="#993C1D" text-anchor="middle">Integration</text>
+<text x="410" y="458" font-size="10" fill="#78716C" text-anchor="middle">Deal flow opens</text>
+
+<text x="565" y="444" font-size="11" fill="#185FA5" text-anchor="middle">Partnership</text>
+<text x="565" y="458" font-size="10" fill="#78716C" text-anchor="middle">They ask your opinion</text>
+
+<!-- Trust bar -->
+<text x="40" y="490" font-size="10" fill="#78716C">Trust</text>
+<rect x="80" y="480" width="560" height="6" rx="3" fill="#E7E5E4"/>
+<rect x="80" y="480" width="476" height="6" rx="3" fill="#0F6E56" opacity="0.6"/>
+
+<!-- Deal flow bar -->
+<text x="40" y="510" font-size="10" fill="#78716C">Deal flow</text>
+<rect x="80" y="500" width="560" height="6" rx="3" fill="#E7E5E4"/>
+<rect x="80" y="500" width="336" height="6" rx="3" fill="#534AB7" opacity="0.6"/>
+</svg>
