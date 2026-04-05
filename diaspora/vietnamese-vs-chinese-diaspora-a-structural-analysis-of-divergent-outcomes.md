@@ -1,7 +1,7 @@
 ---
 title: "Vietnamese vs Chinese diaspora: a structural analysis of divergent outcomes"
 date: 2026-04-05
-captured: 2026-04-05T06:38:42.122Z
+captured: 2026-04-05T07:01:40.236Z
 tags: ["diaspora", "vietnam", "china", "economics", "institutions", "southeast-asia"]
 source: "Claude.ai diaspora analysis session, April 2026"
 ---
@@ -22,6 +22,8 @@ This observation is partially correct but dangerously incomplete. It's true for 
 The two failure cases are Cambodia (400-700K ethnic Vietnamese, ~90% lack citizenship, barred from schools/jobs/property) and SE Asian countries generally where Vietnamese communities lack legal status.
 
 The variable that predicts success is not ethnicity or culture. It's whether the host country grants legal status and institutional access.
+
+![Vietnamese diaspora outcomes scorecard](assets/diaspora/viet-diaspora-scorecard-by-host.svg)
 
 ## Five structural factors explaining the divergence
 
@@ -60,6 +62,8 @@ In the US/France/Germany/Norway/Australia, Vietnamese have full legal rights. Sa
 After Deng Xiaoping's reforms (1978), the Chinese diaspora became a conduit for China's economic explosion. The Vietnamese diaspora had an isolated, poor country until Doi Moi (1986). Vietnam still doesn't function as a capital hub for its overseas communities. Remittances flow ($14-15B annually), but institutional bridge infrastructure is decades behind.
 
 This is changing: 500K+ Viet Kieu return annually, Vietnam's economy is growing 5-7% per year. But the inflection point is still 15-25 years away.
+
+![Five structural factors determining diaspora durability](assets/diaspora/five-factor-root-cause-model.svg)
 
 ## The key insight
 
