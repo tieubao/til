@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 50 note(s). Last updated: 2026-04-05
+> Auto-generated index of 52 note(s). Last updated: 2026-04-05
 
 ## ai
 
@@ -39,9 +39,11 @@
 
 ## diaspora
 
+- [Four asian diasporas 30 year projection](diaspora/four-asian-diasporas-30-year-projection.md)
 - [Four asian diasporas in 2055 projected trajectories](diaspora/four-asian-diasporas-in-2055-projected-trajectories.md)
 - [The bridge builder model highest value position for the next vietnamese generati](diaspora/the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati.md)
 - [Vietnamese vs chinese diaspora a structural analysis of divergent outcomes](diaspora/vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes.md)
+- [Vietnamese vs chinese diaspora why one builds economic hubs and the other doesnt](diaspora/vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt.md)
 - [Why little saigons hollow out the success driven exit problem](diaspora/why-little-saigons-hollow-out-the-success-driven-exit-problem.md)
 - [Why vietnamese built nail salons instead of trade empires the subsistence busine](diaspora/why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine.md)
 
