@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 41 note(s). Last updated: 2026-04-04
+> Auto-generated index of 46 note(s). Last updated: 2026-04-05
 
 ## ai
 
@@ -36,6 +36,14 @@
 
 - [Starship prompt configuration best practices](devtools/starship-prompt-configuration-best-practices.md)
 - [Xdg base directory specification](devtools/xdg-base-directory-specification.md)
+
+## diaspora
+
+- [Four asian diasporas in 2055 projected trajectories](diaspora/four-asian-diasporas-in-2055-projected-trajectories.md)
+- [The bridge builder model highest value position for the next vietnamese generati](diaspora/the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati.md)
+- [Vietnamese vs chinese diaspora a structural analysis of divergent outcomes](diaspora/vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes.md)
+- [Why little saigons hollow out the success driven exit problem](diaspora/why-little-saigons-hollow-out-the-success-driven-exit-problem.md)
+- [Why vietnamese built nail salons instead of trade empires the subsistence busine](diaspora/why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine.md)
 
 ## dwarves-kit
 
