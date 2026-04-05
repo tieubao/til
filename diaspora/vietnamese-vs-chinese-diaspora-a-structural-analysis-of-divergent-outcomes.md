@@ -1,7 +1,7 @@
 ---
 title: "Vietnamese vs Chinese diaspora: a structural analysis of divergent outcomes"
 date: 2026-04-05
-captured: 2026-04-05T07:01:40.236Z
+captured: 2026-04-05T07:04:26.599Z
 tags: ["diaspora", "vietnam", "china", "economics", "institutions", "southeast-asia"]
 source: "Claude.ai diaspora analysis session, April 2026"
 ---
@@ -9,64 +9,50 @@ source: "Claude.ai diaspora analysis session, April 2026"
 
 ## The starting observation
 
-Vietnamese diaspora communities in Southeast Asia (Cambodia, Laos, Thailand, Philippines) tend to decline economically over 1-2 generations, losing wealth and eventually assimilating or disappearing into the host country. Meanwhile, Chinese diaspora communities in the exact same regions built durable economic empires that persist across centuries.
+Vietnamese diaspora communities in Southeast Asia (Cambodia, Laos, Thailand, Philippines) tend to decline economically over 1-2 generations. Meanwhile, Chinese diaspora communities in the exact same regions built durable economic empires that persist across centuries.
 
-This observation is partially correct but dangerously incomplete. It's true for SE Asia, but false as a general statement about Vietnamese people abroad. The Vietnamese diaspora thrives in 5 out of 7 major host regions:
+This observation is partially correct but dangerously incomplete. The Vietnamese diaspora thrives in 5 out of 7 major host regions:
 
-- **US (2.3M people):** Vietnamese Americans generate roughly $35 billion in annual business revenue from approximately 310,000 businesses (VABA estimates, 2023). Vietnamese-born billionaires include Chinh Chu (managing director of Blackstone Group, assets ~$1.1B) and Trung Dung (sold his company On Display for $1.8B in 2000, having arrived in the US in 1984 with $2).
-- **France (~400K people):** French media and politicians view the Vietnamese community as a "model minority." A 1988 survey placed Vietnamese as the 4th most integrated immigrant group in France, behind only Italians, Spanish, and Portuguese. Vietnamese in France have the highest educational attainment rate among all overseas Vietnamese populations.
-- **Germany (~200K people):** Vietnamese academic success in Germany has been called "Das vietnamesische Wunder" (The Vietnamese Miracle). In Berlin's Lichtenberg and Marzahn districts, Vietnamese account for only 2% of the population but make up 17% of prep school enrollment.
-- **Norway (~22K people):** Vietnamese are considered the best-integrated non-Western immigrant group, with education success rates on par with ethnic Norwegians.
-- **Australia (335K people):** Well-integrated with strong community institutions. 1.3% of Australia's total population.
+- **US (2.3M people):** $35B annual business revenue, 310K businesses, billionaires (Chinh Chu, Trung Dung)
+- **France (~400K):** 4th most integrated immigrant group, highest educational attainment among all overseas Vietnamese
+- **Germany (~200K):** "Das vietnamesische Wunder" -- 2% of population, 17% of prep school enrollment in Berlin
+- **Norway (~22K):** Best-integrated non-Western immigrant group
+- **Australia (335K):** Well-integrated, 1.3% of total population
 
-The two failure cases are Cambodia (400-700K ethnic Vietnamese, ~90% lack citizenship, barred from schools/jobs/property) and SE Asian countries generally where Vietnamese communities lack legal status.
+The two failure cases are Cambodia (~90% denied citizenship) and SE Asia generally where legal status is denied.
 
 The variable that predicts success is not ethnicity or culture. It's whether the host country grants legal status and institutional access.
 
-![Vietnamese diaspora outcomes scorecard](assets/diaspora/viet-diaspora-scorecard-by-host.svg)
+![Vietnamese diaspora outcomes by host country](https://assets.han-ws.workers.dev/i/2026/04/viet-diaspora-scorecard-by-host.svg)
 
 ## Five structural factors explaining the divergence
 
 ### Factor 1: Time depth of migration
 
-Chinese merchants began sailing to Southeast Asia over 1,500 years ago. Many were Southern Han Chinese from coastal provinces: Hokkien from Fujian, Teochew from eastern Guangdong, Cantonese, Hakka, and Hainanese. Distinct overseas Chinese communities were established across major SE Asian port cities by the mid-seventeenth century.
-
-The Vietnamese diaspora was born in a single catastrophic moment: the fall of Saigon on April 30, 1975. Between 1975 and 1995, almost 800,000 boat people arrived in other countries. UNHCR estimates between 200,000 and 250,000 died at sea. You cannot build a bamboo network in 50 years starting from refugee camps.
+Chinese merchants began sailing to SE Asia 1,500+ years ago. Distinct communities established by the mid-seventeenth century. The Vietnamese diaspora was born April 30, 1975. 800,000 boat people, 200-250K died at sea. You cannot build a bamboo network in 50 years starting from refugee camps.
 
 ### Factor 2: Migration type
 
-The Chinese were merchants by occupation. Hokkien dominated shipping/export-import. Teochew controlled rice trading. Cantonese ran manufacturing. Hakka dominated leather and mining. Hainanese ran restaurant chains. In Thailand, Teochew controlled over 90% of rice mills, pawnshops, and pharmacies.
-
-Vietnamese refugees were soldiers, civil servants, teachers, farmers, fishermen. Vietnam's merchant class was largely the Hoa (ethnic Chinese Vietnamese). When ethnic Vietnamese refugees arrived in the US with nothing, they had no trade skills to deploy, no existing networks, and no capital.
+Chinese were merchants by occupation (Hokkien: shipping, Teochew: rice trading, Cantonese: manufacturing, Hakka: leather/mining, Hainanese: restaurants). Vietnamese refugees were soldiers, civil servants, teachers, farmers, fishermen. Vietnam's merchant class was the Hoa (ethnic Chinese Vietnamese).
 
 ### Factor 3: Institutional infrastructure
 
-The Chinese built three institutional layers:
+Chinese built three layers: clan associations (kongsi/hui kuan) that pooled capital and funded schools, rotating credit systems (hui) as proto-banks, and the bamboo network (cross-border trade ecosystem controlling 50%+ private wealth in SE Asia despite ~7% of population).
 
-**Clan associations (kongsi/hui kuan):** Organized through surname associations (kongsi), ethnolinguistic guilds (huay kuan), and cross-clan organizations (hui). Pooled funds, bought land, built temples, funded schools. The Singapore Hokkien Huay Kuan built Tao Nan School (1906), Ai Tong School (1912), Nan Chiau High School (1947). Institutional capital persisting across generations.
-
-**Rotating credit systems (hui):** Community organizations functioned as proto-banks, pooling capital for business investment before formal banking existed.
-
-**The bamboo network:** Cross-border trade ecosystem. Despite ~7% of SE Asia's population, ethnic Chinese control 50%+ of private sector wealth in Malaysia, Thailand, Philippines. In Indonesia (1% of population), they dominate retail, finance, manufacturing.
-
-The Vietnamese had none of this. No kongsi. No cross-border network. Family-level hui (choi hui) never scaled into institutional capital.
+Vietnamese had none of this. No kongsi. No cross-border network. Family-level hui (choi hui) never scaled into institutional capital.
 
 ### Factor 4: Host-country legal status
 
-In Cambodia, ~90% of ethnic Vietnamese cannot buy property, attend public schools, open bank accounts, or receive birth certificates (SOAS research). Designated as "nonimmigrant foreigners," they live in floating settlements. Anti-Vietnamese sentiment is politically weaponized.
-
-In the US/France/Germany/Norway/Australia, Vietnamese have full legal rights. Same people, radically different outcomes based on institutional environment.
+In Cambodia, ~90% of ethnic Vietnamese cannot buy property, attend public schools, or receive birth certificates. In the US/France/Germany/Norway/Australia, Vietnamese have full legal rights. Same people, radically different outcomes.
 
 ### Factor 5: Motherland economic gravity
 
-After Deng Xiaoping's reforms (1978), the Chinese diaspora became a conduit for China's economic explosion. The Vietnamese diaspora had an isolated, poor country until Doi Moi (1986). Vietnam still doesn't function as a capital hub for its overseas communities. Remittances flow ($14-15B annually), but institutional bridge infrastructure is decades behind.
+Post-Deng (1978), Chinese diaspora became a conduit for China's economic explosion. Vietnamese diaspora had an isolated country until Doi Moi (1986). 500K+ Viet Kieu returning annually now, but institutional bridge infrastructure is decades behind.
 
-This is changing: 500K+ Viet Kieu return annually, Vietnam's economy is growing 5-7% per year. But the inflection point is still 15-25 years away.
-
-![Five structural factors determining diaspora durability](assets/diaspora/five-factor-root-cause-model.svg)
+![Five factors determining diaspora durability](https://assets.han-ws.workers.dev/i/2026/04/five-factor-root-cause-model.svg)
 
 ## The key insight
 
 The Chinese advantage is institutional, not ethnic. Vietnamese thrive wherever institutions exist. They decline wherever institutions exclude them. The real question isn't "why do Vietnamese fail abroad?" (they mostly don't) but "why didn't the Vietnamese build durable cross-border economic institutions?" The answer: timing, starting conditions, and the nature of the migration itself.
 
-![Vietnamese vs Chinese diaspora structural comparison](assets/diaspora/diaspora-chinese-vs-vietnamese-structure.svg)
+![Vietnamese vs Chinese diaspora structural comparison](https://assets.han-ws.workers.dev/i/2026/04/diaspora-chinese-vs-vietnamese-structure.svg)
