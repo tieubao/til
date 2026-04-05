@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 49 note(s). Last updated: 2026-04-05
+> Auto-generated index of 50 note(s). Last updated: 2026-04-05
 
 ## ai
 
@@ -62,6 +62,7 @@
 - [China as a civilization state not a nation state](history/china-as-a-civilization-state-not-a-nation-state.md)
 - [Imperial examinations how china replaced religion with meritocracy](history/imperial-examinations-how-china-replaced-religion-with-meritocracy.md)
 - [Sinicization how china absorbs its conquerors](history/sinicization-how-china-absorbs-its-conquerors.md)
+- [The tainter trap why complexity kills empires and chinas reset mechanism](history/the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism.md)
 
 ## mcp
 
