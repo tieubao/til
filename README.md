@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 46 note(s). Last updated: 2026-04-05
+> Auto-generated index of 49 note(s). Last updated: 2026-04-05
 
 ## ai
 
@@ -56,6 +56,12 @@
 - [Dwarves kit v1 2 verification pipeline architecture](dwarves-kit/dwarves-kit-v1-2-verification-pipeline-architecture.md)
 - [Sdd landscape and dwarves kit v1 2 reference map](dwarves-kit/sdd-landscape-and-dwarves-kit-v1-2-reference-map.md)
 - [Sdd multi agent verification architecture](dwarves-kit/sdd-multi-agent-verification-architecture.md)
+
+## history
+
+- [China as a civilization state not a nation state](history/china-as-a-civilization-state-not-a-nation-state.md)
+- [Imperial examinations how china replaced religion with meritocracy](history/imperial-examinations-how-china-replaced-religion-with-meritocracy.md)
+- [Sinicization how china absorbs its conquerors](history/sinicization-how-china-absorbs-its-conquerors.md)
 
 ## mcp
 
