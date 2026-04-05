@@ -1,0 +1,64 @@
+<svg width="100%" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg">
+<style>
+  svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  .ts { font-size: 12px; font-weight: 400; fill: #5F5E5A; }
+  .c-purple > rect { fill: #EEEDFE; stroke: #534AB7; }
+  .c-purple .th { fill: #3C3489; }
+  .c-teal > rect { fill: #E1F5EE; stroke: #0F6E56; }
+  .c-teal .th { fill: #085041; }
+  .c-amber > rect { fill: #FAEEDA; stroke: #854F0B; }
+  .c-amber .th { fill: #633806; }
+  .c-coral > rect { fill: #FAECE7; stroke: #993C1D; }
+  .c-coral .th { fill: #712B13; }
+  .c-blue > rect { fill: #E6F1FB; stroke: #185FA5; }
+  .c-blue .th { fill: #0C447C; }
+  .c-green > rect { fill: #EAF3DE; stroke: #3B6D11; }
+  .c-green .th { fill: #27500A; }
+  .c-green .ts { fill: #3B6D11; }
+  .c-gray > rect { fill: #F1EFE8; stroke: #5F5E5A; }
+  .c-gray .th { fill: #444441; }
+  .c-gray .ts { fill: #5F5E5A; }
+  .arr { stroke: #888780; stroke-width: 1.5; }
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<g class="c-purple">
+  <rect x="40" y="20" width="260" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="42" text-anchor="middle" dominant-baseline="central">1. Time depth of migration</text>
+</g>
+<g class="c-teal">
+  <rect x="40" y="80" width="260" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="102" text-anchor="middle" dominant-baseline="central">2. Voluntary vs. forced flight</text>
+</g>
+<g class="c-amber">
+  <rect x="40" y="140" width="260" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="162" text-anchor="middle" dominant-baseline="central">3. Institutional infrastructure</text>
+</g>
+<g class="c-coral">
+  <rect x="40" y="200" width="260" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="222" text-anchor="middle" dominant-baseline="central">4. Host-country legal status</text>
+</g>
+<g class="c-blue">
+  <rect x="40" y="260" width="260" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="282" text-anchor="middle" dominant-baseline="central">5. Motherland economic gravity</text>
+</g>
+
+<line x1="300" y1="42" x2="420" y2="172" class="arr" marker-end="url(#arrow)"/>
+<line x1="300" y1="102" x2="420" y2="178" class="arr" marker-end="url(#arrow)"/>
+<line x1="300" y1="162" x2="420" y2="186" class="arr" marker-end="url(#arrow)"/>
+<line x1="300" y1="222" x2="420" y2="196" class="arr" marker-end="url(#arrow)"/>
+<line x1="300" y1="282" x2="420" y2="208" class="arr" marker-end="url(#arrow)"/>
+
+<g class="c-green">
+  <rect x="420" y="150" width="220" height="80" rx="12" stroke-width="0.5"/>
+  <text class="th" x="530" y="178" text-anchor="middle" dominant-baseline="central">Diaspora durability</text>
+  <text class="ts" x="530" y="200" text-anchor="middle" dominant-baseline="central">Wealth across generations</text>
+</g>
+
+<g class="c-gray">
+  <rect x="100" y="340" width="480" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="340" y="358" text-anchor="middle" dominant-baseline="central">The Chinese advantage is institutional, not ethnic</text>
+  <text class="ts" x="340" y="378" text-anchor="middle" dominant-baseline="central">Vietnamese thrive where institutions exist (US, France, Germany)</text>
+</g>
+</svg>
