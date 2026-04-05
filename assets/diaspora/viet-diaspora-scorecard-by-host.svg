@@ -1,0 +1,78 @@
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+<style>
+  svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  .ts { font-size: 12px; font-weight: 400; fill: #5F5E5A; }
+  .c-green > rect { fill: #EAF3DE; stroke: #3B6D11; }
+  .c-green .th { fill: #27500A; }
+  .c-green .ts { fill: #3B6D11; }
+  .c-red > rect { fill: #FCEBEB; stroke: #A32D2D; }
+  .c-red .th { fill: #791F1F; }
+  .c-red .ts { fill: #A32D2D; }
+  .c-gray > rect { fill: #F1EFE8; stroke: #5F5E5A; }
+  .c-gray .th { fill: #444441; }
+  .c-gray .ts { fill: #5F5E5A; }
+  .c-purple > rect { fill: #EEEDFE; stroke: #534AB7; }
+  .c-purple .th { fill: #3C3489; }
+  .c-purple .ts { fill: #534AB7; }
+  .arr { stroke: #888780; stroke-width: 1.5; }
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+
+<text class="th" x="170" y="28" text-anchor="middle">Thriving (5 of 7 hosts)</text>
+<text class="th" x="510" y="28" text-anchor="middle">Declining (2 of 7)</text>
+
+<g class="c-green">
+  <rect x="40" y="46" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="64" text-anchor="middle" dominant-baseline="central">US: $35B revenue</text>
+  <text class="ts" x="170" y="84" text-anchor="middle" dominant-baseline="central">310K businesses, billionaires</text>
+</g>
+<g class="c-green">
+  <rect x="40" y="114" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="132" text-anchor="middle" dominant-baseline="central">France: "model minority"</text>
+  <text class="ts" x="170" y="152" text-anchor="middle" dominant-baseline="central">4th most integrated group</text>
+</g>
+<g class="c-green">
+  <rect x="40" y="182" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="200" text-anchor="middle" dominant-baseline="central">Germany: "Viet miracle"</text>
+  <text class="ts" x="170" y="220" text-anchor="middle" dominant-baseline="central">2% pop, 17% prep schools</text>
+</g>
+<g class="c-green">
+  <rect x="40" y="250" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="268" text-anchor="middle" dominant-baseline="central">Norway: best-integrated</text>
+  <text class="ts" x="170" y="288" text-anchor="middle" dominant-baseline="central">On par with ethnic Norwegians</text>
+</g>
+<g class="c-green">
+  <rect x="40" y="318" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="170" y="336" text-anchor="middle" dominant-baseline="central">Australia: 335K strong</text>
+  <text class="ts" x="170" y="356" text-anchor="middle" dominant-baseline="central">Well-integrated community</text>
+</g>
+
+<g class="c-red">
+  <rect x="380" y="46" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="510" y="64" text-anchor="middle" dominant-baseline="central">Cambodia: stateless</text>
+  <text class="ts" x="510" y="84" text-anchor="middle" dominant-baseline="central">90% denied citizenship</text>
+</g>
+<g class="c-red">
+  <rect x="380" y="114" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="510" y="132" text-anchor="middle" dominant-baseline="central">SE Asia: declining</text>
+  <text class="ts" x="510" y="152" text-anchor="middle" dominant-baseline="central">No legal status, no support</text>
+</g>
+
+<line x1="380" y1="190" x2="640" y2="190" stroke="#B4B2A9" stroke-width="0.5"/>
+
+<g class="c-gray">
+  <rect x="380" y="210" width="260" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="510" y="228" text-anchor="middle" dominant-baseline="central">YouTube sample bias</text>
+  <text class="ts" x="510" y="248" text-anchor="middle" dominant-baseline="central">Overweights the 2 failure cases</text>
+</g>
+
+<g class="c-purple">
+  <rect x="80" y="420" width="520" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="340" y="438" text-anchor="middle" dominant-baseline="central">Success predictor: host-country legal status</text>
+  <text class="ts" x="340" y="458" text-anchor="middle" dominant-baseline="central">+ institutional access, not ethnicity or culture</text>
+</g>
+
+<path d="M170 374 L170 400 L180 420" fill="none" class="arr" marker-end="url(#arrow)"/>
+<path d="M510 266 L510 400 L500 420" fill="none" class="arr" marker-end="url(#arrow)"/>
+</svg>
