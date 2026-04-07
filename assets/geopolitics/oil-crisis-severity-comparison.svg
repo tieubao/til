@@ -1,0 +1,38 @@
+<svg width="100%" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" style="background:#fff">
+<style>
+  text { font-family: system-ui, sans-serif; }
+  .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  .ts { font-size: 12px; fill: #5F5E5A; }
+  .label { font-size: 11px; fill: #888780; }
+</style>
+<!-- Title -->
+<text class="th" x="340" y="30" text-anchor="middle">Oil supply disruption severity comparison</text>
+<!-- Section 1: Supply lost -->
+<text class="label" x="40" y="60">SUPPLY LOST (million barrels/day)</text>
+<text class="ts" x="40" y="88">1973 Arab embargo</text><rect x="200" y="76" width="54" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="260" y="89">4.5 mb/d</text>
+<text class="ts" x="40" y="114">1979 Iran revolution</text><rect x="200" y="102" width="60" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="266" y="115">5.0 mb/d</text>
+<text class="ts" x="40" y="140">1980 Iran-Iraq war</text><rect x="200" y="128" width="48" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="254" y="141">~4.0 mb/d</text>
+<text class="ts" x="40" y="166">1990 Gulf war</text><rect x="200" y="154" width="52" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="258" y="167">~4.3 mb/d</text>
+<text class="ts" x="40" y="192">2022 Russia-Ukraine</text><rect x="200" y="180" width="36" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="242" y="193">~3.0 mb/d</text>
+<text class="ts" x="40" y="218" fill="#A32D2D" font-weight="500">2026 Hormuz</text><rect x="200" y="206" width="360" height="18" rx="3" fill="#E24B4A"/><text class="ts" x="566" y="219" fill="#A32D2D">10-15 mb/d</text>
+<!-- Section 2: Price impact -->
+<text class="label" x="40" y="260">BRENT CRUDE PRICE IMPACT</text>
+<text class="ts" x="40" y="288">1973 Embargo</text><rect x="200" y="276" width="270" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="476" y="289">+300%</text>
+<text class="ts" x="40" y="314">1979 Revolution</text><rect x="200" y="302" width="167" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="373" y="315">+186%</text>
+<text class="ts" x="40" y="340">2022 Russia-Ukraine</text><rect x="200" y="328" width="58" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="264" y="341">+64%</text>
+<text class="ts" x="40" y="366" fill="#A32D2D" font-weight="500">2026 Hormuz</text><rect x="200" y="354" width="82" height="18" rx="3" fill="#E24B4A"/><text class="ts" x="288" y="367" fill="#A32D2D">+91%</text>
+<!-- Section 3: IEA reserve release -->
+<text class="label" x="40" y="408">IEA RESERVE RELEASE (million barrels)</text>
+<text class="ts" x="40" y="436">1991 Gulf war</text><rect x="200" y="424" width="30" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="236" y="437">~33 mb</text>
+<text class="ts" x="40" y="462">2011 Libya</text><rect x="200" y="450" width="54" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="260" y="463">~60 mb</text>
+<text class="ts" x="40" y="488">2022 Russia-Ukraine</text><rect x="200" y="476" width="216" height="18" rx="3" fill="#B4B2A9"/><text class="ts" x="422" y="489">~240 mb</text>
+<text class="ts" x="40" y="514" fill="#A32D2D" font-weight="500">2026 Hormuz</text><rect x="200" y="502" width="360" height="18" rx="3" fill="#E24B4A"/><text class="ts" x="566" y="515" fill="#A32D2D">400 mb</text>
+<!-- Key quote -->
+<rect x="40" y="550" width="600" height="60" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text class="ts" x="340" y="572" text-anchor="middle" fill="#791F1F">IEA chief Birol: "More serious than 1973, 1979, and 2022 together."</text>
+<text class="ts" x="340" y="592" text-anchor="middle" fill="#791F1F">"The world has never experienced a disruption to energy supply of such magnitude."</text>
+<!-- Legend -->
+<rect x="40" y="630" width="12" height="12" rx="2" fill="#B4B2A9"/><text class="ts" x="58" y="641">Historical crises</text>
+<rect x="180" y="630" width="12" height="12" rx="2" fill="#E24B4A"/><text class="ts" x="198" y="641">2026 Hormuz crisis</text>
+<text class="label" x="40" y="670">Sources: IEA, Dallas Fed, Al Jazeera, GIS Reports. Figures as of early April 2026.</text>
+</svg>
