@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 52 note(s). Last updated: 2026-04-05
+> Auto-generated index of 55 note(s). Last updated: 2026-04-07
 
 ## ai
 
@@ -58,6 +58,12 @@
 - [Dwarves kit v1 2 verification pipeline architecture](dwarves-kit/dwarves-kit-v1-2-verification-pipeline-architecture.md)
 - [Sdd landscape and dwarves kit v1 2 reference map](dwarves-kit/sdd-landscape-and-dwarves-kit-v1-2-reference-map.md)
 - [Sdd multi agent verification architecture](dwarves-kit/sdd-multi-agent-verification-architecture.md)
+
+## geopolitics
+
+- [Australias washminster government structure](geopolitics/australias-washminster-government-structure.md)
+- [How the 2026 strait of hormuz crisis impacts australia](geopolitics/how-the-2026-strait-of-hormuz-crisis-impacts-australia.md)
+- [Measuring oil supply disruption severity 2026 hormuz vs historical crises](geopolitics/measuring-oil-supply-disruption-severity-2026-hormuz-vs-historical-crises.md)
 
 ## history
 
