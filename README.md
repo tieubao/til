@@ -1,11 +1,14 @@
 # Learned
 
-> Auto-generated index of 55 note(s). Last updated: 2026-04-07
+> Auto-generated index of 58 note(s). Last updated: 2026-04-07
 
 ## ai
 
 - [Claude dispatch workflows and async ai orchestration from mobile](ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md)
 - [Complete guide to claude code features workflows and ecosystem](ai/complete-guide-to-claude-code-features-workflows-and-ecosystem.md)
+- [Llm agent memory systems landscape 2026](ai/llm-agent-memory-systems-landscape-2026.md)
+- [Llm memory benchmarks and evaluation crisis](ai/llm-memory-benchmarks-and-evaluation-crisis.md)
+- [Memory systems as agent harness plugins](ai/memory-systems-as-agent-harness-plugins.md)
 - [Multi agent coding brain rot scan design externalized state clean handoffs](ai/multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs.md)
 
 ## ai-tooling
