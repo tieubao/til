@@ -1,0 +1,52 @@
+<svg width="100%" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg" style="background:#fff">
+<style>
+  text { font-family: system-ui, sans-serif; }
+  .th { font-size: 14px; font-weight: 500; fill: #2C2C2A; }
+  .ts { font-size: 12px; fill: #5F5E5A; }
+</style>
+<rect x="180" y="30" width="320" height="56" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text class="th" x="340" y="50" text-anchor="middle" dominant-baseline="central" fill="#791F1F">Strait of Hormuz closed</text>
+<text class="ts" x="340" y="68" text-anchor="middle" dominant-baseline="central" fill="#A32D2D">~20% of global oil removed</text>
+<line x1="340" y1="86" x2="340" y2="120" stroke="#888" stroke-width="1"/>
+<rect x="60" y="120" width="260" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="th" x="190" y="140" text-anchor="middle" dominant-baseline="central" fill="#712B13">Brent crude surges</text>
+<text class="ts" x="190" y="158" text-anchor="middle" dominant-baseline="central" fill="#993C1D">$71 → $126/barrel peak</text>
+<rect x="360" y="120" width="260" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="th" x="490" y="140" text-anchor="middle" dominant-baseline="central" fill="#712B13">Asian refineries squeezed</text>
+<text class="ts" x="490" y="158" text-anchor="middle" dominant-baseline="central" fill="#993C1D">China restricts exports</text>
+<line x1="190" y1="176" x2="190" y2="216" stroke="#888" stroke-width="1"/>
+<line x1="490" y1="176" x2="490" y2="216" stroke="#888" stroke-width="1"/>
+<rect x="60" y="216" width="260" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="th" x="190" y="236" text-anchor="middle" dominant-baseline="central" fill="#633806">Petrol hits $2.40+/L</text>
+<text class="ts" x="190" y="254" text-anchor="middle" dominant-baseline="central" fill="#854F0B">+40% since Feb 28</text>
+<rect x="360" y="216" width="260" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="th" x="490" y="236" text-anchor="middle" dominant-baseline="central" fill="#633806">Diesel near $3.13/L</text>
+<text class="ts" x="490" y="254" text-anchor="middle" dominant-baseline="central" fill="#854F0B">Record highs, shortages</text>
+<line x1="190" y1="272" x2="190" y2="312" stroke="#888" stroke-width="1"/>
+<line x1="490" y1="272" x2="490" y2="312" stroke="#888" stroke-width="1"/>
+<rect x="40" y="312" width="150" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="115" y="332" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Farmers</text>
+<text class="ts" x="115" y="350" text-anchor="middle" dominant-baseline="central" fill="#534AB7">400+ stations dry</text>
+<rect x="210" y="312" width="150" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="285" y="332" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Logistics</text>
+<text class="ts" x="285" y="350" text-anchor="middle" dominant-baseline="central" fill="#534AB7">8-10% surcharges</text>
+<rect x="380" y="312" width="150" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="455" y="332" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Construction</text>
+<text class="ts" x="455" y="350" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Fuel surcharges added</text>
+<rect x="546" y="312" width="110" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="th" x="601" y="332" text-anchor="middle" dominant-baseline="central" fill="#3C3489">Airlines</text>
+<text class="ts" x="601" y="350" text-anchor="middle" dominant-baseline="central" fill="#534AB7">Jet fuel 2x</text>
+<line x1="200" y1="368" x2="200" y2="408" stroke="#888" stroke-width="1"/>
+<line x1="455" y1="368" x2="455" y2="408" stroke="#888" stroke-width="1"/>
+<rect x="60" y="408" width="260" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="th" x="190" y="428" text-anchor="middle" dominant-baseline="central" fill="#085041">Inflation risk: 5.5% by mid-26</text>
+<text class="ts" x="190" y="446" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">RBA hiked rates twice</text>
+<rect x="360" y="408" width="260" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="th" x="490" y="428" text-anchor="middle" dominant-baseline="central" fill="#085041">Food prices climbing</text>
+<text class="ts" x="490" y="446" text-anchor="middle" dominant-baseline="central" fill="#0F6E56">Beef +13.5%, lamb +13.4%</text>
+<line x1="340" y1="464" x2="340" y2="504" stroke="#888" stroke-width="1"/>
+<rect x="110" y="504" width="460" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="th" x="340" y="524" text-anchor="middle" dominant-baseline="central" fill="#444441">Government response (Apr 1)</text>
+<text class="ts" x="340" y="542" text-anchor="middle" dominant-baseline="central" fill="#5F5E5A">Excise halved, reserves released, Singapore supply deal</text>
+<text class="ts" x="40" y="590" dominant-baseline="central" fill="#A32D2D">Only ~29-39 days of reserves vs IEA's 90-day benchmark</text>
+</svg>
