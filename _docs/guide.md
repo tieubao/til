@@ -158,6 +158,23 @@ This wiki uses Obsidian-compatible `[[wikilinks]]` for connections.
 2. Search for `[[old-name]]` across all notes and update references
 3. Or ask Claude to handle it: "I renamed X to Y, update all backlinks"
 
+## Multi-environment workflow
+
+Notes arrive from three environments, each with different compilation behavior:
+
+| Source | Compilation? | What happens |
+|--------|-------------|--------------|
+| **Claude Code** (terminal) | Full, automatic | Reads CLAUDE.md, runs all 5 compilation steps |
+| **Claude.ai** (web skill) | None | Pushes note to GitHub via MCP Worker, no backlinks/README/log |
+| **Obsidian Clipper** | None | Raw dump to `_inbox/`, needs manual "process inbox" |
+
+**The two-step workflow for Claude.ai notes:**
+
+1. Use the knowledge-capture skill on Claude.ai to push the note to GitHub (it arrives in the right folder with frontmatter, but no compilation)
+2. Next time you open Claude Code in this repo, it will automatically detect uncompiled additions and offer to run the compilation step (backlinks, README update, synthesis page check, log entry)
+
+You don't need to remember to do step 2. Claude Code checks for uncompiled notes at session start.
+
 ## Working with Claude
 
 ### Process inbox

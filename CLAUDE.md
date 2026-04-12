@@ -16,6 +16,16 @@ A personal knowledge base following Zettelkasten methodology. Markdown notes org
 - Notes are markdown files with YAML frontmatter
 - `README.md` is an auto-generated index of all notes, grouped by folder. Do not manually edit it.
 
+## Session start check
+
+At the start of every Claude Code session in this repo, check for uncompiled additions:
+
+1. Run `git log --oneline -10` to see recent commits
+2. Check if any notes were added via Claude.ai skill or direct git push that haven't been compiled (look for commits without corresponding `log.md` entries)
+3. If uncompiled notes exist, offer: "I see X new notes added since last compilation. Want me to run the compilation step on them?"
+
+This catches notes pushed from Claude.ai or other sources that bypass Claude Code's compilation step.
+
 ## Note format
 
 Notes follow specific templates defined in the user's global CLAUDE.md (knowledge capture rules). Key points:
