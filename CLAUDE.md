@@ -79,7 +79,9 @@ This is the core of the LLM Wiki pattern. Filing a note is not enough; the wiki 
 
 3. **Update synthesis pages.** If a synthesis page exists for this topic cluster, update it to incorporate the new note. Add the new note to its links, and revise the narrative if the new information changes the synthesis. If no synthesis page exists but the cluster now has 4+ notes, suggest creating one.
 
-4. **Append to `log.md`.** Record what was ingested and what pages were touched:
+4. **Update `README.md` index.** Add or remove the note entry with a one-line summary. Keep the note count in the header accurate. On deletions or merges, remove stale entries and update the count.
+
+5. **Append to `log.md`.** Record what was ingested and what pages were touched:
    ```
    ## [YYYY-MM-DD] ingest | <note title>
    Added to <folder>. Updated links on: <list>. Synthesis page: <updated/suggested/none>.
