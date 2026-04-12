@@ -43,6 +43,6 @@ Built as `/eval-tool` Claude Code slash command that takes a GitHub URL, auto-cl
 
 ## Related
 
-- [[ai-dev-stack-8-layer-model-march-2026]] - Q1 ("which layer?") references this stack model directly
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - Q1 ("which layer?") references this stack model directly
 - [[claudekit-evaluation-and-unique-features]] - a concrete application of this rubric (ClaudeKit scored 10/15 = BOOKMARK)
 - [[llm-memory-benchmarks-and-evaluation-crisis]] - evaluation methodology problems in a different domain; the "kill question" approach avoids the gaming that plagues memory benchmarks

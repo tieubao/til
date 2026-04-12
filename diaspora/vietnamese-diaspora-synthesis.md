@@ -102,11 +102,9 @@ The open question: what would the modern institutional equivalent of the kongsi 
 
 ## Notes synthesized
 
-- [[four-asian-diasporas-30-year-projection]] - comparative framework, four variables, 2055 projections
-- [[four-asian-diasporas-in-2055-projected-trajectories]] - deeper companion with more mechanism detail
+- [[four-asian-diasporas-in-2055-projected-trajectories]] - comparative framework, four variables, 2055 projections
 - [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - prescriptive model, education path, optionality argument
-- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - foundational five-factor diagnostic
-- [[vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt]] - condensed diagnostic + bridge-builder conclusion
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - foundational five-factor diagnostic + bridge-builder conclusion
 - [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - hollowing mechanism, property vs. rental, urgency window
 - [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - migration type deep dive, Tippi Hedren origin, dialect-group specialization
 

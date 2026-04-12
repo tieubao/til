@@ -15,6 +15,6 @@ See the full content in the original session artifacts (3 interactive diagrams: 
 
 ## Related
 
-- [[ai-dev-stack-8-layer-model-march-2026]] - the 8-layer stack model this reference map is built on
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - the 8-layer stack model this reference map is built on
 - [[claude-code-ecosystem-repo-evaluations-for-kit-building]] - the repo evaluations with scores referenced here
 - [[dwarves-kit-v1-2-agent-roster-and-cdp]] - the agent roster and CDP protocol detailed in this map

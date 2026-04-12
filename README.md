@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 62 note(s). Last updated: 2026-04-13
+> Auto-generated index of 59 note(s). Last updated: 2026-04-13
 
 ## ai
 
@@ -14,8 +14,7 @@
 
 ## ai-tooling
 
-- [AI dev stack 8-layer model](ai-tooling/ai-dev-stack-8-layer-model-march-2026.md) — AI dev stack is 8 layers; L3.5 splits into codebase intelligence vs external docs
-- [AI dev stack 8-layer model with tool evaluations](ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md) — Expanded stack model with SDD framework comparisons, tool scores, and 6-phase workflow
+- [AI dev stack 8-layer model with tool evaluations](ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md) — 8-layer stack model with SDD framework comparisons, tool scores, and 6-phase workflow
 - [Autoresearch: the Karpathy loop pattern](ai-tooling/autoresearch-the-karpathy-loop-pattern.md) — Three-file contract (goal + artifact + frozen eval) ratchets quality via automated experiments
 - [ClaudeKit deep dive: session recovery, red team and gaps](ai-tooling/claudekit-deep-dive-session-recovery-red-team-and-gaps.md) — ClaudeKit saves state on Stop hook, not just PreCompact; ship pipeline more complete than ours
 - [ClaudeKit evaluation and unique features](ai-tooling/claudekit-evaluation-and-unique-features.md) — 50+ commands, interview-style spec gate, 4 adversarial reviewers; scored BOOKMARK (10/15)
@@ -44,11 +43,9 @@
 ## diaspora
 
 - [**Vietnamese diaspora synthesis**](diaspora/vietnamese-diaspora-synthesis.md) — Synthesis: structural gap (institutions, not culture) drives hollowing; bridge-builder model is the fix
-- [Four Asian diasporas 30-year projection](diaspora/four-asian-diasporas-30-year-projection.md) — Four variables (homeland gravity, institutions, soft power, intermarriage) predict survival by 2055
-- [Four Asian diasporas in 2055 projected trajectories](diaspora/four-asian-diasporas-in-2055-projected-trajectories.md) — Japanese dissolve, Korean persist culturally, Chinese endure institutionally, Vietnamese at crossroads
+- [Four Asian diasporas in 2055 projected trajectories](diaspora/four-asian-diasporas-in-2055-projected-trajectories.md) — Four variables predict diaspora survival by 2055; Vietnamese at crossroads, Chinese endure
 - [The bridge-builder model](diaspora/the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati.md) — Bicultural fluency connecting Vietnam's rising economy to global capital beats enclave and integration
-- [Vietnamese vs Chinese diaspora: structural analysis](diaspora/vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes.md) — Five factors (time, migration type, institutions, legal status, motherland) explain the gap
-- [Vietnamese vs Chinese diaspora: why one builds hubs](diaspora/vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt.md) — Refugees without merchant skills or institutions can't replicate 1,500-year trade networks
+- [Vietnamese vs Chinese diaspora: structural analysis](diaspora/vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes.md) — Five structural factors explain the gap; escape-through-education trap; bridge-builder alternative
 - [Why Little Saigons hollow out](diaspora/why-little-saigons-hollow-out-the-success-driven-exit-problem.md) — Successful kids leave enclaves; renters not owners means no community anchor survives the exit
 - [Why Vietnamese built nail salons instead of trade empires](diaspora/why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine.md) — Tippi Hedren's manicurist created a refugee entry point; subsistence businesses rational to escape
 

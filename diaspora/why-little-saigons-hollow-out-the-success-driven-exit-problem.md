@@ -50,6 +50,6 @@ The opportunity window is 15-20 years while Gen 1 is still alive and Gen 2 has c
 
 - [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
 - [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - explains why the businesses in Little Saigons were subsistence-type and not worth inheriting
-- [[four-asian-diasporas-30-year-projection]] - the Japanese Yonsei dissolution trajectory that Little Saigons are heading toward
+- [[four-asian-diasporas-in-2055-projected-trajectories]] - the Japanese Yonsei dissolution trajectory that Little Saigons are heading toward
 - [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the alternative model that could break the hollowing cycle within the 15-20 year window
 - [[the-three-gates-what-elders-screen-for]] - trust and screening patterns relevant to community institution-building

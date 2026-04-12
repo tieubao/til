@@ -40,5 +40,5 @@ The foundation underneath both. Proposed by Jeremy Howard (Answer.AI, Sep 2024).
 ## Related
 
 - [[code-graph-context-tools-for-token-reduction]] - the "other half" of the context layer: codebase intelligence vs external docs
-- [[ai-dev-stack-8-layer-model-march-2026]] - these tools live at L3.5b in the 8-layer stack
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - these tools live at L3.5b in the 8-layer stack
 - [[compaction-defense-patterns-for-claude-code-sessions]] - context injection strategies relate to how memory/docs enter the agent's context window

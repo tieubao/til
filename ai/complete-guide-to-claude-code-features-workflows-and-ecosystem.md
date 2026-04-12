@@ -471,5 +471,5 @@ stop bookmarking articles about AI. start building with it.
 
 - [[claude-code-hook-lifecycle-and-event-system]] - deep dive into the hooks system summarized here
 - [[commands-vs-hooks-vs-skills-decision-framework]] - when to use commands vs hooks vs skills, expanding on the distinction made in this guide
-- [[ai-dev-stack-8-layer-model-march-2026]] - the 8-layer stack model that positions Claude Code at L3 with surrounding tooling layers
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - the 8-layer stack model that positions Claude Code at L3 with surrounding tooling layers
 - [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - the Dispatch/remote surface covered briefly here, explored in full

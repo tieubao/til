@@ -76,7 +76,7 @@ Building the bridge early preserves the option to cross in either direction. Don
 ## Related
 
 - [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
-- [[vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt]] - the structural analysis showing why bridge-builders are the missing piece for Vietnamese diaspora
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - the structural analysis showing why bridge-builders are the missing piece for Vietnamese diaspora
 - [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the "escape through education" trap that the bridge-builder model aims to replace
 - [[compound-interest-levels-and-lifestyle-progression]] - the financial compounding logic that applies to institutional knowledge transfer across generations
 - [[enterprise-trust-ladder-vendor-to-strategic-partner]] - trust-building progression that mirrors how bridge-builders earn credibility on both sides

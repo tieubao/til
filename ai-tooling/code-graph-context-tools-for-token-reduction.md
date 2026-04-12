@@ -42,5 +42,5 @@ External docs tools (Context Hub, Context7) solve "the agent doesn't know the St
 ## Related
 
 - [[context-hub-vs-context7-vs-the-context-layer-ecosystem]] - the "other half" of the context layer: external docs vs codebase intelligence
-- [[ai-dev-stack-8-layer-model-march-2026]] - these tools live at L3.5a in the 8-layer stack
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - these tools live at L3.5a in the 8-layer stack
 - [[mcp-tool-schema-caching-in-claude-ai-connectors]] - MCP schema patterns relevant to how these tools expose their graph via MCP
