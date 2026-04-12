@@ -4,6 +4,8 @@ date: 2026-03-27
 captured: 2026-03-27T07:18:26.922Z
 tags: ["ai", "claude", "dispatch", "workflow", "pawel-huryn"]
 source: "X Article by @PawelHuryn"
+aliases: []
+status: refined
 ---
 > Source: [@PawelHuryn](https://x.com/pawelhuryn/status/2036058594433519790) | 2026-03-23
 > Original title: "The Claude Dispatch Guide: 48 Hours Running AI From My Phone"
@@ -206,3 +208,10 @@ P.S. If you want the full system — CLAUDE.md instructions, knowledge architect
 - Sync your Cowork workspace via Google Drive to solve the file transfer gap in both directions.
 - Load CLAUDE.md first before delegating tasks, or the subtask instructions will be imprecise.
 - The knowledge layer (CLAUDE.md + skill libraries in a GitHub repo) is what compounds. Individual surfaces come and go.
+
+## Related
+
+- [[complete-guide-to-claude-code-features-workflows-and-ecosystem]] - companion piece covering Claude Code features in depth; Dispatch is one of the remote surfaces discussed here
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - the operator discipline framework for managing the parallel agent sessions that Dispatch enables
+- [[commands-vs-hooks-vs-skills-decision-framework]] - decision framework for the skills and hooks that Dispatch delegates to Cowork sessions
+- [[compaction-defense-patterns-for-claude-code-sessions]] - context management matters when orchestrating 60+ task sessions from mobile

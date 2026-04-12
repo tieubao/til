@@ -1,0 +1,17 @@
+# Obsidian local config (personal plugins, themes, workspace state)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/hotkeys.json
+
+# Core Obsidian settings ARE tracked in git:
+# .obsidian/app.json (wikilinks, attachment path, link format)
+# .obsidian/core-plugins.json (enabled core plugins)
+# .obsidian/templates.json (template folder path)
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/

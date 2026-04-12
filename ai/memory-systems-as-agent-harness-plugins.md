@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:53:59.810Z
 tags: ["ai", "memory", "agents", "orchestration", "openclaw"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -102,3 +104,10 @@ The pattern: separate the concerns. The agent focuses on reasoning. The harness 
 ## The race
 
 OpenClaw is the dominant harness (9k to 157k GitHub stars in 60 days as of early 2026). Mem0, MemOS, and Memori all launched OpenClaw plugins within weeks of each other. The competition isn't about algorithms. It's about who ships the most reliable, lowest-friction plugin for the harnesses developers are already using.
+
+## Related
+
+- [[llm-agent-memory-systems-landscape-2026]] - the systems (Mem0, Letta, MemOS) whose plugin integrations this note documents
+- [[llm-memory-systems-three-competitive-battlegrounds]] - the technical competition driving these plugin implementations
+- [[claude-code-hook-lifecycle-and-event-system]] - Claude Code's hook system follows the same lifecycle pattern (before/after events) described here
+- [[dwarves-kit-design-philosophy-and-architecture]] - dwarves-kit's hook architecture that this note explicitly connects to ("same architecture as dwarves-kit's hook system")

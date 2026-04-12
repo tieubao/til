@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T08:04:05.867Z
 tags: ["claude-code", "compaction", "context-management", "hooks"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
+aliases: []
+status: refined
 ---
 ## When to use this
 
@@ -58,3 +60,10 @@ Pre-compact backup is insurance, not prevention. The best strategy remains:
 - Keep sessions short. One task per conversation.
 - Prefer `/clear` over `/compact`. Starting fresh costs 20k tokens (nothing) vs. quality loss from compacted context.
 - Write decisions to files (not just conversation). Claude can always re-read a file. It can't recover compacted conversation history.
+
+## Related
+
+- [[claude-code-hook-lifecycle-and-event-system]] - the PreCompact and PostToolUse events this pattern depends on
+- [[dwarves-kit-v1-2-claudekit-patterns-adopted]] - the session-state-save hook that extends this pattern to Stop events
+- [[claudekit-deep-dive-session-recovery-red-team-and-gaps]] - ClaudeKit's session-state.cjs that inspired the Stop-hook extension
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - externalized state as a general pattern for maintaining coherence

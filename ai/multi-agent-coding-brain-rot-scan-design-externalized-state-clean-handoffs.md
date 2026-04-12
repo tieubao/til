@@ -4,6 +4,8 @@ date: 2026-03-30
 captured: 2026-03-30T23:44:48.190Z
 tags: ["ai", "developer-workflows", "multi-agent", "noahgreensnow"]
 source: "X Article by @NoahGreenSnow"
+aliases: []
+status: refined
 ---
 > Source: [@NoahGreenSnow](https://x.com/NoahGreenSnow/status/2037907449508683863) | 2026-03-28
 > Original title: "Multi Agent Coding Brain Rot (and how to fix it)"
@@ -81,3 +83,9 @@ Scan design. Externalized state. Clean handoffs that let your brain let go. That
 - Externalize all agent state into a scratch file (one line per agent: task, status, output location). Every agent tracked in your head is low-grade anxiety.
 - Clean handoffs: leave each agent with a clear goal, concrete next step, assumption budget, escalation condition, and re-entry note.
 - The three FAA scan failure modes (fixation, omission, emphasis) map directly to multi-agent management failures.
+
+## Related
+
+- [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - Dispatch enables exactly the 5+ parallel agent scenario this framework addresses
+- [[compaction-defense-patterns-for-claude-code-sessions]] - context management per session complements the operator-level attention management described here
+- [[why-knowledge-notes-need-context-not-just-facts]] - externalized state for agents mirrors the principle that knowledge needs context to be useful

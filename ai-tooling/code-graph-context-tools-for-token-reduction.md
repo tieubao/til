@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T23:10:36.301Z
 tags: ["ai-tooling", "token-optimization", "mcp", "code-graph"]
 source: "Claude iOS session - SDD research session 3"
+aliases: []
+status: refined
 ---
 ## The problem
 
@@ -36,3 +38,9 @@ Without structural context, AI coding agents grep 40 files to answer a question 
 External docs tools (Context Hub, Context7) solve "the agent doesn't know the Stripe API." Codebase intelligence solves "the agent doesn't know YOUR code." Different problem, different layer.
 
 #ai-tooling #token-optimization #mcp #codebase-graph
+
+## Related
+
+- [[context-hub-vs-context7-vs-the-context-layer-ecosystem]] - the "other half" of the context layer: external docs vs codebase intelligence
+- [[ai-dev-stack-8-layer-model-march-2026]] - these tools live at L3.5a in the 8-layer stack
+- [[mcp-tool-schema-caching-in-claude-ai-connectors]] - MCP schema patterns relevant to how these tools expose their graph via MCP

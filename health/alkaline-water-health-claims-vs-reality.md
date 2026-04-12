@@ -4,6 +4,8 @@ date: 2026-04-11
 captured: 2026-04-11T17:00:40.390Z
 tags: ["nutrition", "debunking"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Question
 
@@ -32,3 +34,7 @@ Alkaline water (pH 8-9+) has become a major marketing phenomenon, but the claims
 ## Key Takeaway
 
 Your body regulates its own pH with extreme precision. Alkaline water gets neutralized by stomach acid instantly and cannot override that system. The premium price is paying for marketing, not science. Regular filtered water does the job.
+
+## Related
+
+- [[tool-evaluation-5-question-rubric]] - the same "does the evidence actually support the claim" critical thinking applies to evaluating health products as it does to evaluating dev tools

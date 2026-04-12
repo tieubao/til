@@ -4,6 +4,8 @@ date: 2026-04-03
 captured: 2026-04-03T18:38:14.880Z
 tags: ["starship", "fish", "terminal", "dotfiles", "catppuccin"]
 source: "Claude web session on dotfiles planning"
+aliases: []
+status: refined
 ---
 ## Starship config best practices
 
@@ -111,3 +113,7 @@ STARSHIP_LOG=debug starship prompt  # verbose logs
 - ~35 modules explicitly disabled
 - Only active: directory, git_branch, git_status, git_state, cmd_duration, character, fill, time
 - scan_timeout=30, command_timeout=500
+
+## Related
+
+- [[xdg-base-directory-specification]] - Starship stores its config at `~/.config/starship.toml`, following XDG conventions

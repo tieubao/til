@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T16:10:22.860Z
 tags: ["claudekit", "session-management", "red-team", "landscape"]
 source: "Claude.ai session on ClaudeKit deep-dive (March 2026)"
+aliases: []
+status: refined
 ---
 # ClaudeKit deep-dive: session recovery, red-team, and landscape gaps (March 2026)
 
@@ -39,3 +41,10 @@ ClaudeKit's `/ck:ship` does: merge > test > adversarial review > version bump > 
 ## Updated landscape position
 
 ClaudeKit remains BOOKMARK (10/15). The Vietnamese docs and breadth make it relevant for Dwarves team adoption later. The session state pattern is the most valuable extraction target. Their red-team review is identical to ours. Their ship pipeline is slightly more complete.
+
+## Related
+
+- [[claudekit-evaluation-and-unique-features]] - the initial evaluation that led to this deep-dive session
+- [[claude-code-hook-lifecycle-and-event-system]] - the Stop/SubagentStop hooks that ClaudeKit's session-state.cjs leverages
+- [[dwarves-kit-v1-2-claudekit-patterns-adopted]] - which ClaudeKit patterns were actually extracted into dwarves-kit
+- [[compaction-defense-patterns-for-claude-code-sessions]] - session recovery relates directly to compaction defense and state persistence

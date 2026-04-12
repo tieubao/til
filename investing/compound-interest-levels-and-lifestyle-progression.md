@@ -4,6 +4,8 @@ date: 2026-04-12
 captured: 2026-04-12T11:28:43.490Z
 tags: ["investing", "compound-interest", "wealth-building", "personal-finance"]
 source: "YouTube video by Bille Finance"
+aliases: []
+status: refined
 ---
 > Source: [Your Life at Every Level of Compound Interest](https://youtube.com/watch?v=SkPGbroTDJY)
 > Channel: Bille Finance | Type: Narrative explainer
@@ -214,3 +216,10 @@ Somewhere, a 23-year-old walks into a glass tower for the very first time this m
 - Building wealth is invisible and boring. No audience. No applause. No signal. When the market drops 19%, you add $600 more and tell nobody
 - At sufficient scale, compound interest becomes structural power. 529s seeded at birth, foundations that grow forever, great-grandchildren who are accredited investors before they can walk
 - The system is designed so that those with liquidity and time buy dips while those without buffers sell at the bottom. This is the architecture, not a bug
+
+## Related
+
+- [[how-to-sit-at-the-table-the-thesis]] - at Levels 4-6, deal flow comes through relationships with older/wealthier people, exactly the dynamic this thesis describes
+- [[enterprise-trust-ladder-vendor-to-strategic-partner]] - the enterprise path to becoming a strategic partner mirrors the capital allocator's path to accessing private markets
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the multigenerational architecture at Levels 5-6 connects to the bridge-builder framework mentioned in Danny's context
+- [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - the contrast between subsistence business (Level 1 depositor mindset) and scalable trade infrastructure (capital allocator mindset)

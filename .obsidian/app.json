@@ -1,0 +1,7 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "attachmentFolderPath": "assets",
+  "newFileLocation": "current",
+  "showFrontmatter": true
+}

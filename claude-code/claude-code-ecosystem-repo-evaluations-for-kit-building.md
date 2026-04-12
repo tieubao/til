@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T08:04:39.329Z
 tags: ["claude-code", "sdd", "tooling", "evaluation"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
+aliases: []
+status: refined
 ---
 Evaluated 7 repos to identify patterns for building a unified Claude Code workflow kit. Scored each with a 5-criterion rubric (layer fit, credibility, adoption cost, pain match, timing), max 15 points.
 
@@ -48,3 +50,10 @@ These repos cluster into two categories: **methodology tools** (GSD, gstack, Cla
 | Timing | Working in this area now | Relevant next month | Not relevant for 30+ days |
 
 Score: 12-15 = ADOPT, 8-11 = BOOKMARK, 5-7 = SKIP. Never adopt more than 1 tool per week.
+
+## Related
+
+- [[tool-evaluation-5-question-rubric]] - the 5-question scoring rubric used to evaluate these repos
+- [[building-dwarves-kit-from-extracted-patterns]] - the synthesis process that consumed these evaluations
+- [[claudekit-evaluation-and-unique-features]] - detailed evaluation of one of the Tier 1 repos (ClaudeKit)
+- [[ai-dev-stack-8-layer-model-march-2026]] - the 8-layer stack model that frames where each repo sits

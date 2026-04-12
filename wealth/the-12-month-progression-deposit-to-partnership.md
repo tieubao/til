@@ -4,6 +4,8 @@ date: 2026-04-04
 captured: 2026-04-04T19:32:04.653Z
 tags: ["wealth-series", "trust-building", "progression", "mentorship", "book-v8"]
 source: "Claude.ai session - V8 book framework"
+aliases: []
+status: refined
 ---
 # The 12-Month Progression: From Deposit to Partnership
 
@@ -57,3 +59,10 @@ They start asking what you think. The lens flips. You have something they need: 
 4. Phone to silent, in bag
 5. Know your drinking constraint before arrival
 6. Kill every ask in your head
+
+## Related
+
+- [[the-three-gates-what-elders-screen-for]] - the invisible tests running during each phase of this progression
+- [[how-to-sit-at-the-table-the-thesis]] - the underlying thesis: why you are building trust in the first place
+- [[anti-patterns-that-destroy-trust-permanently]] - what causes people to stall or get ejected from this timeline
+- [[enterprise-trust-ladder-vendor-to-strategic-partner]] - the enterprise parallel: vendor-to-partner follows a similar phased progression

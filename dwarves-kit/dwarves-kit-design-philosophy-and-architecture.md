@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T16:05:09.016Z
 tags: ["claude-code", "dwarves-kit", "philosophy", "architecture"]
 source: "Migrated from ai-tooling/ (March 2026)"
+aliases: []
+status: refined
 ---
 ## Context
 
@@ -50,3 +52,10 @@ Every principle has an example of a decision it made AND a decision it would rej
 ## How we'll know a principle is wrong
 
 If the same principle gets a carve-out more than once, it should be revisited entirely. "Bash over binaries" already has one carve-out (HUD). A second carve-out means the principle doesn't hold and should be rewritten, not bent again.
+
+## Related
+
+- [[commands-vs-hooks-vs-skills-decision-framework]] - the strictness gradient that implements principle #1 (guardrails over guidance)
+- [[dwarves-kit-self-assessment-against-philosophy]] - how the kit scored against these 7 principles
+- [[claude-code-hook-lifecycle-and-event-system]] - the hook system that enables the "guardrails over guidance" principle
+- [[sdd-landscape-and-dwarves-kit-v1-2-reference-map]] - the full inventory showing all principles applied across the kit

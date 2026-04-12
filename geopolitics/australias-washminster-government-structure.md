@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:05:40.544Z
 tags: ["australia", "government", "political-system"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -50,3 +52,8 @@ The system is best understood along two dimensions:
 ## Why this matters for the Hormuz crisis
 
 The federal/state split explains why the fuel crisis response requires coordination. Fuel excise and strategic reserves are federal. Emergency services, transport infrastructure, and service station allocation are state responsibilities. This is why Albanese convened "National Cabinet" (a coordinating body between federal and state leaders) rather than issuing executive orders unilaterally.
+
+## Related
+
+- [[how-the-2026-strait-of-hormuz-crisis-impacts-australia]] - the crisis that makes this government structure directly relevant, especially the federal/state coordination challenge
+- [[measuring-oil-supply-disruption-severity-2026-hormuz-vs-historical-crises]] - the severity context for the Hormuz crisis that triggered Australia's government response

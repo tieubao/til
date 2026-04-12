@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:05:20.767Z
 tags: ["diaspora", "japan", "vietnam", "korea", "china", "futures", "institutions", "soft-power"]
 source: "Claude.ai diaspora analysis session, April 2026"
+aliases: []
+status: refined
 ---
 # Four Asian diasporas in 2055: Japanese dissolution, Vietnamese crossroads, Korean hybrid, Chinese persistence
 
@@ -50,3 +52,11 @@ Only diaspora with durable institutional infrastructure: clan-owned real estate,
 No. Four conditions that created it no longer exist: geographic concentration from same village, zero access to formal banking, no welfare state, multi-generational physical proximity.
 
 Potential replacements (none fully working): digital diaspora networks (no capital structure), ethnic VC funds (invest in homeland not diaspora), alumni associations (elite-only), church/temple networks (durable but not economic). The diaspora that cracks the modern equivalent first wins.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[four-asian-diasporas-30-year-projection]] - shorter companion note covering the same four-diaspora framework
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - deep dive into the five structural factors behind the Chinese vs Vietnamese divergence
+- [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - explains why Vietnamese enclaves produce subsistence businesses instead of scalable trade infrastructure
+- [[imperial-examinations-how-china-replaced-religion-with-meritocracy]] - the exam system that powered the Chinese bureaucratic infrastructure diaspora communities inherited

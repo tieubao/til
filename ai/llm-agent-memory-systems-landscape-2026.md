@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:52:33.318Z
 tags: ["ai", "memory", "agents", "architecture"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -96,3 +98,9 @@ See [interactive comparison](./llm-agent-memory-systems-landscape-2026-widget.ht
 - [WujiangXu/A-mem](https://github.com/WujiangXu/A-mem) - Zettelkasten-inspired agentic memory
 - [TsinghuaC3I/Awesome-Memory-for-Agents](https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents) - Curated paper list
 - [IAAR-Shanghai/Awesome-AI-Memory](https://github.com/IAAR-Shanghai/Awesome-AI-Memory) - Full stack taxonomy
+
+## Related
+
+- [[llm-memory-systems-three-competitive-battlegrounds]] - drills into the three technical battlegrounds where these systems actually differentiate
+- [[llm-memory-benchmarks-and-evaluation-crisis]] - the broken benchmark layer that makes comparing these systems so difficult
+- [[memory-systems-as-agent-harness-plugins]] - how these memory systems integrate into agent harnesses via lifecycle hooks

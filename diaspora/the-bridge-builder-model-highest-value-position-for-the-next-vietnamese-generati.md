@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T06:41:11.494Z
 tags: ["diaspora", "vietnam", "bridge-builder", "strategy", "education", "generational-wealth", "optionality"]
 source: "Claude.ai diaspora analysis session, April 2026"
+aliases: []
+status: refined
 ---
 # The bridge-builder model: highest-value position for the next Vietnamese generation
 
@@ -70,3 +72,11 @@ This is how you avoid the 70%/90% generational wealth loss (Williams Group): los
 The bridge-builder model maximizes optionality (Taleb). A bridge-builder who decides to fully integrate into the US can do so easily (they have credentials and network). A fully integrated Vietnamese American who decides to become a bridge-builder at 35 will find it much harder (Vietnamese fluency gone, network Western, cultural fluency surface-level).
 
 Building the bridge early preserves the option to cross in either direction. Don't force a specific outcome. Maximize the number of good options available.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt]] - the structural analysis showing why bridge-builders are the missing piece for Vietnamese diaspora
+- [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the "escape through education" trap that the bridge-builder model aims to replace
+- [[compound-interest-levels-and-lifestyle-progression]] - the financial compounding logic that applies to institutional knowledge transfer across generations
+- [[enterprise-trust-ladder-vendor-to-strategic-partner]] - trust-building progression that mirrors how bridge-builders earn credibility on both sides

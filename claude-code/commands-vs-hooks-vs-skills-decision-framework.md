@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T08:03:40.625Z
 tags: ["claude-code", "hooks", "commands", "skills", "architecture"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
+aliases: []
+status: refined
 ---
 Claude Code has three extension mechanisms. The choice between them determines whether a behavior is enforced, suggested, or autonomous. Getting this wrong is the #1 kit design mistake.
 
@@ -44,3 +46,9 @@ The reverse trap is also real: over-hooking. If you hook everything, every tool 
 ## When this framework breaks down
 
 When you need conditional strictness. Example: "block push to main on production repos, allow it on personal projects." The hook doesn't know which type of repo it's in. Solutions: path-scoped rules (.claude/rules/ with YAML frontmatter), environment variables checked inside the hook, or project-level settings.json overriding user-level settings.json.
+
+## Related
+
+- [[claude-code-hook-lifecycle-and-event-system]] - detailed reference for hook events and exit code semantics
+- [[dwarves-kit-design-philosophy-and-architecture]] - the "guardrails over guidance" principle that drives hook-vs-CLAUDE.md decisions
+- [[complete-guide-to-claude-code-features-workflows-and-ecosystem]] - broader Claude Code feature landscape including hooks, skills, and commands

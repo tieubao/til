@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T05:39:03.371Z
 tags: ["pkm", "workflow", "knowledge-management"]
 source: "Claude Code session - github-mcp-worker project, iterating on knowledge capture pipeline"
+aliases: []
+status: refined
 ---
 ## Context
 
@@ -51,3 +53,9 @@ Then re-pushed both original notes in the new Atomic Note format. The hook schem
 ## Key takeaway
 
 The default depth of a capture system determines the quality of your knowledge base. If the default is shallow, everything trends shallow because "just push it quick" wins every time. Making the default medium-depth (Atomic Note with mandatory Context) means every note at minimum answers "why does this matter" and "when would I see this again." You can still drop to TIL for true gotchas, but you have to consciously choose shallow instead of accidentally landing there.
+
+## Related
+
+- [[llm-wiki-pattern-compilation-over-retrieval]] - the LLM Wiki pattern that informed our wiki's compilation step
+- [[redundant-api-pre-checks-in-wrapper-functions]] - one of the two original notes that exposed the shallow-capture problem, later rewritten with proper context
+- [[prompt-improvement-as-a-learning-technique]] - a parallel insight: improving the prompt (adding context) before executing produces deeper output, same principle as adding context to notes

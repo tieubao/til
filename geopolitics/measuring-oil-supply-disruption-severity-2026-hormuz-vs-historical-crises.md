@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:05:14.496Z
 tags: ["energy-security", "oil-crisis", "economics", "hormuz"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 There is no single universal "Richter scale" for oil supply disruptions, but analysts measure severity across three key dimensions: volume lost (mb/d removed from market), price impact (percentage surge in benchmark crude), and duration. The IEA's emergency reserve activation serves as the de facto severity indicator, having been triggered only 6 times since 1974.
 
@@ -34,3 +36,9 @@ Huntington (2018) found that a 10% cut in world oil supplies from OPEC/Gulf disr
 ## Duration risk
 
 The Dallas Fed modeled that a one-quarter closure would raise WTI to $98/barrel and lower global GDP growth by 2.9 percentage points. A three-quarter disruption could reduce Q4-over-Q4 global GDP growth by 1.3 percentage points. As of early April, ceasefire negotiations are ongoing but Iran has rejected US terms, and the strait remains effectively closed with selective passage only.
+
+## Related
+
+- [[how-the-2026-strait-of-hormuz-crisis-impacts-australia]] - specific downstream impact on Australia from this supply disruption
+- [[australias-washminster-government-structure]] - the government structure coordinating Australia's crisis response
+- [[predictive-history-and-the-ambition-of-psycho-history]] - Professor Jiang's observation that the Israel-Iran escalation was accelerating faster than predicted, which led to this crisis

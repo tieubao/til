@@ -4,6 +4,8 @@ date: 2026-03-30
 captured: 2026-03-30T16:14:43.354Z
 tags: ["computation", "theory", "fundamentals"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Definition
 
@@ -40,3 +42,7 @@ The left column has all three ingredients. The right column is missing at least 
 Turing completeness says nothing about speed or practicality. You could write an operating system in Conway's Game of Life. You absolutely should not.
 
 It also does not mean infinite power. There are problems (like the halting problem) that no Turing-complete system can solve. Turing complete is the ceiling for computation, and it turns out to be surprisingly easy to reach.
+
+## Related
+
+- [[redundant-api-pre-checks-in-wrapper-functions]] - practical API design patterns where understanding computational boundaries (what a library can vs should check) matters

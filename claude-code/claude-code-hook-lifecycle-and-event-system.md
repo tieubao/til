@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T08:03:16.538Z
 tags: ["claude-code", "hooks", "lifecycle", "agent-engineering"]
 source: "Claude.ai session: dwarves-kit design (March 29, 2026)"
+aliases: []
+status: refined
 ---
 Claude Code exposes 21 lifecycle hook events that fire at specific points during a session. Hooks are the enforcement layer: unlike CLAUDE.md rules (followed ~70% of the time), a hook with exit code 2 is followed 100% of the time.
 
@@ -73,3 +75,10 @@ Start with command hooks. Graduate to prompt hooks only when grep patterns aren'
 ## The performance constraint
 
 Hooks run synchronously. Total hook execution time adds to every matched tool call. If a PostToolUse hook adds 500ms+ to every file edit, sessions feel sluggish. Profile with `time` before deploying. Ten fast hooks outperform two slow ones.
+
+## Related
+
+- [[claude-code-hook-schema-decision-values-per-event-type]] - the specific decision/permissionDecision values each event type accepts
+- [[commands-vs-hooks-vs-skills-decision-framework]] - when to use hooks vs commands vs skills
+- [[compaction-defense-patterns-for-claude-code-sessions]] - PreCompact and PostToolUse hooks applied to context management
+- [[memory-systems-as-agent-harness-plugins]] - the same lifecycle hook pattern applied to memory systems in other agent harnesses

@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T02:37:28.383Z
 tags: ["youtube", "nodejs", "proxy", "undici", "transcript", "fallback-chain"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Problem
 
@@ -94,3 +96,8 @@ Layers 1-2 share the container's egress proxy IP. They rate-limit together. Laye
 | `web_search` + `web_fetch` on transcript sites | When video is indexed by third parties |
 | YouTube thumbnail URLs (`i.ytimg.com`) | Public, never blocked |
 | `curl` to YouTube (container proxy) | Works but returns HTML that needs parsing |
+
+## Related
+
+- [[redundant-api-pre-checks-in-wrapper-functions]] - both notes deal with understanding which layer in a multi-layer system is responsible for what, and debugging failures caused by layer misattribution
+- [[compound-interest-levels-and-lifestyle-progression]] - this transcript extraction pipeline was used to capture the Bille Finance video that became the compound interest note

@@ -4,6 +4,8 @@ date: 2026-04-08
 captured: 2026-04-08T02:00:45.892Z
 tags: ["ai", "memory", "agents", "competition", "architecture"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -59,3 +61,9 @@ How retrieved memories enter the LLM's context window determines both token cost
 ## The bottom line
 
 The entire field is competing on variations of "use an LLM to decide what to remember and how to update it." The real differentiation is: how much structure wraps that decision (Mem0 = minimal, Letta = agent loop, A-Mem = never delete, MemOS = temporal metadata), what storage backends support it (vector, graph, hybrid, filesystem), what retrieval strategies optimize cost vs accuracy, and how much you trust the LLM versus building deterministic guardrails around it.
+
+## Related
+
+- [[llm-agent-memory-systems-landscape-2026]] - the full landscape overview with the 5-stage pipeline that these three battlegrounds map onto
+- [[memory-systems-as-agent-harness-plugins]] - how the write/update loop and retrieval strategies manifest in real harness integrations
+- [[llm-memory-benchmarks-and-evaluation-crisis]] - why the benchmark numbers cited in battleground 2 (retrieval) should be read with skepticism

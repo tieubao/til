@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T16:05:28.828Z
 tags: ["dwarves-kit", "sdd", "multi-agent", "verification"]
 source: "Migrated from ai-tooling/ (March 2026)"
+aliases: []
+status: refined
 ---
 # dwarves-kit v1.2: Verification pipeline architecture
 
@@ -54,3 +56,10 @@ Max 2 retries. Most fixable issues (missing import, wrong assertion) resolve in 
 - **Max 2 retries, not infinite.** Prevents runaway token consumption.
 - **FAIL:escalate is never retried.** If it needs human judgment, that's final.
 - **No new hooks needed.** Everything runs inside /execute command prompt logic.
+
+## Related
+
+- [[sdd-multi-agent-verification-architecture]] - the broader multi-agent architecture this pipeline implements
+- [[dwarves-kit-v1-2-agent-roster-and-cdp]] - the full agent roster including task-verifier and fix-agent
+- [[commands-vs-hooks-vs-skills-decision-framework]] - why verification uses subagents instead of hooks
+- [[security-gates-for-mcp-tools-that-bridge-private-to-public]] - a similar gate pipeline pattern (ordered by cost ascending)

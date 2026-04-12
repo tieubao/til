@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T05:02:30.542Z
 tags: ["mcp", "security", "secret-scanning", "path-traversal", "claude-skills"]
 source: "Claude Code session building push_skill tool for github-mcp-worker"
+aliases: []
+status: refined
 ---
 ## The problem
 
@@ -128,3 +130,9 @@ flowchart TD
 4. **Commit** — the expensive, irreversible action, happens last
 
 **The transferable principle**: order your gates by cost ascending and reversibility descending. The cheapest, most-reversible check goes first. The expensive, irreversible action goes last. This applies to any pipeline that ends with a side effect (deploy, send, publish, commit).
+
+## Related
+
+- [[redundant-api-pre-checks-in-wrapper-functions]] - another pattern discovered in the same MCP worker project about API call efficiency
+- [[dwarves-kit-v1-2-verification-pipeline-architecture]] - a similar ordered gate pipeline (verify then fix then escalate)
+- [[claude-code-hook-lifecycle-and-event-system]] - hooks as enforcement gates in the agent loop, same "server-side enforcement" principle

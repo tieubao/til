@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T23:09:49.978Z
 tags: ["autoresearch", "karpathy", "optimization", "ai-tooling"]
 source: "Claude iOS session - SDD research session 2"
+aliases: []
+status: refined
 ---
 ## The three-file contract
 
@@ -35,3 +37,9 @@ For skill file optimization: use LLM-as-judge with binary eval criteria (10 yes/
 For most single-artifact optimizations, doing 3-5 manual iterations with Claude is faster and cheaper than setting up the full loop. The pattern pays off when you have many things to optimize (20+ skill files) or when the scoring function already exists (test suites).
 
 #autoresearch #karpathy #optimization #ai-tooling
+
+## Related
+
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - positions AutoResearch as a "separate axis" optimization pattern across the full stack
+- [[tool-evaluation-5-question-rubric]] - the kill question ("what failure would this have prevented?") is the same kind of measurable scoring that makes the Karpathy loop work
+- [[dwarves-kit-v1-2-verification-pipeline-architecture]] - the verification pipeline could use this ratchet pattern for automated skill file optimization

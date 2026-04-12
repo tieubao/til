@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T06:56:34.613Z
 tags: ["china", "sinicization", "civilization", "geopolitics"]
 source: "YouTube: Audio Point \"How China Turns Outsiders Into Chinese\" (2026-03-04)"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -54,3 +56,10 @@ The sinicization narrative is contested by modern historians.
 - Morris Rossabi, *Khubilai Khan* (1988)
 - Peter Perdue, *China Marches West*
 - Jane Burbank, *Empires in World History*
+
+## Related
+
+- [[imperial-examinations-how-china-replaced-religion-with-meritocracy]] - the exam system that conquerors adopted because no alternative could govern China at scale
+- [[china-as-a-civilization-state-not-a-nation-state]] - the civilization-state framework that sinicization sustains across regime changes
+- [[the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism]] - explains how the civilization survives the dynastic collapses that precede new rounds of sinicization
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - sinicization's institutional depth contrasts with the Vietnamese diaspora's lack of inherited institutional infrastructure

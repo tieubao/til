@@ -4,6 +4,8 @@ date: 2026-03-30
 captured: 2026-03-30T16:50:24.441Z
 tags: ["ai", "claude-code", "developer-tools", "axel-bitblaze69"]
 source: "X Article by @Axel_bitblaze69"
+aliases: []
+status: refined
 ---
 > Source: [@Axel_bitblaze69](https://x.com/Axel_bitblaze69/status/2037978621684621428) | 2026-03-28
 > Original title: "Everything I Learned Using Claude Code for 2 Months"
@@ -464,3 +466,10 @@ stop bookmarking articles about AI. start building with it.
 - The combo strategy works: Cursor for daily inline edits + Claude Code for heavy refactors and architecture. Experienced devs use 2.3 AI coding tools on average.
 - Hooks make behavior deterministic (unlike CLAUDE.md which is suggestive). Use PreToolUse for security gates, Stop hooks for quality gates.
 - Skills are reusable workflow packages that auto-activate based on context. The /last30days viral skill is a good example of community-built tooling.
+
+## Related
+
+- [[claude-code-hook-lifecycle-and-event-system]] - deep dive into the hooks system summarized here
+- [[commands-vs-hooks-vs-skills-decision-framework]] - when to use commands vs hooks vs skills, expanding on the distinction made in this guide
+- [[ai-dev-stack-8-layer-model-march-2026]] - the 8-layer stack model that positions Claude Code at L3 with surrounding tooling layers
+- [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - the Dispatch/remote surface covered briefly here, explored in full

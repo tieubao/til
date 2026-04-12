@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:04:43.588Z
 tags: ["australia", "energy-security", "oil", "hormuz", "2026"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -51,3 +53,9 @@ Australia declined to join Trump's proposed multinational naval coalition for th
 - Food prices rising: beef/veal +13.5%, lamb/goat +13.4% annually
 - Economists forecast fuel prices remaining 20-40% above early 2026 levels for at least 6 months
 - If excise cut expires on Jul 1 without extension, petrol jumps ~26 cents/L overnight
+
+## Related
+
+- [[measuring-oil-supply-disruption-severity-2026-hormuz-vs-historical-crises]] - puts the Hormuz closure in historical context against previous oil crises
+- [[australias-washminster-government-structure]] - explains the federal/state structure behind the crisis response mechanisms
+- [[the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism]] - the complexity and brittleness framework that applies to Australia's just-in-time fuel dependency

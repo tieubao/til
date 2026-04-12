@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:15:00.643Z
 tags: ["diaspora", "vietnam", "china", "economics", "institutions"]
 source: "Claude.ai diaspora deep-dive session, April 2026"
+aliases: []
+status: refined
 ---
 # Vietnamese vs Chinese diaspora: why one builds economic hubs and the other doesn't
 
@@ -43,3 +45,11 @@ The "escape" mindset isn't a cultural defect. It's a rational response to the ty
 The highest-value position for the next Vietnamese generation isn't "individual professional who dissolves into host country" or "ethnic enclave business owner." It's the **bridge-builder**: someone deeply fluent in both Vietnamese business culture and international markets, who can connect Vietnam's rising economy to global capital and knowledge flows.
 
 This is exactly what overseas Chinese did after Deng's reforms. Vietnam is approaching a similar inflection point.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - extended version with deeper data on each of the five structural factors
+- [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the enclave hollowing mechanism described in the "escape through education" section
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - full development of the bridge-builder alternative mentioned at the end
+- [[china-as-a-civilization-state-not-a-nation-state]] - why Chinese institutional continuity across centuries produced durable diaspora infrastructure

@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:15:46.395Z
 tags: ["diaspora", "japan", "vietnam", "korea", "china", "futures"]
 source: "Claude.ai diaspora deep-dive session, April 2026"
+aliases: []
+status: refined
 ---
 # Four Asian diasporas: 30-year projection (Japanese, Vietnamese, Korean, Chinese)
 
@@ -52,3 +54,11 @@ Only diaspora with institutional infrastructure durable enough for generational 
 Yes, for new diasporas. The conditions (geographic concentration, no banking access, no welfare state, multi-generational proximity) no longer exist.
 
 Potential replacements: digital diaspora networks, ethnic VC funds, alumni association models, church/temple networks that add capital pooling. Nobody has cracked the modern equivalent yet.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[four-asian-diasporas-in-2055-projected-trajectories]] - companion note with the same framework but deeper detail on each diaspora's mechanisms
+- [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the enclave hollowing mechanism that drives the Vietnamese trajectory described here
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the "institutional intervention" wild card that could redirect Vietnamese diaspora off the Japanese path
+- [[china-as-a-civilization-state-not-a-nation-state]] - explains the civilizational continuity behind Chinese diaspora institutional durability

@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:04:26.599Z
 tags: ["diaspora", "vietnam", "china", "economics", "institutions", "southeast-asia"]
 source: "Claude.ai diaspora analysis session, April 2026"
+aliases: []
+status: refined
 ---
 # Vietnamese vs Chinese diaspora: a structural analysis of why one builds economic hubs and the other doesn't
 
@@ -56,3 +58,11 @@ Post-Deng (1978), Chinese diaspora became a conduit for China's economic explosi
 The Chinese advantage is institutional, not ethnic. Vietnamese thrive wherever institutions exist. They decline wherever institutions exclude them. The real question isn't "why do Vietnamese fail abroad?" (they mostly don't) but "why didn't the Vietnamese build durable cross-border economic institutions?" The answer: timing, starting conditions, and the nature of the migration itself.
 
 ![Vietnamese vs Chinese diaspora structural comparison](https://assets.han-ws.workers.dev/i/2026/04/diaspora-chinese-vs-vietnamese-structure.svg)
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[vietnamese-vs-chinese-diaspora-why-one-builds-economic-hubs-and-the-other-doesnt]] - condensed version of the same five-factor analysis with the bridge-builder conclusion
+- [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - deep dive into Factor 2 (migration type) and why refugees built subsistence businesses
+- [[sinicization-how-china-absorbs-its-conquerors]] - the cultural absorption mechanism that created the institutional depth Chinese diaspora inherited
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the strategic response to the structural gap identified here

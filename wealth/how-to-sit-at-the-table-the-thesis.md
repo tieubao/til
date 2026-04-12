@@ -4,6 +4,8 @@ date: 2026-04-04
 captured: 2026-04-04T19:31:10.214Z
 tags: ["wealth-series", "mentorship", "opportunity", "deal-flow", "book-v8"]
 source: "Claude.ai session - origin conversation for V8 book project"
+aliases: []
+status: refined
 ---
 # How to Sit at the Table - The Thesis
 
@@ -48,3 +50,11 @@ The exchange is not free. You must:
 - Rothschild mandatory sharing: every member contributes intelligence, not just receives it
 - Omi merchants: contribute before extracting, build trust through consistent generosity
 - The economics of mentorship: a mentor can transfer in two years what took them ten to learn
+
+## Related
+
+- [[the-three-gates-what-elders-screen-for]] - the specific invisible tests that determine whether you earn a seat at the table
+- [[the-12-month-progression-deposit-to-partnership]] - the timeline for how trust actually builds after you get access
+- [[anti-patterns-that-destroy-trust-permanently]] - behaviors that will get you removed from the table permanently
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - applying the opportunity lens to Vietnamese diaspora positioning
+- [[compound-interest-levels-and-lifestyle-progression]] - at higher wealth levels, deal flow proximity and "sitting at the table" is exactly how capital allocators operate

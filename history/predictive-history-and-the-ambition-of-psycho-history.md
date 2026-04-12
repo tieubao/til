@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T02:36:49.783Z
 tags: ["history", "geopolitics", "predictive-history", "education"]
 source: "YouTube video by Predictive History"
+aliases: []
+status: refined
 ---
 > Source: [Civilization BONUS: Meet Professor Jiang](https://youtube.com/watch?v=voQEteh6Hko)
 > Channel: [Predictive History](https://www.youtube.com/@PredictiveHistory) | Duration: ~12 min | Date: 2025-10-07
@@ -70,3 +72,10 @@ Okay, so enjoy your summer. I'm going to engage in the process of deep reflectio
 - The Civilization course grew organically: AP English > Great Books program > 60-class sweep of human history from Ice Age to American Empire
 - Self-identified gaps: philosophy (Marx, Hegel, Kant), classical economics (Adam Smith) -- planned summer study of Toynbee and Spengler
 - Long-term ambition: build a school ("Plato's Academy" / "Jedi Temple") specializing in liberal arts and humanities, training future intellectuals and building foundations for psycho-history
+
+## Related
+
+- [[the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism]] - Tainter's and Toynbee's frameworks are the structural models that predictive history would need to formalize
+- [[china-as-a-civilization-state-not-a-nation-state]] - the civilization-state framework demonstrates the kind of deep structural pattern predictive history aims to identify
+- [[imperial-examinations-how-china-replaced-religion-with-meritocracy]] - an example of institutional analysis across 1,300 years, the scale predictive history operates at
+- [[measuring-oil-supply-disruption-severity-2026-hormuz-vs-historical-crises]] - Professor Jiang noted the Israel-Iran escalation was accelerating; this note documents the resulting crisis he was watching

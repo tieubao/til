@@ -4,6 +4,8 @@ date: 2026-04-07
 captured: 2026-04-07T17:53:19.727Z
 tags: ["ai", "memory", "benchmarks", "evaluation"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -73,3 +75,9 @@ The multi-dimensional evaluation framework from Mem0's ECAI 2025 paper is the mo
 
 For model selection: use the Letta Leaderboard.
 For system comparison: be skeptical of any single-benchmark claims. Look for papers that report multiple metrics including latency and token cost.
+
+## Related
+
+- [[llm-agent-memory-systems-landscape-2026]] - the production systems and research systems whose benchmark claims this note scrutinizes
+- [[llm-memory-systems-three-competitive-battlegrounds]] - the retrieval strategy battleground where latency vs accuracy numbers from benchmarks actually matter
+- [[tool-evaluation-5-question-rubric]] - a practical evaluation framework that sidesteps benchmark gaming by asking "what failure would this have prevented?"

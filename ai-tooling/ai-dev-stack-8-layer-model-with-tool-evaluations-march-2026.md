@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T16:03:17.349Z
 tags: ["sdd", "ai-tooling", "claude-code", "stack-model", "evaluation-framework"]
 source: "Claude.ai session on SDD research + tool evaluation, March 28 2026"
+aliases: []
+status: refined
 ---
 # AI Dev Stack - 8-Layer Model (March 2026)
 
@@ -114,3 +116,10 @@ Scoring: 12-15 = ADOPT, 8-11 = BOOKMARK, 5-7 = SKIP. Rule: never adopt more than
 - `ai-stack-complete.jsx` - interactive 8-layer stack map (React, light theme, iOS-friendly)
 - `claudekit-eval.jsx` - ClaudeKit evaluation card
 - `ai-stack-light.jsx` - combined stack + ClaudeKit eval with tabs
+
+## Related
+
+- [[ai-dev-stack-8-layer-model-march-2026]] - the condensed version of this stack model
+- [[autoresearch-the-karpathy-loop-pattern]] - the optimization pattern referenced as a "separate axis" in the stack
+- [[claudekit-evaluation-and-unique-features]] - detailed evaluation of ClaudeKit at L4
+- [[sdd-landscape-and-dwarves-kit-v1-2-reference-map]] - how the SDD frameworks compared here inform dwarves-kit positioning

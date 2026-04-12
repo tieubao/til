@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T06:57:08.443Z
 tags: ["china", "political-theory", "civilization-state", "geopolitics"]
 source: "YouTube: Audio Point \"The Civilization that Pretends to be a Country\" (2026-02-16)"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -53,3 +55,10 @@ China has survived 2,000+ years through invasions, famines, civil wars, and revo
 - Martin Jacques, *When China Rules the World* (2009/2012)
 - Zhang Weiwei, *The China Wave: Rise of a Civilizational State* (2012)
 - American Historical Association, "The Oldest Living Civilization"
+
+## Related
+
+- [[sinicization-how-china-absorbs-its-conquerors]] - the absorption mechanism that sustains the civilization-state across conquests
+- [[imperial-examinations-how-china-replaced-religion-with-meritocracy]] - the exam system that produced the cultural unity and bureaucratic continuity central to the civilization-state
+- [[the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism]] - why the civilization-state survives collapses that destroy nation-states
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - how civilization-state institutional depth created durable diaspora infrastructure that newer diasporas lack

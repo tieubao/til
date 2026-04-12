@@ -4,6 +4,8 @@ date: 2026-04-04
 captured: 2026-04-04T19:32:22.290Z
 tags: ["wealth-series", "enterprise", "trust-ladder", "vendor-to-partner", "book-v8"]
 source: "Claude.ai session - V8 book framework"
+aliases: []
+status: refined
 ---
 # Enterprise Trust Ladder: From Vendor to Strategic Partner
 
@@ -45,3 +47,10 @@ Delivery is 40%. Process is 60%.
 - **Only talking to your buyer**: single-threaded relationship dies when that person moves
 - **Disappearing between engagements**: partners share intelligence between deals
 - **Surprising them publicly**: never surprise the director in front of their boss
+
+## Related
+
+- [[the-12-month-progression-deposit-to-partnership]] - the personal relationship version of this same ladder
+- [[anti-patterns-that-destroy-trust-permanently]] - detailed catalog of behaviors that keep you stuck at vendor level
+- [[the-three-gates-what-elders-screen-for]] - the character and value tests that enterprise directors also run, just in corporate form
+- [[redundant-api-pre-checks-in-wrapper-functions]] - an example of the "deliver the insight, not just the output" principle applied to code review

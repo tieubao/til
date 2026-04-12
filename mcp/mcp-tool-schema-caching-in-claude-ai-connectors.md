@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T15:53:16.404Z
 tags: ["mcp", "cloudflare", "debugging"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## Question
 
@@ -23,3 +25,8 @@ The worker itself serves the updated schema immediately after deploy. The delay 
 ## Key Takeaway
 
 If you change MCP tool parameters and Claude still shows the old schema, it's a client cache issue. Disconnect and reconnect the connector.
+
+## Related
+
+- [[security-gates-for-mcp-tools-that-bridge-private-to-public]] - building MCP tools on Cloudflare Workers where schema updates need to propagate
+- [[context-hub-vs-context7-vs-the-context-layer-ecosystem]] - other MCP-based tools in the context layer that face similar caching behavior

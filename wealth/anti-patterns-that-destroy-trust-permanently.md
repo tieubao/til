@@ -4,6 +4,8 @@ date: 2026-04-04
 captured: 2026-04-04T19:02:16.110Z
 tags: ["wealth-series", "anti-patterns", "trust", "failure-modes", "book-v8"]
 source: "Claude.ai session - V8 book framework"
+aliases: []
+status: refined
 ---
 # Anti-Patterns: Behaviors That Destroy Trust Permanently
 
@@ -73,3 +75,10 @@ Raising concerns in group meetings that should have been flagged privately. Neve
 | Single-threaded | Yes | 1 engagement | Build relationships across their org |
 | Ghost between deals | Yes | 3-6 months | Start sharing intel between contracts |
 | Public surprise | Yes, once | Immediate | Apologize privately, never repeat |
+
+## Related
+
+- [[the-three-gates-what-elders-screen-for]] - the tests these anti-patterns fail (confidentiality, character, value)
+- [[enterprise-trust-ladder-vendor-to-strategic-partner]] - enterprise-specific anti-patterns that keep you stuck at vendor level
+- [[the-12-month-progression-deposit-to-partnership]] - where in the timeline each anti-pattern typically kills the relationship
+- [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - community-level trust erosion when successful members exit instead of reinvesting

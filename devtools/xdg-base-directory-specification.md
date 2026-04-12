@@ -4,6 +4,8 @@ date: 2026-04-02
 captured: 2026-04-02T05:27:51.486Z
 tags: ["xdg", "dotfiles", "macos", "linux", "standards", "chezmoi"]
 source: "Claude.ai chat"
+aliases: []
+status: refined
 ---
 ## What is XDG
 
@@ -73,3 +75,7 @@ When using chezmoi for dotfiles, XDG simplifies the mental model:
 chezmoi itself is XDG-compliant and handles both XDG-compliant apps (everything under `dot_config/`) and legacy dotfiles (root-level `dot_*` files) seamlessly.
 
 The practical benefit: XDG-compliant tools cluster their configs under one directory, making it obvious what to track in your dotfiles repo vs what to ignore.
+
+## Related
+
+- [[starship-prompt-configuration-best-practices]] - Starship is a good example of an XDG-compliant tool, config lives at `~/.config/starship.toml`

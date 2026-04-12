@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T06:57:50.515Z
 tags: ["china", "education", "confucianism", "governance"]
 source: "YouTube: Audio Point \"How Ancient China Survived Without a Single Holy Book\" (2025-12-28)"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -59,3 +61,10 @@ All three share the same core claims: Confucianism functions as an operating sys
 - Benjamin Elman, *A Cultural History of Civil Service Examinations in Late Imperial China*
 - World History Encyclopedia, "Civil Service Examinations of Imperial China"
 - Yale Forum on Religion and Ecology, "Confucianism"
+
+## Related
+
+- [[sinicization-how-china-absorbs-its-conquerors]] - the exam system is the key mechanism that made conquerors adopt Chinese civilization rather than replace it
+- [[china-as-a-civilization-state-not-a-nation-state]] - the civilization-state framework that the exam system enabled over 1,300 years
+- [[the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism]] - how the bureaucracy the exams produced could become a complexity trap
+- [[predictive-history-and-the-ambition-of-psycho-history]] - Professor Jiang's project to teach history as a coherent system, directly building on the kind of institutional analysis this note covers

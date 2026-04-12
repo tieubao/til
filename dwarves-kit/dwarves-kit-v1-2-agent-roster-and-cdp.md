@@ -4,6 +4,8 @@ date: 2026-03-29
 captured: 2026-03-29T16:05:51.221Z
 tags: ["dwarves-kit", "agents", "collaborative-design"]
 source: "Migrated from ai-tooling/ (March 2026)"
+aliases: []
+status: refined
 ---
 # dwarves-kit v1.2: agent roster and collaborative design protocol
 
@@ -29,3 +31,9 @@ Three decision modes: lead (human picks), coder (orchestrator picks), autonomous
 Referenced by: worker subagents, task-verifier, security-auditor, reviewer agent.
 
 Source: CCGS Collaborative Design Principle, adapted for subagent autonomy modes.
+
+## Related
+
+- [[dwarves-kit-v1-2-verification-pipeline-architecture]] - how task-verifier and fix-agent work together in the verify-fix-retry loop
+- [[sdd-multi-agent-verification-architecture]] - the broader architectural design these agents implement
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - patterns for staying coherent while running multiple agents

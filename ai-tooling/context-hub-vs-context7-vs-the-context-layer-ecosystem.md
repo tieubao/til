@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T23:10:54.098Z
 tags: ["ai-tooling", "context-layer", "mcp", "documentation"]
 source: "Claude iOS session - SDD research sessions 2 and 3"
+aliases: []
+status: refined
 ---
 ## Context Hub (Andrew Ng, DeepLearning.AI)
 
@@ -34,3 +36,9 @@ The foundation underneath both. Proposed by Jeremy Howard (Answer.AI, Sep 2024).
 - DeepWiki: architecture understanding of internal code (different angle)
 
 #ai-tooling #context-layer #mcp #llms-txt
+
+## Related
+
+- [[code-graph-context-tools-for-token-reduction]] - the "other half" of the context layer: codebase intelligence vs external docs
+- [[ai-dev-stack-8-layer-model-march-2026]] - these tools live at L3.5b in the 8-layer stack
+- [[compaction-defense-patterns-for-claude-code-sessions]] - context injection strategies relate to how memory/docs enter the agent's context window

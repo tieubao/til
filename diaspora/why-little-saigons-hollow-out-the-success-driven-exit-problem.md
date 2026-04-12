@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:15:22.186Z
 tags: ["diaspora", "vietnam", "economics", "urban", "community"]
 source: "Claude.ai diaspora deep-dive session, April 2026"
+aliases: []
+status: refined
 ---
 # Why Little Saigons hollow out: the success-driven exit problem
 
@@ -43,3 +45,11 @@ The escape mindset comes from the subsistence nature of the business, not from V
 The missing ingredient is institutional capital: community-owned real estate, Vietnamese-controlled investment funds, business succession planning, and economic infrastructure that survives the founder.
 
 The opportunity window is 15-20 years while Gen 1 is still alive and Gen 2 has capital. After that, the Japanese Yonsei trajectory locks in: culturally visible, economically dissolved.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - explains why the businesses in Little Saigons were subsistence-type and not worth inheriting
+- [[four-asian-diasporas-30-year-projection]] - the Japanese Yonsei dissolution trajectory that Little Saigons are heading toward
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the alternative model that could break the hollowing cycle within the 15-20 year window
+- [[the-three-gates-what-elders-screen-for]] - trust and screening patterns relevant to community institution-building

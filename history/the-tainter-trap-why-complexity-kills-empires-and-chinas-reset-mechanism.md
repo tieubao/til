@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T07:09:03.007Z
 tags: ["china", "collapse", "complexity", "geopolitics", "tainter"]
 source: "YouTube: Audio Point \"The Chinese Lesson Every Empire Learns Too Late\" (2026-01-29)"
+aliases: []
+status: refined
 ---
 ## Overview
 
@@ -85,3 +87,10 @@ This is the fourth in a series by Audio Point on Chinese civilization. The four 
 - Arnold Toynbee, *A Study of History* (1934-61)
 - John King Fairbank, *China: A New History* (2006)
 - Paul Kennedy, *The Rise and Fall of the Great Powers* (1987)
+
+## Related
+
+- [[china-as-a-civilization-state-not-a-nation-state]] - the civilization-state framework explains why China can reset while Western empires cannot
+- [[sinicization-how-china-absorbs-its-conquerors]] - the absorption mechanism that operates during and after each collapse-reset cycle
+- [[imperial-examinations-how-china-replaced-religion-with-meritocracy]] - the bureaucratic engine that both prevents and contributes to complexity accumulation
+- [[predictive-history-and-the-ambition-of-psycho-history]] - Tainter's and Toynbee's frameworks are exactly the kind of structural models predictive history aims to formalize

@@ -4,6 +4,8 @@ date: 2026-04-05
 captured: 2026-04-05T06:39:23.388Z
 tags: ["diaspora", "vietnam", "entrepreneurship", "nail-salon", "education", "parenting"]
 source: "Claude.ai diaspora analysis session, April 2026"
+aliases: []
+status: refined
 ---
 # Why Vietnamese refugees built nail salons instead of trade empires
 
@@ -56,3 +58,11 @@ The escape mentality is rational given the business type, not a cultural defect.
 ## Implication
 
 The "escape through education" strategy was optimal for 1980. It's suboptimal for 2025. The next generation has access to scalable businesses. The optimal strategy now: build something worth inheriting, not something worth escaping.
+
+## Related
+
+- [[vietnamese-diaspora-synthesis]] - synthesis page connecting all diaspora notes
+- [[vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes]] - the full five-factor structural comparison that contextualizes the subsistence vs scalable divergence
+- [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the downstream effect of subsistence businesses on community survival
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the "build something worth inheriting" strategy developed in full
+- [[how-to-sit-at-the-table-the-thesis]] - positioning and access patterns relevant to building scalable businesses vs subsistence ones

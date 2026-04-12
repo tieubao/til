@@ -4,6 +4,8 @@ date: 2026-04-04
 captured: 2026-04-04T19:31:45.071Z
 tags: ["wealth-series", "character-test", "trust", "mentorship", "book-v8"]
 source: "Claude.ai session - V8 book framework"
+aliases: []
+status: refined
 ---
 # The Three Gates: What Older/Wealthier People Screen For
 
@@ -73,3 +75,10 @@ You are there to extract judgment, not receive instructions. The Arab majlis mod
 - Genuine capability test: do it excellently
 - One-time busywork: do it gracefully, but don't let it become the pattern
 - Consistent staff treatment: redirect by bringing something next time that only a peer could provide
+
+## Related
+
+- [[how-to-sit-at-the-table-the-thesis]] - the thesis these gates serve: opportunity access through relationship, not money
+- [[anti-patterns-that-destroy-trust-permanently]] - the inverse: behaviors that fail these gates permanently
+- [[the-12-month-progression-deposit-to-partnership]] - how passing these gates maps to a concrete timeline
+- [[enterprise-trust-ladder-vendor-to-strategic-partner]] - the same screening dynamics applied to enterprise client relationships

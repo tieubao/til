@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T23:09:30.592Z
 tags: ["sdd", "claude-code", "dev-stack", "ai-coding"]
 source: "Claude iOS session - SDD research sessions 2 and 3"
+aliases: []
+status: refined
 ---
 ## The 8-layer model
 
@@ -31,3 +33,10 @@ External API docs (Context Hub/Context7) solve "the agent doesn't know Stripe's 
 Spec-driven tools produce artifacts (spec doc, architecture, task list). Role-driven tools produce judgment (CEO pushback, eng review, QA testing). They're complementary, not competing: use SDD for planning, gstack for review.
 
 #ai-tooling #sdd #claude-code #dev-stack
+
+## Related
+
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - expanded version with tool evaluations, SDD framework comparisons, and the integrated workflow
+- [[code-graph-context-tools-for-token-reduction]] - deep dive into L3.5a (codebase intelligence) tools
+- [[context-hub-vs-context7-vs-the-context-layer-ecosystem]] - deep dive into L3.5b (external docs) tools
+- [[tool-evaluation-5-question-rubric]] - the rubric used to score tools at each layer

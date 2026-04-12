@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T05:38:33.151Z
 tags: ["architecture", "api-design", "performance", "anti-pattern"]
 source: "Claude Code session - github-mcp-worker project, reviewing push_skill tool"
+aliases: []
+status: refined
 ---
 ## Context
 
@@ -43,3 +45,8 @@ The right fix depends on scale. For a personal MCP worker doing < 50 pushes/day,
 ## How to spot this
 
 When a function calls an API to check state (exists? version? content?) and then passes the result to a library function that starts by checking the same state, you have a redundant pre-check. Look for this pattern whenever a wrapper function adds logic around a self-contained library call.
+
+## Related
+
+- [[why-knowledge-notes-need-context-not-just-facts]] - this note was one of the two original notes that revealed the "shallow capture" problem, leading to the context-first capture system
+- [[youtube-transcript-extraction-from-cloud-containers]] - another example of debugging a multi-layer system where understanding which layer handles what prevents redundant work

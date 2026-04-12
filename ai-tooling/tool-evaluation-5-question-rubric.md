@@ -4,6 +4,8 @@ date: 2026-03-26
 captured: 2026-03-26T23:10:18.606Z
 tags: ["ai-tooling", "evaluation", "framework", "decision-making"]
 source: "Claude iOS session - SDD research session 3"
+aliases: []
+status: refined
 ---
 ## The 5-question rubric
 
@@ -38,3 +40,9 @@ Each question scores 1-3. Total 5-15:
 Built as `/eval-tool` Claude Code slash command that takes a GitHub URL, auto-classifies layer, checks overlap, scores rubric, outputs verdict.
 
 #ai-tooling #evaluation #framework #decision-making
+
+## Related
+
+- [[ai-dev-stack-8-layer-model-march-2026]] - Q1 ("which layer?") references this stack model directly
+- [[claudekit-evaluation-and-unique-features]] - a concrete application of this rubric (ClaudeKit scored 10/15 = BOOKMARK)
+- [[llm-memory-benchmarks-and-evaluation-crisis]] - evaluation methodology problems in a different domain; the "kill question" approach avoids the gaming that plagues memory benchmarks

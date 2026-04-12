@@ -4,6 +4,8 @@ date: 2026-03-28
 captured: 2026-03-28T05:38:13.039Z
 tags: ["claude-code", "hooks", "debugging"]
 source: "Claude Code session - github-mcp-worker project, fixing Stop hook validation error"
+aliases: []
+status: refined
 ---
 ## Context
 
@@ -45,3 +47,9 @@ The `reason` field in a Stop hook surfaces as context in the conversation, makin
 ## How to spot this
 
 Any time a Claude Code hook throws `Hook JSON output validation failed` with `Invalid input`, check whether the `decision` or `permissionDecision` field value matches the hook event type. The most common mistake is mixing up `"allow"` (PreToolUse) with `"approve"` (Stop).
+
+## Related
+
+- [[claude-code-hook-lifecycle-and-event-system]] - the full event system and exit code contract these decision values plug into
+- [[commands-vs-hooks-vs-skills-decision-framework]] - choosing when a hook is the right mechanism
+- [[why-knowledge-notes-need-context-not-just-facts]] - this debugging discovery was one of the notes that prompted the "context is mandatory" rule
