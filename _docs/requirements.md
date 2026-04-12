@@ -56,7 +56,7 @@ A personal knowledge base that compounds over time. Not a note-taking app. Not a
 | T-2 | Git for version history and collaboration | Done |
 | T-3 | `.gitignore` for Obsidian local config | Done |
 | T-4 | Templates for all note types | Done |
-| T-5 | Search tooling (qmd or similar) | Not needed at current scale (60 notes) |
+| T-5 | Search tooling (qmd or similar) | Not needed at current scale (59 notes) |
 
 ## Non-requirements (decided against)
 
@@ -78,7 +78,7 @@ A personal knowledge base that compounds over time. Not a note-taking app. Not a
 
 ## Scale expectations
 
-- Current: ~62 notes across 16 topic folders
+- Current: ~59 notes across 16 topic folders
 - Near-term: ~200 notes. Index file + grep still sufficient.
 - Synthesis pages should appear when clusters reach 4+ notes
 
@@ -88,7 +88,7 @@ These tools are not needed now but should be adopted when specific thresholds ar
 
 | Tool | What it does | Adopt when | Why not now |
 |------|-------------|------------|-------------|
-| **qmd** | Local markdown search with hybrid BM25/vector search and LLM re-ranking. Has CLI + MCP server. [github.com/tobi/qmd](https://github.com/tobi/qmd) | ~500 notes, or when README.md index exceeds context window (~200 entries with summaries) | grep + README summaries work fine at 62 notes. Adding search infra before it's needed creates maintenance cost for zero benefit. |
+| **qmd** | Local markdown search with hybrid BM25/vector search and LLM re-ranking. Has CLI + MCP server. [github.com/tobi/qmd](https://github.com/tobi/qmd) | ~500 notes, or when README.md index exceeds context window (~200 entries with summaries) | grep + README summaries work fine at 59 notes. Adding search infra before it's needed creates maintenance cost for zero benefit. |
 | **Marp** | Markdown-to-slides in Obsidian. Karpathy uses it to generate presentations from wiki content. | When you want quick slide previews inside Obsidian without leaving the vault | User already has a `slide-deck` skill (React+Vite+Framer Motion) that's more capable for polished decks. Marp is only useful for quick-and-dirty in-vault previews. |
 | **Obsidian Marp plugin** | Renders Marp slides inside Obsidian as a preview pane | Same as above | Same as above |
 | **Immutable raw archive** (`_raw/` folder) | Preserve original source documents so wiki pages can be re-derived if the LLM got something wrong | When ingesting long research papers, book chapters, or reports where the original matters | Currently `_inbox/` is a processing queue, not an archive. Git history preserves originals as fallback. A dedicated raw archive adds value when sources are complex enough that re-derivation is likely. |

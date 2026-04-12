@@ -214,11 +214,11 @@ Claude will create a note from the conversation output, properly linked and file
 | Folder | Domain | Notes |
 |--------|--------|-------|
 | `ai/` | AI concepts, memory systems, agent patterns | 7 |
-| `ai-tooling/` | AI tool evaluations, dev stack analysis | 9 |
+| `ai-tooling/` | AI tool evaluations, dev stack analysis | 8 |
 | `claude-code/` | Claude Code hooks, skills, workflows | 5 |
 | `cs/` | Computer science fundamentals | 1 |
 | `devtools/` | Developer tools and config | 2 |
-| `diaspora/` | Vietnamese/Asian diaspora analysis | 7 |
+| `diaspora/` | Vietnamese/Asian diaspora analysis | 6 |
 | `dwarves-kit/` | Dwarves Kit architecture and design | 9 |
 | `geopolitics/` | Geopolitical analysis | 3 |
 | `health/` | Health and wellness | 1 |
@@ -226,7 +226,7 @@ Claude will create a note from the conversation output, properly linked and file
 | `investing/` | Personal finance and investing | 1 |
 | `mcp/` | Model Context Protocol | 2 |
 | `patterns/` | Software patterns and anti-patterns | 1 |
-| `pkm/` | Personal knowledge management meta | 1 |
+| `pkm/` | Personal knowledge management meta | 2 |
 | `wealth/` | Trust-building, business relationships | 5 |
 | `youtube/` | YouTube-related tooling | 1 |
 
