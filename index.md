@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 227 note(s) across 21 folders. Last updated: 2026-04-13
+> Full catalog of 242 note(s) across 22 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -31,6 +31,14 @@
 - [Claude Code hook schema decision values per event type](claude-code/claude-code-hook-schema-decision-values-per-event-type.md) - Stop hooks need "approve"/"block", not "allow"/"deny"; mixing causes silent validation errors
 - [Commands vs hooks vs skills decision framework](claude-code/commands-vs-hooks-vs-skills-decision-framework.md) - If skipping it causes irreversible damage, use a hook; if output degrades, use a skill
 - [Compaction defense patterns for Claude Code sessions](claude-code/compaction-defense-patterns-for-claude-code-sessions.md) - Two-layer defense: PreCompact backup + post-compaction re-injection of critical rules
+
+## crypto
+
+- [The Bitcoin investment paradox](crypto/bitcoin-investment-paradox.md) - Either Bitcoin becomes universal (you're auto-invested) or it fails (you lose nothing)
+- [Cobie on (3,3) and crypto incentives](crypto/cobie-on-33-and-crypto-incentives.md) - Time horizon determines VC behavior; mercenary capital erodes trust in bull markets
+- [Ray Dalio on Bitcoin as digital gold](crypto/ray-dalio-on-bitcoin.md) - Dalio's 2021 assessment: Bitcoin is "one hell of an invention" but risks remain
+- [Stellar vs Nano comparison](crypto/stellar-vs-nano-comparison.md) - Both fast and cheap; Nano is currency-only, Stellar is a platform with tokens and DEX
+- [Token emission models](crypto/token-emission-models.md) - Six models: halving, exponential decay, linear decay, fixed supply, constant, bonding curve
 
 ## cs
 
@@ -86,6 +94,7 @@
 - [Between Go and Elixir](engineering/between-golang-and-elixir.md) - Complementary model: Elixir for orchestration and fault tolerance, Go for compute-heavy tasks
 - [Bit Twiddling Hacks](engineering/bit-twiddling-hacks.md) - Stanford reference of bitwise tricks: branchless abs, popcount, De Bruijn log, Morton interleaving
 - [Building a worker pool in Go](engineering/building-worker-pool-in-go.md) - Job queue, workers, and dispatcher pattern for bounded concurrency in Go
+- [Building web apps with functional programming](engineering/building-web-apps-with-functional-programming.md) - Full FP stack: Elm frontend, Haskell backend, NixOS infra for reproducible builds
 - [Channels in Golang](engineering/channels-in-golang.md) - Channel types, buffering, nil/closed behavior, and edge cases for correct concurrent Go
 - [Chin thoi quen xau can bo neu muon theo nganh CNTT](engineering/chin-thoi-quen-xau-nganh-cntt.md) - Nine bad habits to drop for IT careers: not reading docs, skimming, copying without thinking
 - [Choose Boring Technology](engineering/choose-boring-technology.md) - Finite innovation tokens; spend them on business problems, not infrastructure novelty
@@ -104,9 +113,13 @@
 - [Effective error handling in Go](engineering/effective-error-handling-in-go.md) - Indented flow pattern, custom error types, and idiomatic error handling practices
 - [Egoless Engineering](engineering/egoless-engineering.md) - Ego and parochialism destroy orgs; domain experts who teach beat domain owners who gatekeep
 - [Elixir concepts for Go developers](engineering/elixir-concepts-for-go-developers.md) - Actor model vs CSP comparison: addressable processes with mailboxes vs anonymous goroutines with channels
+- [Elm language overview](engineering/elm-language-overview.md) - Functional language compiling to JS; Model-View-Update pattern influenced Redux
 - [Error handling in Upspin](engineering/error-handling-in-upspin.md) - Rob Pike's structured error type with Path, User, Op, Kind fields for rich context across boundaries
 - [Five problem-solving skills for software engineers](engineering/five-problem-solving-skills.md) - Break problems down, stay calm, think before coding, ask for help, practice regularly
 - [Four days of Go](engineering/four-days-of-go.md) - C/Erlang developer's candid evaluation: fast compilation but syntax inconsistencies and missing features
+- [Functional programming for the rest of us](engineering/fp-for-the-rest-of-us.md) - FP appears difficult due to presentation, not complexity; immutability enables easy testing and debugging
+- [Functional thinking](engineering/functional-thinking.md) - Neal Ford on shifting from OO to FP mindset: composition over inheritance, Either over exceptions
+- [Functional vs imperative vs declarative programming](engineering/functional-vs-imperative-vs-declarative.md) - Reference card for three paradigms: imperative (how), declarative (what), functional (pure transforms)
 - [Go best practices for production environments](engineering/go-best-practices-for-production.md) - SoundCloud's Go in production: single GOPATH, flat repo structure, go fmt on save
 - [Go best practices, six years in](engineering/go-best-practices-six-years-in.md) - Peter Bourgon's core principle: make dependencies explicit across config, testing, and design
 - [Go concurrency through illustrations](engineering/go-concurrency-through-illustrations.md) - Visual introduction to goroutines, channels, and select using mining analogies
@@ -120,6 +133,7 @@
 - [Go vs Swift comparison](engineering/go-vs-swift-comparison.md) - Side-by-side comparison: static typing, concurrency models, memory management, error handling
 - [Go 2 error handling draft design](engineering/go2-error-handling-draft-design.md) - Proposed check/handle keywords to reduce if-err-nil boilerplate; ultimately not accepted
 - [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
+- [Goodbye, Object Oriented Programming](engineering/goodbye-object-oriented-programming.md) - OOP's three pillars dismantled: banana-gorilla-jungle, diamond problem, fragile base class
 - [Heisenberg developers](engineering/heisenberg-developers.md) - Measuring developer work alters their behavior; estimation demands kill creativity and drive talent away
 - [Hidden dividends of microservices](engineering/hidden-dividends-of-microservices.md) - Beyond scaling: microservices force explicit interfaces, independent deploys, and team autonomy
 - [The history of Hadoop](engineering/history-of-hadoop.md) - From Doug Cutting's Lucene to Apache Hadoop, driven by two Google papers (GFS and MapReduce)
@@ -138,9 +152,11 @@
 - [Monorepo advantages](engineering/monorepo-advantages.md) - Single repo for all code: atomic commits, unified tooling, easier refactoring across boundaries
 - [No primitives - model domain concepts with types](engineering/no-primitives-domain-modeling.md) - Primitive Obsession code smell; wrap domain concepts in types to enforce invariants at construction
 - [Papers I like (part 1)](engineering/papers-i-like-part-1.md) - Fabian Giesen's 10 essential CS papers: Lamport, Herlihy, Cook, and more
+- [Pragmatic functional programming](engineering/pragmatic-functional-programming.md) - Uncle Bob: FP matters beyond concurrency; immutability brings simplicity even on 4-core laptops
 - [Programmer competency matrix](engineering/programmer-competency-matrix.md) - 0-3 scale across 20+ skill categories for self-assessment; knowledge is cumulative per level
 - [Programming practices - Unix philosophy and beyond](engineering/programming-practices-principles.md) - Timeless principles: prototype first, fail noisily, separate policy from mechanism, least surprise
 - [The purple developer - 10x productivity is contextual](engineering/purple-developer-10x-myth.md) - The 10x engineer is the one who built the system; spread the knowledge, spread the productivity
+- [Railway Oriented Programming](engineering/railway-oriented-programming.md) - Two-track error handling: happy path and failure path via Either/Result types, no monad jargon
 - [Rob Pike's 5 rules of programming](engineering/rob-pike-five-rules-of-programming.md) - Measure before optimizing; fancy algorithms are slow when n is small; data dominates
 - [Rust is not a good C replacement](engineering/rust-is-not-a-good-c-replacement.md) - Drew DeVault: Rust replaces C++, not C; 15 new features/year vs C's 0.73
 - [The SaaS CTO security checklist](engineering/saas-cto-security-checklist.md) - Comprehensive checklist: infrastructure, application, and organizational security for SaaS
@@ -162,6 +178,8 @@
 - [UML as a communication tool](engineering/uml-as-communication-tool.md) - UML diagrams for requirements and design communication; modeling language, not a process
 - [Understanding nil in Go](engineering/understanding-nil-in-go.md) - Nil is the zero value for 6 types; each behaves differently when nil, enabling idiomatic patterns
 - [What if GitHub is the devil - curl's pragmatic take](engineering/what-if-github-is-the-devil.md) - Daniel Stenberg on why curl stays on GitHub: network effect, contingency plans, pragmatism over purity
+- [What is functional programming](engineering/what-is-functional-programming.md) - FP defined by side effects management: pure functions with declared inputs and outputs only
+- [Which programming languages are functional](engineering/which-programming-languages-are-functional.md) - Side-effects management as the criterion; Haskell is genuine, JS is not, Clojure is 80%
 - [Why big tech companies are so slow](engineering/why-big-tech-is-slow.md) - Feature interaction complexity grows combinatorially; slowness is math, not incompetence
 - [Why Go is a poorly designed language](engineering/why-go-is-poorly-designed.md) - Seven design flaws: nil interface paradox, variable shadowing, slice pain, compiler rigidity
 - [Why OO sucks - Joe Armstrong's critique](engineering/why-oo-sucks.md) - Erlang creator's four objections: binding data to functions, everything-is-object, scattered types, private state
