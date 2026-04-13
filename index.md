@@ -1,11 +1,12 @@
 # Index
 
-> Full catalog of 205 note(s) across 20 folders. Last updated: 2026-04-13
+> Full catalog of 227 note(s) across 21 folders. Last updated: 2026-04-13
 
 ## ai
 
 - [Claude dispatch workflows and async AI orchestration from mobile](ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md) - Orchestrate 60+ parallel AI sessions from your phone; knowledge layer compounds across surfaces
 - [Complete guide to Claude Code features workflows and ecosystem](ai/complete-guide-to-claude-code-features-workflows-and-ecosystem.md) - Practitioner's guide: agentic loop, CLAUDE.md under 200 lines, Sonnet for 90% of tasks
+- [Grand unified theory of the AI hype cycle](ai/grand-unified-theory-of-ai-hype-cycle.md) - Seven decades of AI hype follow the same arc: novel mechanism gets labeled AI, boom, bust, rename
 - [LLM agent memory systems landscape 2026](ai/llm-agent-memory-systems-landscape-2026.md) - Memory systems all solve a 5-stage pipeline; differentiation is in structure around LLM decisions
 - [LLM memory benchmarks and evaluation crisis](ai/llm-memory-benchmarks-and-evaluation-crisis.md) - LoCoMo has ~99 wrong answers; no trustworthy single benchmark exists for memory systems
 - [LLM memory systems three competitive battlegrounds](ai/llm-memory-systems-three-competitive-battlegrounds.md) - Write/update loop absorbs 80% of innovation; all systems delegate conflict resolution to LLMs
@@ -33,13 +34,18 @@
 
 ## cs
 
+- [A brief totally accurate history of programming languages](cs/brief-totally-accurate-history-of-programming-languages.md) - Satirical timeline of programming language creation from 1800 punch cards to modern languages
 - [Comparing algorithm textbooks: CLRS, Tardos, Skiena, Sedgewick](cs/comparing-algorithm-textbooks.md) - Four major algo textbooks compared by use case: reference, network flow, interviews, coursework
 - [Go To statement considered harmful](cs/goto-considered-harmful.md) - Dijkstra's 1968 argument: go to destroys the coordinate system needed to reason about programs
+- [History of regular expressions](cs/history-of-regular-expressions.md) - From 1950s neuroscience (Kleene's algebra) through UNIX tooling to the Russian internet outage
+- [History of software - resource collection](cs/history-of-software-resources.md) - Curated links covering software history: timelines, shareware, accessibility, word processing
 - [The immutability of math for programmers](cs/immutability-of-math-for-programmers.md) - Math underpins CS at its core; frameworks change, linear algebra and probability do not
 - [Syntactic sugar, salt, and saccharin](cs/syntactic-sugar-salt-saccharin.md) - Sugar helps readability, salt enforces discipline, saccharin is empty calories in language design
 - [A TCP/IP tutorial - RFC 1180](cs/tcp-ip-tutorial-rfc1180.md) - RFC 1180 walkthrough of TCP/IP layers, ARP resolution, and packet flow between networks
 - [The actor model in 10 minutes](cs/the-actor-model.md) - Actors replace shared memory with isolated units communicating via async message passing
+- [The next century of computing](cs/the-next-century-of-computing.md) - End of Moore's Law triggers a Cambrian Explosion of bizarre hardware beyond 1940s architectures
 - [Turing completeness](cs/turing-completeness.md) - A system needs branching, looping, and unbounded memory to compute anything
+- [What's next in computing](cs/whats-next-in-computing.md) - Computing eras cycle every 10-15 years; 2016 prediction: hardware + AI is the next wave
 - [Why interviewers ask linked list questions](cs/why-linked-list-interview-questions.md) - Linked list interviews are a cultural artifact of 1980s C pointer manipulation, not a timeless test
 - [Why Vim uses hjkl for navigation](cs/why-vim-uses-hjkl.md) - Chain of accidents from 1967 ASCII table to ADM-3A terminal to Bill Joy's vi
 
@@ -71,9 +77,10 @@
 
 ## engineering
 
-- [Apache ZooKeeper for distributed coordination](engineering/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election, service discovery, and distributed locks
 - [10 tips to improve application performance](engineering/10-tips-application-performance.md) - NGINX guide: reverse proxy, load balancing, caching, compression, and HTTP/2 for 10x gains
+- [Best practices for agile documentation](engineering/agile-documentation-best-practices.md) - Prefer executable specs, document stable concepts, keep it simple; fewer docs done well
 - [The antipattern scripting language](engineering/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
+- [Apache ZooKeeper for distributed coordination](engineering/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election, service discovery, and distributed locks
 - [The junior programmer's guide to asking for help](engineering/asking-for-help-at-work.md) - Timebox your struggle, then ask; balance between pestering and spinning your wheels
 - [Benefits of continuous delivery](engineering/benefits-of-continuous-delivery.md) - Small deploys mean lower risk, fresher context, faster feedback, and features reaching users sooner
 - [Between Go and Elixir](engineering/between-golang-and-elixir.md) - Complementary model: Elixir for orchestration and fault tolerance, Go for compute-heavy tasks
@@ -85,11 +92,13 @@
 - [Code for readability](engineering/code-for-readability.md) - Code as if the maintainer is a violent psychopath who knows where you live
 - [Code review basics](engineering/code-review-basics.md) - Fundamentals of starting code review as a team practice; overcoming resistance and building habit
 - [Comparing Elixir and Go](engineering/comparing-elixir-and-go.md) - Concurrency model comparison: preemptive actors with isolated heaps vs cooperative goroutines with channels
+- [Conway's law](engineering/conways-law.md) - System architecture mirrors org communication structure; you cannot fight it, only reshape it
 - [Creating a microservice - answer these 10 questions first](engineering/creating-a-microservice-ten-questions.md) - Operational checklist: testing, config, security, discovery, scaling, failure handling, upgrades, monitoring
 - [CSS architecture - first steps](engineering/css-architecture-first-steps.md) - BEM, SMACSS, ITCSS methodologies for maintainable stylesheets
 - [Data drives code structure](engineering/data-drives-code-structure.md) - Software structure follows data structure: arrays become loops, graphs become traversals
 - [What to know before debating type systems](engineering/debating-type-systems.md) - Static vs dynamic, strong vs weak, nominal vs structural; most type debates use terms imprecisely
 - [Deleting code](engineering/deleting-code.md) - Delete unused code permanently; version control is your safety net, not commented-out blocks
+- [DevOps team topologies](engineering/devops-team-topologies.md) - Anti-patterns (silos, fake DevOps teams) vs recommended topologies for Dev-Ops collaboration
 - [Discipline doesn't scale](engineering/discipline-doesnt-scale.md) - Calls for discipline fail because there is no motivation to adopt them; change the environment instead
 - [Effective code reviews without wasting time](engineering/effective-code-reviews.md) - One reviewer finds half of defects; beyond two reviewers, social loafing kicks in
 - [Effective error handling in Go](engineering/effective-error-handling-in-go.md) - Indented flow pattern, custom error types, and idiomatic error handling practices
@@ -111,7 +120,9 @@
 - [Go vs Swift comparison](engineering/go-vs-swift-comparison.md) - Side-by-side comparison: static typing, concurrency models, memory management, error handling
 - [Go 2 error handling draft design](engineering/go2-error-handling-draft-design.md) - Proposed check/handle keywords to reduce if-err-nil boilerplate; ultimately not accepted
 - [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
+- [Heisenberg developers](engineering/heisenberg-developers.md) - Measuring developer work alters their behavior; estimation demands kill creativity and drive talent away
 - [Hidden dividends of microservices](engineering/hidden-dividends-of-microservices.md) - Beyond scaling: microservices force explicit interfaces, independent deploys, and team autonomy
+- [The history of Hadoop](engineering/history-of-hadoop.md) - From Doug Cutting's Lucene to Apache Hadoop, driven by two Google papers (GFS and MapReduce)
 - [How to learn software design](engineering/how-to-learn-software-design.md) - Read other people's code, study patterns, then practice by rewriting existing programs
 - [How to read research papers](engineering/how-to-read-research-papers.md) - Three-pass method: skim structure, grasp arguments, then verify details
 - [How to succeed as a poor programmer](engineering/how-to-succeed-as-a-poor-programmer.md) - Compensate for weak coding with communication, testing, simplicity, and asking for help
@@ -177,20 +188,21 @@
 
 ## hiring
 
-- [Assessing software engineering candidates](hiring/assessing-software-engineering-candidates.md) - Bryan Cantrill's framework: written artifacts over pop quizzes; evaluate aptitude, motivation, values
-- [Developer Happiness Index 2021](hiring/developer-happiness-index.md) - What makes developers happy at work; data on retention factors across regions
 - [40 best questions to ask in an interview](hiring/40-best-questions-to-ask-in-an-interview.md) - High-signal questions candidates should ask employers, organized by category
-- [How to hire programmers and outsourced developers](hiring/how-to-hire-programmers.md) - Donn Felker's 4-step hiring process with programming challenges as the great equalizer
+- [Assessing software engineering candidates](hiring/assessing-software-engineering-candidates.md) - Bryan Cantrill's framework: written artifacts over pop quizzes; evaluate aptitude, motivation, values
 - [Company culture is who you hire, fire, and promote](hiring/company-culture-is-who-you-hire-fire-promote.md) - Culture defined by three actions, not mission statements
-- [Facebook hiring: strengths, builders, and learners](hiring/facebook-hiring-strengths-builders-learners.md) - Three factors Facebook evaluates in every candidate at every level
+- [Developer Happiness Index 2021](hiring/developer-happiness-index.md) - What makes developers happy at work; data on retention factors across regions
 - [A developer's guide to interviewing](hiring/developers-guide-to-interviewing.md) - Questions to evaluate employers as a developer candidate
 - [Don't hire 0x engineers](hiring/dont-hire-0x-engineers.md) - Against the 10x myth; build functional teams with capable people
+- [Facebook hiring: strengths, builders, and learners](hiring/facebook-hiring-strengths-builders-learners.md) - Three factors Facebook evaluates in every candidate at every level
 - [How to hire](hiring/how-to-hire.md) - Six principles: strengths over weakness, trajectory over experience, doers over talkers
+- [How to hire programmers and outsourced developers](hiring/how-to-hire-programmers.md) - Donn Felker's 4-step hiring process with programming challenges as the great equalizer
 
 ## history
 
 - [China as a civilization state, not a nation state](history/china-as-a-civilization-state-not-a-nation-state.md) - China is a 2,000-year civilization wearing nation-state clothing; continuity and order trump liberty
 - [Imperial examinations: how China replaced religion with meritocracy](history/imperial-examinations-how-china-replaced-religion-with-meritocracy.md) - 1,300-year exam system created cultural unity and loyal bureaucracy without a holy book
+- [Israel, Palestine va Jerusalem](history/israel-palestine-va-jerusalem.md) - History of the Israel-Palestine conflict from shared Abrahamic origins to modern territorial disputes
 - [Predictive history and the ambition of psycho-history](history/predictive-history-and-the-ambition-of-psycho-history.md) - Prof Jiang aims to build Asimov's psycho-history: connect past, explain present, predict future
 - [Sinicization: how China absorbs its conquerors](history/sinicization-how-china-absorbs-its-conquerors.md) - Every conqueror adopted Chinese civilization because demographics and bureaucracy made it inevitable
 - [The Tainter trap: why complexity kills empires](history/the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism.md) - Empires die from complexity overload; China survives by expecting collapse and having a reset protocol
@@ -202,15 +214,22 @@
 
 ## leadership
 
+- [A decade of remote work](leadership/a-decade-of-remote-work.md) - Ten years of remote lessons: go all-in or not at all, summits matter, hire for self-discipline
 - [The consulting secret - ask your senior ICs what is broken](leadership/consulting-secret-ask-the-ics.md) - Schedule 90 min with your best IC, ask what is broken, read it back to leadership
 - [CTO vs VP Engineering](leadership/cto-vs-vp-engineering.md) - CTO is outward-facing (vision, customers, innovation); VP Eng is inward-facing (delivery, process, people)
+- [How to work out what to charge clients](leadership/how-to-charge-clients.md) - Calculate your floor rate from costs and billability, then apply three markup factors
 - [HR evaluation as unique value measurement](leadership/hr-evaluation-unique-value.md) - Market value = Differentiation x Influence; uniqueness beats commoditized skill checklists
 - [In pursuit of excellence](leadership/in-pursuit-of-excellence.md) - Excellence comes from unique positioning at domain intersections, not being best at common skills
 - [Lam an kieu Cu Ho](leadership/lam-an-kieu-cu-ho.md) - Five business lessons from Ho Chi Minh's methods, applied at FPT Software by Nguyen Thanh Nam
+- [How to manage people who are smarter than you](leadership/managing-people-smarter-than-you.md) - Reframe management as enabling others' success; confront insecurity, learn from your team
 - [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) - $100B fund betting AI runs the planet; gun-senryaku connects portfolio companies in a flock
+- [Nguyen tac truc giac trong lanh dao](leadership/nguyen-tac-truc-giac.md) - Shark Phu on "tuong" traits and Maxwell on intuition as the differentiator in leadership
+- [Note to new design managers](leadership/note-to-new-design-managers.md) - Practical guide: manage time, communicate definitively, document everything, protect craft quality
+- [The rise of the interim CTO](leadership/rise-of-the-interim-cto.md) - Temporary tech executive bridges the gap between coding founder and strategic tech leadership
 - [Steve Jobs negotiation and persuasion tactics](leadership/steve-jobs-negotiation-tactics.md) - Pitch with passion, be brutally honest, earn respect through work ethic, disarm with charm
 - [Tips on working with talents](leadership/tips-on-working-with-talents.md) - Four angles on using talent: genuinely need them, create worthy challenges, fair treatment, tolerate quirks
 - [Why soldiers and chefs make the best product managers](leadership/why-soldiers-and-chefs-make-best-pms.md) - Leading without authority under pressure with imperfect info; OODA loop for shipping decisions
+- [Why you need engineering managers](leadership/why-you-need-engineering-managers.md) - Coordination math, calendar incompatibility, and accountability require dedicated management roles
 
 ## life
 
@@ -254,6 +273,12 @@
 
 - [LLM Wiki pattern: compilation over retrieval](pkm/llm-wiki-pattern-compilation-over-retrieval.md) - LLM compiles raw sources into interlinked wiki instead of re-deriving via RAG each time
 - [Why knowledge notes need context, not just facts](pkm/why-knowledge-notes-need-context-not-just-facts.md) - Default capture depth was TIL (shallow); changing default to Atomic Note fixed quality
+
+## startup
+
+- [Anatomy of software frauds](startup/anatomy-of-software-frauds.md) - Three-layer fraud architecture: unlimited scapegoats, sales-driven culture, deceptive founding
+- [Tap trung vao san pham](startup/tap-trung-vao-san-pham.md) - When product is broken, sales and marketing accelerate failure; fix the product first
+- [Tesla and GM - founders vs professional managers](startup/tesla-gm-founders-vs-managers.md) - Steve Blank parallels Musk/Durant (visionary founders) vs Sloan (professional management)
 
 ## wealth
 
