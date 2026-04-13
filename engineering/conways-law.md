@@ -33,3 +33,6 @@ Conway's law is not just an observation; it is a constraint. You cannot fight it
 
 ## Related
 
+- [[software-architecture-guide-fowler]] - Fowler frames architecture as shaped by social boundaries
+- [[backend-for-frontend-pattern]] - explicitly aligns service boundaries to team structure
+- [[creating-a-microservice-ten-questions]] - org structure determines how these questions get answered

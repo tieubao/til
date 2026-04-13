@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 191 note(s) across 20 folders. Last updated: 2026-04-13
+> Full catalog of 205 note(s) across 20 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -71,6 +71,7 @@
 
 ## engineering
 
+- [Apache ZooKeeper for distributed coordination](engineering/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election, service discovery, and distributed locks
 - [10 tips to improve application performance](engineering/10-tips-application-performance.md) - NGINX guide: reverse proxy, load balancing, caching, compression, and HTTP/2 for 10x gains
 - [The antipattern scripting language](engineering/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
 - [The junior programmer's guide to asking for help](engineering/asking-for-help-at-work.md) - Timebox your struggle, then ask; balance between pestering and spinning your wheels
@@ -84,6 +85,8 @@
 - [Code for readability](engineering/code-for-readability.md) - Code as if the maintainer is a violent psychopath who knows where you live
 - [Code review basics](engineering/code-review-basics.md) - Fundamentals of starting code review as a team practice; overcoming resistance and building habit
 - [Comparing Elixir and Go](engineering/comparing-elixir-and-go.md) - Concurrency model comparison: preemptive actors with isolated heaps vs cooperative goroutines with channels
+- [Creating a microservice - answer these 10 questions first](engineering/creating-a-microservice-ten-questions.md) - Operational checklist: testing, config, security, discovery, scaling, failure handling, upgrades, monitoring
+- [CSS architecture - first steps](engineering/css-architecture-first-steps.md) - BEM, SMACSS, ITCSS methodologies for maintainable stylesheets
 - [Data drives code structure](engineering/data-drives-code-structure.md) - Software structure follows data structure: arrays become loops, graphs become traversals
 - [What to know before debating type systems](engineering/debating-type-systems.md) - Static vs dynamic, strong vs weak, nominal vs structural; most type debates use terms imprecisely
 - [Deleting code](engineering/deleting-code.md) - Delete unused code permanently; version control is your safety net, not commented-out blocks
@@ -119,6 +122,7 @@
 - [Lessons learned in software development](engineering/lessons-learned-in-software-dev.md) - Collected wisdom on development practices, debugging, team dynamics, and project management
 - [Leveraging poor memory in engineering](engineering/leveraging-poor-memory-in-engineering.md) - Poor memory forces good habits: write everything down, automate, document decisions
 - [Mastering programming](engineering/mastering-programming.md) - Kent Beck's practices: slicing problems, one thing at a time, concrete then abstract
+- [Testing strategies in a microservice architecture](engineering/microservice-testing-strategies.md) - Five-layer test pyramid for microservices: unit, integration, component, contract, end-to-end
 - [A million WebSockets and Go](engineering/million-websockets-and-go.md) - Mail.Ru optimized 3M concurrent WebSockets from 72 GB to manageable with epoll and buffer pooling
 - [Monorepo advantages](engineering/monorepo-advantages.md) - Single repo for all code: atomic commits, unified tooling, easier refactoring across boundaries
 - [No primitives - model domain concepts with types](engineering/no-primitives-domain-modeling.md) - Primitive Obsession code smell; wrap domain concepts in types to enforce invariants at construction
@@ -131,6 +135,7 @@
 - [The SaaS CTO security checklist](engineering/saas-cto-security-checklist.md) - Comprehensive checklist: infrastructure, application, and organizational security for SaaS
 - [What makes a senior developer](engineering/so-you-want-to-be-senior.md) - Seniority is judgment, positive impact beyond code, and being a force multiplier for the team
 - [The ACM/IEEE Software Engineering code of ethics](engineering/software-engineering-code-of-ethics.md) - Eight principles covering public interest, client duties, product quality, and professional judgment
+- [Martin Fowler's software architecture guide](engineering/software-architecture-guide-fowler.md) - Architecture as shared understanding; quality drives speed; social boundaries shape systems
 - [Software engineering vs computer science](engineering/software-engineering-vs-computer-science.md) - CS focuses on algorithms; SE focuses on process management for complex software systems
 - [10 modern software over-engineering mistakes](engineering/software-over-engineering-mistakes.md) - Anticipating futures, premature abstraction, shallow wrappers, and metrics over correctness
 - [Stack Overflow technical deconstruction](engineering/stack-overflow-technical-deconstruction.md) - Nick Craver's inside look at Stack Overflow infrastructure: radical transparency and embracing failure
@@ -173,6 +178,14 @@
 ## hiring
 
 - [Assessing software engineering candidates](hiring/assessing-software-engineering-candidates.md) - Bryan Cantrill's framework: written artifacts over pop quizzes; evaluate aptitude, motivation, values
+- [Developer Happiness Index 2021](hiring/developer-happiness-index.md) - What makes developers happy at work; data on retention factors across regions
+- [40 best questions to ask in an interview](hiring/40-best-questions-to-ask-in-an-interview.md) - High-signal questions candidates should ask employers, organized by category
+- [How to hire programmers and outsourced developers](hiring/how-to-hire-programmers.md) - Donn Felker's 4-step hiring process with programming challenges as the great equalizer
+- [Company culture is who you hire, fire, and promote](hiring/company-culture-is-who-you-hire-fire-promote.md) - Culture defined by three actions, not mission statements
+- [Facebook hiring: strengths, builders, and learners](hiring/facebook-hiring-strengths-builders-learners.md) - Three factors Facebook evaluates in every candidate at every level
+- [A developer's guide to interviewing](hiring/developers-guide-to-interviewing.md) - Questions to evaluate employers as a developer candidate
+- [Don't hire 0x engineers](hiring/dont-hire-0x-engineers.md) - Against the 10x myth; build functional teams with capable people
+- [How to hire](hiring/how-to-hire.md) - Six principles: strengths over weakness, trajectory over experience, doers over talkers
 
 ## history
 
@@ -234,6 +247,7 @@
 
 ## patterns
 
+- [Pattern - Backends for Frontends (BFF)](patterns/backend-for-frontend-pattern.md) - Dedicated backend per client type; avoids API bloat from serving diverse frontends
 - [Redundant API pre-checks in wrapper functions](patterns/redundant-api-pre-checks-in-wrapper-functions.md) - Wrapper checks file existence, then library re-checks internally; doubled API calls
 
 ## pkm

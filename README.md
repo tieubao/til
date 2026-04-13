@@ -2,10 +2,24 @@
 
 A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) methodology, maintained by LLMs using the [LLM Wiki](https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285) pattern.
 
-213 interlinked notes across 21 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
+227 interlinked notes across 21 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
 ## Recent additions
 
+- `2026-04-13` [Developer Happiness Index 2021](hiring/developer-happiness-index.md) - What makes developers happy at work; data on retention factors
+- `2026-04-13` [40 best questions to ask in an interview](hiring/40-best-questions-to-ask-in-an-interview.md) - High-signal questions candidates should ask employers
+- `2026-04-13` [How to hire programmers and outsourced developers](hiring/how-to-hire-programmers.md) - Donn Felker's 4-step process with programming challenges
+- `2026-04-13` [Company culture is who you hire, fire, and promote](hiring/company-culture-is-who-you-hire-fire-promote.md) - Culture defined by actions, not declarations
+- `2026-04-13` [Facebook hiring: strengths, builders, and learners](hiring/facebook-hiring-strengths-builders-learners.md) - Three factors Facebook evaluates in every candidate
+- `2026-04-13` [A developer's guide to interviewing](hiring/developers-guide-to-interviewing.md) - Questions to evaluate employers as a developer candidate
+- `2026-04-13` [Don't hire 0x engineers](hiring/dont-hire-0x-engineers.md) - Against the 10x myth; build functional teams with capable people
+- `2026-04-13` [How to hire](hiring/how-to-hire.md) - Six principles: strengths over weakness, trajectory over experience
+- `2026-04-13` [Creating a microservice - answer these 10 questions first](engineering/creating-a-microservice-ten-questions.md) - Operational checklist covering testing, config, security, discovery, scaling, and failure handling
+- `2026-04-13` [Martin Fowler's software architecture guide](engineering/software-architecture-guide-fowler.md) - Architecture as shared understanding, quality drives speed
+- `2026-04-13` [Testing strategies in a microservice architecture](engineering/microservice-testing-strategies.md) - Five-layer test pyramid adapted for distributed services
+- `2026-04-13` [CSS architecture - first steps](engineering/css-architecture-first-steps.md) - BEM, SMACSS, ITCSS methodologies for maintainable stylesheets
+- `2026-04-13` [Apache ZooKeeper for distributed coordination](engineering/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election and service discovery
+- `2026-04-13` [Pattern - Backends for Frontends (BFF)](patterns/backend-for-frontend-pattern.md) - Dedicated backend per client type to avoid API bloat
 - `2026-04-13` [Grand unified theory of the AI hype cycle](ai/grand-unified-theory-of-ai-hype-cycle.md) - AI hype follows a repeating 13-step cycle driven by novel mechanisms
 - `2026-04-13` [History of regular expressions](cs/history-of-regular-expressions.md) - From 1950s neuroscience to UNIX tooling via AI winters
 - `2026-04-13` [Israel, Palestine va Jerusalem](history/israel-palestine-va-jerusalem.md) - 3000 years of religious and territorial conflict in the Middle East
@@ -34,7 +48,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 
 | Folder | Notes | Domain |
 |--------|-------|--------|
-| [engineering/](engineering/) | 92 | Software engineering practices, principles, languages |
+| [engineering/](engineering/) | 97 | Software engineering practices, principles, languages |
 | [life/](life/) | 25 | Life philosophy, habits, mindset, career wisdom |
 | [cs/](cs/) | 14 | Computer science fundamentals |
 | [dwarves-kit/](dwarves-kit/) | 9 | Dwarves Kit architecture and design |
@@ -52,13 +66,13 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | [pkm/](pkm/) | 2 | Personal knowledge management |
 | [devtools/](devtools/) | 2 | Developer tools and config |
 | [startup/](startup/) | 3 | Startup strategy, product focus, fraud patterns |
-| [hiring/](hiring/) | 1 | Candidate assessment and hiring |
-| [patterns/](patterns/) | 1 | Software patterns and anti-patterns |
+| [hiring/](hiring/) | 9 | Candidate assessment and hiring |
+| [patterns/](patterns/) | 2 | Software patterns and anti-patterns |
 | [youtube/](youtube/) | 1 | YouTube tooling |
 
 ## Documentation
 
-- [Full note index](index.md) - catalog of all 213 notes with one-line summaries
+- [Full note index](index.md) - catalog of all 227 notes with one-line summaries
 - [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
 - [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
 - [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers

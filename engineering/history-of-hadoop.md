@@ -45,3 +45,4 @@ Hadoop's entire existence traces back to two Google papers that the company publ
 ## Related
 
 - [[choose-boring-technology]] - Hadoop was once the exciting choice that later became "boring" infrastructure
+- [[apache-zookeeper-distributed-coordination]] - ZooKeeper emerged from the Hadoop ecosystem in 2008

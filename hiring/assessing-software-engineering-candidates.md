@@ -45,3 +45,8 @@ Bryan Cantrill outlines a comprehensive framework for evaluating software engine
 - A thoughtful process encourages candidate candor, which in turn strengthens the process.
 
 ## Related
+
+- [[how-to-hire-programmers]] - another structured multi-stage hiring process with programming challenges
+- [[facebook-hiring-strengths-builders-learners]] - Facebook's three-factor evaluation framework
+- [[how-to-hire]] - six hiring principles including strengths-based evaluation
+- [[40-best-questions-to-ask-in-an-interview]] - the candidate's side of the interview equation

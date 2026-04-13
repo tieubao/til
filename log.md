@@ -6,6 +6,50 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-13] ingest | Batch ingest 8 notes from GitHub issues (label: hiring)
+
+Triaged 8 issues (#545, #518, #361, #310, #304, #298, #229, #106). Created 8 notes, skipped 0.
+
+**New notes (hiring/):**
+- `hiring/developer-happiness-index.md` (#545) - Developer happiness survey data and retention factors
+- `hiring/40-best-questions-to-ask-in-an-interview.md` (#518) - 40 high-signal interview questions by category
+- `hiring/how-to-hire-programmers.md` (#361) - 4-step process for hiring programmers and outsourced devs
+- `hiring/company-culture-is-who-you-hire-fire-promote.md` (#310) - Culture defined by hire/fire/promote decisions
+- `hiring/facebook-hiring-strengths-builders-learners.md` (#304) - Facebook's three hiring factors
+- `hiring/developers-guide-to-interviewing.md` (#298) - Developer's guide to evaluating employers
+- `hiring/dont-hire-0x-engineers.md` (#229) - Against 10x engineer mythology
+- `hiring/how-to-hire.md` (#106) - Six hiring principles
+
+**Updated links on:** `hiring/assessing-software-engineering-candidates.md` (added 4 backlinks). All 8 new notes cross-linked to each other and existing note.
+
+**Synthesis page:** hiring/ now has 9 notes. Synthesis page suggested.
+
+---
+
+## [2026-04-13] ingest | Batch ingest 6 notes from GitHub issues (label: architecture)
+
+Triaged 10 issues (#464, #445, #291, #253, #250, #247, #245, #221, #111, #92). Created 6 notes, skipped 4.
+
+**New notes (engineering/):**
+- `engineering/creating-a-microservice-ten-questions.md` (#221) - 10-question operational checklist for new microservices
+- `engineering/software-architecture-guide-fowler.md` (#445) - Martin Fowler's architecture guide overview
+- `engineering/microservice-testing-strategies.md` (#253) - Five-layer test pyramid for microservices
+- `engineering/css-architecture-first-steps.md` (#247) - BEM, SMACSS, ITCSS methodologies
+- `engineering/apache-zookeeper-distributed-coordination.md` (#291) - ZooKeeper coordination primitives
+
+**New notes (patterns/):**
+- `patterns/backend-for-frontend-pattern.md` (#92) - BFF pattern for client-specific backends
+
+**Skipped:**
+- #464 (Computer Architecture course) - bare academic URL, no article content
+- #111 (Design Patterns in Swift) - bare GitHub repo link, no article content
+- #250 (Distributed Logging Architecture) - SSL certificate error, site migrated
+- #245 (Optimistic Models / Spinners) - 404 after redirect, site dead
+
+**Cross-links updated:** hidden-dividends-of-microservices, conways-law, history-of-hadoop. Synthesis page: none (engineering/ microservices sub-cluster growing but no synthesis yet).
+
+---
+
 ## [2026-04-13] ingest | Batch ingest 8 notes from GitHub issues (label: history)
 
 Triaged 22 issues (#591, #581, #578, #577, #564, #550, #477, #453, #436, #418, #396, #380, #347, #213, #197, #170, #169, #168, #166, #156, #141, #47). Created 8 notes, skipped 14.

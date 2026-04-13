@@ -43,3 +43,7 @@ Tom Killalea's article on the less obvious benefits of microservices beyond the 
 - Infrastructure is not programmable
 
 ## Related
+
+- [[creating-a-microservice-ten-questions]] - the operational checklist that complements these strategic dividends
+- [[microservice-testing-strategies]] - dividend 8 (test differently) explored in depth
+- [[backend-for-frontend-pattern]] - enables the "permissionless innovation" dividend for frontend teams
