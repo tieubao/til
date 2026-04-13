@@ -124,10 +124,10 @@ flowchart TD
     style D fill:#fce4ec
 ```
 
-1. **Schema validation** — cheapest, no network calls, catches bad input fast
-2. **Secret scan** — CPU only, no network, catches security issues before any external call
-3. **Diff check** — one GitHub API call, prevents unnecessary commits
-4. **Commit** — the expensive, irreversible action, happens last
+1. **Schema validation**  -  cheapest, no network calls, catches bad input fast
+2. **Secret scan**  -  CPU only, no network, catches security issues before any external call
+3. **Diff check**  -  one GitHub API call, prevents unnecessary commits
+4. **Commit**  -  the expensive, irreversible action, happens last
 
 **The transferable principle**: order your gates by cost ascending and reversibility descending. The cheapest, most-reversible check goes first. The expensive, irreversible action goes last. This applies to any pipeline that ends with a side effect (deploy, send, publish, commit).
 

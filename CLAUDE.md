@@ -45,6 +45,7 @@ Notes follow specific templates defined in the user's global CLAUDE.md (knowledg
 - **Depth types**: TIL (shallow), Atomic Note (default/medium), Article (deep), Definition (reference)
 - **Context is mandatory** for Atomic Notes and Articles
 - **Filename convention**: lowercase, hyphen-separated, descriptive (e.g., `redundant-api-pre-checks-in-wrapper-functions.md`)
+- **No em dashes**: never use `—` (em dash) anywhere in the repo. Use ` - ` (space-hyphen-space), commas, semicolons, or split into two sentences.
 
 ## Wikilinks and backlinks
 

@@ -6,16 +6,16 @@ A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/
 
 ## Recent additions
 
-- [LLM Wiki pattern: compilation over retrieval](pkm/llm-wiki-pattern-compilation-over-retrieval.md) — Karpathy's LLM Wiki pattern analyzed against our implementation
-- [**Vietnamese diaspora synthesis**](diaspora/vietnamese-diaspora-synthesis.md) — First synthesis page: 7 notes woven into a structural argument
-- [The Munger Operating System for life](life/munger-operating-system.md) — Charlie Munger's 16 life principles from his USC commencement speech
-- [Always be quitting](life/always-be-quitting.md) — 10 practices to make yourself replaceable and unlock career growth
-- [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) — $100B fund betting AI runs the planet
-- [Simple burnout triage](life/simple-burnout-triage.md) — One question: can you sustain the last 2 months forever?
-- [How and why I invest in startups](investing/how-and-why-i-invest-in-startups.md) — Fund the best people on the hardest problems
-- [Vipassana for hackers](life/vipassana-for-hackers.md) — 10-day silent meditation explained for rational minds
-- [Vitamins and longevity stack](health/vitamins-and-longevity-stack.md) — Daily supplement stack with dosages
-- [What it feels like to become poor](life/what-it-feels-like-to-become-poor.md) — Lost $3M in 2008; humility from the car wash
+- `2026-04-13` [LLM Wiki pattern: compilation over retrieval](pkm/llm-wiki-pattern-compilation-over-retrieval.md) - Karpathy's LLM Wiki pattern analyzed against our implementation
+- `2026-04-13` [**Vietnamese diaspora synthesis**](diaspora/vietnamese-diaspora-synthesis.md) - First synthesis page: 7 notes woven into a structural argument
+- `2026-04-13` [The Munger Operating System for life](life/munger-operating-system.md) - Charlie Munger's 16 life principles from his USC commencement speech
+- `2026-04-13` [Always be quitting](life/always-be-quitting.md) - 10 practices to make yourself replaceable and unlock career growth
+- `2026-04-13` [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) - $100B fund betting AI runs the planet
+- `2026-04-13` [Simple burnout triage](life/simple-burnout-triage.md) - One question: can you sustain the last 2 months forever?
+- `2026-04-13` [How and why I invest in startups](investing/how-and-why-i-invest-in-startups.md) - Fund the best people on the hardest problems
+- `2026-04-13` [Vipassana for hackers](life/vipassana-for-hackers.md) - 10-day silent meditation explained for rational minds
+- `2026-04-13` [Vitamins and longevity stack](health/vitamins-and-longevity-stack.md) - Daily supplement stack with dosages
+- `2026-04-08` [What it feels like to become poor](life/what-it-feels-like-to-become-poor.md) - Lost $3M in 2008; humility from the car wash
 
 ## How it works
 
@@ -57,9 +57,9 @@ The human thinks and curates. The LLM handles the bookkeeping.
 
 ## Documentation
 
-- [Full note index](index.md) — catalog of all 91 notes with one-line summaries
-- [Usage guide](_docs/guide.md) — how to add notes, use Obsidian, work with Claude
-- [Architecture](_docs/architecture.md) — system design, folder conventions, operations model
-- [Requirements](_docs/requirements.md) — feature tracker, design principles, scaling triggers
-- [Changelog](_docs/changelog.md) — project decisions log
-- [Operations log](log.md) — chronological record of ingests, queries, lints
+- [Full note index](index.md) - catalog of all 91 notes with one-line summaries
+- [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
+- [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
+- [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers
+- [Changelog](_docs/changelog.md) - project decisions log
+- [Operations log](log.md) - chronological record of ingests, queries, lints
