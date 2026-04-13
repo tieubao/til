@@ -6,6 +6,21 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-13] ingest | Batch ingest 5 notes from GitHub issues (label: better dev)
+
+Ingested issues #616, #615, #614, #556, #552 via WebFetch. All placed in `engineering/`.
+
+**New notes:**
+- `engineering/egoless-engineering.md` - ego and parochialism destroy engineering orgs
+- `engineering/choose-boring-technology.md` - innovation tokens and boring tech advocacy
+- `engineering/why-big-tech-is-slow.md` - feature interaction complexity explains slowness
+- `engineering/good-and-bad-elixir.md` - Elixir anti-patterns and positive practices
+- `engineering/bit-twiddling-hacks.md` - Stanford bitwise manipulation reference
+
+Updated links on: effective-code-reviews, discipline-doesnt-scale, mastering-programming, lessons-learned-in-software-dev, data-drives-code-structure, hidden-dividends-of-microservices, monorepo-advantages, code-for-readability, programming-practices-principles, zen-of-python. Synthesis page: none (engineering/ has 40 notes but no synthesis yet; suggest creating one for the "better dev" cluster).
+
+---
+
 ## [2026-04-13] refactor | Zettelkasten migration
 
 Initial migration from flat TIL collection to Zettelkasten wiki. 60 notes updated with frontmatter fields (`aliases`, `status`). 205 wikilinks added across all notes. `predictive-history/` merged into `history/`.

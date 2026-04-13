@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 101 note(s) across 19 folders. Last updated: 2026-04-13
+> Full catalog of 106 note(s) across 19 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -72,6 +72,11 @@
 - [Programming practices - Unix philosophy and beyond](engineering/programming-practices-principles.md) - Timeless principles: prototype first, fail noisily, separate policy from mechanism, least surprise
 - [The purple developer - 10x productivity is contextual](engineering/purple-developer-10x-myth.md) - The 10x engineer is the one who built the system; spread the knowledge, spread the productivity
 - [What if GitHub is the devil - curl's pragmatic take](engineering/what-if-github-is-the-devil.md) - Daniel Stenberg on why curl stays on GitHub: network effect, contingency plans, pragmatism over purity
+- [Bit Twiddling Hacks](engineering/bit-twiddling-hacks.md) - Stanford reference of bitwise tricks: branchless abs, popcount, De Bruijn log, Morton interleaving
+- [Choose Boring Technology](engineering/choose-boring-technology.md) - Finite innovation tokens; spend them on business problems, not infrastructure novelty
+- [Egoless Engineering](engineering/egoless-engineering.md) - Ego and parochialism destroy orgs; domain experts who teach beat domain owners who gatekeep
+- [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
+- [Why big tech companies are so slow](engineering/why-big-tech-is-slow.md) - Feature interaction complexity grows combinatorially; slowness is math, not incompetence
 
 ## geopolitics
 
