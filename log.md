@@ -14,6 +14,23 @@ Initial migration from flat TIL collection to Zettelkasten wiki. 60 notes update
 
 Added to `pkm/`. Captures Karpathy's LLM Wiki pattern, four key insights, scaling limits, and how it applies to our wiki. Linked to: why-knowledge-notes-need-context, llm-memory-systems-three-competitive-battlegrounds, llm-agent-memory-systems-landscape-2026, memory-systems-as-agent-harness-plugins. Synthesis page: none (pkm/ has only 2 notes).
 
+## [2026-04-13] ingest | Batch ingest 32 notes from GitHub issues (label: life)
+
+Triaged all 50 GitHub issues with `life` label. Result: 20 body-ingest, 11 url-ingest (WebFetch), 11 youtube-skip, 8 skip. Created 32 new notes total.
+
+**New folders created:** `life/` (24 notes), `leadership/` (6 notes)
+**Existing folders extended:** `health/` (+1), `investing/` (+1)
+
+**Notes by folder:**
+- `life/`: always-be-quitting, average-joe, be-dispassionate-about-software-careers, chon-nguoi-hop-tac-va-ket-giao, dang-le-nguyen-vu-nhan-tinh-the-thai, great-minds-discuss-ideas, hygge-danish-concept-of-cosiness, john-vu-on-world-class-quality, laziness-does-not-exist, learning-to-say-no, munger-operating-system, navagraha-nine-celestial-bodies, pavel-durov-secrets-for-success, simple-burnout-triage, to-chat-lanh-dao-kinh-doanh, vipassana-for-hackers, we-used-to-just-live, what-it-feels-like-to-become-poor, when-and-how-to-ask-for-help, why-explore-space-stuhlinger-letter, why-we-lie-about-being-retired, working-attitude-principles, time-is-the-only-real-currency, 100-little-ideas
+- `leadership/`: steve-jobs-negotiation-tactics, tips-on-working-with-talents, lam-an-kieu-cu-ho, masayoshi-son-softbank-vision, hr-evaluation-unique-value, in-pursuit-of-excellence
+- `health/`: vitamins-and-longevity-stack
+- `investing/`: how-and-why-i-invest-in-startups
+
+**Issues skipped (19):** #606, #604, #600, #588, #562, #561, #505 youtube, #501, #499, #495 fetched, #475, #468, #454, #448 fetched, #446, #444, #439, #426, #410, #401, #368, #366, #364
+
+Wiki: 59 -> 91 notes. Synthesis page: life/ has 24 notes but topics are diverse (career, philosophy, health, spirituality, finance); sub-cluster synthesis recommended rather than one page.
+
 ## [2026-04-13] synthesis | Vietnamese diaspora: from subsistence to bridge-building
 
 First synthesis page in the wiki. Synthesizes all 7 diaspora notes into a layered argument: structural diagnosis -> hollowing mechanism -> trajectory projections -> bridge-builder prescription. Identified one contradiction (urgency window: 10-15 vs 15-20 years) and one major gap (community-level institutional prescription is underspecified). Cross-linked to wealth/, history/ notes.
