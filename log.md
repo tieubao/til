@@ -46,3 +46,17 @@ Deleted `ai-tooling/ai-dev-stack-8-layer-model-march-2026.md` (strict subset of 
 ## [2026-04-13] lint | First wiki health check
 
 Results: 1 orphan (health/alkaline-water, acceptable), 0 broken links in content, 0 raw stragglers, 0 missing Related sections, 0 stale notes. 6 clusters eligible for synthesis pages (dwarves-kit, ai-tooling, ai, claude-code, history, wealth). 1 known contradiction (diaspora urgency window 10-15 vs 15-20 years). Overall health: good.
+
+## [2026-04-13] ingest | Batch ingest 10 notes from GitHub issues (engineering, cs, leadership)
+
+Ingested issues #609, #592, #544, #540, #539, #538, #536, #534, #524, #512.
+
+**New folder created:** `engineering/` (7 notes)
+**Existing folders extended:** `cs/` (+2), `leadership/` (+1)
+
+**Notes by folder:**
+- `engineering/`: data-drives-code-structure, no-primitives-domain-modeling, antipattern-scripting-language, what-if-github-is-the-devil, purple-developer-10x-myth, programming-practices-principles, discipline-doesnt-scale
+- `cs/`: why-linked-list-interview-questions, why-vim-uses-hjkl
+- `leadership/`: consulting-secret-ask-the-ics
+
+Wiki: 91 -> 101 notes. Synthesis page: engineering/ has 7 notes, eligible for synthesis.

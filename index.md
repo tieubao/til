@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 91 note(s) across 18 folders. Last updated: 2026-04-13
+> Full catalog of 101 note(s) across 19 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -34,6 +34,8 @@
 ## cs
 
 - [Turing completeness](cs/turing-completeness.md) - A system needs branching, looping, and unbounded memory to compute anything
+- [Why interviewers ask linked list questions](cs/why-linked-list-interview-questions.md) - Linked list interviews are a cultural artifact of 1980s C pointer manipulation, not a timeless test
+- [Why Vim uses hjkl for navigation](cs/why-vim-uses-hjkl.md) - Chain of accidents from 1967 ASCII table to ADM-3A terminal to Bill Joy's vi
 
 ## devtools
 
@@ -61,6 +63,16 @@
 - [SDD landscape and Dwarves Kit v1.2 reference map](dwarves-kit/sdd-landscape-and-dwarves-kit-v1-2-reference-map.md) - Single source of truth: 8-layer stack, all tool scores, full kit inventory
 - [SDD multi-agent verification architecture](dwarves-kit/sdd-multi-agent-verification-architecture.md) - 5 gaps found in v1.1; phases 1-2 built, parallel agent teams deferred
 
+## engineering
+
+- [The antipattern scripting language](engineering/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
+- [Data drives code structure](engineering/data-drives-code-structure.md) - Software structure follows data structure: arrays become loops, graphs become traversals
+- [Discipline doesn't scale](engineering/discipline-doesnt-scale.md) - Calls for discipline fail because there is no motivation to adopt them; change the environment instead
+- [No primitives - model domain concepts with types](engineering/no-primitives-domain-modeling.md) - Primitive Obsession code smell; wrap domain concepts in types to enforce invariants at construction
+- [Programming practices - Unix philosophy and beyond](engineering/programming-practices-principles.md) - Timeless principles: prototype first, fail noisily, separate policy from mechanism, least surprise
+- [The purple developer - 10x productivity is contextual](engineering/purple-developer-10x-myth.md) - The 10x engineer is the one who built the system; spread the knowledge, spread the productivity
+- [What if GitHub is the devil - curl's pragmatic take](engineering/what-if-github-is-the-devil.md) - Daniel Stenberg on why curl stays on GitHub: network effect, contingency plans, pragmatism over purity
+
 ## geopolitics
 
 - [Australia's Washminster government structure](geopolitics/australias-washminster-government-structure.md) - Australia blends Westminster parliament with US federalism; federal/state split complicates crisis response
@@ -87,6 +99,7 @@
 
 ## leadership
 
+- [The consulting secret - ask your senior ICs what is broken](leadership/consulting-secret-ask-the-ics.md) - Schedule 90 min with your best IC, ask what is broken, read it back to leadership
 - [HR evaluation as unique value measurement](leadership/hr-evaluation-unique-value.md) - Market value = Differentiation x Influence; uniqueness beats commoditized skill checklists
 - [In pursuit of excellence](leadership/in-pursuit-of-excellence.md) - Excellence comes from unique positioning at domain intersections, not being best at common skills
 - [Lam an kieu Cu Ho](leadership/lam-an-kieu-cu-ho.md) - Five business lessons from Ho Chi Minh's methods, applied at FPT Software by Nguyen Thanh Nam
