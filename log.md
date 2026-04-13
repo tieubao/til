@@ -62,16 +62,13 @@ Deleted `ai-tooling/ai-dev-stack-8-layer-model-march-2026.md` (strict subset of 
 
 Results: 1 orphan (health/alkaline-water, acceptable), 0 broken links in content, 0 raw stragglers, 0 missing Related sections, 0 stale notes. 6 clusters eligible for synthesis pages (dwarves-kit, ai-tooling, ai, claude-code, history, wealth). 1 known contradiction (diaspora urgency window 10-15 vs 15-20 years). Overall health: good.
 
-## [2026-04-13] ingest | Batch ingest 10 notes from GitHub issues (engineering, cs, leadership)
+## [2026-04-13] ingest | Batch ingest 77 notes from GitHub issues (better dev label)
 
-Ingested issues #609, #592, #544, #540, #539, #538, #536, #534, #524, #512.
+Triaged 100 GitHub issues with `better dev` label. Result: 44 body-ingest, 31 url-ingest (WebFetch), 2 youtube-skip, 12 skip, 5 already ingested, 7 URLs dead (404/DNS gone).
 
-**New folder created:** `engineering/` (7 notes)
-**Existing folders extended:** `cs/` (+2), `leadership/` (+1)
+**New folders created:** `engineering/` (64 notes), `hiring/` (1 note)
+**Existing folders extended:** `cs/` (+5), `leadership/` (+3), `life/` (+1)
 
-**Notes by folder:**
-- `engineering/`: data-drives-code-structure, no-primitives-domain-modeling, antipattern-scripting-language, what-if-github-is-the-devil, purple-developer-10x-myth, programming-practices-principles, discipline-doesnt-scale
-- `cs/`: why-linked-list-interview-questions, why-vim-uses-hjkl
-- `leadership/`: consulting-secret-ask-the-ics
+**Dead URLs (skipped):** #285 (pragprog 404), #284 (framer blog removed), #272 (SSL error), #263 (SE blocked), #212 (rosettacode 403), #206 (Google Docs JS), #200 (DNS gone)
 
-Wiki: 91 -> 101 notes. Synthesis page: engineering/ has 7 notes, eligible for synthesis.
+Wiki: 91 -> 168 notes. Synthesis page: engineering/ now has 64 notes, sub-cluster synthesis recommended (code quality, career growth, language philosophy, system design).

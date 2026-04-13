@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 106 note(s) across 19 folders. Last updated: 2026-04-13
+> Full catalog of 168 note(s) across 20 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -33,6 +33,12 @@
 
 ## cs
 
+- [Comparing algorithm textbooks: CLRS, Tardos, Skiena, Sedgewick](cs/comparing-algorithm-textbooks.md) - Four major algo textbooks compared by use case: reference, network flow, interviews, coursework
+- [Go To statement considered harmful](cs/goto-considered-harmful.md) - Dijkstra's 1968 argument: go to destroys the coordinate system needed to reason about programs
+- [The immutability of math for programmers](cs/immutability-of-math-for-programmers.md) - Math underpins CS at its core; frameworks change, linear algebra and probability do not
+- [Syntactic sugar, salt, and saccharin](cs/syntactic-sugar-salt-saccharin.md) - Sugar helps readability, salt enforces discipline, saccharin is empty calories in language design
+- [A TCP/IP tutorial - RFC 1180](cs/tcp-ip-tutorial-rfc1180.md) - RFC 1180 walkthrough of TCP/IP layers, ARP resolution, and packet flow between networks
+- [The actor model in 10 minutes](cs/the-actor-model.md) - Actors replace shared memory with isolated units communicating via async message passing
 - [Turing completeness](cs/turing-completeness.md) - A system needs branching, looping, and unbounded memory to compute anything
 - [Why interviewers ask linked list questions](cs/why-linked-list-interview-questions.md) - Linked list interviews are a cultural artifact of 1980s C pointer manipulation, not a timeless test
 - [Why Vim uses hjkl for navigation](cs/why-vim-uses-hjkl.md) - Chain of accidents from 1967 ASCII table to ADM-3A terminal to Bill Joy's vi
@@ -65,18 +71,70 @@
 
 ## engineering
 
+- [10 tips to improve application performance](engineering/10-tips-application-performance.md) - NGINX guide: reverse proxy, load balancing, caching, compression, and HTTP/2 for 10x gains
 - [The antipattern scripting language](engineering/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
+- [The junior programmer's guide to asking for help](engineering/asking-for-help-at-work.md) - Timebox your struggle, then ask; balance between pestering and spinning your wheels
+- [Benefits of continuous delivery](engineering/benefits-of-continuous-delivery.md) - Small deploys mean lower risk, fresher context, faster feedback, and features reaching users sooner
+- [Bit Twiddling Hacks](engineering/bit-twiddling-hacks.md) - Stanford reference of bitwise tricks: branchless abs, popcount, De Bruijn log, Morton interleaving
+- [Chin thoi quen xau can bo neu muon theo nganh CNTT](engineering/chin-thoi-quen-xau-nganh-cntt.md) - Nine bad habits to drop for IT careers: not reading docs, skimming, copying without thinking
+- [Choose Boring Technology](engineering/choose-boring-technology.md) - Finite innovation tokens; spend them on business problems, not infrastructure novelty
+- [Code for readability](engineering/code-for-readability.md) - Code as if the maintainer is a violent psychopath who knows where you live
+- [Code review basics](engineering/code-review-basics.md) - Fundamentals of starting code review as a team practice; overcoming resistance and building habit
 - [Data drives code structure](engineering/data-drives-code-structure.md) - Software structure follows data structure: arrays become loops, graphs become traversals
+- [What to know before debating type systems](engineering/debating-type-systems.md) - Static vs dynamic, strong vs weak, nominal vs structural; most type debates use terms imprecisely
+- [Deleting code](engineering/deleting-code.md) - Delete unused code permanently; version control is your safety net, not commented-out blocks
 - [Discipline doesn't scale](engineering/discipline-doesnt-scale.md) - Calls for discipline fail because there is no motivation to adopt them; change the environment instead
+- [Effective code reviews without wasting time](engineering/effective-code-reviews.md) - One reviewer finds half of defects; beyond two reviewers, social loafing kicks in
+- [Egoless Engineering](engineering/egoless-engineering.md) - Ego and parochialism destroy orgs; domain experts who teach beat domain owners who gatekeep
+- [Error handling in Upspin](engineering/error-handling-in-upspin.md) - Rob Pike's structured error type with Path, User, Op, Kind fields for rich context across boundaries
+- [Five problem-solving skills for software engineers](engineering/five-problem-solving-skills.md) - Break problems down, stay calm, think before coding, ask for help, practice regularly
+- [Go context should go away](engineering/go-context-should-go-away.md) - Michal Strba argues Go's context.Context is a poor design that pollutes every function signature
+- [Go proverbs](engineering/go-proverbs.md) - Rob Pike's Go proverbs: don't communicate by sharing memory, share memory by communicating
+- [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
+- [Hidden dividends of microservices](engineering/hidden-dividends-of-microservices.md) - Beyond scaling: microservices force explicit interfaces, independent deploys, and team autonomy
+- [How to learn software design](engineering/how-to-learn-software-design.md) - Read other people's code, study patterns, then practice by rewriting existing programs
+- [How to read research papers](engineering/how-to-read-research-papers.md) - Three-pass method: skim structure, grasp arguments, then verify details
+- [How to succeed as a poor programmer](engineering/how-to-succeed-as-a-poor-programmer.md) - Compensate for weak coding with communication, testing, simplicity, and asking for help
+- [HTTP caching guide](engineering/http-caching-guide.md) - Cache-Control, ETag, Last-Modified headers explained; caching layers from browser to CDN
+- [Intro to compilers](engineering/intro-to-compilers.md) - Compiler pipeline: lexing, parsing, AST, optimization, code generation in plain language
+- [Lessons from a senior developer](engineering/lessons-from-a-senior-developer.md) - Hard-won lessons: ego kills growth, code reviews teach more than coding, shipping beats perfection
+- [Lessons learned in software development](engineering/lessons-learned-in-software-dev.md) - Collected wisdom on development practices, debugging, team dynamics, and project management
+- [Leveraging poor memory in engineering](engineering/leveraging-poor-memory-in-engineering.md) - Poor memory forces good habits: write everything down, automate, document decisions
+- [Mastering programming](engineering/mastering-programming.md) - Kent Beck's practices: slicing problems, one thing at a time, concrete then abstract
+- [Monorepo advantages](engineering/monorepo-advantages.md) - Single repo for all code: atomic commits, unified tooling, easier refactoring across boundaries
 - [No primitives - model domain concepts with types](engineering/no-primitives-domain-modeling.md) - Primitive Obsession code smell; wrap domain concepts in types to enforce invariants at construction
+- [Papers I like (part 1)](engineering/papers-i-like-part-1.md) - Fabian Giesen's 10 essential CS papers: Lamport, Herlihy, Cook, and more
+- [Programmer competency matrix](engineering/programmer-competency-matrix.md) - 0-3 scale across 20+ skill categories for self-assessment; knowledge is cumulative per level
 - [Programming practices - Unix philosophy and beyond](engineering/programming-practices-principles.md) - Timeless principles: prototype first, fail noisily, separate policy from mechanism, least surprise
 - [The purple developer - 10x productivity is contextual](engineering/purple-developer-10x-myth.md) - The 10x engineer is the one who built the system; spread the knowledge, spread the productivity
+- [Rob Pike's 5 rules of programming](engineering/rob-pike-five-rules-of-programming.md) - Measure before optimizing; fancy algorithms are slow when n is small; data dominates
+- [Rust is not a good C replacement](engineering/rust-is-not-a-good-c-replacement.md) - Drew DeVault: Rust replaces C++, not C; 15 new features/year vs C's 0.73
+- [The SaaS CTO security checklist](engineering/saas-cto-security-checklist.md) - Comprehensive checklist: infrastructure, application, and organizational security for SaaS
+- [What makes a senior developer](engineering/so-you-want-to-be-senior.md) - Seniority is judgment, positive impact beyond code, and being a force multiplier for the team
+- [The ACM/IEEE Software Engineering code of ethics](engineering/software-engineering-code-of-ethics.md) - Eight principles covering public interest, client duties, product quality, and professional judgment
+- [Software engineering vs computer science](engineering/software-engineering-vs-computer-science.md) - CS focuses on algorithms; SE focuses on process management for complex software systems
+- [10 modern software over-engineering mistakes](engineering/software-over-engineering-mistakes.md) - Anticipating futures, premature abstraction, shallow wrappers, and metrics over correctness
+- [Stack Overflow technical deconstruction](engineering/stack-overflow-technical-deconstruction.md) - Nick Craver's inside look at Stack Overflow infrastructure: radical transparency and embracing failure
+- [Pattern matching with case let in Swift](engineering/swift-pattern-matching-case-let.md) - Swift's case let for destructuring enums, optionals, and tuples with pattern matching
+- [What makes code Swifty](engineering/swifty-code.md) - Three pillars: strong type safety, path to performance, clear expressive naming
+- [Technical debt as a city metaphor](engineering/technical-debt-as-a-city.md) - Codebase as city: rushed construction, changing requirements, and patch culture cause decay
+- [The 80x24 rule for code formatting](engineering/the-80x24-rule.md) - 80 chars wide, 24 lines tall per method; constraints nudge toward better design
+- [The SRE model](engineering/the-sre-model.md) - Google's SRE: voluntary support that scales with product maturity, not a new ops title
+- [12 years, 12 lessons at ThoughtWorks](engineering/twelve-lessons-at-thoughtworks.md) - Patrick Kua on tools vs thinking, agile transformations, safety for learning, and coding architects
+- [Type wars - static vs dynamic typing history](engineering/type-wars.md) - Uncle Bob traces six decades of the type debate from Frege through Fortran to modern languages
+- [UML as a communication tool](engineering/uml-as-communication-tool.md) - UML diagrams for requirements and design communication; modeling language, not a process
 - [What if GitHub is the devil - curl's pragmatic take](engineering/what-if-github-is-the-devil.md) - Daniel Stenberg on why curl stays on GitHub: network effect, contingency plans, pragmatism over purity
-- [Bit Twiddling Hacks](engineering/bit-twiddling-hacks.md) - Stanford reference of bitwise tricks: branchless abs, popcount, De Bruijn log, Morton interleaving
-- [Choose Boring Technology](engineering/choose-boring-technology.md) - Finite innovation tokens; spend them on business problems, not infrastructure novelty
-- [Egoless Engineering](engineering/egoless-engineering.md) - Ego and parochialism destroy orgs; domain experts who teach beat domain owners who gatekeep
-- [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
 - [Why big tech companies are so slow](engineering/why-big-tech-is-slow.md) - Feature interaction complexity grows combinatorially; slowness is math, not incompetence
+- [Why OO sucks - Joe Armstrong's critique](engineering/why-oo-sucks.md) - Erlang creator's four objections: binding data to functions, everything-is-object, scattered types, private state
+- [Wisdom of programming quotes](engineering/wisdom-of-programming-quotes.md) - Henrik Warne's curated quotes on complexity, debugging, teams, and the nature of programming
+- [Working as a software developer](engineering/working-as-a-software-developer.md) - Production software realities: programs are big, never done, and reading matters more than writing
+- [Write code that is easy to delete, not easy to extend](engineering/write-code-easy-to-delete.md) - Lines of code are lines spent; build disposable software, not reusable software
+- [How to write a successful conference proposal](engineering/writing-conference-proposals.md) - Proposals target reviewers, not audiences; the talk and the proposal are different skills
+- [Writing good commit messages](engineering/writing-good-commit-messages.md) - 50-char summary, 72-char body wrapping; explain why, not what
+- [Writing great documentation for open source](engineering/writing-great-documentation.md) - Start with empathy, linearize non-linear concepts, write a TOC of reader questions first
+- [Writing perfect pull requests](engineering/writing-perfect-pull-requests.md) - Provide context, be explicit about feedback needs, ask questions rather than issue commands
+- [The Zen of Go](engineering/zen-of-go.md) - Dave Cheney's Go principles: single-purpose packages, flat control flow, goroutine discipline
+- [The Zen of Python](engineering/zen-of-python.md) - PEP 20: beautiful over ugly, explicit over implicit, simple over complex, readability counts
 
 ## geopolitics
 
@@ -88,6 +146,10 @@
 
 - [Alkaline water health claims vs reality](health/alkaline-water-health-claims-vs-reality.md) - Stomach acid neutralizes alkaline water instantly; premium price buys marketing
 - [Vitamins and longevity stack](health/vitamins-and-longevity-stack.md) - Daily supplement stack for anti-aging: NMN, Omega-3, Magnesium, CoQ10, and 12 more with dosages
+
+## hiring
+
+- [Assessing software engineering candidates](hiring/assessing-software-engineering-candidates.md) - Bryan Cantrill's framework: written artifacts over pop quizzes; evaluate aptitude, motivation, values
 
 ## history
 
@@ -105,12 +167,14 @@
 ## leadership
 
 - [The consulting secret - ask your senior ICs what is broken](leadership/consulting-secret-ask-the-ics.md) - Schedule 90 min with your best IC, ask what is broken, read it back to leadership
+- [CTO vs VP Engineering](leadership/cto-vs-vp-engineering.md) - CTO is outward-facing (vision, customers, innovation); VP Eng is inward-facing (delivery, process, people)
 - [HR evaluation as unique value measurement](leadership/hr-evaluation-unique-value.md) - Market value = Differentiation x Influence; uniqueness beats commoditized skill checklists
 - [In pursuit of excellence](leadership/in-pursuit-of-excellence.md) - Excellence comes from unique positioning at domain intersections, not being best at common skills
 - [Lam an kieu Cu Ho](leadership/lam-an-kieu-cu-ho.md) - Five business lessons from Ho Chi Minh's methods, applied at FPT Software by Nguyen Thanh Nam
 - [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) - $100B fund betting AI runs the planet; gun-senryaku connects portfolio companies in a flock
 - [Steve Jobs negotiation and persuasion tactics](leadership/steve-jobs-negotiation-tactics.md) - Pitch with passion, be brutally honest, earn respect through work ethic, disarm with charm
 - [Tips on working with talents](leadership/tips-on-working-with-talents.md) - Four angles on using talent: genuinely need them, create worthy challenges, fair treatment, tolerate quirks
+- [Why soldiers and chefs make the best product managers](leadership/why-soldiers-and-chefs-make-best-pms.md) - Leading without authority under pressure with imperfect info; OODA loop for shipping decisions
 
 ## life
 
@@ -129,6 +193,7 @@
 - [Navagraha: nine celestial bodies in Hindu astrology](life/navagraha-nine-celestial-bodies.md) - Nine planets of Hindu cosmology; seven map to weekdays, Rahu/Ketu are shadow nodes governing karma
 - [Pavel Durov's secrets for success](life/pavel-durov-secrets-for-success.md) - Telegram founder's principles: master what you love, read constantly, write daily, stay healthy
 - [Simple burnout triage](life/simple-burnout-triage.md) - One question: can you sustain the last 2 months forever? Three response levels from crisis to thriving
+- [Tieu chuan cua ban la gi](life/tieu-chuan-cua-ban-la-gi.md) - High standards vs low standards in work; the difference shows in how you treat details and quality
 - [Time is the only real currency we have](life/time-is-the-only-real-currency.md) - Engineers waste time on language tribalism and premature scale; invest in automation and tool mastery instead
 - [To chat lanh dao kinh doanh](life/to-chat-lanh-dao-kinh-doanh.md) - How a Vietnamese tech corp screens management trainees; energy and persuasion are the two key tests
 - [Vipassana for hackers](life/vipassana-for-hackers.md) - 10-day silent meditation course explained for rational minds; systematic self-observation as mind-hacking
