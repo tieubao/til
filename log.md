@@ -6,6 +6,29 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-13] ingest | Batch ingest 10 notes from GitHub issues (label: golang)
+
+Ingested issues #470, #429, #398, #397, #377, #353, #320, #312, #303, #287 via WebFetch. All placed in `engineering/`.
+
+**New notes:**
+- `engineering/million-websockets-and-go.md` - Mail.Ru's optimization journey for 3M concurrent WebSocket connections
+- `engineering/go-testing-principles-dave-cheney.md` - Dave Cheney's GopherChina 2019 testing talk principles
+- `engineering/go-type-system-closer-look.md` - named vs unnamed types, underlying types, assignability rules
+- `engineering/go2-error-handling-draft-design.md` - check/handle proposal (not accepted), Go error handling evolution
+- `engineering/go-concurrency-through-illustrations.md` - visual intro to goroutines, channels, select
+- `engineering/building-worker-pool-in-go.md` - bounded concurrency pattern with job queue and dispatcher
+- `engineering/typed-nils-in-go.md` - interface nil gotcha when concrete nil is stored in interface
+- `engineering/four-days-of-go.md` - newcomer critique of Go's strictness vs flexibility trade-off
+- `engineering/go-vs-swift-comparison.md` - side-by-side language comparison (typing, concurrency, paradigm)
+- `engineering/comparing-elixir-and-go.md` - concurrency models, fault tolerance, when to choose which
+
+**Skipped:** #353 URL dead (geeks.uniplaces.com DNS gone). Note written from known article content.
+**Partial:** #429 PDF not parseable via WebFetch; note written from talk title and known Dave Cheney testing principles. #303 GitHub PDF page; note written from known comparison content.
+
+Updated cross-links on all 10 new notes to existing notes: understanding-nil-in-go, between-golang-and-elixir, channels-in-golang, error-handling-in-upspin, effective-error-handling-in-go, good-and-bad-elixir, swifty-code, elixir-concepts-for-go-developers, zen-of-go, go-proverbs, go-best-practices-six-years-in, debating-type-systems, swift-pattern-matching-case-let. Synthesis page: none (engineering/ Go cluster now has 15+ notes; sub-cluster synthesis recommended).
+
+---
+
 ## [2026-04-13] ingest | Batch ingest 5 notes from GitHub issues (label: better dev)
 
 Ingested issues #616, #615, #614, #556, #552 via WebFetch. All placed in `engineering/`.
