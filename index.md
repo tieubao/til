@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 168 note(s) across 20 folders. Last updated: 2026-04-13
+> Full catalog of 191 note(s) across 20 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -75,32 +75,51 @@
 - [The antipattern scripting language](engineering/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
 - [The junior programmer's guide to asking for help](engineering/asking-for-help-at-work.md) - Timebox your struggle, then ask; balance between pestering and spinning your wheels
 - [Benefits of continuous delivery](engineering/benefits-of-continuous-delivery.md) - Small deploys mean lower risk, fresher context, faster feedback, and features reaching users sooner
+- [Between Go and Elixir](engineering/between-golang-and-elixir.md) - Complementary model: Elixir for orchestration and fault tolerance, Go for compute-heavy tasks
 - [Bit Twiddling Hacks](engineering/bit-twiddling-hacks.md) - Stanford reference of bitwise tricks: branchless abs, popcount, De Bruijn log, Morton interleaving
+- [Building a worker pool in Go](engineering/building-worker-pool-in-go.md) - Job queue, workers, and dispatcher pattern for bounded concurrency in Go
+- [Channels in Golang](engineering/channels-in-golang.md) - Channel types, buffering, nil/closed behavior, and edge cases for correct concurrent Go
 - [Chin thoi quen xau can bo neu muon theo nganh CNTT](engineering/chin-thoi-quen-xau-nganh-cntt.md) - Nine bad habits to drop for IT careers: not reading docs, skimming, copying without thinking
 - [Choose Boring Technology](engineering/choose-boring-technology.md) - Finite innovation tokens; spend them on business problems, not infrastructure novelty
 - [Code for readability](engineering/code-for-readability.md) - Code as if the maintainer is a violent psychopath who knows where you live
 - [Code review basics](engineering/code-review-basics.md) - Fundamentals of starting code review as a team practice; overcoming resistance and building habit
+- [Comparing Elixir and Go](engineering/comparing-elixir-and-go.md) - Concurrency model comparison: preemptive actors with isolated heaps vs cooperative goroutines with channels
 - [Data drives code structure](engineering/data-drives-code-structure.md) - Software structure follows data structure: arrays become loops, graphs become traversals
 - [What to know before debating type systems](engineering/debating-type-systems.md) - Static vs dynamic, strong vs weak, nominal vs structural; most type debates use terms imprecisely
 - [Deleting code](engineering/deleting-code.md) - Delete unused code permanently; version control is your safety net, not commented-out blocks
 - [Discipline doesn't scale](engineering/discipline-doesnt-scale.md) - Calls for discipline fail because there is no motivation to adopt them; change the environment instead
 - [Effective code reviews without wasting time](engineering/effective-code-reviews.md) - One reviewer finds half of defects; beyond two reviewers, social loafing kicks in
+- [Effective error handling in Go](engineering/effective-error-handling-in-go.md) - Indented flow pattern, custom error types, and idiomatic error handling practices
 - [Egoless Engineering](engineering/egoless-engineering.md) - Ego and parochialism destroy orgs; domain experts who teach beat domain owners who gatekeep
+- [Elixir concepts for Go developers](engineering/elixir-concepts-for-go-developers.md) - Actor model vs CSP comparison: addressable processes with mailboxes vs anonymous goroutines with channels
 - [Error handling in Upspin](engineering/error-handling-in-upspin.md) - Rob Pike's structured error type with Path, User, Op, Kind fields for rich context across boundaries
 - [Five problem-solving skills for software engineers](engineering/five-problem-solving-skills.md) - Break problems down, stay calm, think before coding, ask for help, practice regularly
+- [Four days of Go](engineering/four-days-of-go.md) - C/Erlang developer's candid evaluation: fast compilation but syntax inconsistencies and missing features
+- [Go best practices for production environments](engineering/go-best-practices-for-production.md) - SoundCloud's Go in production: single GOPATH, flat repo structure, go fmt on save
+- [Go best practices, six years in](engineering/go-best-practices-six-years-in.md) - Peter Bourgon's core principle: make dependencies explicit across config, testing, and design
+- [Go concurrency through illustrations](engineering/go-concurrency-through-illustrations.md) - Visual introduction to goroutines, channels, and select using mining analogies
 - [Go context should go away](engineering/go-context-should-go-away.md) - Michal Strba argues Go's context.Context is a poor design that pollutes every function signature
+- [Go performance optimization guide](engineering/go-performance-optimization-guide.md) - Lock-free ring buffers 3x faster than channels; sync.Pool, escape analysis, and profiling tips
 - [Go proverbs](engineering/go-proverbs.md) - Rob Pike's Go proverbs: don't communicate by sharing memory, share memory by communicating
+- [Go, REST APIs, and pointers](engineering/go-rest-apis-and-pointers.md) - Pointer fields solve the zero-value vs intentionally-empty ambiguity in PATCH requests
+- [Go testing principles by Dave Cheney](engineering/go-testing-principles-dave-cheney.md) - Table-driven tests, test behavior not implementation, use t.Helper() and t.Run()
+- [Go - the little language that could](engineering/go-the-little-language-that-could.md) - Simplicity and pragmatism drove Go's rise past Swift, Scala, and Rust in language rankings
+- [A closer look at Go's type system](engineering/go-type-system-closer-look.md) - Named vs unnamed types, underlying types, and assignability rules that trip up Go developers
+- [Go vs Swift comparison](engineering/go-vs-swift-comparison.md) - Side-by-side comparison: static typing, concurrency models, memory management, error handling
+- [Go 2 error handling draft design](engineering/go2-error-handling-draft-design.md) - Proposed check/handle keywords to reduce if-err-nil boilerplate; ultimately not accepted
 - [Good and bad Elixir](engineering/good-and-bad-elixir.md) - Anti-patterns: piping side effects, over-using with, hiding higher-order functions
 - [Hidden dividends of microservices](engineering/hidden-dividends-of-microservices.md) - Beyond scaling: microservices force explicit interfaces, independent deploys, and team autonomy
 - [How to learn software design](engineering/how-to-learn-software-design.md) - Read other people's code, study patterns, then practice by rewriting existing programs
 - [How to read research papers](engineering/how-to-read-research-papers.md) - Three-pass method: skim structure, grasp arguments, then verify details
 - [How to succeed as a poor programmer](engineering/how-to-succeed-as-a-poor-programmer.md) - Compensate for weak coding with communication, testing, simplicity, and asking for help
 - [HTTP caching guide](engineering/http-caching-guide.md) - Cache-Control, ETag, Last-Modified headers explained; caching layers from browser to CDN
+- [Idiomatic Go](engineering/idiomatic-go.md) - Naming conventions, spelling, formatting, and style nuances from Go's standard library
 - [Intro to compilers](engineering/intro-to-compilers.md) - Compiler pipeline: lexing, parsing, AST, optimization, code generation in plain language
 - [Lessons from a senior developer](engineering/lessons-from-a-senior-developer.md) - Hard-won lessons: ego kills growth, code reviews teach more than coding, shipping beats perfection
 - [Lessons learned in software development](engineering/lessons-learned-in-software-dev.md) - Collected wisdom on development practices, debugging, team dynamics, and project management
 - [Leveraging poor memory in engineering](engineering/leveraging-poor-memory-in-engineering.md) - Poor memory forces good habits: write everything down, automate, document decisions
 - [Mastering programming](engineering/mastering-programming.md) - Kent Beck's practices: slicing problems, one thing at a time, concrete then abstract
+- [A million WebSockets and Go](engineering/million-websockets-and-go.md) - Mail.Ru optimized 3M concurrent WebSockets from 72 GB to manageable with epoll and buffer pooling
 - [Monorepo advantages](engineering/monorepo-advantages.md) - Single repo for all code: atomic commits, unified tooling, easier refactoring across boundaries
 - [No primitives - model domain concepts with types](engineering/no-primitives-domain-modeling.md) - Primitive Obsession code smell; wrap domain concepts in types to enforce invariants at construction
 - [Papers I like (part 1)](engineering/papers-i-like-part-1.md) - Fabian Giesen's 10 essential CS papers: Lamport, Herlihy, Cook, and more
@@ -119,12 +138,16 @@
 - [What makes code Swifty](engineering/swifty-code.md) - Three pillars: strong type safety, path to performance, clear expressive naming
 - [Technical debt as a city metaphor](engineering/technical-debt-as-a-city.md) - Codebase as city: rushed construction, changing requirements, and patch culture cause decay
 - [The 80x24 rule for code formatting](engineering/the-80x24-rule.md) - 80 chars wide, 24 lines tall per method; constraints nudge toward better design
+- [The generic dilemma in Go](engineering/the-generic-dilemma-in-go.md) - Three approaches to generics: leave out (C), compile-time specialization (C++), boxing (Java)
 - [The SRE model](engineering/the-sre-model.md) - Google's SRE: voluntary support that scales with product maturity, not a new ops title
 - [12 years, 12 lessons at ThoughtWorks](engineering/twelve-lessons-at-thoughtworks.md) - Patrick Kua on tools vs thinking, agile transformations, safety for learning, and coding architects
 - [Type wars - static vs dynamic typing history](engineering/type-wars.md) - Uncle Bob traces six decades of the type debate from Frege through Fortran to modern languages
+- [Typed nils in Go](engineering/typed-nils-in-go.md) - Interface holds (type, data); nil concrete value in interface is non-nil, breaking nil checks
 - [UML as a communication tool](engineering/uml-as-communication-tool.md) - UML diagrams for requirements and design communication; modeling language, not a process
+- [Understanding nil in Go](engineering/understanding-nil-in-go.md) - Nil is the zero value for 6 types; each behaves differently when nil, enabling idiomatic patterns
 - [What if GitHub is the devil - curl's pragmatic take](engineering/what-if-github-is-the-devil.md) - Daniel Stenberg on why curl stays on GitHub: network effect, contingency plans, pragmatism over purity
 - [Why big tech companies are so slow](engineering/why-big-tech-is-slow.md) - Feature interaction complexity grows combinatorially; slowness is math, not incompetence
+- [Why Go is a poorly designed language](engineering/why-go-is-poorly-designed.md) - Seven design flaws: nil interface paradox, variable shadowing, slice pain, compiler rigidity
 - [Why OO sucks - Joe Armstrong's critique](engineering/why-oo-sucks.md) - Erlang creator's four objections: binding data to functions, everything-is-object, scattered types, private state
 - [Wisdom of programming quotes](engineering/wisdom-of-programming-quotes.md) - Henrik Warne's curated quotes on complexity, debugging, teams, and the nature of programming
 - [Working as a software developer](engineering/working-as-a-software-developer.md) - Production software realities: programs are big, never done, and reading matters more than writing
