@@ -6,6 +6,45 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-13] ingest | Batch ingest 14 notes from GitHub issues (label: management)
+
+Triaged 19 issues (#598, #589, #545, #484, #443, #435, #433, #416, #402, #373, #358, #349, #346, #300, #243, #154, #76, #67, #51). Created 14 notes, skipped 5.
+
+**New notes (leadership/):**
+- `leadership/note-to-new-design-managers.md` (#598) - Hardik Pandya's guide for new design managers
+- `leadership/why-you-need-engineering-managers.md` (#589) - Charity Majors on why EMs are necessary
+- `leadership/a-decade-of-remote-work.md` (#433) - Viktor Petersson's remote work lessons
+- `leadership/rise-of-the-interim-cto.md` (#402) - When startups need a temporary CTO
+- `leadership/how-to-charge-clients.md` (#358) - Paul Boag's honest pricing method
+- `leadership/nguyen-tac-truc-giac.md` (#349) - Nguyên tắc trực giác trong lãnh đạo (Vietnamese)
+- `leadership/managing-people-smarter-than-you.md` (#76) - HBR advice on managing smarter reports
+
+**New notes (engineering/):**
+- `engineering/conways-law.md` (#416) - Org structure constrains system design
+- `engineering/devops-team-topologies.md` (#346) - Matthew Skelton's DevOps team framework
+- `engineering/agile-documentation-best-practices.md` (#243) - Scott Ambler's agile doc practices
+- `engineering/heisenberg-developers.md` (#154) - Measuring developers changes their behavior
+
+**New notes (startup/):**
+- `startup/tap-trung-vao-san-pham.md` (#443) - Focus on fixing product first (Vietnamese)
+- `startup/anatomy-of-software-frauds.md` (#484) - Three-layer architecture of tech fraud
+- `startup/tesla-gm-founders-vs-managers.md` (#373) - Founders vs professional managers pattern
+
+**New folder:** `startup/` created for startup-specific content.
+
+**Skipped:**
+- #545 (Developer Happiness Index) - cult.honeypot.io DNS dead
+- #435 (Doctrine Patterns) - wardleypedia.org TLS connection failed
+- #300 (Top 10 leadership competencies) - image only, no text content
+- #67 (H-1B Visa Program) - NYTimes paywall, WebFetch blocked
+- #51 (How to legally own another person) - Dropbox link dead
+
+**Cross-links added:** devops-team-topologies -> conways-law, rise-of-the-interim-cto -> cto-vs-vp-engineering, managing-people-smarter-than-you -> tips-on-working-with-talents.
+
+Synthesis page: none. Leadership cluster now has 15 notes; synthesis recommended.
+
+---
+
 ## [2026-04-13] ingest | Batch ingest 10 notes from GitHub issues (label: golang)
 
 Ingested issues #470, #429, #398, #397, #377, #353, #320, #312, #303, #287 via WebFetch. All placed in `engineering/`.
