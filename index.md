@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 242 note(s) across 22 folders. Last updated: 2026-04-13
+> Full catalog of 248 note(s) across 22 folders. Last updated: 2026-04-13
 
 ## ai
 
@@ -34,11 +34,17 @@
 
 ## crypto
 
+- [Asynchronous Byzantine Fault Tolerance](crypto/asynchronous-byzantine-fault-tolerance.md) - aBFT removes timing assumptions; strongest fault tolerance model for permissionless blockchains
 - [The Bitcoin investment paradox](crypto/bitcoin-investment-paradox.md) - Either Bitcoin becomes universal (you're auto-invested) or it fails (you lose nothing)
 - [Cobie on (3,3) and crypto incentives](crypto/cobie-on-33-and-crypto-incentives.md) - Time horizon determines VC behavior; mercenary capital erodes trust in bull markets
+- [Double spending in cryptocurrency](crypto/double-spending.md) - The fundamental digital currency problem: race attacks, 51% attacks, and confirmation defenses
+- [Ethereum token standards and security tokens](crypto/ethereum-token-standards-and-security-tokens.md) - From ERC-20 to security tokens; STOs bring SEC-compliant equity and dividends on-chain
 - [Ray Dalio on Bitcoin as digital gold](crypto/ray-dalio-on-bitcoin.md) - Dalio's 2021 assessment: Bitcoin is "one hell of an invention" but risks remain
+- [Runtime verification for blockchain security](crypto/runtime-verification-for-blockchain-security.md) - K Framework proves smart contract correctness mathematically; stronger than manual audits
 - [Stellar vs Nano comparison](crypto/stellar-vs-nano-comparison.md) - Both fast and cheap; Nano is currency-only, Stellar is a platform with tokens and DEX
+- [Stripe on Bitcoin as the IP layer of payments](crypto/stripe-on-bitcoin.md) - Stripe backed then dropped Bitcoin; vision of global payment protocol hit fee and speed walls
 - [Token emission models](crypto/token-emission-models.md) - Six models: halving, exponential decay, linear decay, fixed supply, constant, bonding curve
+- [Undercollateralized loans in DeFi](crypto/undercollateralized-loans-in-defi.md) - Eight approaches from flash loans to social trust pools; each trades off risk differently
 
 ## cs
 

@@ -2,7 +2,7 @@
 
 A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) methodology, maintained by LLMs using the [LLM Wiki](https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285) pattern.
 
-242 interlinked notes across 22 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
+248 interlinked notes across 22 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
 ## Recent additions
 
@@ -47,7 +47,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | [diaspora/](diaspora/) | 6 | Vietnamese and Asian diaspora analysis |
 | [history/](history/) | 6 | History, civilizations, geopolitical patterns |
 | [claude-code/](claude-code/) | 5 | Claude Code hooks, skills, workflows |
-| [crypto/](crypto/) | 5 | Cryptocurrency, blockchain, tokenomics |
+| [crypto/](crypto/) | 11 | Cryptocurrency, blockchain, DeFi, tokenomics |
 | [wealth/](wealth/) | 5 | Trust-building, business relationships |
 | [geopolitics/](geopolitics/) | 3 | Oil crises, government structures |
 | [startup/](startup/) | 3 | Startup strategy, product focus |
@@ -61,7 +61,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 
 ## Documentation
 
-- [Full note index](index.md) - catalog of all 242 notes with one-line summaries
+- [Full note index](index.md) - catalog of all 248 notes with one-line summaries
 - [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
 - [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
 - [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers
