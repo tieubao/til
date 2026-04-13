@@ -6,6 +6,32 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-13] ingest | Batch ingest 8 notes from GitHub issues (label: history)
+
+Triaged 22 issues (#591, #581, #578, #577, #564, #550, #477, #453, #436, #418, #396, #380, #347, #213, #197, #170, #169, #168, #166, #156, #141, #47). Created 8 notes, skipped 14.
+
+**New notes (ai/):**
+- `ai/grand-unified-theory-of-ai-hype-cycle.md` (#591) - AI hype follows a repeating 13-step cycle
+
+**New notes (cs/):**
+- `cs/history-of-regular-expressions.md` (#564) - From neuroscience to UNIX tooling
+- `cs/the-next-century-of-computing.md` (#578) - Post-Moore's Law predictions
+- `cs/whats-next-in-computing.md` (#168) - Chris Dixon's computing eras framework
+- `cs/brief-totally-accurate-history-of-programming-languages.md` (#347) - Satirical PL timeline
+- `cs/history-of-software-resources.md` (#436) - Curated link collection
+
+**New notes (engineering/):**
+- `engineering/history-of-hadoop.md` (#166) - From Lucene to distributed computing
+
+**New notes (history/):**
+- `history/israel-palestine-va-jerusalem.md` (#550) - 3000 years of Middle East conflict (Vietnamese)
+
+**Skipped:** #581 (paywall), #577 (PDF only), #477 (SVG link), #453 (old academic URL+PDF), #418 (video link), #396 (Reddit, unfetchable), #380 (YouTube), #213 (dead blog), #197 (dead tumblr), #170 (dead Facebook), #169 (old Vietnamese site), #156 (YouTube), #141 (PDF only), #47 (bare URL)
+
+Updated cross-links: `history-of-regular-expressions` <-> `grand-unified-theory-of-ai-hype-cycle`, `the-next-century-of-computing` <-> `whats-next-in-computing`. Synthesis page: none (cs/ has 14 notes but spans multiple domains).
+
+---
+
 ## [2026-04-13] ingest | Batch ingest 14 notes from GitHub issues (label: management)
 
 Triaged 19 issues (#598, #589, #545, #484, #443, #435, #433, #416, #402, #373, #358, #349, #346, #300, #243, #154, #76, #67, #51). Created 14 notes, skipped 5.
