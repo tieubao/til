@@ -14,7 +14,8 @@ A personal knowledge base following Zettelkasten methodology. Markdown notes org
 - `_docs/` contains project documentation (requirements, architecture, guide, changelog)
 - `assets/` holds images and attachments
 - Notes are markdown files with YAML frontmatter
-- `README.md` is an auto-generated index of all notes, grouped by folder. Do not manually edit it.
+- `index.md` is the full catalog of all notes with one-line summaries, grouped by folder. The LLM reads this to navigate the wiki.
+- `README.md` is the repo landing page with methodology description, topic overview, and recent additions.
 
 ## Session start check
 
@@ -89,7 +90,7 @@ This is the core of the LLM Wiki pattern. Filing a note is not enough; the wiki 
 
 3. **Update synthesis pages.** If a synthesis page exists for this topic cluster, update it to incorporate the new note. Add the new note to its links, and revise the narrative if the new information changes the synthesis. If no synthesis page exists but the cluster now has 4+ notes, suggest creating one.
 
-4. **Update `README.md` index.** Add or remove the note entry with a one-line summary. Keep the note count in the header accurate. On deletions or merges, remove stale entries and update the count.
+4. **Update `index.md`.** Add or remove the note entry with a one-line summary. Keep the note count in the header accurate. On deletions or merges, remove stale entries and update the count. Also update `README.md` recent additions if the note is noteworthy.
 
 5. **Append to `log.md`.** Record what was ingested and what pages were touched:
    ```
@@ -102,7 +103,7 @@ This is the core of the LLM Wiki pattern. Filing a note is not enough; the wiki 
 When the user asks a question that requires synthesizing across multiple notes, Claude will:
 
 1. **Read `log.md`** first to understand recent activity and context.
-2. **Read `README.md`** index to find relevant pages by summary, then drill into them.
+2. **Read `index.md`** to find relevant pages by summary, then drill into them.
 3. **Synthesize an answer** from the compiled wiki, citing specific notes with `[[wikilinks]]`.
 4. **Offer to file the answer back.** If the synthesis is substantial (not a quick lookup), ask: "Want me to file this as a wiki page?" Good answers become new notes. This is how explorations compound.
 5. **If filed**, run the compilation step: check for overlaps, flag contradictions, update synthesis pages, append to `log.md` with operation type `query`.
