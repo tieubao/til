@@ -4,6 +4,19 @@ A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/
 
 91 interlinked notes across 18 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
+## Recent additions
+
+- [LLM Wiki pattern: compilation over retrieval](pkm/llm-wiki-pattern-compilation-over-retrieval.md) — Karpathy's LLM Wiki pattern analyzed against our implementation
+- [**Vietnamese diaspora synthesis**](diaspora/vietnamese-diaspora-synthesis.md) — First synthesis page: 7 notes woven into a structural argument
+- [The Munger Operating System for life](life/munger-operating-system.md) — Charlie Munger's 16 life principles from his USC commencement speech
+- [Always be quitting](life/always-be-quitting.md) — 10 practices to make yourself replaceable and unlock career growth
+- [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) — $100B fund betting AI runs the planet
+- [Simple burnout triage](life/simple-burnout-triage.md) — One question: can you sustain the last 2 months forever?
+- [How and why I invest in startups](investing/how-and-why-i-invest-in-startups.md) — Fund the best people on the hardest problems
+- [Vipassana for hackers](life/vipassana-for-hackers.md) — 10-day silent meditation explained for rational minds
+- [Vitamins and longevity stack](health/vitamins-and-longevity-stack.md) — Daily supplement stack with dosages
+- [What it feels like to become poor](life/what-it-feels-like-to-become-poor.md) — Lost $3M in 2008; humility from the car wash
+
 ## How it works
 
 ```
@@ -24,8 +37,8 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | Folder | Notes | Domain |
 |--------|-------|--------|
 | [life/](life/) | 24 | Life philosophy, habits, mindset, career wisdom |
-| [ai-tooling/](ai-tooling/) | 8 | AI developer tools and evaluations |
 | [dwarves-kit/](dwarves-kit/) | 9 | Dwarves Kit architecture and design |
+| [ai-tooling/](ai-tooling/) | 8 | AI developer tools and evaluations |
 | [ai/](ai/) | 7 | AI concepts, memory systems, agent patterns |
 | [diaspora/](diaspora/) | 6 | Vietnamese and Asian diaspora analysis |
 | [leadership/](leadership/) | 6 | Management, negotiation, business leadership |
@@ -41,19 +54,6 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | [cs/](cs/) | 1 | Computer science fundamentals |
 | [patterns/](patterns/) | 1 | Software patterns and anti-patterns |
 | [youtube/](youtube/) | 1 | YouTube tooling |
-
-## Recent additions
-
-- [LLM Wiki pattern: compilation over retrieval](pkm/llm-wiki-pattern-compilation-over-retrieval.md) — Karpathy's LLM Wiki pattern analyzed against our implementation
-- [**Vietnamese diaspora synthesis**](diaspora/vietnamese-diaspora-synthesis.md) — First synthesis page: 7 notes woven into a structural argument
-- [The Munger Operating System for life](life/munger-operating-system.md) — Charlie Munger's 16 life principles from his USC commencement speech
-- [Always be quitting](life/always-be-quitting.md) — 10 practices to make yourself replaceable and unlock career growth
-- [Masayoshi Son and the SoftBank Vision Fund](leadership/masayoshi-son-softbank-vision.md) — $100B fund betting AI runs the planet
-- [Simple burnout triage](life/simple-burnout-triage.md) — One question: can you sustain the last 2 months forever?
-- [How and why I invest in startups](investing/how-and-why-i-invest-in-startups.md) — Fund the best people on the hardest problems
-- [Vipassana for hackers](life/vipassana-for-hackers.md) — 10-day silent meditation explained for rational minds
-- [Vitamins and longevity stack](health/vitamins-and-longevity-stack.md) — Daily supplement stack with dosages
-- [What it feels like to become poor](life/what-it-feels-like-to-become-poor.md) — Lost $3M in 2008; humility from the car wash
 
 ## Documentation
 
