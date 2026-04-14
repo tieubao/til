@@ -1,11 +1,13 @@
 ---
 title: "Transformer internals for software engineers — FFN as graph database (LARQL)"
 date: 2026-04-14
-captured: 2026-04-14T05:03:34.910Z
+captured: 2026-04-14T06:13:41.708Z
 tags: ["ai", "llm", "transformer", "architecture"]
 source: "Claude Code session - larql repo walkthrough"
 ---
 A software-engineer's mental model of how transformers work, why attention was invented, and how the LARQL project reframes the FFN as a queryable graph database. Written for someone comfortable with data structures, databases, graphs, mmap, and BLAS — but new to LLMs.
+
+![Transformer pipeline with LARQL FFN-as-graph reframe](https://assets.han-ws.workers.dev/i/2026/04/larql-transformer-ffn-graph.svg)
 
 ## What an LLM actually computes
 
