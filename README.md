@@ -2,10 +2,11 @@
 
 A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) methodology, maintained by LLMs using the [LLM Wiki](https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285) pattern.
 
-258 interlinked notes across 24 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
+259 interlinked notes across 24 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
 ## Recent additions
 
+- `2026-04-19` [How LLM agents do web research: the ReAct loop](ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is under-weighting Reddit/HN/Twitter
 - `2026-04-18` [Hermes Agent comprehensive briefing April 2026](ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
 - `2026-04-18` [Hermes vs OpenClaw competitive scene](ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins metrics, Hermes wins narrative; equilibrium is to run both and bridge via ACP
 - `2026-04-18` [Why developers migrate to Hermes, real vs hype](ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
@@ -15,7 +16,6 @@ A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/
 - `2026-04-17` [Zed global agent rules live in the Rules Library](zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md) - No global file escape hatch; user-scope rules live in an LMDB database
 - `2026-04-14` [Transformer internals: FFN as graph database (LARQL)](ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md) - FFN as sparse KNN lookup over ~348K "edges"; factual knowledge editable without retraining
 - `2026-04-14` [How the bond market controls housing, stocks, and jobs](finance/how-the-bond-market-controls-housing-stocks-and-jobs.md) - Yield seesaw sets mortgage rates, ERP, and corporate refinancing costs; one chain from the 10-year
-- `2026-04-14` [Financial knowledge as compound information advantage](finance/financial-knowledge-as-compound-information-advantage.md) - Information compounds like capital; the gap between Tier 1 and Tier 2 is entirely learnable
 
 ## How it works
 
@@ -43,7 +43,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | [dwarves-kit/](dwarves-kit/) | 9 | Dwarves Kit architecture and design |
 | [hiring/](hiring/) | 9 | Candidate assessment and hiring |
 | [ai-tooling/](ai-tooling/) | 13 | AI developer tools and evaluations |
-| [ai/](ai/) | 10 | AI concepts, memory systems, agent patterns |
+| [ai/](ai/) | 11 | AI concepts, memory systems, agent patterns |
 | [diaspora/](diaspora/) | 6 | Vietnamese and Asian diaspora analysis |
 | [history/](history/) | 6 | History, civilizations, geopolitical patterns |
 | [claude-code/](claude-code/) | 5 | Claude Code hooks, skills, workflows |
@@ -63,7 +63,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 
 ## Documentation
 
-- [Full note index](index.md) - catalog of all 258 notes with one-line summaries
+- [Full note index](index.md) - catalog of all 259 notes with one-line summaries
 - [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
 - [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
 - [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers

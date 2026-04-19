@@ -6,6 +6,24 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] ingest | How LLM agents do web research: the ReAct loop
+
+One note pushed via Claude.ai between the previous compilation and this session.
+
+**New note:**
+- `ai/how-llm-agents-do-web-research-the-react-loop.md` - agent research as ReAct loop; biggest failure mode is under-weighting Reddit/HN/Twitter
+
+**Compilation work:**
+- Stripped 2 em dashes
+- Added `## Related` with 5 wikilinks (multi-agent scan, claude dispatch, autoresearch, prompt improvement, memory landscape)
+- Added back-reference from `ai-tooling/autoresearch-the-karpathy-loop-pattern.md` distinguishing ReAct (soft) vs Karpathy (hard) loops
+- Updated `index.md` (ai/ 10 -> 11, header 258 -> 259)
+- Updated `README.md` Recent additions and Topics table
+
+**Contradictions flagged:** none. Complements existing multi-agent notes rather than contradicting them.
+
+---
+
 ## [2026-04-19] ingest | Compile 10 notes pushed via Claude.ai (Hermes/OpenClaw cluster + LLM infra + finance + zed)
 
 Notes were pushed direct to master between 2026-04-14 and 2026-04-18 without running the compilation step. Compiled them today.

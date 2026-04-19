@@ -57,8 +57,8 @@ Default ranking that most agents lean toward:
 2. Established publications (Reuters, major tech press)
 3. High-reputation aggregators (Hacker News threads, Stack Overflow)
 4. Wikipedia (often as a starting map, not a final source)
-5. Forums (Reddit, Discord archives) — used selectively
-6. Twitter/X — used rarely unless the query is explicitly about a Twitter discussion
+5. Forums (Reddit, Discord archives), used selectively
+6. Twitter/X, used rarely unless the query is explicitly about a Twitter discussion
 
 The reasoning: official sources are factually dense, low-noise, and paraphrasable without copyright issues. Reddit is high-signal for opinions and real-world use but requires filtering, which is hard to do programmatically.
 
@@ -104,3 +104,11 @@ The jump from "chat with search" to "Research mode" is architectural, not just a
 ## Key takeaway
 
 Agent web research is a ReAct loop, not an algorithm. The stopping condition is a soft mix of budget, coverage, and diminishing returns; the agent's confidence signal is unreliable. The biggest systematic failure mode is over-weighting official sources and under-weighting Reddit/HN/Twitter, which is where practitioner truth tends to live. Prompts that force the agent toward community sources close the biggest quality gap.
+
+## Related
+
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - operator discipline for the multi-agent Research mode described here
+- [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - orchestrating long-running research runs from mobile
+- [[autoresearch-the-karpathy-loop-pattern]] - distinct sibling: automated experiment loops, not web research, but shares the "frozen eval gates the loop" idea
+- [[prompt-improvement-as-a-learning-technique]] - prompt sharpening is how you force the agent toward Reddit/HN that it would otherwise skip
+- [[llm-agent-memory-systems-landscape-2026]] - where research outputs go after the loop ends

@@ -43,3 +43,4 @@ For most single-artifact optimizations, doing 3-5 manual iterations with Claude 
 - [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - positions AutoResearch as a "separate axis" optimization pattern across the full stack
 - [[tool-evaluation-5-question-rubric]] - the kill question ("what failure would this have prevented?") is the same kind of measurable scoring that makes the Karpathy loop work
 - [[dwarves-kit-v1-2-verification-pipeline-architecture]] - the verification pipeline could use this ratchet pattern for automated skill file optimization
+- [[how-llm-agents-do-web-research-the-react-loop]] - adjacent but distinct: web research is a soft ReAct loop with no frozen eval, AutoResearch is a hard loop with one

@@ -1,12 +1,13 @@
 # Index
 
-> Full catalog of 258 note(s) across 24 folders. Last updated: 2026-04-19
+> Full catalog of 259 note(s) across 24 folders. Last updated: 2026-04-19
 
 ## ai
 
 - [Claude dispatch workflows and async AI orchestration from mobile](ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md) - Orchestrate 60+ parallel AI sessions from your phone; knowledge layer compounds across surfaces
 - [Complete guide to Claude Code features workflows and ecosystem](ai/complete-guide-to-claude-code-features-workflows-and-ecosystem.md) - Practitioner's guide: agentic loop, CLAUDE.md under 200 lines, Sonnet for 90% of tasks
 - [Grand unified theory of the AI hype cycle](ai/grand-unified-theory-of-ai-hype-cycle.md) - Seven decades of AI hype follow the same arc: novel mechanism gets labeled AI, boom, bust, rename
+- [How LLM agents do web research: the ReAct loop](ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is over-weighting official sources
 - [LLM agent memory systems landscape 2026](ai/llm-agent-memory-systems-landscape-2026.md) - Memory systems all solve a 5-stage pipeline; differentiation is in structure around LLM decisions
 - [LLM memory benchmarks and evaluation crisis](ai/llm-memory-benchmarks-and-evaluation-crisis.md) - LoCoMo has ~99 wrong answers; no trustworthy single benchmark exists for memory systems
 - [LLM memory systems three competitive battlegrounds](ai/llm-memory-systems-three-competitive-battlegrounds.md) - Write/update loop absorbs 80% of innovation; all systems delegate conflict resolution to LLMs
