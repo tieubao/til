@@ -131,3 +131,4 @@ To experiment hands-on: small OpenClaw instance with three SOUL files for a conc
 - [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - the "watching agents chat" failure mode named here, diagnosed elsewhere
 - [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - alternative orchestration pattern without the persona roleplay
 - [[claude-code-ecosystem-repo-evaluations-for-kit-building]] - related question: what SOUL-like patterns are worth stealing into dwarves-kit
+- [[deepagents-vs-openclaw-vs-hermes-category-positioning]] - category note clarifying OpenClaw is a runtime platform, distinct from library-layer agent harnesses like deepagents

@@ -26,6 +26,7 @@
 - [ClaudeKit evaluation and unique features](ai-tooling/claudekit-evaluation-and-unique-features.md) - 50+ commands, interview-style spec gate, 4 adversarial reviewers; scored BOOKMARK (10/15)
 - [Code graph context tools for token reduction](ai-tooling/code-graph-context-tools-for-token-reduction.md) - AST-based code graphs cut agent token usage 40-95% by replacing grep with structured queries
 - [Context Hub vs Context7 vs the context layer ecosystem](ai-tooling/context-hub-vs-context7-vs-the-context-layer-ecosystem.md) - Context Hub = curated API docs with feedback loop; Context7 = 9k+ library docs via MCP
+- [deepagents vs OpenClaw vs Hermes: category positioning](ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md) - Library vs runtime distinction; deepagents stacks under runtimes, doesn't compete with them
 - [Hermes Agent comprehensive briefing April 2026](ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
 - [Hermes vs OpenClaw competitive scene April 2026](ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins on metrics, Hermes wins the narrative; realistic equilibrium is to run both
 - [OpenClaw multi-persona dev team setup playbook](ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md) - End-to-end JSON5 config + SOUL/AGENTS/TOOLS files for a Telegram-led PM/Engineer/QA team

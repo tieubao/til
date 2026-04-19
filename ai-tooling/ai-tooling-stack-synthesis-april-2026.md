@@ -74,21 +74,24 @@ The split is structurally important: a stack model that lumps these together hid
 
 Verdict pattern: codebase-memory-mcp = ADOPT for any project with 100+ files. Context Hub + Context7 = complementary, both worth running together. Bito = SKIP (commercial, replaces Claude Code rather than augmenting it).
 
-## Cluster 4: agent stack alternatives (L3 / L5)
+## Cluster 4: agent stack alternatives (split across L3 library and L3-L5 runtime)
 
-The most-discussed thread in the folder, captured across 5 notes:
+The most-discussed thread in the folder, captured across 6 notes. **Critical refinement added 2026-04-19**: these tools are not all peers. Library-layer tools and runtime-platform tools occupy different stack layers and compete on different axes. Treating them as alternatives leads to bad adoption decisions.
 
-| Note | Angle |
-|---|---|
-| [[hermes-agent-comprehensive-briefing-april-2026]] | Hermes deep dive: architecture, growth, source quality warning |
-| [[hermes-vs-openclaw-competitive-scene-april-2026]] | head-to-head metrics; verdict: OpenClaw is winning, Hermes is winning the narrative |
-| [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] | 5 migration drivers ranked: push (CVEs + subscription cliff) > auto-skill-generation > defaults > tagline |
-| [[openclaw-virtual-company-pattern]] | the CEO/CTO/PM idiom on top of OpenClaw, plus 6 failure modes |
-| [[openclaw-multi-persona-dev-team-setup-playbook]] | hands-on JSON5 + SOUL/AGENTS/TOOLS playbook |
+| Note | Layer | Angle |
+|---|---|---|
+| [[deepagents-vs-openclaw-vs-hermes-category-positioning]] | L3 vs L3-L5 | category-positioning meta-note: deepagents is a library, OpenClaw/Hermes are runtimes; not peers |
+| [[hermes-agent-comprehensive-briefing-april-2026]] | L3-L5 runtime | Hermes deep dive: architecture, growth, source quality warning |
+| [[hermes-vs-openclaw-competitive-scene-april-2026]] | L3-L5 runtime | head-to-head metrics; verdict: OpenClaw is winning, Hermes is winning the narrative |
+| [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] | L3-L5 runtime | 5 migration drivers ranked: push (CVEs + subscription cliff) > auto-skill-generation > defaults > tagline |
+| [[openclaw-virtual-company-pattern]] | L3-L5 runtime | the CEO/CTO/PM idiom on top of OpenClaw, plus 6 failure modes |
+| [[openclaw-multi-persona-dev-team-setup-playbook]] | L3-L5 runtime | hands-on JSON5 + SOUL/AGENTS/TOOLS playbook |
+
+The library/runtime split matters because the rubric's Q1 (which layer?) is the question developers most often skip. The deepagents post-mortem shows what happens when you skip it: people compare a Python library you `pip install` against a daemon you `systemctl start` and treat them as alternatives. They are not. They stack: a Python service could embed deepagents as its agent logic *inside* an OpenClaw or Hermes runtime.
 
 **The key contradiction to flag**: the briefing and competitive-scene notes both warn explicitly about coordinated SEO/affiliate promotion of Hermes. Six press-release farms run the identical "Hermes Gains Momentum" text. This is the only place in the repo where a tool's own marketing momentum is treated as adversarial information. Source-credibility filtering belongs in the rubric (Q3) but in this case it had to be applied at every step of capture.
 
-Strategic synthesis: Hermes bet on "one smart agent with a learning loop." OpenClaw bet on "many role-specialized agents talking to each other." Both bets will likely survive. The smart developer pattern emerging on Reddit (run OpenClaw for orchestration, Hermes for focused execution loops, bridge via ACP) is the "don't pick a religion" answer and is probably right.
+Strategic synthesis: Hermes bet on "one smart agent with a learning loop." OpenClaw bet on "many role-specialized agents talking to each other." deepagents bet on "give Python services a decent agent harness without committing to a runtime." All three bets will likely survive because they aren't competing for the same slot. The smart developer pattern: run OpenClaw or Hermes for the always-on messaging surface, embed deepagents (or steal its pattern) for backend autonomous loops, and use Claude Code for human-in-the-loop SDLC. Three different layers, three different tools.
 
 ## Cross-cutting: AutoResearch ([[autoresearch-the-karpathy-loop-pattern]])
 
@@ -103,6 +106,7 @@ The pattern's significance: it provides the missing piece for actually scoring t
 3. **In April 2026, "growth" and "readiness" are inversely correlated** in agent stacks. Treat star counts and momentum stories as adversarial signals; trust battle-test history and CVE counts as credibility signals.
 4. **The "virtual company" multi-agent pattern is intellectually attractive and operationally wrong** for most solo setups. Steal the SOUL.md convention, skip the org-chart roleplay.
 5. **AutoResearch is the missing scoring layer** that turns the rubric's kill question from a heuristic into a measurable optimization loop.
+6. **Library-layer and runtime-layer agent tools are not peers and should not be compared head-to-head.** The deepagents/OpenClaw/Hermes post-mortem is the canonical example: developers asked "which one should I use?" when the correct answer was "all three, at different layers, for different problems." Q1 of the rubric (which layer?) is the most-skipped question in practice.
 
 ## Open questions
 
@@ -120,6 +124,7 @@ The pattern's significance: it provides the missing piece for actually scoring t
 - [[claudekit-deep-dive-session-recovery-red-team-and-gaps]] - L4 gap analysis
 - [[code-graph-context-tools-for-token-reduction]] - L3.5a (codebase intelligence)
 - [[context-hub-vs-context7-vs-the-context-layer-ecosystem]] - L3.5b (external docs)
+- [[deepagents-vs-openclaw-vs-hermes-category-positioning]] - the library/runtime category-positioning meta-note that refines cluster 4
 - [[hermes-agent-comprehensive-briefing-april-2026]] - L3-5 alternative agent stack
 - [[hermes-vs-openclaw-competitive-scene-april-2026]] - L3-5 competitive head-to-head
 - [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] - migration analysis

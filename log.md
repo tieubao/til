@@ -27,6 +27,21 @@ Second finance-tooling tool evaluation, paired with a private memo in the tradin
 
 ---
 
+## [2026-04-19] ingest | deepagents vs OpenClaw vs Hermes: category positioning (compile + synthesis refinement)
+
+The note `ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md` was added externally (commit 30b98bf) during the same session that produced the ai-tooling synthesis. Compile pass to weave it into the cluster.
+
+**Compilation work:**
+- Added `## Related` section to the deepagents note (it had none): cross-links to both Hermes notes, OpenClaw virtual-company pattern, the synthesis, the 8-layer stack, and the rubric
+- Added backlinks from `hermes-agent-comprehensive-briefing-april-2026.md`, `hermes-vs-openclaw-competitive-scene-april-2026.md`, and `openclaw-virtual-company-pattern.md`
+- Refined `ai-tooling-stack-synthesis-april-2026.md` cluster 4: reframed from "5 notes about runtime alternatives" to "6 notes split across L3 library and L3-L5 runtime, not all peers"; added a 6th key insight about category positioning being the most-skipped rubric question
+- Updated `index.md` with the new note entry under ai-tooling
+- Updated `README.md` Recent additions
+
+**Contradiction worth flagging:** the deepagents note frames OpenClaw and Hermes as runtime peers in the same category, while `hermes-vs-openclaw-competitive-scene-april-2026.md` treats them as direct competitors. Both are correct at different abstraction levels: at the runtime layer they compete, but at the broader stack they share a layer that is distinct from library-level tools like deepagents. The synthesis now spells out both framings.
+
+---
+
 ## [2026-04-19] refactor | split engineering/ into 6 sub-folders
 
 `engineering/` had grown to 107 notes flat at the root. Split into 6 domain sub-folders to make the cluster navigable and to make orphans visible by domain so future repair passes can target one cluster at a time.

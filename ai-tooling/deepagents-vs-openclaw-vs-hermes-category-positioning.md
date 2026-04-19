@@ -59,3 +59,12 @@ Each of the five situations below implies a different tool. If a project doesn't
 Category position determines the decision. Ask which layer you need, not which framework is hot. Library-layer problems (backend agent inside a service) get `deepagents` or raw LangGraph. Runtime-layer problems (always-on messaging agent) get OpenClaw or Hermes. SDLC-layer problems (human-in-the-loop coding) get Claude Code. If three "competing" tools solve three different problems, they aren't actually competing.
 
 The most valuable move from `deepagents` isn't adoption, it's studying the source. The "planning tool + virtual filesystem + subagents with isolated context + trust-the-LLM" pattern is the open-source lecture notes for why Claude Code works. Steal the pattern; don't necessarily adopt the library.
+
+## Related
+
+- [[hermes-agent-comprehensive-briefing-april-2026]] - the runtime-platform alternative this note differentiates against
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - the head-to-head this note expands by adding the library/runtime axis
+- [[openclaw-virtual-company-pattern]] - OpenClaw's persona/SOUL idiom that deepagents does not implement (different category)
+- [[ai-tooling-stack-synthesis-april-2026]] - the broader synthesis where this category-positioning insight fits as a refinement of cluster 4
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - deepagents lives at L3 (library) vs OpenClaw/Hermes at L3-L5 (runtime + orchestration)
+- [[tool-evaluation-5-question-rubric]] - Q1 ("which layer?") is exactly the question this note answers for deepagents

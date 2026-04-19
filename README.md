@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-19` [deepagents vs OpenClaw vs Hermes: category positioning](ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md) - Library vs runtime distinction; the three are not peers and stack rather than compete
 - `2026-04-19` [AI tooling stack synthesis April 2026](ai-tooling/ai-tooling-stack-synthesis-april-2026.md) - Synthesis: 3 layers wired through one rubric; growth and adoption-readiness are inversely correlated
 - `2026-04-19` [LLM agent memory synthesis April 2026](ai/llm-agent-memory-synthesis-april-2026.md) - Synthesis: 5-stage pipeline + 3 battlegrounds + harness hooks form one stack with a broken evaluation floor
 - `2026-04-19` [OpenBB evaluation](finance-tooling/openbb-evaluation.md) - Python-first financial SDK; 11/15 BOOKMARK; crypto value thin, TradFi inflection point

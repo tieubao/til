@@ -70,3 +70,4 @@ The research flywheel is the real long-term bet. Nous Research is an open-weight
 - [[openclaw-virtual-company-pattern]] - the incumbent's idiom Hermes deliberately omits
 - [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - where Hermes sits in the broader dev-tool stack
 - [[llm-agent-memory-systems-landscape-2026]] - three-layer memory context for Hermes's architecture
+- [[deepagents-vs-openclaw-vs-hermes-category-positioning]] - category-positioning note clarifying that Hermes is a runtime platform, not a library like deepagents

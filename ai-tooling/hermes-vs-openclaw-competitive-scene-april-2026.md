@@ -73,3 +73,4 @@ A non-trivial portion of the Reddit community flags coordinated promotion of Her
 - [[openclaw-virtual-company-pattern]] - the OpenClaw idiom with no Hermes equivalent
 - [[openclaw-multi-persona-dev-team-setup-playbook]] - hands-on OpenClaw setup for the patterns discussed here
 - [[tool-evaluation-5-question-rubric]] - framework for making the "which to adopt" call yourself
+- [[deepagents-vs-openclaw-vs-hermes-category-positioning]] - refines this head-to-head by adding the library-vs-runtime axis (deepagents is a library, OpenClaw and Hermes are runtimes; not peers)
