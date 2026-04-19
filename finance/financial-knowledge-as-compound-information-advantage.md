@@ -154,3 +154,4 @@ Each tier builds on the one below. The gap between tiers 1 and 2 is where most p
 - [[how-the-bond-market-controls-housing-stocks-and-jobs]] - the mechanics behind discount rates, duration, credit spreads referenced here
 - [[compound-interest-levels-and-lifestyle-progression]] - compounding mechanics applied to lifestyle tiers rather than careers
 - [[the-three-gates-what-elders-screen-for]] - social counterpart: who gets access to the rooms where information compounds
+- [[cobie-on-33-and-crypto-incentives]] - "show me the incentive" applied to crypto markets is the same information-edge thesis in a different domain

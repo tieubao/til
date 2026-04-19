@@ -40,3 +40,7 @@ Byzantine Fault Tolerance (BFT) is the foundational consensus problem for decent
 The old internet achieved security through permissioned access. Decentralized systems cannot rely on this approach. aBFT provides the strongest theoretical foundation for consensus in adversarial, permissionless environments because it makes no assumptions about message delivery timing.
 
 ## Related
+
+- [[double-spending]] - the core attack vector that BFT consensus prevents
+- [[stellar-vs-nano-comparison]] - Stellar's Federated Byzantine Agreement is a related BFT variant; Nano's block-lattice takes a different route to the same problem
+- [[runtime-verification-for-blockchain-security]] - formal verification applied to consensus implementations themselves

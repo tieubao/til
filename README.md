@@ -6,6 +6,9 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-19` [AI tooling stack synthesis April 2026](ai-tooling/ai-tooling-stack-synthesis-april-2026.md) - Synthesis: 3 layers wired through one rubric; growth and adoption-readiness are inversely correlated
+- `2026-04-19` [LLM agent memory synthesis April 2026](ai/llm-agent-memory-synthesis-april-2026.md) - Synthesis: 5-stage pipeline + 3 battlegrounds + harness hooks form one stack with a broken evaluation floor
+- `2026-04-19` [OpenBB evaluation](finance-tooling/openbb-evaluation.md) - Python-first financial SDK; 11/15 BOOKMARK; crypto value thin, TradFi inflection point
 - `2026-04-19` [OSS trading stack survey, April 2026](finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis; Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first agentic pilot
 - `2026-04-19` [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; §13 blocks integration into any network-facing trading stack
 - `2026-04-19` [How LLM agents do web research: the ReAct loop](ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is under-weighting Reddit/HN/Twitter
@@ -15,8 +18,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-04-18` [OpenClaw virtual company pattern](ai-tooling/openclaw-virtual-company-pattern.md) - The "CEO/CTO/PM" multi-agent idiom is a convention, not a feature; six failure modes
 - `2026-04-18` [OpenClaw multi-persona dev team setup playbook](ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md) - End-to-end config for a Telegram-led PM/Engineer/QA team on Docker
 - `2026-04-18` [TurboQuant KV cache compression](ai/turboquant-kv-cache-compression.md) - Random rotation + two-stage quantizer cuts KV cache to 3-4 bits with unbiased inner products
-- `2026-04-17` [Zed global agent rules live in the Rules Library](zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md) - No global file escape hatch; user-scope rules live in an LMDB database
-- `2026-04-14` [Transformer internals: FFN as graph database (LARQL)](ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md) - FFN as sparse KNN lookup over ~348K "edges"; factual knowledge editable without retraining
 
 ## How it works
 

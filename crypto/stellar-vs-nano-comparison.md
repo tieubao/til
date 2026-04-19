@@ -48,3 +48,7 @@ These features target real-world adoption. A bank could convert all client accou
 Stellar Development Foundation is a non-profit (unlike Ripple, which is for-profit). The CEO has presented to the US House Financial Services Committee. Speakers at Stellar Meridian have included representatives from the IMF, World Bank, World Economic Forum, and US Congress. USDC launched on Stellar, and institutions are already using it for remittances.
 
 ## Related
+
+- [[asynchronous-byzantine-fault-tolerance]] - Stellar's FBA is a BFT variant; this note frames where it sits in the consensus design space
+- [[double-spending]] - both protocols solve double-spending without proof-of-work
+- [[stripe-on-bitcoin]] - Stripe explicitly named Stellar as a Bitcoin alternative for payments after dropping BTC support

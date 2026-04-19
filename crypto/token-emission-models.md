@@ -33,3 +33,7 @@ Overview of common token emission models used in cryptocurrency projects. These 
 Each model creates different incentive structures. Halving and decay models reward early participants. Constant emission models are more egalitarian over time. Bonding curves create price discovery mechanisms. The choice of emission model fundamentally shapes a token's economic properties: inflation rate, wealth concentration, miner/validator incentives, and long-term sustainability.
 
 ## Related
+
+- [[ethereum-token-standards-and-security-tokens]] - the standards on which most emission models are implemented
+- [[cobie-on-33-and-crypto-incentives]] - tokenomics incentive critique that emission schedules directly shape
+- [[undercollateralized-loans-in-defi]] - lending protocol tokenomics interact with emission curves

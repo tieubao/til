@@ -45,3 +45,7 @@ Stripe remained optimistic about Lightning Network, Ethereum, Stellar, and poten
 Bitcoin evolved to prioritize being an asset (store of value) over being a medium of exchange. This was not a failure - the Bitcoin community made deliberate trade-offs. But it meant the "IP layer of payments" vision required different technology than Bitcoin's base layer could provide.
 
 ## Related
+
+- [[stellar-vs-nano-comparison]] - Stripe explicitly named Stellar as a Bitcoin payments alternative after the 2018 retreat
+- [[bitcoin-investment-paradox]] - the "store of value over medium of exchange" pivot Stripe witnessed firsthand
+- [[ray-dalio-on-bitcoin]] - institutional view of Bitcoin as asset rather than currency, consistent with what drove Stripe out

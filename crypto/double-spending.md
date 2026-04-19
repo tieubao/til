@@ -42,3 +42,7 @@ Double spending creates inflation by generating additional copies of existing fu
 Bitcoin uses probabilistic finality - transactions are never technically "final" because a conflicting chain can always outgrow the current one. More confirmations exponentially reduce the probability of a successful reorganization attack. This is why exchanges require multiple confirmations (often 6+ for Bitcoin) before crediting deposits.
 
 ## Related
+
+- [[asynchronous-byzantine-fault-tolerance]] - the consensus theory that frames double-spending as a Byzantine generals problem
+- [[stellar-vs-nano-comparison]] - two non-PoW protocols that prevent double-spending without 51% attack exposure
+- [[runtime-verification-for-blockchain-security]] - smart contract bugs as a separate attack surface beyond consensus-level double-spending

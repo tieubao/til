@@ -27,3 +27,8 @@ The Bitcoin community's goalposts have shifted from "decentralized and independe
 Boring investment vehicles tied to assets that physically exist in the world (companies, real estate) continue to be reliable long-term plays. Even if their worth were represented in Bitcoin at the institutional level, a boring index fund portfolio simply migrates over. Highly speculative investment vehicles have always existed. High risk, high reward is a thing, but NOT investing in them is also a sound strategy.
 
 ## Related
+
+- [[ray-dalio-on-bitcoin]] - structured institutional bull/bear case from Bridgewater that complements this retail-side paradox
+- [[cobie-on-33-and-crypto-incentives]] - "show me the incentive" critique that complements the goalpost-shift framing here
+- [[stripe-on-bitcoin]] - the vision-vs-reality template applied to payments specifically
+- [[how-and-why-i-invest-in-startups]] - the boring-vehicles counterweight thesis applied to early-stage companies

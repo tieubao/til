@@ -46,3 +46,8 @@ DeFi has produced eight distinct approaches, each with different trust assumptio
 | Custodial | Protocol custody | Smart contract risk |
 
 ## Related
+
+- [[ethereum-token-standards-and-security-tokens]] - the token primitives DeFi lending builds on
+- [[runtime-verification-for-blockchain-security]] - lending protocols are prime formal-verification targets given the dollar amounts at risk
+- [[token-emission-models]] - protocol token incentives shape lending pool economics
+- [[cobie-on-33-and-crypto-incentives]] - DeFi exemplifies the cooperate-vs-defect dynamic Cobie describes

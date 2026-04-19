@@ -127,3 +127,4 @@ Every link in this chain traces back to the 10-year treasury yield. When it move
 
 - [[financial-knowledge-as-compound-information-advantage]] - duration, credit spreads, and discount rates as tools of compound career advantage
 - [[compound-interest-levels-and-lifestyle-progression]] - counterpart on how cash/savings choices compound at a personal level
+- [[ray-dalio-on-bitcoin]] - macro storehold-of-wealth thesis applied to Bitcoin against this same bond/yield backdrop

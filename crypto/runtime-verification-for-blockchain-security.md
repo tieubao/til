@@ -42,3 +42,8 @@ This makes K suitable for concurrent languages and control-intensive features li
 **Competitors in formal verification** - Certora, CertiK, Hevm. The open nature of blockchain development means competition accelerates progress across the field.
 
 ## Related
+
+- [[asynchronous-byzantine-fault-tolerance]] - consensus protocols that can themselves be formal-verification targets (RV verified Ethereum 2.0's Gasper)
+- [[double-spending]] - one class of attack formal verification can rule out at the protocol level
+- [[undercollateralized-loans-in-defi]] - DeFi lending contracts are prime targets for formal verification given the dollar amounts at risk
+- [[ethereum-token-standards-and-security-tokens]] - high-value token contracts where bytecode-level verification matters most

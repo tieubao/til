@@ -51,3 +51,8 @@ Bitcoin's diversification benefits are "more theoretical than realized." Its cor
 Bitcoin looks like "a long-duration option on a highly unknown future that I could put an amount of money in that I wouldn't mind losing about 80% of."
 
 ## Related
+
+- [[bitcoin-investment-paradox]] - retail-side bear case that mirrors Bridgewater's institutional skepticism
+- [[stripe-on-bitcoin]] - real-world institutional retreat that Dalio's "limited adoption" thesis predicted
+- [[cobie-on-33-and-crypto-incentives]] - micro-incentive view of the same speculative dynamics Dalio assesses at the macro level
+- [[how-the-bond-market-controls-housing-stocks-and-jobs]] - macro context for the "storehold of wealth" demand Dalio invokes

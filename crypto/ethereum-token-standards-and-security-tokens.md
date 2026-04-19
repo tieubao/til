@@ -51,3 +51,7 @@ A typical STO takes about six months:
 - **Lottery.com** - Lottery industry tokenization
 
 ## Related
+
+- [[token-emission-models]] - emission mechanics for the tokens issued on these standards
+- [[undercollateralized-loans-in-defi]] - DeFi protocols built directly on Ethereum's token primitives
+- [[runtime-verification-for-blockchain-security]] - formal verification matters most for high-value security-token contracts

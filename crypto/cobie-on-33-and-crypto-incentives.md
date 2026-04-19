@@ -38,3 +38,8 @@ Crypto communities adopt game-theory language ("wagmi," "hodl," "(3,3)") that su
 "Show me the incentive and I will show you the outcome." The system is not uniquely rigged against retail. All participants face identical adversarial incentives. Reputations, time horizons, and financial alignment determine behavior far more than rhetoric about decentralization or community. Understanding this is the actual edge in crypto investing.
 
 ## Related
+
+- [[token-emission-models]] - emission schedules are the mechanical side of the incentive question Cobie raises
+- [[undercollateralized-loans-in-defi]] - DeFi mechanism design where incentives drive borrower/lender outcomes
+- [[bitcoin-investment-paradox]] - parallel critique of crypto's broader "you can't lose" narrative
+- [[financial-knowledge-as-compound-information-advantage]] - "show me the incentive" reframed as an information edge

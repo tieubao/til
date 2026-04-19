@@ -6,6 +6,110 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] ingest | OpenBB Platform evaluation
+
+Second finance-tooling tool evaluation, paired with a private memo in the trading repo. Python-first financial SDK covering equities, options, macro, and FRED via opt-in extensions; AGPL-3.0 on the Platform, closed commercial on the Workspace tier.
+
+**New note:**
+- `finance-tooling/openbb-evaluation.md` - OpenBB Platform SDK; 5-question rubric scored 11/15 = BOOKMARK; genuine TradFi research tool but thin value for pure-crypto shape
+
+**Compilation work:**
+- Applied 5-question rubric (Q1 2/3, Q2 2/3, Q3 3/3, Q4 3/3, Q5 1/3 = 11/15)
+- Added head-to-head comparison table with FinceptTerminal (category peer, 10/15)
+- Ran privacy checklist before publishing; all 7 items PASS
+- Added `## Related` with wikilinks to tool-evaluation-5-question-rubric, fincept-terminal-evaluation, oss-trading-stack-survey-april-2026
+- Added to `index.md` under `## finance-tooling` (cluster now 3 notes)
+- Added to `README.md` Recent additions
+
+**Contradictions flagged:** `oss-trading-stack-survey-april-2026` placed OpenBB in the agentic/AI category with a "read-only CLI only" verdict driven by AGPL concerns. This new eval reframes OpenBB as a research-SDK category (not agentic) and disentangles the AGPL trigger from commercial-license clauses that were separately a Fincept-specific issue. The OSS survey's categorization still holds; this eval adds nuance.
+
+**External link:** private "applied to my engine" memo lives in `tieubao/trading` at `research/tools/openbb.md` (private repo; not linked here). Verdict there is `pilot-30d` scoped to research-only use outside the engine runtime.
+
+---
+
+## [2026-04-19] refactor | split engineering/ into 6 sub-folders
+
+`engineering/` had grown to 107 notes flat at the root. Split into 6 domain sub-folders to make the cluster navigable and to make orphans visible by domain so future repair passes can target one cluster at a time.
+
+**New sub-folders:**
+- `engineering/go/` (27 notes) - Go language: syntax, idioms, performance, error handling, generics, concurrency, comparisons with Elixir and Swift
+- `engineering/functional/` (12) - FP concepts, Elixir/Elm specifics, anti-OOP critiques
+- `engineering/architecture/` (14) - distributed systems, microservices, monorepos, perf, security, SRE, DevOps topologies, HTTP caching, CSS architecture
+- `engineering/code-quality/` (18) - reviews, deletion, type systems, naming, docs, commit messages, PRs, conference proposals
+- `engineering/careers/` (19) - career advice, seniority, problem-solving, ethics, ThoughtWorks-style lessons
+- `engineering/principles/` (17) - general engineering principles, language opinions, history pieces, productivity rules of thumb
+
+Total: 27+12+14+18+19+17 = 107 ✓ (no notes lost)
+
+**Compilation work:**
+- Used `git mv` so blame/history is preserved on every file
+- Wrote `engineering/README.md` documenting the new taxonomy
+- Updated `index.md`: replaced the flat engineering section with 6 sub-sections (one per sub-folder)
+- README.md Topics table unchanged (the parent `engineering/` link still works)
+
+**No backlink updates needed.** Obsidian wikilinks (`[[note-name]]`) resolve via shortest path, so `[[zen-of-go]]` continues to find the note at its new path. No grep-and-replace pass was required.
+
+**Side effect:** `engineering/` is no longer the worst orphan cluster in the repo. Orphans are still there (40 of 107 had no incoming/outgoing links), but they're now distributed across sub-folders where future repair passes can target them by domain.
+
+---
+
+## [2026-04-19] synthesis | LLM agent memory synthesis April 2026
+
+Wove 4 ai/ memory notes (landscape-2026, three-battlegrounds, harness-plugins, benchmarks-and-evaluation-crisis) into a single synthesis page. The 4-note cluster was already coherent; the synthesis spells out the vertical relationship (5-stage pipeline → 3 battlegrounds → harness lifecycle hooks → broken evaluation layer) that no individual note made explicit.
+
+**New note:**
+- `ai/llm-agent-memory-synthesis-april-2026.md` (type: synthesis) - architecture stack with light-theme ASCII diagram, agreements across the 4 notes, contradictions flagged, what the synthesis adds beyond individual notes
+
+**Compilation work:**
+- Cross-linked to `dwarves-kit-design-philosophy-and-architecture` (same hook architecture pattern, applied to spec enforcement instead of memory)
+- Cross-linked to `claude-code-hook-lifecycle-and-event-system` (same before/after lifecycle pattern)
+- Cross-linked to the parallel `ai-tooling-stack-synthesis-april-2026` (the rubric whose "kill question" framing the synthesis borrows)
+- Cross-linked to `hermes-agent-comprehensive-briefing-april-2026` (Hermes's 3-layer memory is an applied example of the architecture)
+
+**Contradictions flagged inside the synthesis:** the landscape note cites Mem0's LoCoMo score as 68.5%, while the benchmarks note flags this same number as untrustworthy. Not a real contradiction; a known limitation that the synthesis spells out so future readers don't trust the scores.
+
+---
+
+## [2026-04-19] synthesis | AI tooling stack synthesis April 2026
+
+First synthesis page in `ai-tooling/`. Covers all 13 notes in the folder. Thesis: 3 layers (Claude Code workflow packs / context layer / agent stack alternatives) wired through one rubric (the 5-question evaluation framework), plus AutoResearch as a cross-cutting optimization pattern.
+
+**New note:**
+- `ai-tooling/ai-tooling-stack-synthesis-april-2026.md` (type: synthesis) - 4 sub-clusters with verdict tables, key contradictions flagged (especially the Hermes coordinated-promotion warning), 5 actionable insights, 4 open questions
+
+**Compilation work:**
+- Cross-linked to `oss-trading-stack-survey-april-2026`, `fincept-terminal-evaluation`, `openbb-evaluation` as cross-domain rubric applications (proves the rubric is portable, not domain-specific)
+- Cross-linked to `dwarves-kit-v1-2-verification-pipeline-architecture` as a candidate target for the AutoResearch ratchet pattern
+
+**Headline insight surfaced by synthesis (not visible in any individual note):** in April 2026, growth metrics and adoption-readiness move in opposite directions. The fastest-growing tool (Hermes) is the least battle-tested. The most stable tool (OpenClaw) is the most security-cratered. The most starred tool (gstack) is criticized as "just a bunch of prompts." Star count is roughly meaningless as a quality signal in this market.
+
+---
+
+## [2026-04-19] lint | full wiki health check + crypto/ orphan repair
+
+Ran the 7-check lint pass across 251 content notes in 25 folders. Headline: capture pipeline is healthy (zero broken wikilinks, zero raw stragglers, zero missing `## Related` headings, zero stale notes), but ~88 legacy notes are true orphans (no incoming and no outgoing links) and ~121 have empty `## Related` sections. The orphan problem is concentrated in pre-2026 bulk-imported folders: `engineering/` (40 of 107), `life/` (16 of 25), `crypto/` (11 of 11), `leadership/` (10 of 16), `cs/` (5 of 14). Modern post-2026 capture folders (ai/, ai-tooling/, claude-code/, dwarves-kit/, hiring/, wealth/, mcp/, pkm/, diaspora/) have zero orphans, confirming the new pipeline is working.
+
+**Crypto/ repair (this session):**
+- Wove `## Related` sections across all 11 crypto notes into 3 sub-clusters:
+  - Consensus/security: `asynchronous-byzantine-fault-tolerance`, `double-spending`, `runtime-verification-for-blockchain-security`, `stellar-vs-nano-comparison`
+  - Bitcoin discourse: `bitcoin-investment-paradox`, `ray-dalio-on-bitcoin`, `stripe-on-bitcoin`, `cobie-on-33-and-crypto-incentives`
+  - Tokenomics/DeFi: `token-emission-models`, `undercollateralized-loans-in-defi`, `ethereum-token-standards-and-security-tokens`
+- Added cross-folder backlinks on 3 external notes: `investing/how-and-why-i-invest-in-startups`, `finance/how-the-bond-market-controls-housing-stocks-and-jobs`, `finance/financial-knowledge-as-compound-information-advantage`
+- Crypto/ goes from 11 orphans to 0 orphans, 0 empty Related sections
+
+**Thin-cluster synthesis gaps surfaced:**
+- High-value (well-linked, ready): `ai-tooling/` (13), `ai/` (11), `dwarves-kit/` (9), `claude-code/` (5), `wealth/` (5)
+- Repair-then-synthesize: `engineering/` (107 - too big, recommend split), `life/` (25), `leadership/` (16), `cs/` (14), `hiring/` (9), `history/` (6)
+
+**Contradictions flagged:** none auto-detectable. Semantic contradiction check would need per-cluster reads.
+
+**Open follow-ups (deferred for user input):**
+1. Synthesis page drafts for `ai-tooling/` and `ai/` (project rule requires discussion before writing)
+2. Sub-folder split of `engineering/` (107 notes is a category-smell; needs taxonomy decision)
+3. Repair work on `life/`, `leadership/`, `cs/` orphan clusters
+
+---
+
 ## [2026-04-19] synthesis | OSS trading stack survey, April 2026 (migrated from trading repo)
 
 Sanitized a multi-tool trading-tooling survey originally in a private trading repo. Now a public synthesis note in `finance-tooling/`. Strips owner-specific SPEC / decision / experiment IDs, engine paths, account sizing, and "our repo" framing. Keeps the generic category framework (execution frameworks / agentic AI / infra libs), comparison tables, tool deep-dives, mermaid ecosystem + positioning + lifecycle diagrams, and recommendations applicable to any semi-pro crypto trader.

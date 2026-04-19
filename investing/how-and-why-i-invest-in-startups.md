@@ -59,3 +59,6 @@ Build an investment team with variable experience across different firms and ind
 Find good people solving tough problems, and the financials often sort themselves out.
 
 ## Related
+
+- [[bitcoin-investment-paradox]] - the boring-vehicles thesis as a counterweight to speculative assets like Bitcoin
+- [[compound-interest-levels-and-lifestyle-progression]] - longer-horizon compounding mechanics that startup investing relies on
