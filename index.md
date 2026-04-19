@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 259 note(s) across 24 folders. Last updated: 2026-04-19
+> Full catalog of all notes, grouped by folder. Last updated: 2026-04-19
 
 ## ai
 

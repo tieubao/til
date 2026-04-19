@@ -2,7 +2,7 @@
 
 A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) methodology, maintained by LLMs using the [LLM Wiki](https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285) pattern.
 
-259 interlinked notes across 24 topics. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
+Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
 ## Recent additions
 
@@ -34,36 +34,36 @@ The human thinks and curates. The LLM handles the bookkeeping.
 
 ## Topics
 
-| Folder | Notes | Domain |
-|--------|-------|--------|
-| [engineering/](engineering/) | 107 | Software engineering practices, principles, languages |
-| [life/](life/) | 25 | Life philosophy, habits, mindset, career wisdom |
-| [leadership/](leadership/) | 16 | Management, negotiation, business leadership |
-| [cs/](cs/) | 14 | Computer science fundamentals |
-| [dwarves-kit/](dwarves-kit/) | 9 | Dwarves Kit architecture and design |
-| [hiring/](hiring/) | 9 | Candidate assessment and hiring |
-| [ai-tooling/](ai-tooling/) | 13 | AI developer tools and evaluations |
-| [ai/](ai/) | 11 | AI concepts, memory systems, agent patterns |
-| [diaspora/](diaspora/) | 6 | Vietnamese and Asian diaspora analysis |
-| [history/](history/) | 6 | History, civilizations, geopolitical patterns |
-| [claude-code/](claude-code/) | 5 | Claude Code hooks, skills, workflows |
-| [crypto/](crypto/) | 11 | Cryptocurrency, blockchain, DeFi, tokenomics |
-| [wealth/](wealth/) | 5 | Trust-building, business relationships |
-| [geopolitics/](geopolitics/) | 3 | Oil crises, government structures |
-| [startup/](startup/) | 3 | Startup strategy, product focus |
-| [health/](health/) | 2 | Wellness, nutrition |
-| [investing/](investing/) | 2 | Compound interest, startup investing |
-| [mcp/](mcp/) | 2 | Model Context Protocol |
-| [pkm/](pkm/) | 2 | Personal knowledge management |
-| [devtools/](devtools/) | 2 | Developer tools and config |
-| [patterns/](patterns/) | 2 | Software patterns and anti-patterns |
-| [finance/](finance/) | 2 | Bond markets, capital structure, compounding knowledge |
-| [youtube/](youtube/) | 1 | YouTube tooling |
-| [zed/](zed/) | 1 | Zed editor agent rules and configuration |
+| Folder | Domain |
+|--------|--------|
+| [engineering/](engineering/) | Software engineering practices, principles, languages |
+| [life/](life/) | Life philosophy, habits, mindset, career wisdom |
+| [leadership/](leadership/) | Management, negotiation, business leadership |
+| [cs/](cs/) | Computer science fundamentals |
+| [dwarves-kit/](dwarves-kit/) | Dwarves Kit architecture and design |
+| [hiring/](hiring/) | Candidate assessment and hiring |
+| [ai-tooling/](ai-tooling/) | AI developer tools and evaluations |
+| [ai/](ai/) | AI concepts, memory systems, agent patterns |
+| [diaspora/](diaspora/) | Vietnamese and Asian diaspora analysis |
+| [history/](history/) | History, civilizations, geopolitical patterns |
+| [claude-code/](claude-code/) | Claude Code hooks, skills, workflows |
+| [crypto/](crypto/) | Cryptocurrency, blockchain, DeFi, tokenomics |
+| [wealth/](wealth/) | Trust-building, business relationships |
+| [geopolitics/](geopolitics/) | Oil crises, government structures |
+| [startup/](startup/) | Startup strategy, product focus |
+| [health/](health/) | Wellness, nutrition |
+| [investing/](investing/) | Compound interest, startup investing |
+| [mcp/](mcp/) | Model Context Protocol |
+| [pkm/](pkm/) | Personal knowledge management |
+| [devtools/](devtools/) | Developer tools and config |
+| [patterns/](patterns/) | Software patterns and anti-patterns |
+| [finance/](finance/) | Bond markets, capital structure, compounding knowledge |
+| [youtube/](youtube/) | YouTube tooling |
+| [zed/](zed/) | Zed editor agent rules and configuration |
 
 ## Documentation
 
-- [Full note index](index.md) - catalog of all 259 notes with one-line summaries
+- [Full note index](index.md) - catalog of all notes with one-line summaries
 - [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
 - [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
 - [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers
