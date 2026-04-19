@@ -239,6 +239,8 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; AGPL §13 blocks integration into any network-facing trading stack
 - [OpenBB evaluation](finance-tooling/openbb-evaluation.md) - Python-first financial SDK (equities, options, macro, FRED); 11/15 BOOKMARK; crypto value thin, TradFi inflection point
 - [OSS trading stack survey, April 2026](finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis (execution frameworks / agentic AI / infra libs); Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first vendor pilot
+- [Why rotating ISP IPs break Binance API keys, and how to fix it with WireGuard](finance-tooling/wireguard-static-ip-exchange-whitelist.md) - Cheap VPS + WireGuard beats every bundled static-IP product for exchange whitelisting; $5/mo beats $15-500/mo alternatives
+- [Static outbound IP solutions for crypto trading bots, ten options compared](finance-tooling/static-ip-solutions-compared-for-trading-bots.md) - 10 options across 5 categories; every commercial static-IP service is Category A (rent a VPS) re-bundled with markup
 
 ## geopolitics
 

@@ -6,6 +6,41 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] ingest | Static outbound IP solutions, ten options compared
+
+Companion landscape note to the WireGuard static-IP pattern. Where the earlier note answers "how to build the winning solution," this one walks through every competing option a semi-pro trader might consider and explains why each wins or loses. Useful as a decision-reference when someone pitches the trader a new proxy / VPN / PaaS "static IP" product.
+
+**New note:**
+- `finance-tooling/static-ip-solutions-compared-for-trading-bots.md` - Article-depth comparison of 10 options across 5 categories (VPS, consumer VPN, enterprise network, static proxy, PaaS / ISP); decision matrix + category-level scoring; meta-takeaway that B-E are all re-bundles of A with markup
+
+**Compilation work:**
+- Ran D-051 privacy checklist end-to-end before publishing; all 7 items PASS (same scan pattern as the WireGuard how-to; no dollar amounts tied to owner, no engine paths, no 1P URIs, no position data, no Dwarves detail, no real names, no owner-shape tells masquerading as generic)
+- Added `## Related` wikilinks to the WireGuard how-to (category A winner) and to `oss-trading-stack-survey-april-2026` (where the bot that uses this IP gets built)
+- Added to `index.md` under `## finance-tooling` (cluster now 5 notes)
+- Added to `README.md` Recent additions
+- Cross-reference expectation: the WireGuard how-to note's `## Related` section could be updated later to link back to this comparison; deferred until someone actually traverses that link
+
+**External link:** same underlying trading-repo setup as the previous note; this eval stays generic. No trading-repo internals referenced.
+
+---
+
+## [2026-04-19] ingest | WireGuard static-IP pattern for exchange API whitelisting
+
+Generic how-to note derived from a real trading-infra setup (Mac-local engine + Tokyo VPS egress tunnel). Bridges the gap for semi-pro traders stuck on the "my ISP rotates, my Binance key keeps breaking" problem with a concrete $5/mo pattern.
+
+**New note:**
+- `finance-tooling/wireguard-static-ip-exchange-whitelist.md` - Article-depth pattern note; compares VPN services, proxy services, Cloudflare, fly.io, and cheap VPS + WireGuard; concludes "static IP is never a product, always a feature of rented compute"
+
+**Compilation work:**
+- Ran D-051 privacy checklist end-to-end before publishing; all 7 items PASS (no dollar amounts tied to owner, no engine paths, no 1P URIs, no position data, no Dwarves detail, no real names, no owner-shape tells)
+- Added `## Related` wikilinks to `oss-trading-stack-survey-april-2026` (engine context) and `crypto/double-spending` (why key hardening exists at all)
+- Added to `index.md` under `## finance-tooling` (cluster now 4 notes)
+- Added to `README.md` Recent additions
+
+**External link:** private operational runbook for the actual owner setup lives in the `tieubao/trading` private repo at `operations/wg-egress-tunnel-runbook.md` and the design SPEC at `docs/specs/SPEC-012-wireguard-egress-tunnel.md`. Not linked from this public note.
+
+---
+
 ## [2026-04-19] ingest | OpenBB Platform evaluation
 
 Second finance-tooling tool evaluation, paired with a private memo in the trading repo. Python-first financial SDK covering equities, options, macro, and FRED via opt-in extensions; AGPL-3.0 on the Platform, closed commercial on the Workspace tier.
