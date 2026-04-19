@@ -215,6 +215,7 @@
 ## finance-tooling
 
 - [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; AGPL §13 blocks integration into any network-facing trading stack
+- [OSS trading stack survey, April 2026](finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis (execution frameworks / agentic AI / infra libs); Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first vendor pilot
 
 ## geopolitics
 

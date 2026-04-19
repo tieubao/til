@@ -6,6 +6,26 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] synthesis | OSS trading stack survey, April 2026 (migrated from trading repo)
+
+Sanitized a multi-tool trading-tooling survey originally in a private trading repo. Now a public synthesis note in `finance-tooling/`. Strips owner-specific SPEC / decision / experiment IDs, engine paths, account sizing, and "our repo" framing. Keeps the generic category framework (execution frameworks / agentic AI / infra libs), comparison tables, tool deep-dives, mermaid ecosystem + positioning + lifecycle diagrams, and recommendations applicable to any semi-pro crypto trader.
+
+**New note:**
+- `finance-tooling/oss-trading-stack-survey-april-2026.md` (type: synthesis) - 3-category survey with 4 mermaid diagrams; Freqtrade + VectorBT recommended; ai-hedge-fund as first agentic pilot
+
+**Compilation work:**
+- Ran through a strict privacy checklist before publishing (no dollar amounts, no engine paths, no SPEC/EXP IDs, no 1P URIs, no position data, no owner-shape tells); all 7 items PASS
+- Added to `index.md` under `## finance-tooling` (between FinceptTerminal eval and the geopolitics section)
+- Linked to existing synthesis note `ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md` as a parallel-shape peer in a different vertical
+- Linked to `hermes-agent-comprehensive-briefing-april-2026.md` and `hermes-vs-openclaw-competitive-scene-april-2026.md` since Hermes appears as an LLM backend candidate for vendor pilots
+- Tool evaluation rubric `tool-evaluation-5-question-rubric.md` cross-referenced since individual tool deep-dives follow that framing
+
+**Contradictions flagged:** none. This is the first finance-tooling synthesis note; no overlapping claims in existing notes.
+
+**Synthesis opportunity noted:** when `finance-tooling/` grows past 4 notes, consider a meta-synthesis connecting it to `ai-tooling/` (both are tool-evaluation domains following the same rubric; Venn overlap on agentic trading tools is substantial).
+
+---
+
 ## [2026-04-19] ingest | FinceptTerminal evaluation (new finance-tooling folder)
 
 First note in a new `finance-tooling/` folder, parallel to `ai-tooling/`. Scoped specifically to financial tool reviews (terminals, data providers, broker platforms, frameworks), distinct from `finance/` (concepts) and `investing/` (personal investing philosophy).

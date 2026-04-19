@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-19` [OSS trading stack survey, April 2026](finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis; Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first agentic pilot
 - `2026-04-19` [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; §13 blocks integration into any network-facing trading stack
 - `2026-04-19` [How LLM agents do web research: the ReAct loop](ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is under-weighting Reddit/HN/Twitter
 - `2026-04-18` [Hermes Agent comprehensive briefing April 2026](ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
