@@ -6,6 +6,21 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-20] ingest | GeckoTerminal API evaluation
+
+Fills the DEX OHLCV gap surfaced by a signals-engine integration where Binance-only klines silently drop coverage on Solana SPL and EVM DeFi tokens without a CEX pair. Evaluated six free providers and ten paid candidates; GeckoTerminal wins the free tier decisively with keyless auth + native H1/H4 + 30 rpm + 1000 bars/call. Same underlying DEX data as CoinGecko Pro Analyst ($129/mo), which makes the paid tier a common footgun.
+
+**New note:**
+- `finance-tooling/geckoterminal-evaluation.md` - 14/15 ADOPT verdict; category comparison table (6 free + 10 paid); specific call-out of Moralis Pro $49 as the paid upgrade for >6mo history; onboarding path; Reddit consensus summary citing DexScreener rate-limit pain + Freqtrade issue #10377 (no framework-native SPL OHLCV path)
+
+**Compilation work:**
+- Ran D-051 privacy checklist end-to-end before publishing; all 7 items PASS (no owner dollar amounts, no engine paths, no 1P URIs, no position data, no Dwarves detail, no real names, no owner-shape tells)
+- Added `## Related` wikilinks to openbb-evaluation, fincept-terminal-evaluation, oss-trading-stack-survey, tool-evaluation-5-question-rubric
+- Added to `index.md` under `## finance-tooling` (cluster now 6 notes)
+- Added to `README.md` Recent additions
+
+---
+
 ## [2026-04-19] ingest | Static outbound IP solutions, ten options compared
 
 Companion landscape note to the WireGuard static-IP pattern. Where the earlier note answers "how to build the winning solution," this one walks through every competing option a semi-pro trader might consider and explains why each wins or loses. Useful as a decision-reference when someone pitches the trader a new proxy / VPN / PaaS "static IP" product.

@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-20` [GeckoTerminal API evaluation](finance-tooling/geckoterminal-evaluation.md) - Keyless H1/H4 OHLCV for DEX pools; 14/15 ADOPT; same data as $129/mo CoinGecko Pro
 - `2026-04-19` [Static outbound IP solutions for crypto trading bots, ten options compared](finance-tooling/static-ip-solutions-compared-for-trading-bots.md) - 10 options across 5 categories; every commercial static-IP service re-bundles "rent a VPS" with markup
 - `2026-04-19` [Why rotating ISP IPs break Binance API keys, and how to fix it with WireGuard](finance-tooling/wireguard-static-ip-exchange-whitelist.md) - Cheap VPS + WireGuard beats every bundled static-IP product for exchange whitelisting
 - `2026-04-19` [deepagents vs OpenClaw vs Hermes: category positioning](ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md) - Library vs runtime distinction; the three are not peers and stack rather than compete
