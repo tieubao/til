@@ -177,45 +177,54 @@ You don't need to remember to do step 2. Claude Code checks for uncompiled notes
 
 ## Working with Claude
 
+### Commands cheatsheet
+
+Phrases you can type to Claude in this repo. Exact wording doesn't matter, intent does.
+
+| Command | What Claude does |
+|---------|------------------|
+| `process inbox` | Refine raw `_inbox/` captures: fix frontmatter, pick topic folder, add wikilinks, set `status: refined` |
+| `capture this as a note: <description>` | Create a new note from the current conversation in the right folder |
+| `/learned` | Same as above, via the knowledge-capture skill |
+| `compile <note>` / `compile recent commits` / `re-ingest` | Run the compilation step (backlinks, `index.md`, `README.md`, `log.md`) for notes added outside Claude Code |
+| `answer from the wiki: <question>` | Synthesize across existing notes, cite with `[[wikilinks]]` |
+| `file that answer as a wiki page` | Save a synthesis from the current chat as a new note, fully linked |
+| `reorganize the wiki` | Orphan check, folder merge/split, backlink updates |
+| `lint the wiki` | Health report: orphans, broken links, raw stragglers, thin clusters, contradictions |
+
+Claude also auto-detects uncompiled additions at session start (commits without a matching `log.md` entry) and offers to run compilation without being asked.
+
 ### Process inbox
 
-When `_inbox/` has raw captures waiting:
+When `_inbox/` has raw captures waiting, say `process inbox`. Claude will add/fix frontmatter, determine the correct topic folder, restructure content to match templates, add wikilinks, move the note out of inbox, and set status to `refined`.
 
-```
-process inbox
-```
+### Compile a note manually
 
-Claude will: add/fix frontmatter, determine the correct topic folder, restructure content to match templates, add wikilinks, move the note out of inbox, set status to `refined`.
+Normally automatic, but if you pushed a note from Claude.ai or git and want to trigger compilation now: `compile <filename>` or `compile recent commits`. Claude walks the 5 steps in CLAUDE.md §"Compilation step": overlap check, contradiction flag, synthesis update, `index.md` + `README.md` refresh, `log.md` append.
+
+### Recovering notes pushed directly to GitHub
+
+Scenario: you pushed a note to GitHub from Claude.ai, an Obsidian sync, or a manual `git push`, and it skipped the compilation step. The note is in the right folder with frontmatter, but backlinks aren't updated, `index.md` / `README.md` don't list it, and `log.md` has no entry.
+
+**What to do:**
+
+1. Open Claude Code in this repo. It runs the session-start check automatically: `git log --oneline -10` against `log.md` entries, then offers to compile anything uncompiled. Just say yes.
+2. If you're already mid-session and want to force it: say `compile recent commits`, or `re-ingest the notes I just pushed`, or `compile <filename>`.
+3. Claude will run the 5 compilation steps and append a `log.md` entry tagged `ingest`.
+
+You don't need to remember any of this if you open Claude Code regularly, the session-start check does it for you. Future automation is planned (see `_docs/requirements.md` §M-5) but deliberately deferred until the manual flow becomes painful.
+
+### Query the wiki
+
+For questions that need synthesis across multiple notes: `answer from the wiki: <question>`. Claude reads `log.md` + `index.md` first, drills into relevant notes, and cites with `[[wikilinks]]`. If the answer is substantial, Claude will offer to file it back as a new note (this is how explorations compound).
 
 ### Reorganize
 
-Ask Claude to reorganize when the wiki feels messy:
+Ask Claude to `reorganize the wiki` when it feels messy. Claude checks for orphan notes, suggests folder merges/splits, updates all backlinks after moves, and commits changes separately from content.
 
-```
-reorganize the wiki
-```
+### Lint
 
-Claude will: check for orphan notes, suggest folder merges/splits, update all backlinks after moves, commit changes separately from content.
-
-### Lint (planned)
-
-Periodic health check:
-
-```
-lint the wiki
-```
-
-Claude will check for: orphan notes (no links in or out), broken wikilinks, notes still in `raw` status, stale notes, clusters missing synthesis pages, contradictions between notes.
-
-### Query and file back
-
-When a conversation produces a useful synthesis or analysis:
-
-```
-file that answer as a wiki page
-```
-
-Claude will create a note from the conversation output, properly linked and filed. This is how explorations compound into the knowledge base.
+Periodic health check: `lint the wiki`. Claude audits for orphan notes (no links in or out), broken wikilinks, notes still in `raw` status outside `_inbox/`, stale notes, clusters missing synthesis pages, and contradictions between notes. Output is a markdown report grouped by severity.
 
 ## Topic folders
 

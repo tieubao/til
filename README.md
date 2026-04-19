@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-19` [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; §13 blocks integration into any network-facing trading stack
 - `2026-04-19` [How LLM agents do web research: the ReAct loop](ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is under-weighting Reddit/HN/Twitter
 - `2026-04-18` [Hermes Agent comprehensive briefing April 2026](ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
 - `2026-04-18` [Hermes vs OpenClaw competitive scene](ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins metrics, Hermes wins narrative; equilibrium is to run both and bridge via ACP
@@ -15,7 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-04-18` [TurboQuant KV cache compression](ai/turboquant-kv-cache-compression.md) - Random rotation + two-stage quantizer cuts KV cache to 3-4 bits with unbiased inner products
 - `2026-04-17` [Zed global agent rules live in the Rules Library](zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md) - No global file escape hatch; user-scope rules live in an LMDB database
 - `2026-04-14` [Transformer internals: FFN as graph database (LARQL)](ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md) - FFN as sparse KNN lookup over ~348K "edges"; factual knowledge editable without retraining
-- `2026-04-14` [How the bond market controls housing, stocks, and jobs](finance/how-the-bond-market-controls-housing-stocks-and-jobs.md) - Yield seesaw sets mortgage rates, ERP, and corporate refinancing costs; one chain from the 10-year
 
 ## How it works
 
@@ -31,6 +31,22 @@ Claude AI skill (refined)┘
 - **Lint**: periodic health checks for orphans, broken links, stale claims
 
 The human thinks and curates. The LLM handles the bookkeeping.
+
+## Commands
+
+Type these to Claude in this repo (exact wording doesn't matter, intent does):
+
+| Command | What it does |
+|---------|--------------|
+| `process inbox` | Refine raw `_inbox/` captures into the right folder with links |
+| `capture this as a note: ...` | Save a learning moment from the current chat |
+| `compile recent commits` / `re-ingest` | Run compilation on notes pushed directly to GitHub (backlinks, index, README, log) |
+| `answer from the wiki: ...` | Synthesize across notes, cite with `[[wikilinks]]` |
+| `file that answer as a wiki page` | Commit a synthesis from chat as a new note |
+| `reorganize the wiki` | Clean up orphans, folders, backlinks |
+| `lint the wiki` | Health check: orphans, broken links, raw stragglers |
+
+Full reference: [commands cheatsheet in the usage guide](_docs/guide.md#commands-cheatsheet).
 
 ## Topics
 
@@ -58,6 +74,7 @@ The human thinks and curates. The LLM handles the bookkeeping.
 | [devtools/](devtools/) | Developer tools and config |
 | [patterns/](patterns/) | Software patterns and anti-patterns |
 | [finance/](finance/) | Bond markets, capital structure, compounding knowledge |
+| [finance-tooling/](finance-tooling/) | Financial tool evaluations: terminals, data providers, broker platforms, frameworks |
 | [youtube/](youtube/) | YouTube tooling |
 | [zed/](zed/) | Zed editor agent rules and configuration |
 

@@ -47,6 +47,22 @@ A personal knowledge base that compounds over time. Not a note-taking app. Not a
 | M-2 | Auto-generated README.md index | Done (via MCP Worker) |
 | M-3 | Chronological changelog of wiki operations | Done |
 | M-4 | Contradiction detection between notes | Planned |
+| M-5 | Auto-compile notes pushed directly to GitHub (via Claude Code Action) | Planned (see below) |
+
+### M-5: Auto-compile via GitHub Actions (future)
+
+Right now, notes pushed directly to GitHub (via Claude.ai skill, manual `git push`, or Obsidian sync) skip the compilation step. Claude Code catches this at session start, but only when you next open a session. If the gap becomes painful (e.g., you push from Claude.ai several times a week), automate it.
+
+**Sketch:**
+
+- Workflow triggers on `push` to `master` with path filter on `**/*.md`, excluding `_inbox/**`, `log.md`, `index.md`, `README.md` (to avoid loops)
+- Uses `anthropics/claude-code-action@v1` with `ANTHROPIC_API_KEY` repo secret
+- Reads `CLAUDE.md`, runs the 5 compilation steps on the pushed notes
+- Opens a PR titled `compile: <note titles>` instead of auto-committing to master (human still reviews overlap/contradiction flags)
+- `concurrency: { group: compile-notes }` to serialize parallel pushes that would race on `log.md`
+- Explicit "do not auto-create synthesis pages" instruction in the action prompt (synthesis needs human thinking, per design principle 2)
+
+**Adoption trigger**: when direct-to-GitHub pushes exceed ~1/week or the "open Claude Code to compile" friction becomes noticeable. Not worth building before then; cost is complexity, not dollars (~$2-5/month for personal volume).
 
 ### Tooling
 

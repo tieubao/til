@@ -78,7 +78,17 @@ The `_inbox/` folder is the landing zone for raw captures:
 
 ## Compilation step (run on every note addition)
 
-This is the core of the LLM Wiki pattern. Filing a note is not enough; the wiki must compile the new knowledge into the existing structure. After adding or refining a note, Claude will:
+This is the core of the LLM Wiki pattern. Filing a note is not enough; the wiki must compile the new knowledge into the existing structure.
+
+**Trigger phrases** (any of these means run the compilation step on the target notes):
+- `compile <filename>` - scoped to one note
+- `compile recent commits` / `compile recent` - walk recent commits, find notes missing from `log.md`
+- `re-ingest` / `re-ingest recent` / `re-ingest the notes I just pushed` - same as above
+- `process inbox` - implies compilation after refinement
+
+Claude should also run this automatically without a command when the session-start check (above) detects uncompiled additions and the user confirms.
+
+After adding or refining a note, Claude will:
 
 1. **Check for overlapping claims.** Search for existing notes that cover the same topic. If the new note adds to, refines, or contradicts existing notes, update the `## Related` sections on both sides with a note about the relationship.
 

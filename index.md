@@ -212,6 +212,10 @@
 - [Financial knowledge as compound information advantage](finance/financial-knowledge-as-compound-information-advantage.md) - Bille Finance narrative: information compounds like capital; the gap between Tier 1 and Tier 2 is learnable
 - [How the bond market controls housing, stocks, and jobs](finance/how-the-bond-market-controls-housing-stocks-and-jobs.md) - Yield seesaw sets mortgage rates, equity risk premium, and corporate refinancing costs; one chain from the 10-year
 
+## finance-tooling
+
+- [FinceptTerminal evaluation](finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; AGPL §13 blocks integration into any network-facing trading stack
+
 ## geopolitics
 
 - [Australia's Washminster government structure](geopolitics/australias-washminster-government-structure.md) - Australia blends Westminster parliament with US federalism; federal/state split complicates crisis response

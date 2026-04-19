@@ -6,6 +6,31 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] ingest | FinceptTerminal evaluation (new finance-tooling folder)
+
+First note in a new `finance-tooling/` folder, parallel to `ai-tooling/`. Scoped specifically to financial tool reviews (terminals, data providers, broker platforms, frameworks), distinct from `finance/` (concepts) and `investing/` (personal investing philosophy).
+
+**New folder:**
+- `finance-tooling/` with `README.md` explaining scope
+
+**New note:**
+- `finance-tooling/fincept-terminal-evaluation.md` - AGPL-3 Qt6 Bloomberg-alternative; 5-question rubric scored 10/15 = BOOKMARK; AGPL §13 blocks integration into any network-facing trading stack
+
+**Compilation work:**
+- Applied the `ai-tooling/tool-evaluation-5-question-rubric.md` scoring system to a finance tool (first cross-folder use of the rubric)
+- Added `## Related` wikilinks to the rubric, to `ai-dev-stack-8-layer-model`, and to `how-the-bond-market-controls-housing-stocks-and-jobs` (macro research is the target use case)
+- Added `## finance-tooling` section to `index.md` between `finance` and `geopolitics`
+- Added `finance-tooling/` row to `README.md` Topics table
+- Added this note to `README.md` Recent additions
+
+**Contradictions flagged:** none. This is a new folder and a new tool; no prior claims to conflict with.
+
+**Synthesis opportunity noted:** the 8-layer AI dev stack doesn't naturally accommodate financial tooling categories (research terminals, execution frameworks, data providers). If the cluster grows to 4+ finance-tooling notes, consider a `finance-tooling-stack-synthesis.md` analogous to the AI dev stack note.
+
+**External link:** this evaluation is the public half of a pair. The private "applied to my engine" memo lives in `tieubao/trading` at `research/tools/fincept-terminal.md` (private repo; not linked here).
+
+---
+
 ## [2026-04-19] ingest | How LLM agents do web research: the ReAct loop
 
 One note pushed via Claude.ai between the previous compilation and this session.
