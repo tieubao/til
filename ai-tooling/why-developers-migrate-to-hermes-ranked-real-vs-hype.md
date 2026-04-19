@@ -69,3 +69,11 @@ If you're already deep in:
 ...most migration reasons don't apply.
 
 The one thing worth studying is point 3: *how* Hermes decides "this task was skill-worthy." That mechanism is directly portable into existing tooling. Steal the pattern, not the product.
+
+## Related
+
+- [[hermes-agent-comprehensive-briefing-april-2026]] - full architectural overview that frames each of these drivers
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - broader comparison, where these drivers translate to metrics
+- [[openclaw-virtual-company-pattern]] - the OpenClaw pattern that the April 4 subscription change disrupted
+- [[autoresearch-the-karpathy-loop-pattern]] - adjacent idea: auto-generated artifacts refined by execution
+- [[prompt-improvement-as-a-learning-technique]] - related theme of extracting reusable patterns from one-off sessions

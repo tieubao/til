@@ -215,3 +215,4 @@ P.S. If you want the full system  -  CLAUDE.md instructions, knowledge architect
 - [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - the operator discipline framework for managing the parallel agent sessions that Dispatch enables
 - [[commands-vs-hooks-vs-skills-decision-framework]] - decision framework for the skills and hooks that Dispatch delegates to Cowork sessions
 - [[compaction-defense-patterns-for-claude-code-sessions]] - context management matters when orchestrating 60+ task sessions from mobile
+- [[openclaw-multi-persona-dev-team-setup-playbook]] - alternative stack doing the same mobile-orchestrator pattern via Telegram + OpenClaw

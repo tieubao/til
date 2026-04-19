@@ -123,3 +123,11 @@ Three reasons:
 3. **The "watch agents chat to each other" appeal is mostly theater.** Seeing PM, Engineer, QA bots message each other in Slack feels like watching an org run. It's dopamine, not output. The real question: does multi-agent produce better final results than a single well-prompted agent for your tasks? Honest answer: for well-decomposable parallel tasks (research, benchmarking multiple options), yes. For everything else, no.
 
 To experiment hands-on: small OpenClaw instance with three SOUL files for a concrete task, measure whether it beats a single Claude Code session with a thorough prompt. That's the experiment that tells you whether the pattern is worth anything, not how the agents "feel" chatting.
+
+## Related
+
+- [[openclaw-multi-persona-dev-team-setup-playbook]] - concrete hands-on implementation of this pattern
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - where this idiom sits in the competitive landscape
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - the "watching agents chat" failure mode named here, diagnosed elsewhere
+- [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - alternative orchestration pattern without the persona roleplay
+- [[claude-code-ecosystem-repo-evaluations-for-kit-building]] - related question: what SOUL-like patterns are worth stealing into dwarves-kit

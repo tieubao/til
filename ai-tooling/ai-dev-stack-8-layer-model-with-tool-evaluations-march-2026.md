@@ -122,3 +122,5 @@ Scoring: 12-15 = ADOPT, 8-11 = BOOKMARK, 5-7 = SKIP. Rule: never adopt more than
 - [[autoresearch-the-karpathy-loop-pattern]] - the optimization pattern referenced as a "separate axis" in the stack
 - [[claudekit-evaluation-and-unique-features]] - detailed evaluation of ClaudeKit at L4
 - [[sdd-landscape-and-dwarves-kit-v1-2-reference-map]] - how the SDD frameworks compared here inform dwarves-kit positioning
+- [[hermes-agent-comprehensive-briefing-april-2026]] - where Hermes slots in the agent layer post-April 2026
+- [[openclaw-virtual-company-pattern]] - OpenClaw's multi-role pattern at the orchestration layer

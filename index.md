@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of 248 note(s) across 22 folders. Last updated: 2026-04-13
+> Full catalog of 258 note(s) across 24 folders. Last updated: 2026-04-19
 
 ## ai
 
@@ -12,6 +12,8 @@
 - [LLM memory systems three competitive battlegrounds](ai/llm-memory-systems-three-competitive-battlegrounds.md) - Write/update loop absorbs 80% of innovation; all systems delegate conflict resolution to LLMs
 - [Memory systems as agent harness plugins](ai/memory-systems-as-agent-harness-plugins.md) - Memory integrates via two lifecycle hooks: before-turn recall, after-turn capture
 - [Multi-agent coding brain rot scan design](ai/multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs.md) - Fighter pilot scan patterns fix the brain rot of running 5+ AI agents in parallel
+- [Transformer internals for software engineers, FFN as graph database (LARQL)](ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md) - FFN as sparse KNN lookup over ~348K "edges"; graph-DB reframe makes factual knowledge editable without retraining
+- [TurboQuant KV cache compression](ai/turboquant-kv-cache-compression.md) - Random rotation + two-stage quantizer cuts KV cache to 3-4 bits with unbiased inner products; ICLR 2026
 
 ## ai-tooling
 
@@ -21,8 +23,13 @@
 - [ClaudeKit evaluation and unique features](ai-tooling/claudekit-evaluation-and-unique-features.md) - 50+ commands, interview-style spec gate, 4 adversarial reviewers; scored BOOKMARK (10/15)
 - [Code graph context tools for token reduction](ai-tooling/code-graph-context-tools-for-token-reduction.md) - AST-based code graphs cut agent token usage 40-95% by replacing grep with structured queries
 - [Context Hub vs Context7 vs the context layer ecosystem](ai-tooling/context-hub-vs-context7-vs-the-context-layer-ecosystem.md) - Context Hub = curated API docs with feedback loop; Context7 = 9k+ library docs via MCP
+- [Hermes Agent comprehensive briefing April 2026](ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
+- [Hermes vs OpenClaw competitive scene April 2026](ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins on metrics, Hermes wins the narrative; realistic equilibrium is to run both
+- [OpenClaw multi-persona dev team setup playbook](ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md) - End-to-end JSON5 config + SOUL/AGENTS/TOOLS files for a Telegram-led PM/Engineer/QA team
+- [OpenClaw virtual company pattern](ai-tooling/openclaw-virtual-company-pattern.md) - "CEO/CTO/PM" multi-agent idiom is a convention, not a feature; six failure modes most writeups skip
 - [Prompt improvement as a learning technique](ai-tooling/prompt-improvement-as-a-learning-technique.md) - Sharpening vague prompts into structured ones is a thinking tool, not just better answers
 - [Tool evaluation 5-question rubric](ai-tooling/tool-evaluation-5-question-rubric.md) - 5 questions in 10 min; the kill question: what past failure would this have prevented?
+- [Why developers migrate to Hermes, ranked real vs hype](ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (OpenClaw CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
 
 ## claude-code
 
@@ -199,6 +206,11 @@
 - [The Zen of Go](engineering/zen-of-go.md) - Dave Cheney's Go principles: single-purpose packages, flat control flow, goroutine discipline
 - [The Zen of Python](engineering/zen-of-python.md) - PEP 20: beautiful over ugly, explicit over implicit, simple over complex, readability counts
 
+## finance
+
+- [Financial knowledge as compound information advantage](finance/financial-knowledge-as-compound-information-advantage.md) - Bille Finance narrative: information compounds like capital; the gap between Tier 1 and Tier 2 is learnable
+- [How the bond market controls housing, stocks, and jobs](finance/how-the-bond-market-controls-housing-stocks-and-jobs.md) - Yield seesaw sets mortgage rates, equity risk premium, and corporate refinancing costs; one chain from the 10-year
+
 ## geopolitics
 
 - [Australia's Washminster government structure](geopolitics/australias-washminster-government-structure.md) - Australia blends Westminster parliament with US federalism; federal/state split complicates crisis response
@@ -315,3 +327,7 @@
 ## youtube
 
 - [YouTube transcript extraction from cloud containers](youtube/youtube-transcript-extraction-from-cloud-containers.md) - Node.js fetch ignores HTTPS_PROXY; fix with undici ProxyAgent for YouTube transcripts
+
+## zed
+
+- [Zed global agent rules live in the Rules Library, not AGENTS.md](zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md) - No global file escape hatch; user-scope rules live in an LMDB database and need the paperclip icon to be default

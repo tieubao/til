@@ -89,3 +89,5 @@ Scan design. Externalized state. Clean handoffs that let your brain let go. That
 - [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - Dispatch enables exactly the 5+ parallel agent scenario this framework addresses
 - [[compaction-defense-patterns-for-claude-code-sessions]] - context management per session complements the operator-level attention management described here
 - [[why-knowledge-notes-need-context-not-just-facts]] - externalized state for agents mirrors the principle that knowledge needs context to be useful
+- [[openclaw-virtual-company-pattern]] - the "watching agents chat" failure mode this framework prevents
+- [[openclaw-multi-persona-dev-team-setup-playbook]] - concrete multi-agent setup where these scan/handoff disciplines matter

@@ -6,6 +6,42 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-19] ingest | Compile 10 notes pushed via Claude.ai (Hermes/OpenClaw cluster + LLM infra + finance + zed)
+
+Notes were pushed direct to master between 2026-04-14 and 2026-04-18 without running the compilation step. Compiled them today.
+
+**New notes (ai-tooling/, Hermes/OpenClaw cluster):**
+- `ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md` - Nous Research's self-hosted agent, auto-generated skills, growth trajectory
+- `ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md` - side-by-side metrics, verdict, source credibility filter
+- `ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md` - 5 migration drivers ranked by substance vs narrative
+- `ai-tooling/openclaw-virtual-company-pattern.md` - conceptual breakdown of the CEO/CTO/PM idiom and its 6 failure modes
+- `ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md` - end-to-end JSON5 + SOUL/AGENTS/TOOLS playbook for a Telegram-led team
+
+**New notes (ai/):**
+- `ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md` - FFN reframed as a graph database of ~348K edges, LARQL tooling
+- `ai/turboquant-kv-cache-compression.md` - ICLR 2026 KV cache quantization via random rotation + QJL correction
+
+**New notes (finance/ - new folder):**
+- `finance/financial-knowledge-as-compound-information-advantage.md` - Bille Finance narrative on information compounding like capital
+- `finance/how-the-bond-market-controls-housing-stocks-and-jobs.md` - Vincent Chan: yield seesaw, ERP, refinancing trap
+
+**New notes (zed/ - new folder):**
+- `zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md` - Rules Library (LMDB) is the only global mechanism in Zed
+
+**Compilation work:**
+- Added `## Related` sections with wikilinks to all 10 new notes (none had proper Related sections)
+- Stripped em dashes from `transformer-internals-...larql.md` (9) and `openclaw-multi-persona-...playbook.md` (16) per repo style rule
+- Updated backlinks on: `ai/multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs.md`, `ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md`, `ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md`, `investing/compound-interest-levels-and-lifestyle-progression.md`
+- Added `finance/` and `zed/` sections to `index.md`; bumped ai/ to 10 and ai-tooling/ to 13
+- Updated header count to 258 across 24 folders
+- README.md refreshed: new Recent additions, Topics table, doc line
+
+**Contradictions flagged:** none. The Hermes/OpenClaw cluster is internally consistent and new; no prior notes covered these tools.
+
+**Synthesis page:** ai-tooling/ now has 13 notes, a mature cluster. Strong candidate for a synthesis page (layered dev-tool landscape, Hermes vs OpenClaw, evaluation rubric connective tissue). Suggested for next session.
+
+---
+
 ## [2026-04-13] ingest | Batch ingest 8 notes from GitHub issues (label: hiring)
 
 Triaged 8 issues (#545, #518, #361, #310, #304, #298, #229, #106). Created 8 notes, skipped 0.

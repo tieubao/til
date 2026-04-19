@@ -66,3 +66,9 @@ Indirectly, three reasons to track it:
 1. **Local model viability improves.** TurboQuant and similar techniques (KIVI, KVQuant, KVTC, PolarQuant, BalanceKV) are the reason a 70B-class model might actually fit in consumer VRAM with long context. Relevant for privacy-sensitive or offline use cases.
 2. **Inference cost drops.** API prices for long-context usage should come down as providers deploy these techniques.
 3. **The math is approachable for a CS408-level path.** Built on random rotations, Beta distributions, and Johnson-Lindenstrauss projections. If following linear algebra and probability into computational finance, this is a clean example of theoretical CS tools (vector quantization, JL transform, discrepancy theory) getting weaponized for practical LLM infra. Good ICLR read.
+
+## Related
+
+- [[transformer-internals-for-software-engineers-ffn-as-graph-database-larql]] - counterpart that targets FFN weights; this note targets attention KV cache
+- [[llm-agent-memory-systems-landscape-2026]] - downstream use case: long-context agent memory becomes cheap when KV quantization holds
+- [[llm-memory-systems-three-competitive-battlegrounds]] - why infra improvements like this reshape what memory architectures are viable

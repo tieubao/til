@@ -68,7 +68,9 @@ The assertive phrasing beats the concise one.
 
 ## Related
 
-- Project-root `AGENTS.md` / `CLAUDE.md` still earn their keep for repo-specific context (architecture, conventions, verification rules). They stack on top of the global default rule, they don't replace it.
-- The agents.md spec is followed by Cursor, Aider, and Zed's agent panel. Keep one at repo root for any serious project, same as a README.
+- [[commands-vs-hooks-vs-skills-decision-framework]] - Claude Code's parallel layered mechanism for rules vs ephemeral behavior
+- [[claude-code-hook-lifecycle-and-event-system]] - hook system is Claude Code's answer to the "global behavior injection" problem Zed solves via the Rules Library
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - where IDE-embedded agents fit in the broader dev stack
+- Project-root `AGENTS.md` / `CLAUDE.md` still earn their keep for repo-specific context. They stack on top of the global default rule, they don't replace it.
 
 #zed #ai-agents #claude #editor-config

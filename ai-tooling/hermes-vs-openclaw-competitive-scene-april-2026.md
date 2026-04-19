@@ -65,3 +65,11 @@ A non-trivial portion of the Reddit community flags coordinated promotion of Her
 **Medium term (12 months)**: OpenClaw is still the default. Once security incidents fade from the news cycle and the foundation ships hardened versions, and once NemoClaw + NVIDIA + enterprise partners mature, the ecosystem advantage compounds. Hermes's auto-skill-generation will get cloned, commoditized, and absorbed by competitors including OpenClaw itself. A 44,000-skill community library cannot be recreated in a year. Nor can 1,200 contributors.
 
 **Realistic equilibrium**: both survive, both matter. The smart developer pattern already emerging on Reddit: run OpenClaw for multi-channel orchestration, Hermes for focused execution loops, bridge via ACP. This is the "don't pick a religion" answer and it's probably right.
+
+## Related
+
+- [[hermes-agent-comprehensive-briefing-april-2026]] - deeper dive on Hermes architecture and growth
+- [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] - migration drivers isolated and ranked
+- [[openclaw-virtual-company-pattern]] - the OpenClaw idiom with no Hermes equivalent
+- [[openclaw-multi-persona-dev-team-setup-playbook]] - hands-on OpenClaw setup for the patterns discussed here
+- [[tool-evaluation-5-question-rubric]] - framework for making the "which to adopt" call yourself

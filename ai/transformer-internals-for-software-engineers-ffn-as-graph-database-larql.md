@@ -1,11 +1,11 @@
 ---
-title: "Transformer internals for software engineers — FFN as graph database (LARQL)"
+title: "Transformer internals for software engineers, FFN as graph database (LARQL)"
 date: 2026-04-14
 captured: 2026-04-14T06:13:41.708Z
 tags: ["ai", "llm", "transformer", "architecture"]
 source: "Claude Code session - larql repo walkthrough"
 ---
-A software-engineer's mental model of how transformers work, why attention was invented, and how the LARQL project reframes the FFN as a queryable graph database. Written for someone comfortable with data structures, databases, graphs, mmap, and BLAS — but new to LLMs.
+A software-engineer's mental model of how transformers work, why attention was invented, and how the LARQL project reframes the FFN as a queryable graph database. Written for someone comfortable with data structures, databases, graphs, mmap, and BLAS, but new to LLMs.
 
 ![Transformer pipeline with LARQL FFN-as-graph reframe](https://assets.han-ws.workers.dev/i/2026/04/larql-transformer-ffn-graph.svg)
 
@@ -23,7 +23,7 @@ The function is ~16 GB of floating-point numbers (the *weights*) plus a fixed se
 
 ### The residual stream
 
-A transformer is N identical blocks stacked (Gemma-3-4B has N=34). Each block takes a `[seq_len, hidden_size]` matrix of floats (here `hidden_size=2560`) and returns one of the same shape. This matrix is called the **residual stream** — a mutable buffer flowing through the pipeline, where each block *adds* its contribution:
+A transformer is N identical blocks stacked (Gemma-3-4B has N=34). Each block takes a `[seq_len, hidden_size]` matrix of floats (here `hidden_size=2560`) and returns one of the same shape. This matrix is called the **residual stream**, a mutable buffer flowing through the pipeline, where each block *adds* its contribution:
 
 ```python
 x = embed(tokens)            # [seq, 2560]
@@ -33,7 +33,7 @@ for block in blocks:         # 34 times
 logits = x @ embed.T         # project back to vocab → 262K scores
 ```
 
-The `x + attention(x) + ffn(x)` pattern is why it's called "residual" — each layer is a diff against the running state. Close to a middleware chain where each middleware mutates a shared context object by *adding* to it.
+The `x + attention(x) + ffn(x)` pattern is why it's called "residual", each layer is a diff against the running state. Close to a middleware chain where each middleware mutates a shared context object by *adding* to it.
 
 Two sub-modules per block:
 - **Attention**: look at other tokens in the sequence and mix in information from them.
@@ -74,7 +74,7 @@ weights = softmax(scores)                              # normalize to sum=1
 output[i] = sum(weights[j] * V[j] for j in range(seq_len))
 ```
 
-**Software analogy:** a `Map<Vec, Vec>` where `get(query)` doesn't return one value — it returns a weighted blend of all values, weighted by how similar each stored key is to your query. A soft, differentiable, content-addressed hash-map lookup.
+**Software analogy:** a `Map<Vec, Vec>` where `get(query)` doesn't return one value, it returns a weighted blend of all values, weighted by how similar each stored key is to your query. A soft, differentiable, content-addressed hash-map lookup.
 
 ### Why they had to invent it
 
@@ -95,9 +95,9 @@ return y                                    # added back to residual
 ```
 
 Three weight matrices:
-- `W_gate`: `[10240, 2560]` — 10,240 rows, each a 2560-dim "detector"
+- `W_gate`: `[10240, 2560]`, 10,240 rows, each a 2560-dim "detector"
 - `W_up`: same shape
-- `W_down`: `[10240, 2560]` — 10,240 columns, each a 2560-dim "writer"
+- `W_down`: `[10240, 2560]`, 10,240 columns, each a 2560-dim "writer"
 
 The activation (SiLU, GeGLU) is near-zero for most inputs, so **most of the 10,240 rows produce ~0 contribution**. Only a handful "fire" per token. This sparsity is the key insight.
 
@@ -107,7 +107,7 @@ The activation (SiLU, GeGLU) is near-zero for most inputs, so **most of the 10,2
 - The matching column of `W_down` → the **edge payload**, a vector that nudges the output toward a specific target token.
 - 34 layers × 10,240 features ≈ **348,160 edges**.
 
-The FFN is literally: "for each token, find the few detectors that fire, add their payloads to the stream." That's **KNN lookup + sum**, not a matmul in spirit — the matmul was just how GPUs happened to compute it.
+The FFN is literally: "for each token, find the few detectors that fire, add their payloads to the stream." That's **KNN lookup + sum**, not a matmul in spirit, the matmul was just how GPUs happened to compute it.
 
 ## Weights on disk
 
@@ -157,7 +157,7 @@ To add "Atlantis → capital-of → Poseidon":
 3. Synthesize a down vector that rotates the residual toward `Poseidon`'s embedding.
 4. Write both into a `.vlp` **patch file** (JSON-ish overlay, ~10 KB per fact). Base vindex stays untouched.
 
-At query time, the patch overlay is merged in-memory. `COMPILE CURRENT INTO VINDEX` bakes the overlay into a new `down_weights.bin` by writing the new column in place — because `.vindex` stores column-major, the original file can be **hardlinked** and only changed columns rewritten. Instant.
+At query time, the patch overlay is merged in-memory. `COMPILE CURRENT INTO VINDEX` bakes the overlay into a new `down_weights.bin` by writing the new column in place, because `.vindex` stores column-major, the original file can be **hardlinked** and only changed columns rewritten. Instant.
 
 **The audacious claim:** editing an LLM's factual knowledge reduces to "allocate a free row in a matrix and fill it in." No gradient descent.
 
@@ -173,4 +173,10 @@ At query time, the patch overlay is merged in-memory. `COMPILE CURRENT INTO VIND
 
 ## Key takeaway
 
-A transformer is mostly arithmetic over a flowing residual stream. Attention is a soft content-addressed hash-map that moves information between positions. FFN is a sparse KNN lookup (dressed up as a matmul) that transforms information at each position. Factual knowledge lives almost entirely in FFN weights, and those weights — reorganized — look exactly like a graph database with ~348K edges. LARQL is the tool that makes this view literal: query it with SQL-like syntax, edit it without retraining, recompile to standard model formats.
+A transformer is mostly arithmetic over a flowing residual stream. Attention is a soft content-addressed hash-map that moves information between positions. FFN is a sparse KNN lookup (dressed up as a matmul) that transforms information at each position. Factual knowledge lives almost entirely in FFN weights, and those weights, reorganized, look exactly like a graph database with ~348K edges. LARQL is the tool that makes this view literal: query it with SQL-like syntax, edit it without retraining, recompile to standard model formats.
+
+## Related
+
+- [[turboquant-kv-cache-compression]] - counterpart on the attention side: compressing KV cache instead of reorganizing FFN weights
+- [[llm-agent-memory-systems-landscape-2026]] - memory systems built on top of the LLM function this note decomposes
+- [[llm-memory-systems-three-competitive-battlegrounds]] - where FFN-as-graph fits against retrieval and fine-tuning approaches

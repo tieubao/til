@@ -62,3 +62,11 @@ Hermes needs 64K+ context models. Uses 6-8K tokens per CLI turn, 15-20K per mess
 ## Why it matters, beyond the hype
 
 The research flywheel is the real long-term bet. Nous Research is an open-weight model lab. Every Hermes Agent instance running in the wild potentially generates training trajectories that make the next Hermes model better at being an agent. OpenClaw doesn't have that. Neither does LangGraph or CrewAI. This is a moat that compounds over quarters, not weeks.
+
+## Related
+
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - side-by-side metrics and verdict, same source session
+- [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] - migration drivers ranked by what's real versus narrative
+- [[openclaw-virtual-company-pattern]] - the incumbent's idiom Hermes deliberately omits
+- [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - where Hermes sits in the broader dev-tool stack
+- [[llm-agent-memory-systems-landscape-2026]] - three-layer memory context for Hermes's architecture

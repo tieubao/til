@@ -223,3 +223,5 @@ Somewhere, a 23-year-old walks into a glass tower for the very first time this m
 - [[enterprise-trust-ladder-vendor-to-strategic-partner]] - the enterprise path to becoming a strategic partner mirrors the capital allocator's path to accessing private markets
 - [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the multigenerational architecture at Levels 5-6 connects to the bridge-builder framework mentioned in Danny's context
 - [[why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine]] - the contrast between subsistence business (Level 1 depositor mindset) and scalable trade infrastructure (capital allocator mindset)
+- [[financial-knowledge-as-compound-information-advantage]] - the career side of compounding: information advantage moves you between the levels described here
+- [[how-the-bond-market-controls-housing-stocks-and-jobs]] - mechanics underneath why the instruments change at different compounding levels

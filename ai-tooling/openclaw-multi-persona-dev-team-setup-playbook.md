@@ -5,7 +5,7 @@ captured: 2026-04-18T16:27:29.910Z
 tags: ["openclaw", "multi-agent", "playbook", "dwarves", "config"]
 source: "Claude.ai chat"
 ---
-Complete hands-on setup for running a multi-persona dev team inside OpenClaw. Scenario: Dwarves Dev Shop — one orchestrator (messaged on Telegram) that delegates to three sub-agent roles: PM, Engineer, QA. Running on Docker.
+Complete hands-on setup for running a multi-persona dev team inside OpenClaw. Scenario: Dwarves Dev Shop, one orchestrator (messaged on Telegram) that delegates to three sub-agent roles: PM, Engineer, QA. Running on Docker.
 
 ## Scope of this note
 
@@ -20,7 +20,7 @@ Complete hands-on setup for running a multi-persona dev team inside OpenClaw. Sc
 
 **Extrapolated plausibly (community convention, verify before running):**
 - Exact tool names (`web_search`, `web_fetch`, `apply_patch`, etc.) real per OpenClaw tool docs, but exact allow/deny strings may vary by version
-- `models.providers.anthropic.apiKey` path is best inference — check `openclaw config validate` before starting
+- `models.providers.anthropic.apiKey` path is best inference, check `openclaw config validate` before starting
 - `subagents.allowAgents` field confirmed in docs
 
 **Where to RTFM before shipping:**
@@ -199,7 +199,7 @@ Complete hands-on setup for running a multi-persona dev team inside OpenClaw. Sc
 ### workspace-dwarves/SOUL.md
 
 ```markdown
-# SOUL — Dwarves Lead
+# SOUL, Dwarves Lead
 
 ## Vibe
 Pragmatic technical lead at a Vietnam-Singapore software consultancy.
@@ -248,7 +248,7 @@ Short sentences. No filler. No "Great question!" openings. No em dashes.
 The critical file. Tells the orchestrator how to delegate.
 
 ```markdown
-# AGENTS — How the Dwarves team works
+# AGENTS, How the Dwarves team works
 
 ## Your sub-agents
 
@@ -318,7 +318,7 @@ Do not include raw sub-agent transcripts unless the user asks.
 ### workspace-dwarves/USER.md
 
 ```markdown
-# User — Han
+# User, Han
 
 ## Role
 Founder and technical lead at Dwarves Foundation, software consultancy
@@ -346,7 +346,7 @@ international clients.
 ### workspace-dwarves/TOOLS.md
 
 ```markdown
-# TOOLS — Rules
+# TOOLS, Rules
 
 ## exec
 - Always dry-run destructive commands first
@@ -383,7 +383,7 @@ Remember: sub-agent runs only get `AGENTS.md + TOOLS.md` injected. Persona lives
 ### workspace-pm/AGENTS.md
 
 ```markdown
-# PM role — Dwarves dev shop
+# PM role, Dwarves dev shop
 
 You are a product manager sub-agent spawned by the Dwarves Lead
 orchestrator. You have no memory of prior conversations. Your entire
@@ -421,7 +421,7 @@ Return as Markdown. The orchestrator will extract and hand to Engineer.
 ### workspace-engineer/AGENTS.md
 
 ```markdown
-# Engineer role — Dwarves dev shop
+# Engineer role, Dwarves dev shop
 
 You are an implementation sub-agent. Your job: turn a spec into working files.
 
@@ -457,7 +457,7 @@ Given a PM spec + target paths + stack constraints:
 ### workspace-qa/AGENTS.md
 
 ```markdown
-# QA role — Dwarves dev shop
+# QA role, Dwarves dev shop
 
 You are a QA sub-agent. Your job: verify that what Engineer built matches
 the PM spec.
@@ -616,8 +616,8 @@ Test results:
 - curl localhost:3000: PASS (found "Dwarves Skills")
 
 Bugs found via code review:
-- app/page.tsx:18 — alt="" on the logo img, should be descriptive
-- app/skills-data.ts:12 — reel-transcript description truncated mid-sentence
+- app/page.tsx:18, alt="" on the logo img, should be descriptive
+- app/skills-data.ts:12, reel-transcript description truncated mid-sentence
 
 Overall: READY TO SHIP with minor fixes
 ```
@@ -657,11 +657,11 @@ docker exec -it openclaw openclaw subagents log <run-id> 100
 
 These slash commands work directly in chat:
 
-- `/subagents list` — see what's running right now
-- `/subagents log <id>` — dump the last N entries
-- `/subagents steer <id> "focus only on the hero section"` — inject a nudge into a running sub-agent
-- `/subagents kill <id>` — stop a specific run
-- `/stop` — abort the whole chain (cascades to all sub-agents)
+- `/subagents list`, see what's running right now
+- `/subagents log <id>`, dump the last N entries
+- `/subagents steer <id> "focus only on the hero section"`, inject a nudge into a running sub-agent
+- `/subagents kill <id>`, stop a specific run
+- `/stop`, abort the whole chain (cascades to all sub-agents)
 
 ### Admin dashboard
 
@@ -692,3 +692,11 @@ If that passes, start the gateway and message on Telegram. If the first spawn fa
 First 3-4 tries will feel clumsy. Sub-agents will over-scope, under-verify, or ask for context that wasn't passed. The system gets good after iterating on the AGENTS.md files for each role based on what they got wrong. Budget a week of tweaking before this feels useful for real work.
 
 For a solo tech lead with an existing dwarves-kit + Claude Code workflow, this is a good learning exercise, probably not a production setup. The existing workflow will likely still beat this for most tasks. Value comes from understanding the delegation pattern, not from adopting the stack.
+
+## Related
+
+- [[openclaw-virtual-company-pattern]] - conceptual framing this playbook implements
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - why OpenClaw is still worth learning even if Hermes has narrative momentum
+- [[claude-dispatch-workflows-and-async-ai-orchestration-from-mobile]] - similar Telegram-as-orchestrator-channel pattern in a different stack
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - context-starvation and handoff failure modes this setup has to manage
+- [[claude-code-ecosystem-repo-evaluations-for-kit-building]] - comparison target for whether dwarves-kit should adopt any of these conventions

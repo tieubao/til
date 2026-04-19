@@ -122,3 +122,8 @@ Every link in this chain traces back to the 10-year treasury yield. When it move
 - The high yield spread (corporate vs. government bond yield gap) is an early warning signal for market trouble.
 - The 2021-2024 cycle was one story: cheap money (low yields) inflated everything, then expensive money (high yields) contracted everything.
 - Understanding the bond market means understanding why your mortgage costs what it does, why stocks rise or fall, and whether your employer can afford to keep you.
+
+## Related
+
+- [[financial-knowledge-as-compound-information-advantage]] - duration, credit spreads, and discount rates as tools of compound career advantage
+- [[compound-interest-levels-and-lifestyle-progression]] - counterpart on how cash/savings choices compound at a personal level
