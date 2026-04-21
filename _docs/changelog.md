@@ -4,6 +4,32 @@ Append-only record of wiki operations. Each entry: `## [date] operation | descri
 
 ---
 
+## [2026-04-21] refactor | Framework/content separation: move domain folders under `notes/`
+
+**Decision:** Repo root now holds framework only (CLAUDE.md, README.md, index.md, log.md, `_docs/`, `_templates/`, `_inbox/`). All 26 domain folders and `assets/` moved under `notes/`.
+
+**Rationale:**
+1. **Asymmetry fixed.** Underscore-prefixed folders (`_inbox/`, `_templates/`, `_docs/`) already signaled "framework, not content." Flat domain folders at root had no equivalent signal, so a newcomer reading `ls` saw 25+ folders with no way to tell the wiki's operating system apart from the wiki's contents. Moving domains under `notes/` makes the split explicit.
+2. **Forkable template.** The LLM-wiki pattern (per `notes/pkm/llm-wiki-pattern-compilation-over-retrieval.md`) is the kind of thing other people will want to copy. Separating framework from content means someone can clone this repo, delete `notes/`, and have a working wiki-framework template with zero cleanup.
+3. **The "more files at top level looks impressive" instinct was vanity.** Acknowledged by the user and overruled by the clarity argument.
+
+**Cost:** one-time mechanical refactor. 289 files renamed (all `R100`), 270 links rewritten in index.md, 16+26 links rewritten in README.md, framework docs updated.
+
+**Invariants preserved:**
+- `[[wikilinks]]` unaffected because Obsidian resolves by filename, not path
+- Git history preserved (all moves are pure renames)
+- Note count unchanged (273 before, 273 after)
+- `notes/assets/` stayed co-located with notes so Obsidian vault-root image resolution continues to work
+
+**What did NOT move:**
+- `_inbox/`, `_templates/`, `_docs/` stayed at root (they're framework, not content)
+- Root markdown files (CLAUDE.md, README.md, index.md, log.md) stayed at root
+
+**Stale artifacts removed:**
+- Dropped the per-folder note-count table from `_docs/guide.md` (counts churn every ingest; pointer to README Topics table now)
+
+---
+
 ## [2026-04-13] refactor | Zettelkasten migration
 
 Migrated the TIL repo from a flat note collection to a Zettelkasten-style LLM wiki. This was a foundational restructure session.

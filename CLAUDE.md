@@ -8,14 +8,21 @@ A personal knowledge base following Zettelkasten methodology. Markdown notes org
 
 ## Repo structure
 
-- Each topic is a folder at the root (e.g., `ai-tooling/`, `patterns/`, `mcp/`, `claude-code/`)
-- `_inbox/` is the landing zone for raw, unprocessed notes (Obsidian Clipper dumps here)
-- `_templates/` contains Obsidian templates for new notes
-- `_docs/` contains project documentation (requirements, architecture, guide, changelog)
-- `assets/` holds images and attachments
-- Notes are markdown files with YAML frontmatter
-- `index.md` is the full catalog of all notes with one-line summaries, grouped by folder. The LLM reads this to navigate the wiki.
-- `README.md` is the repo landing page with methodology description, topic overview, and recent additions.
+Repo root holds framework files only; all content lives under `notes/`.
+
+**Framework (root)**:
+- `CLAUDE.md` - this file; operating rules for the wiki
+- `README.md` - landing page with methodology, topic overview, recent additions
+- `index.md` - full catalog of all notes with one-line summaries, grouped by folder. The LLM reads this to navigate the wiki.
+- `log.md` - chronological content operations (ingests, queries, lints, synthesis)
+- `_docs/` - project documentation (requirements, architecture, guide, changelog)
+- `_templates/` - Obsidian templates for new notes
+- `_inbox/` - landing zone for raw, unprocessed notes (Obsidian Clipper dumps here)
+
+**Content (`notes/`)**:
+- Each topic is a folder under `notes/` (e.g., `notes/ai-tooling/`, `notes/patterns/`, `notes/mcp/`, `notes/claude-code/`)
+- `notes/assets/` holds images and attachments, scoped per domain (e.g., `notes/assets/wealth/*.svg`)
+- Notes are markdown files with YAML frontmatter. Obsidian resolves `[[wikilinks]]` by filename, so path depth does not matter.
 
 ## Session start check
 
@@ -143,7 +150,7 @@ For link updates: `docs: update backlinks`.
 ## Topic folder selection
 
 - Reuse existing folders when content fits
-- Organize by domain, not by tool (e.g., YouTube extraction goes in `youtube/`, not `nodejs/`)
+- Organize by domain, not by tool (e.g., YouTube extraction goes in `notes/youtube/`, not `notes/nodejs/`)
 - Never use date-based paths for topic organization
 - When reorganizing, Claude may merge, split, or rename folders. Always update all backlinks after moves.
 

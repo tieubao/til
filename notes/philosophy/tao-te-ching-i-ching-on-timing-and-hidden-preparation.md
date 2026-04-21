@@ -13,12 +13,12 @@ Curated passages from a friend's morning share. Loosely translated from English 
 
 The six passages stitched together form a single argument:
 
-1. **Patience precedes clarity** — let the mud settle before you act
-2. **Forcing visibility backfires** — tiptoes don't stand, self-definition obscures the self
-3. **Read the traffic lights of life** — green/yellow/red timing
-4. **When forced to wait, prepare** — the hidden dragon still trains
-5. **The sage leads by not leading** — presence without imposition
-6. **Respect what should be feared** — honor the signals
+1. **Patience precedes clarity**: let the mud settle before you act
+2. **Forcing visibility backfires**: tiptoes don't stand, self-definition obscures the self
+3. **Read the traffic lights of life**: green/yellow/red timing
+4. **When forced to wait, prepare**: the hidden dragon still trains
+5. **The sage leads by not leading**: presence without imposition
+6. **Respect what should be feared**: honor the signals
 
 ## Source Mapping
 
@@ -34,7 +34,7 @@ The six passages stitched together form a single argument:
 
 ## The Hidden Dragon Principle
 
-The I Ching line **潛龍勿用 (Tiềm long vật dụng)** — "Hidden dragon, do not act" — is the keystone. Confucius's commentary in the Wenyan (文言) appendix elaborates:
+The I Ching line **潛龍勿用 (Tiềm long vật dụng)**, "Hidden dragon, do not act", is the keystone. Confucius's commentary in the Wenyan (文言) appendix elaborates:
 
 > Đức cao mà lại ẩn mình,
 > Đời thay, mình vẫn là mình chẳng thay.
@@ -51,7 +51,7 @@ Most readings of 無為 (wu wei) get interpreted as passivity. The post corrects
 
 > "Tới đoạn phải dừng thì cũng không hẳn là dừng hẳn. Năng lượng dư thì ta vẫn có thể đi luyện skill, gầy dựng chuẩn bị điều kiện cho ngon thì thời tới mới nắm bắt được. Còn không chuẩn bị thì dĩ nhiên là thời tới sẽ bị những người đã chuẩn bị hốt hết."
 
-**The dragon is hidden but not idle.** A red light is not sleep — it is preparation. Those who don't prepare during the red light get passed by those who did when the light turns green.
+**The dragon is hidden but not idle.** A red light is not sleep; it is preparation. Those who don't prepare during the red light get passed by those who did when the light turns green.
 
 This resolves the apparent contradiction between Ch. 29 ("sometimes act, sometimes don't") and the ambition-drive embedded in any real life. The sage doesn't suppress capability; they **hide capability while sharpening it**, waiting for the signal.
 
@@ -62,7 +62,7 @@ The poster's analogy:
 - **Yellow** → slow down
 - **Red** → stop (but keep training)
 
-The weakness of this analogy, which the poster acknowledges: real-life lights are not visible. You read weather from shadows. The skill of the sage isn't following rules — it's **reading the signal when there's no signal**.
+The weakness of this analogy, which the poster acknowledges: real-life lights are not visible. You read weather from shadows. The skill of the sage isn't following rules; it's **reading the signal when there's no signal**.
 
 ## Why This Matters
 
@@ -82,7 +82,18 @@ The Taoist answer is clear: **substance first, visibility on time, not before.**
 
 ## Related
 
+- [[simple-burnout-triage]] - the Taoist answer to pacing: can you sustain this forever? Red-light preparation is the same move
+- [[munger-operating-system]] - "deserve what you want before you ask" is the Confucian substance-before-visibility rule in Western clothing
+- [[be-dispassionate-about-software-careers]] - invest in skills for self-preservation, not applause; visibility on time, not before
+- [[in-pursuit-of-excellence]] - unique positioning is built during the hidden-dragon phase, not announced during it
+- [[the-three-gates-what-elders-screen-for]] - elders screen for character that only shows across time; the signal you can't fake
+- [[the-12-month-progression-deposit-to-partnership]] - trust compounds over quarters; the traffic light for relationships is long
+- [[dang-le-nguyen-vu-nhan-tinh-the-thai]] - Vietnamese framing of the same ideas: self-reflect, build inner strength, accept impermanence
+- [[leadership-in-the-agentic-era]] - the "great with agents, broken as a leader" anti-pattern is the modern version of "tiptoes don't stand"
+
+## Sources
+
 - Stephen Mitchell, *Tao Te Ching: A New English Version* (1988)
 - *I Ching*, Qian hexagram 乾卦, Wenyan 文言 commentary
-- Concept: 無為 (wu wei) — non-forcing action
+- Concept: 無為 (wu wei), non-forcing action
 - Concept: 潛龍勿用 (hidden dragon, do not act)
