@@ -133,3 +133,15 @@ The correct posture is the opposite: the agent stack handles coordination and pr
 ## Key takeaway
 
 Agentic leadership is the same job it always was (judgment, trust, taste, bet-making), but with execution capacity so abundant that the only thing separating good leaders from bad is whether they use the freed hours to think harder and relate better, or waste them in the tooling.
+
+## Related
+
+- [[cto-vs-vp-engineering]] - outward vs inward leadership split still holds; the agentic era amplifies the outward (trust, strategy) half
+- [[in-pursuit-of-excellence]] - unique positioning at domain intersections is what keeps leaders from being commoditized by their own agents
+- [[managing-people-smarter-than-you]] - "enable others' success" now extends to agent fleets; insecurity failure mode is identical
+- [[hr-evaluation-unique-value]] - Market value = Differentiation x Influence; the taste and trust multipliers are exactly these
+- [[nguyen-tac-truc-giac]] - intuition as the leadership differentiator; maps onto the taste multiplier at the top of the stack
+- [[dwarves-kit-design-philosophy-and-architecture]] - guardrails, SKILL.md, and policy docs are how judgment gets encoded; this note is the leadership-level framing of that same move
+- [[multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs]] - IC-level version of the review-fatigue identity problem the culture multiplier must solve
+- [[ai-tooling-stack-synthesis-april-2026]] - the 3-layer tooling synthesis is what the leadership leverage stack sits on top of
+- [[tao-te-ching-i-ching-on-timing-and-hidden-preparation]] - the anti-pattern (great with agents, broken as a leader) is forcing visibility instead of building substance

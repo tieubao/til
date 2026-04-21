@@ -19,16 +19,19 @@ til/
     requirements.md  # What the wiki should do
     architecture.md  # How it's built, decisions
     guide.md         # This file (usage manual)
-    changelog.md     # Chronological operations log
+    changelog.md     # Project decisions log (structural changes)
   _inbox/            # Raw captures land here (Obsidian Clipper)
   _templates/        # Obsidian templates for new notes
-  assets/            # Images and attachments
-  ai/                # Topic folder
-  ai-tooling/        # Topic folder
-  claude-code/       # Topic folder
-  ...                # More topic folders
+  notes/             # All content lives here
+    assets/          # Images and attachments, scoped per domain
+    ai/              # Topic folder
+    ai-tooling/      # Topic folder
+    claude-code/     # Topic folder
+    ...              # More topic folders
   CLAUDE.md          # Schema: tells Claude how the wiki works
-  README.md          # Auto-generated index of all notes
+  README.md          # Landing page with topic overview + recent additions
+  index.md           # Full catalog of notes, grouped by folder
+  log.md             # Chronological content operations log
   .gitignore         # Ignores Obsidian local config
 ```
 
@@ -230,31 +233,14 @@ Periodic health check: `lint the wiki`. Claude audits for orphan notes (no links
 
 ### Choosing a folder
 
-1. Check existing folders first (`ls` or browse in Obsidian)
-2. Organize by **domain**, not by tool (YouTube extraction goes in `youtube/`, not `nodejs/`)
+1. Check existing folders first (`ls notes/` or browse in Obsidian)
+2. Organize by **domain**, not by tool (YouTube extraction goes in `notes/youtube/`, not `notes/nodejs/`)
 3. Never use date-based paths
 4. When in doubt, ask Claude; it knows the existing structure
 
 ### Current folders
 
-| Folder | Domain | Notes |
-|--------|--------|-------|
-| `ai/` | AI concepts, memory systems, agent patterns | 7 |
-| `ai-tooling/` | AI tool evaluations, dev stack analysis | 8 |
-| `claude-code/` | Claude Code hooks, skills, workflows | 5 |
-| `cs/` | Computer science fundamentals | 1 |
-| `devtools/` | Developer tools and config | 2 |
-| `diaspora/` | Vietnamese/Asian diaspora analysis | 6 |
-| `dwarves-kit/` | Dwarves Kit architecture and design | 9 |
-| `geopolitics/` | Geopolitical analysis | 3 |
-| `health/` | Health and wellness | 1 |
-| `history/` | Historical analysis (China, civilizations) | 5 |
-| `investing/` | Personal finance and investing | 1 |
-| `mcp/` | Model Context Protocol | 2 |
-| `patterns/` | Software patterns and anti-patterns | 1 |
-| `pkm/` | Personal knowledge management meta | 2 |
-| `wealth/` | Trust-building, business relationships | 5 |
-| `youtube/` | YouTube-related tooling | 1 |
+See the [Topics table in README.md](../README.md#topics) for the up-to-date folder list. All content folders live under `notes/`. Note counts are not maintained per folder (they churn with every ingest).
 
 ## Obsidian setup
 
@@ -264,7 +250,7 @@ These settings should be configured when first opening the vault:
 
 1. **Settings > Files and links > New link format**: "Shortest path when possible"
 2. **Settings > Files and links > Use [[Wikilinks]]**: ON
-3. **Settings > Files and links > Default location for new attachments**: "In the folder specified below" -> `assets`
+3. **Settings > Files and links > Default location for new attachments**: "In the folder specified below" -> `notes/assets`
 4. **Settings > Templates > Template folder location**: `_templates`
 
 ### Image handling
@@ -272,7 +258,7 @@ These settings should be configured when first opening the vault:
 After clipping a web article with images:
 
 1. **Settings > Hotkeys** > search "Download" > bind "Download all images" to `Ctrl+Shift+D` (or `Cmd+Shift+D` on Mac)
-2. After clipping an article, press the hotkey to download all images to `assets/`
+2. After clipping an article, press the hotkey to download all images to `notes/assets/`
 3. This makes images local so they survive broken URLs and the LLM can view them directly
 
 Note: LLMs can't read markdown with inline images in one pass. The workaround is to have the LLM read the text first, then view referenced images separately.

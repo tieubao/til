@@ -6,6 +6,56 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-21] refactor | Move all content folders under `notes/`
+
+Separated framework from content. Root now holds only the wiki operating system (CLAUDE.md, README.md, index.md, log.md, `_docs/`, `_templates/`, `_inbox/`); all domain folders and `assets/` live under `notes/`. Motivation: the underscore-prefixed framework folders already signaled "this is framework, not content" but content folders had no such signal, leaking the asymmetry. Makes the LLM-wiki pattern forkable as a standalone template.
+
+**Scope:** 27 folders moved via `git mv` (26 domains + `assets/`), 273 notes relocated, 0 content changes. All 289 file moves staged as `R100` (pure renames), so `git log --follow` traces through cleanly.
+
+**Path updates:**
+- `index.md`: 270 markdown links rewritten to prefix every domain path with `notes/`
+- `README.md`: 16 Recent-additions links + 26 Topics-table paths rewritten
+- `CLAUDE.md`: rewrote the "Repo structure" section to describe framework-at-root + content-under-`notes/` split
+- `_docs/architecture.md`: updated three-layer model + folder-convention sections
+- `_docs/guide.md`: updated the ASCII tree, Obsidian attachments path (`notes/assets`), and dropped the stale per-folder note-count table in favor of a pointer to README Topics
+- No changes to `_docs/requirements.md` or `_docs/changelog.md` content (changelog entry added separately)
+
+**Invariants preserved (verified by test script):**
+- 273 content notes before, 273 after
+- 0 broken markdown links in root-level docs (README, CLAUDE, log, all `_docs/*.md`)
+- 270/270 index.md paths resolve to existing files
+- 547 wikilinks scanned; 0 broken (Obsidian resolves by filename, path-independent)
+- `notes/assets/` kept together with notes so Obsidian vault-root image resolution still works
+
+**Known non-issues surfaced by the scan:**
+- Two folder-level `README.md` files (`notes/engineering/README.md`, `notes/finance-tooling/README.md`) share a basename. Not a wikilink target; no code writes `[[README]]`.
+- Regex false-positive: `list[[ts_ms, o, h, l, c, v]]` inside a ccxt code-shape note matched the wikilink pattern. It's Python type-annotation syntax, not a link.
+
+Commit strategy: single `refactor: move content folders under notes/` commit so the rename diff is reviewable in one place. Structural decision logged in `_docs/changelog.md`.
+
+---
+
+## [2026-04-21] ingest | Leadership in the agentic era + Tao Te Ching on timing
+
+Two notes pushed via Claude.ai landed on `master` without compilation (commits `0647907`, `f24d681`). Compiled both in one pass, cross-linked them through the shared "substance before visibility" thesis.
+
+**New notes:**
+- `leadership/leadership-in-the-agentic-era.md` - Era framing (industrial -> knowledge -> platform -> agentic), the five-layer leadership leverage stack (strategy/taste/trust/culture/context), and the "great with agents, broken as a leader" anti-pattern
+- `philosophy/tao-te-ching-i-ching-on-timing-and-hidden-preparation.md` - First note in new `philosophy/` folder. Six curated Tao Te Ching + I Ching passages around 潛龍勿用 (hidden dragon, do not act); key insight that wu wei is preparation during a red light, not idleness
+
+**Compilation work:**
+- Added `## Related` to the leadership note: cto-vs-vp-engineering, in-pursuit-of-excellence, managing-people-smarter-than-you, hr-evaluation-unique-value, nguyen-tac-truc-giac, dwarves-kit-design-philosophy-and-architecture, multi-agent-coding-brain-rot-scan-design, ai-tooling-stack-synthesis-april-2026, plus a cross-folder link to the Taoist note
+- Rebuilt `## Related` on the Taoist note with wikilinks to simple-burnout-triage, munger-operating-system, be-dispassionate-about-software-careers, in-pursuit-of-excellence, the-three-gates-what-elders-screen-for, the-12-month-progression-deposit-to-partnership, dang-le-nguyen-vu-nhan-tinh-the-thai, and the leadership note. Moved Mitchell/I Ching citations into a separate `## Sources` section
+- Stripped 7 em dashes from the Taoist note per repo rule (hard rule #1)
+- Created new `## philosophy` section in `index.md` (between patterns and pkm); added leadership entry to `## leadership`
+- Added both to `README.md` Recent additions (dropped the two oldest 2026-04-18 rows: Hermes briefing and TurboQuant); added `philosophy/` row to Topics table
+
+**Contradictions / overlaps:** None found. Leadership note complements `nguyen-tac-truc-giac` (intuition theme) and `hr-evaluation-unique-value` (Differentiation x Influence = taste x trust) rather than contradicting. Taoist note is the first in its cluster; wisdom-adjacent notes currently live in `life/` and `wealth/`.
+
+**Synthesis page:** Not yet. Leadership folder has 17 notes but spans multiple sub-clusters (agentic-era, consulting mechanics, PM/EM roles, Vietnamese business wisdom); sub-cluster synthesis is the right move, not a single leadership synthesis. Philosophy folder has 1 note; synthesis requires 4+.
+
+---
+
 ## [2026-04-20] ingest | GeckoTerminal API evaluation
 
 Fills the DEX OHLCV gap surfaced by a signals-engine integration where Binance-only klines silently drop coverage on Solana SPL and EVM DeFi tokens without a CEX pair. Evaluated six free providers and ten paid candidates; GeckoTerminal wins the free tier decisively with keyless auth + native H1/H4 + 30 rpm + 1000 bars/call. Same underlying DEX data as CoinGecko Pro Analyst ($129/mo), which makes the paid tier a common footgun.

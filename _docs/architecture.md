@@ -35,14 +35,14 @@ Adapted from Karpathy's LLM Wiki pattern:
 | Layer | Karpathy's version | Our version |
 |-------|-------------------|-------------|
 | **Raw sources** | Immutable source documents | `_inbox/` (raw Clipper captures) |
-| **Wiki** | LLM-generated markdown pages | Topic folders with refined notes + wikilinks |
+| **Wiki** | LLM-generated markdown pages | `notes/<domain>/` folders with refined notes + wikilinks |
 | **Schema** | CLAUDE.md / AGENTS.md | `CLAUDE.md` at repo root |
 
 Key difference: we don't maintain a separate raw sources archive. Once a raw note is processed, the refined version replaces it. The git history preserves the original if needed.
 
 ## Folder conventions
 
-### Infrastructure folders (underscore prefix)
+### Framework folders (root, underscore-prefixed)
 
 | Folder | Purpose | In index? | In graph? |
 |--------|---------|-----------|-----------|
@@ -50,12 +50,12 @@ Key difference: we don't maintain a separate raw sources archive. Once a raw not
 | `_templates/` | Obsidian note templates | No | No |
 | `_docs/` | Project documentation | No | No |
 
-### Content folders (topic-based)
+### Content folders (under `notes/`)
 
-Named by domain. Lowercase, hyphenated. Examples: `ai/`, `ai-tooling/`, `diaspora/`, `wealth/`.
+Named by domain. Lowercase, hyphenated. Examples: `notes/ai/`, `notes/ai-tooling/`, `notes/diaspora/`, `notes/wealth/`. `notes/assets/` holds images scoped per domain.
 
 Rules:
-- Domain over tool (YouTube extraction -> `youtube/`, not `nodejs/`)
+- Domain over tool (YouTube extraction -> `notes/youtube/`, not `notes/nodejs/`)
 - No date-based paths
 - Small folders (1-2 notes) are fine; they represent legitimate domains that will grow
 - Merge only when domains genuinely overlap
@@ -65,7 +65,9 @@ Rules:
 | File | Purpose | Who maintains it |
 |------|---------|-----------------|
 | `CLAUDE.md` | Schema: tells Claude how the wiki works | Claude + human co-evolve |
-| `README.md` | Auto-generated note index | MCP Worker or Claude |
+| `README.md` | Landing page with topic overview + recent additions | MCP Worker or Claude |
+| `index.md` | Full catalog of notes, grouped by folder | Claude (on every ingest) |
+| `log.md` | Chronological content operations log | Claude (on every ingest) |
 | `.gitignore` | Excludes Obsidian local config | Human |
 
 ## Note anatomy
