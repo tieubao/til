@@ -62,3 +62,5 @@ Sqreen published a comprehensive security checklist aimed at CTOs and technical 
 ## Related
 
 - [[software-engineering-code-of-ethics]] - ethical dimensions of security decisions
+- [[hids-lite-rule-set-for-single-operator-vps]] - solo-operator distillation of the monitoring-and-response items here
+- [[cloudflare-workers-as-monitoring-backend-for-self-hosted-linux]] - serverless execution shape that makes these rules runnable without a dedicated monitoring box

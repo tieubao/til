@@ -6,6 +6,22 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-22] ingest | Cloudflare-native VPS monitoring pattern + HIDS-lite rule set
+
+Two engineering/architecture notes from a trading-repo research memo on building alarm / anomaly detection for a small VPS fleet. Private design decisions stay in the originating repo; these TIL notes extract the generic patterns.
+
+**Notes pushed:**
+- [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - architectural pattern: dumb agent on host, rules in Worker, dedup in KV, D1 for history
+- [HIDS-lite rule set for a single-operator Linux VPS](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md) - 15-rule catalog over shell-sampled signals (ss, ps, lastb, wg, AIDE, dpkg)
+
+**Why these belong together:** one is the runtime shape, one is the detection logic. Either note without the other is half the answer to "how do I monitor a self-hosted Linux box without running another monitoring box?"
+
+**Privacy gate:** both drafted, privacy-checklist-PASSED on all 7 lines (no dollar figures, no engine-internal paths, no 1Password URIs, no owner-shape tells, no real host names or IPs leaked from the source repo).
+
+**Pairing:** companion to a private trading-repo research memo dated 2026-04-22 covering the host-specific design decisions (account shape, SPEC-012 compatibility, owner-fleet trajectory). Public notes cover the reusable patterns only.
+
+---
+
 ## [2026-04-21] refactor | Move all content folders under `notes/`
 
 Separated framework from content. Root now holds only the wiki operating system (CLAUDE.md, README.md, index.md, log.md, `_docs/`, `_templates/`, `_inbox/`); all domain folders and `assets/` live under `notes/`. Motivation: the underscore-prefixed framework folders already signaled "this is framework, not content" but content folders had no such signal, leaking the asymmetry. Makes the LLM-wiki pattern forkable as a standalone template.

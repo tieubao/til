@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of all notes, grouped by folder. Last updated: 2026-04-20
+> Full catalog of all notes, grouped by folder. Last updated: 2026-04-22
 
 ## ai
 
@@ -109,10 +109,12 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [10 tips to improve application performance](notes/engineering/architecture/10-tips-application-performance.md) - NGINX guide: reverse proxy, load balancing, caching, compression, and HTTP/2 for 10x gains
 - [Apache ZooKeeper for distributed coordination](notes/engineering/architecture/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election, service discovery, and distributed locks
 - [Benefits of continuous delivery](notes/engineering/architecture/benefits-of-continuous-delivery.md) - Small deploys mean lower risk, fresher context, faster feedback, and features reaching users sooner
+- [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - Agent + Worker + D1/KV free tier beats Kuma/Netdata/Prometheus for the 1-20 host solo operator
 - [Creating a microservice - answer these 10 questions first](notes/engineering/architecture/creating-a-microservice-ten-questions.md) - Operational checklist: testing, config, security, discovery, scaling, failure handling, upgrades, monitoring
 - [CSS architecture - first steps](notes/engineering/architecture/css-architecture-first-steps.md) - BEM, SMACSS, ITCSS methodologies for maintainable stylesheets
 - [DevOps team topologies](notes/engineering/architecture/devops-team-topologies.md) - Anti-patterns (silos, fake DevOps teams) vs recommended topologies for Dev-Ops collaboration
 - [Hidden dividends of microservices](notes/engineering/architecture/hidden-dividends-of-microservices.md) - Beyond scaling: microservices force explicit interfaces, independent deploys, and team autonomy
+- [HIDS-lite rule set for a single-operator Linux VPS](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md) - 15 rules over cheap shell signals catch 80% of script-kiddie-tier compromises; out-of-band engine required
 - [The history of Hadoop](notes/engineering/architecture/history-of-hadoop.md) - From Doug Cutting's Lucene to Apache Hadoop, driven by two Google papers (GFS and MapReduce)
 - [HTTP caching guide](notes/engineering/architecture/http-caching-guide.md) - Cache-Control, ETag, Last-Modified headers explained; caching layers from browser to CDN
 - [Testing strategies in a microservice architecture](notes/engineering/architecture/microservice-testing-strategies.md) - Five-layer test pyramid for microservices: unit, integration, component, contract, end-to-end

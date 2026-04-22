@@ -6,6 +6,8 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-22` [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - Agent + Worker + D1/KV free tier beats Kuma/Netdata/Prometheus for the 1-20 host solo operator
+- `2026-04-22` [HIDS-lite rule set for a single-operator Linux VPS](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md) - 15 rules over cheap shell signals catch 80% of script-kiddie-tier compromises; out-of-band engine required
 - `2026-04-21` [Leadership in the agentic era](notes/leadership/leadership-in-the-agentic-era.md) - When agents absorb execution capacity, taste + trust + context become the scarce leadership work; coordination time collapses
 - `2026-04-21` [Tao Te Ching + I Ching on timing and hidden preparation](notes/philosophy/tao-te-ching-i-ching-on-timing-and-hidden-preparation.md) - The hidden dragon still trains: wu wei is preparation during a red light, not idleness
 - `2026-04-20` [GeckoTerminal API evaluation](notes/finance-tooling/geckoterminal-evaluation.md) - Keyless H1/H4 OHLCV for DEX pools; 14/15 ADOPT; same data as $129/mo CoinGecko Pro
