@@ -6,6 +6,19 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-22] ingest | age, a modern file-encryption CLI
+
+Captured from a Claude Code chat that started with "what is the `age` package of Homebrew for?". Worth saving because `age` lands on many machines as a silent dependency of `sops`, `chezmoi`, or dotfile bootstraps, so most users encounter it without ever reading the docs.
+
+**Note pushed:**
+- [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - definition + shape + use-case table + minimum workflow + why-over-GPG
+
+**Filed under:** `notes/devtools/` (domain: developer CLI tools, alongside starship and XDG spec). Considered `engineering/architecture/` but the note is tool-shaped, not pattern-shaped.
+
+**Backlinks added:** none outbound to this note yet; inbound links point to `saas-cto-security-checklist` (secret-management checklist item) and `xdg-base-directory-specification` (where the age key file should live). No synthesis page for devtools yet (3 notes, below the 4-note threshold).
+
+---
+
 ## [2026-04-22] ingest | Cloudflare-native VPS monitoring pattern + HIDS-lite rule set
 
 Two engineering/architecture notes from a trading-repo research memo on building alarm / anomaly detection for a small VPS fleet. Private design decisions stay in the originating repo; these TIL notes extract the generic patterns.
