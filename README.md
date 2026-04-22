@@ -6,6 +6,9 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-22` [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; native SOPS backend, SSH-key identities, no keyring state
+- `2026-04-22` [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - Agent + Worker + D1/KV free tier beats Kuma/Netdata/Prometheus for the 1-20 host solo operator
+- `2026-04-22` [HIDS-lite rule set for a single-operator Linux VPS](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md) - 15 rules over cheap shell signals catch 80% of script-kiddie-tier compromises; out-of-band engine required
 - `2026-04-21` [Leadership in the agentic era](notes/leadership/leadership-in-the-agentic-era.md) - When agents absorb execution capacity, taste + trust + context become the scarce leadership work; coordination time collapses
 - `2026-04-21` [Tao Te Ching + I Ching on timing and hidden preparation](notes/philosophy/tao-te-ching-i-ching-on-timing-and-hidden-preparation.md) - The hidden dragon still trains: wu wei is preparation during a red light, not idleness
 - `2026-04-20` [GeckoTerminal API evaluation](notes/finance-tooling/geckoterminal-evaluation.md) - Keyless H1/H4 OHLCV for DEX pools; 14/15 ADOPT; same data as $129/mo CoinGecko Pro
@@ -13,7 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-04-19` [Why rotating ISP IPs break Binance API keys, and how to fix it with WireGuard](notes/finance-tooling/wireguard-static-ip-exchange-whitelist.md) - Cheap VPS + WireGuard beats every bundled static-IP product for exchange whitelisting
 - `2026-04-19` [deepagents vs OpenClaw vs Hermes: category positioning](notes/ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md) - Library vs runtime distinction; the three are not peers and stack rather than compete
 - `2026-04-19` [AI tooling stack synthesis April 2026](notes/ai-tooling/ai-tooling-stack-synthesis-april-2026.md) - Synthesis: 3 layers wired through one rubric; growth and adoption-readiness are inversely correlated
-- `2026-04-19` [LLM agent memory synthesis April 2026](notes/ai/llm-agent-memory-synthesis-april-2026.md) - Synthesis: 5-stage pipeline + 3 battlegrounds + harness hooks form one stack with a broken evaluation floor
 - `2026-04-19` [OpenBB evaluation](notes/finance-tooling/openbb-evaluation.md) - Python-first financial SDK; 11/15 BOOKMARK; crypto value thin, TradFi inflection point
 - `2026-04-19` [OSS trading stack survey, April 2026](notes/finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis; Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first agentic pilot
 - `2026-04-19` [FinceptTerminal evaluation](notes/finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; §13 blocks integration into any network-facing trading stack
