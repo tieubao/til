@@ -76,6 +76,7 @@
 
 ## devtools
 
+- [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; X25519 + ChaCha20-Poly1305, native SSH-key identities, the default backend for SOPS
 - [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md) - Start from a preset, use $fill for right-alignment, disable 90% of modules
 - [XDG base directory specification](notes/devtools/xdg-base-directory-specification.md) - XDG separates config/data/state/cache into standard dirs; simplifies dotfile management
 
