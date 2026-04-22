@@ -116,3 +116,4 @@ The trap is thinking "static IP" is a product you buy. It isn't. Static IPs are 
 - [[finance-tooling/static-ip-solutions-compared-for-trading-bots]] - companion landscape note: 10 alternatives evaluated and why VPS + WireGuard wins
 - [[finance-tooling/oss-trading-stack-survey-april-2026]] - where the engine that hits these exchanges gets built
 - [[crypto/double-spending]] - why exchanges need key hardening in the first place
+- [[hids-lite-rule-set-for-single-operator-vps]] - the tunnel VPS becomes a monitored host; `wg show` is part of its signal set
