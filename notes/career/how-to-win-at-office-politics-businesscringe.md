@@ -1,7 +1,7 @@
 ---
 title: "How to win at office politics (BusinessCringe)"
 date: 2026-04-25
-captured: 2026-04-25T00:22:49.562Z
+captured: 2026-04-25T00:54:19.461Z
 tags: ["career", "workplace", "soft-skills", "office-politics", "youtube"]
 source: "YouTube video by BusinessCringe"
 ---
@@ -49,13 +49,13 @@ Corporate advancement is not decided by competence, output, or tenure. It is dec
 
 ## My takeaways / how to apply
 
-I'm on the other side of the table as founder of Dwarves, so most of this video flips on its head for me. But the frame is still useful in several ways:
+I'm on the other side of the table as a founder, so most of this video flips on its head for me. But the frame is still useful in several ways:
 
-- **I am a scoreboard-holder for ~15+ people.** The video is an uncomfortable mirror: my mental model of each contractor is doing the same thing. Worth checking whether my scoreboard is tracking signal (actual delivery, judgment, client feedback) or noise (who Slacks me back fast, who speaks up in syncs). Probably some of both, which is a problem I should fix by making the evaluation rubric more explicit.
-- **Client-side politics is the real game for a consultancy.** Inside Dwarves the "office politics" stakes are low. But the client's internal politics determines whether contracts renew, budgets survive, and champions defend us in their own org. Treating our primary client contact as someone whose scoreboard we need to keep healthy (make them look good to *their* boss) is probably the single highest-leverage lesson from this.
-- **Ops/comms people already run this.** Thuc, My, Nikki, Thanh, Tom, Minh each have relationships with different client stakeholders. The video's "alliance building above your pay grade" maps directly to how we should think about account coverage: don't rely on one champion, have quiet coverage across multiple stakeholders.
+- **A founder is a scoreboard-holder.** The video is an uncomfortable mirror: my mental model of each person on the team is doing the same thing the video describes. Worth checking whether my scoreboard is tracking signal (actual delivery, judgment, client feedback) or noise (who responds fast, who speaks up in syncs). Probably some of both, which is a problem to fix by making the evaluation rubric more explicit.
+- **Client-side politics is the real game for a consultancy.** Internally, "office politics" stakes are low. But the client's internal politics determines whether contracts renew, budgets survive, and champions defend the engagement in their own org. Treating the primary client contact as someone whose scoreboard we need to keep healthy (make them look good to *their* boss) is probably the single highest-leverage lesson from this.
+- **Account coverage maps to "build alliances above your pay grade."** Don't rely on one champion at a client. Have quiet coverage across multiple stakeholders so the engagement survives if any one of them rotates out.
 - **For Danny's Family Library.** This is a brutal but honest chapter topic for later books. The honest version, not the Leadership Book version, is valuable: "the workplace is not a meritocracy by default, and here's the defense manual." Flag this for the book roadmap.
-- **"Own your narrative" maps to client status updates.** The project update cadence in Notion's `ProjectUpdates` DB is literally the "own your narrative" tactic applied at the company level. Make sure every Dwarves project has a clear Dwarves-authored story that reaches the client's leadership, not just our counterpart.
+- **"Own your narrative" maps to client status updates.** A regular project-update cadence is literally the "own your narrative" tactic applied at the company level. Make sure every project has a clearly-authored story that reaches the client's leadership, not just the immediate counterpart.
 
 ## Open questions
 
