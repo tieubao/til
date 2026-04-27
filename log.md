@@ -6,6 +6,37 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-27] ingest | Compile 6 notes pushed via Claude.ai (2026-04-24 to 2026-04-27)
+
+Six notes arrived on `origin/master` from Claude.ai pushes that bypassed the local Claude Code compilation step. Pulled, fixed two structural issues, added Related sections, cross-linked to existing notes, and stripped em dashes that violated the repo's hard style rule.
+
+**Notes compiled:**
+- `notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md` (2026-04-24) - two-tier encryption pattern; key-separation principle (key and ciphertext must have different failure modes)
+- `notes/career/how-to-win-at-office-politics-businesscringe.md` (2026-04-25) - YouTube ingest; perception scoreboard model; founder-side reframe added
+- `notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md` (2026-04-25) - four CC surfaces, three runtimes; desktop Electron 2x RAM cost
+- `notes/comp-fin/optimization-as-the-bridge-to-computational-finance.md` (2026-04-27) - depth + breadth axis for optimization; convex opt + DP + stochastic control are the workhorses
+- `notes/optimization/operations-research-and-milp-for-software-engineers.md` (2026-04-27) - OR as declarative problem solving; engineer's mental model and concept map
+- `notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md` (2026-04-27) - out-of-process IM model, Mach IPC, IMK lifecycle, Secure Input pain points
+
+**Structural fixes:**
+- Moved `engineering/architecture/age-and-1password-...md` (root) to `notes/engineering/architecture/` and shortened the truncated filename. The 2026-04-21 framework move had relocated content under `notes/`, but the Claude.ai push wrote to the pre-move path.
+- Merged `notes/claude/` into `notes/claude-code/`. The new `claude/` folder duplicated the existing claude-code domain.
+- Stripped em dashes from `claude-code-surfaces` and `macos-input-method-kit` notes (hard style rule).
+
+**Backlinks added on existing notes:**
+- `notes/devtools/age-modern-file-encryption-cli.md` - linked to the new age + 1Password pattern
+- `notes/devtools/xdg-base-directory-specification.md` - linked to the new age + 1Password pattern (key file location)
+
+**New domain folders created:** `notes/career/`, `notes/comp-fin/`, `notes/optimization/`, `notes/macos/`. Topics table in README.md updated to include all four.
+
+**Cross-cluster pairings:** `optimization-as-the-bridge-to-computational-finance` and `operations-research-and-milp-for-software-engineers` are companion notes (foundation + bridge); cross-linked both ways.
+
+**Synthesis pages:** none. Each new folder has only 1 note.
+
+**Provenance note:** commits `799e4b6` and `b14900f` are duplicate pushes of the office-politics note (same path, slightly different content; final state correct, history is noisy).
+
+---
+
 ## [2026-04-22] ingest | age, a modern file-encryption CLI
 
 Captured from a Claude Code chat that started with "what is the `age` package of Homebrew for?". Worth saving because `age` lands on many machines as a silent dependency of `sops`, `chezmoi`, or dotfile bootstraps, so most users encounter it without ever reading the docs.

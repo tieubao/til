@@ -128,3 +128,9 @@ Across 50,000 OTC derivative trades with 200 counterparties, compute capital req
 ## Bottom line
 
 If the goal is computational finance, **prioritize convex optimization and dynamic programming over MILP**. MILP is a great teacher because it forces rigorous thinking about decision variables and constraints, but the workhorses of quant finance are convex optimization (for portfolios, calibration) and stochastic control (for trading, pricing). Boyd's course is the doorway. Stochastic control is the destination.
+
+## Related
+
+- [[operations-research-and-milp-for-software-engineers]] - the OR/MILP foundation this note bridges from; engineers' mental model for declarative problem solving with a solver
+- [[financial-knowledge-as-compound-information-advantage]] - why the comp-fin learning investment compounds over a career
+- [[how-the-bond-market-controls-housing-stocks-and-jobs]] - macro context for the kinds of decisions stochastic control gets aimed at

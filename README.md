@@ -6,6 +6,12 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-04-27` [Optimization as the bridge to computational finance](notes/comp-fin/optimization-as-the-bridge-to-computational-finance.md) - Comp-fin rests on three pillars (stochastic calculus, numerical methods, optimization); convex opt + DP + stochastic control are the workhorses, not MILP
+- `2026-04-27` [Operations Research and MILP for software engineers](notes/optimization/operations-research-and-milp-for-software-engineers.md) - OR is declarative problem solving with a solver; MILP is one technique inside mathematical optimization, the rest is modeling
+- `2026-04-27` [macOS Input Method Kit (IMK) architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md) - Out-of-process IM model, Mach IPC keystroke routing, Secure Input pain points
+- `2026-04-25` [Claude Code surfaces - CLI vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md) - Four surfaces, three runtimes; desktop Electron costs ~2x RAM and runs hot, CLI + web is the leaner pattern
+- `2026-04-25` [How to win at office politics (BusinessCringe)](notes/career/how-to-win-at-office-politics-businesscringe.md) - The invisible scoreboard runs on perception, not performance; can't opt out, three offensive tactics to defend against, three defensive plays to run
+- `2026-04-24` [age and 1password as complementary encryption tiers](notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md) - Two-tier backup: 1P for availability, age for offline recovery; key-separation principle (key and ciphertext must have different failure modes)
 - `2026-04-22` [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; native SOPS backend, SSH-key identities, no keyring state
 - `2026-04-22` [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - Agent + Worker + D1/KV free tier beats Kuma/Netdata/Prometheus for the 1-20 host solo operator
 - `2026-04-22` [HIDS-lite rule set for a single-operator Linux VPS](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md) - 15 rules over cheap shell signals catch 80% of script-kiddie-tier compromises; out-of-band engine required
@@ -18,12 +24,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-04-19` [AI tooling stack synthesis April 2026](notes/ai-tooling/ai-tooling-stack-synthesis-april-2026.md) - Synthesis: 3 layers wired through one rubric; growth and adoption-readiness are inversely correlated
 - `2026-04-19` [OpenBB evaluation](notes/finance-tooling/openbb-evaluation.md) - Python-first financial SDK; 11/15 BOOKMARK; crypto value thin, TradFi inflection point
 - `2026-04-19` [OSS trading stack survey, April 2026](notes/finance-tooling/oss-trading-stack-survey-april-2026.md) - 3-category synthesis; Freqtrade + VectorBT canonical for semi-pro crypto; ai-hedge-fund as first agentic pilot
-- `2026-04-19` [FinceptTerminal evaluation](notes/finance-tooling/fincept-terminal-evaluation.md) - AGPL-3 Qt6 Bloomberg-alternative; 10/15 BOOKMARK; §13 blocks integration into any network-facing trading stack
-- `2026-04-19` [How LLM agents do web research: the ReAct loop](notes/ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is under-weighting Reddit/HN/Twitter
-- `2026-04-18` [Hermes Agent comprehensive briefing April 2026](notes/ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
-- `2026-04-18` [Hermes vs OpenClaw competitive scene](notes/ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins metrics, Hermes wins narrative; equilibrium is to run both and bridge via ACP
-- `2026-04-18` [Why developers migrate to Hermes, real vs hype](notes/ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
-- `2026-04-18` [OpenClaw virtual company pattern](notes/ai-tooling/openclaw-virtual-company-pattern.md) - The "CEO/CTO/PM" multi-agent idiom is a convention, not a feature; six failure modes
 
 ## How it works
 
@@ -84,6 +84,10 @@ Full reference: [commands cheatsheet in the usage guide](_docs/guide.md#commands
 | [philosophy/](notes/philosophy/) | Taoism, I Ching, timing and preparation |
 | [finance/](notes/finance/) | Bond markets, capital structure, compounding knowledge |
 | [finance-tooling/](notes/finance-tooling/) | Financial tool evaluations: terminals, data providers, broker platforms, frameworks |
+| [comp-fin/](notes/comp-fin/) | Computational finance: optimization, stochastic control, learning paths |
+| [optimization/](notes/optimization/) | Operations research, MILP, mathematical optimization fundamentals |
+| [career/](notes/career/) | Career strategy, workplace dynamics, office politics |
+| [macos/](notes/macos/) | macOS frameworks and platform-specific architecture |
 | [youtube/](notes/youtube/) | YouTube tooling |
 | [zed/](notes/zed/) | Zed editor agent rules and configuration |
 

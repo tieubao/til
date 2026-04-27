@@ -11,10 +11,10 @@ There are four ways to run Claude Code in 2026, not three. The question "web vs 
 
 The four surfaces:
 
-1. **Terminal CLI** (`claude` command) — Node.js process running locally, full access to filesystem, shell, git, and PATH. Installed via `npm i -g @anthropic-ai/claude-code`.
-2. **Web** (claude.ai/code) — agent runs on Anthropic's cloud infrastructure in a sandboxed VM with a fresh git clone. Sessions persist when the laptop is off.
-3. **Desktop app** (Code tab in Claude app) — Electron GUI wrapper around the same engine as the CLI. Can spawn three *kinds* of sessions: local, remote (cloud), or SSH. macOS and Windows only, no Linux.
-4. **iOS / Dispatch** — monitor and spawn sessions from the phone. The agent itself runs in the cloud or on a paired desktop.
+1. **Terminal CLI** (`claude` command) - Node.js process running locally, full access to filesystem, shell, git, and PATH. Installed via `npm i -g @anthropic-ai/claude-code`.
+2. **Web** (claude.ai/code) - agent runs on Anthropic's cloud infrastructure in a sandboxed VM with a fresh git clone. Sessions persist when the laptop is off.
+3. **Desktop app** (Code tab in Claude app) - Electron GUI wrapper around the same engine as the CLI. Can spawn three *kinds* of sessions: local, remote (cloud), or SSH. macOS and Windows only, no Linux.
+4. **iOS / Dispatch** - monitor and spawn sessions from the phone. The agent itself runs in the cloud or on a paired desktop.
 
 ## Where the agent runs
 
@@ -79,6 +79,13 @@ The "CLI + web for async" pattern uses less than 1 GB RAM total on the laptop. T
 
 - [Claude Code desktop docs](https://code.claude.com/docs/en/desktop)
 - [Claude Code overview](https://code.claude.com/docs/en/overview)
-- [GitHub issue #32010](https://github.com/anthropics/claude-code/issues/32010) — desktop renderer CPU analysis
-- [GitHub issue #31666](https://github.com/anthropics/claude-code/issues/31666) — Windows memory explosion
-- [GitHub issue #48299](https://github.com/anthropics/claude-code/issues/48299) — Linux UI lag
+- [GitHub issue #32010](https://github.com/anthropics/claude-code/issues/32010) - desktop renderer CPU analysis
+- [GitHub issue #31666](https://github.com/anthropics/claude-code/issues/31666) - Windows memory explosion
+- [GitHub issue #48299](https://github.com/anthropics/claude-code/issues/48299) - Linux UI lag
+
+## Related
+
+- [[claude-code-cost-mechanics-corrected-for-opus-4-7-april-2026]] - cost behavior across the same surfaces; cache survival rules apply identically to CLI, web, and desktop
+- [[compaction-defense-patterns-for-claude-code-sessions]] - long web sessions are exactly where the compaction defenses pay off most
+- [[claude-code-ecosystem-repo-evaluations-for-kit-building]] - plugins/hooks landscape, only available on the CLI surface
+- [[commands-vs-hooks-vs-skills-decision-framework]] - extension model is CLI-only, reinforcing why CLI stays the primary surface

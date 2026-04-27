@@ -165,3 +165,12 @@ If you decide not to play it, it's kind of like rolling up to a sports game and 
 The other team would obviously destroy you, and that's why bad people get promoted. If you don't play office politics, you end up like Bill. You know, doing the work of 30 people and being paid for a third of a normal person's salary.
 
 Office politics is what's up whether you like it or not. So play it. Play it to win.
+
+## Related
+
+- [[in-pursuit-of-excellence]] - Hotta's "Unique Value = Differentiation x Influence" formula; influence is the perception layer the video calls "owning your narrative"
+- [[hr-evaluation-unique-value]] - the organizational evaluation model behind the perception scoreboard
+- [[be-dispassionate-about-software-careers]] - same diagnosis (workplace is not a meritocracy by default), different prescription (manage passion vs play politics)
+- [[managing-people-smarter-than-you]] - the founder/manager flip side: your scoreboard is what the video critiques in others
+- [[steve-jobs-negotiation-tactics]] - narrative control as a senior-level political move, not just a defensive one
+- [[chon-nguoi-hop-tac-va-ket-giao]] - choosing collaborators carefully is the personal-life version of "building alliances above your pay grade"
