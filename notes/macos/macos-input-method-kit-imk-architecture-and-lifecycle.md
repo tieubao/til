@@ -22,7 +22,7 @@ The stack from hardware to client app:
 3. **IMK process** (separate `.app`, sandboxed) hosts an `IMKServer` (vends a Mach port and connection) plus your `IMKInputController` subclass (handles keystrokes, manages composition state, drives the candidate window).
 4. **Focused app process** receives composed text via its `NSTextInputClient` implementation (typically inside an `NSTextView` or `WKWebView`).
 
-The two processes communicate over Mach IPC. The `client` argument passed into your input controller is a remote proxy conforming to the `IMKTextInput` protocol — every method call on it crosses the process boundary.
+The two processes communicate over Mach IPC. The `client` argument passed into your input controller is a remote proxy conforming to the `IMKTextInput` protocol - every method call on it crosses the process boundary.
 
 ## Keystroke lifecycle
 
@@ -80,10 +80,10 @@ The candidate window is itself an `NSPanel` rendered by the input method process
 ```
 
 The bundle's `Info.plist` declares:
-- `InputMethodConnectionName` — the Mach port name
-- `InputMethodServerControllerClass` — your controller class
-- `tsInputMethodCharacterRepertoireKey` — which scripts you handle
-- `TICapsLockLanguageOverrideCapable` — opt-in to Caps Lock language switching
+- `InputMethodConnectionName` - the Mach port name
+- `InputMethodServerControllerClass` - your controller class
+- `tsInputMethodCharacterRepertoireKey` - which scripts you handle
+- `TICapsLockLanguageOverrideCapable` - opt-in to Caps Lock language switching
 
 The `.app` lives in `~/Library/Input Methods/` (per-user) or `/Library/Input Methods/` (system). After a relaunch of `cfprefsd` and re-login (or `killall TextInputMenuAgent`), it appears in System Settings → Keyboard → Input Sources.
 
@@ -103,14 +103,19 @@ The `.app` lives in `~/Library/Input Methods/` (per-user) or `/Library/Input Met
 - **Secure Input event blocks IMK entirely.** When an app enables `EnableSecureEventInput` (password fields, sudo prompts, 1Password's main vault), the OS bypasses input methods. There is no fix; it is a security feature. Users of non-Latin input methods experience this as "my input doesn't work in Terminal sometimes."
 - **Sandboxing is awkward.** Input methods run out-of-process with limited entitlements. Network access, file access outside the container, and XPC to helpers all need explicit entitlements. Apple has historically been picky about IMs in the Mac App Store.
 - **Hot reload is painful.** Changes to the `.app` often require killing the input method process and sometimes logging out. `killall <YourIMName>` during development; `pkill -f /Library/Input\ Methods/` for the nuclear option.
-- **The `client` proxy is unreliable across some apps.** Electron apps, older Java apps, and anything using non-standard text views have inconsistent `NSTextInputClient` implementations. `attributesForCharacterIndex:` returning nil for cursor position is the most common bug — the candidate window cannot be placed correctly.
+- **The `client` proxy is unreliable across some apps.** Electron apps, older Java apps, and anything using non-standard text views have inconsistent `NSTextInputClient` implementations. `attributesForCharacterIndex:` returning nil for cursor position is the most common bug - the candidate window cannot be placed correctly.
 - **Debugging is annoying.** The input method process cannot be attached to in Xcode the normal way before launch. Common workarounds: `NSLog` to a file and `tail -f` it, or attach to the running process after triggering it. Console.app filtered to the bundle ID helps.
 - **Performance matters more than expected.** Every keystroke crosses an IPC boundary. If `inputText:client:` does anything slow (synchronous network, heavy computation), typing latency becomes visible. Production IMEs offload candidate generation to background queues and stream results.
 - **The framework hasn't really changed since ~2008.** Stable Objective-C with C-flavored APIs. Swift bridging works but documentation is thin. Most production input methods (Squirrel, OpenVanilla, Sogou, Google Japanese IME) remain ObjC++.
 
 ## Reference implementations worth reading
 
-- **Squirrel** — RIME engine on macOS, Cantonese/Mandarin. Small enough to read end-to-end.
-- **OpenVanilla** — Multi-language IM platform. Older but well-structured.
+- **Squirrel** - RIME engine on macOS, Cantonese/Mandarin. Small enough to read end-to-end.
+- **OpenVanilla** - Multi-language IM platform. Older but well-structured.
 
 If the task isn't a full IME for a writing system, IMK is almost certainly the wrong choice. Reach for `CGEventTap` or `NSTextInputClient` instead.
+
+## Related
+
+- [[swifty-code]] - the broader Apple-platform style this code sits inside; ObjC/Swift bridging applies to IMK
+- [[swift-pattern-matching-case-let]] - useful when porting an IM controller body from ObjC switch to Swift

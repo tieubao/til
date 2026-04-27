@@ -72,3 +72,8 @@ Python libraries to play with: `PuLP`, `Pyomo`, `cvxpy`, `OR-Tools` (Google's op
 ## Key takeaway
 
 Operations Research is the field; mathematical optimization is the technique; MILP is one specific class of optimization problem. The right mental model for an engineer is *declarative problem solving with a solver*, the same family as SQL planners and SAT/SMT solvers. You already know graphs and constraints. What's new is letting an external engine search the solution space for you instead of writing the search yourself. Thirty lines of OR-Tools Python on the Vehicle Routing Problem is the fastest way to feel it.
+
+## Related
+
+- [[optimization-as-the-bridge-to-computational-finance]] - the comp-fin sequel: where each optimization technique unlocks a specific quant problem (Markowitz, Almgren-Chriss, HJB)
+- [[intro-to-compilers]] - register allocation as graph coloring is a classic MILP-adjacent problem inside the compiler stack

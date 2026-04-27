@@ -35,13 +35,22 @@
 - [Tool evaluation 5-question rubric](notes/ai-tooling/tool-evaluation-5-question-rubric.md) - 5 questions in 10 min; the kill question: what past failure would this have prevented?
 - [Why developers migrate to Hermes, ranked real vs hype](notes/ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (OpenClaw CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
 
+## career
+
+- [How to win at office politics (BusinessCringe)](notes/career/how-to-win-at-office-politics-businesscringe.md) - The invisible scoreboard runs on perception, not performance; can't opt out, three offensive tactics to defend against, three defensive plays to run
+
 ## claude-code
 
 - [Claude Code ecosystem repo evaluations for kit building](notes/claude-code/claude-code-ecosystem-repo-evaluations-for-kit-building.md) - Evaluated 7 repos; methodology + hardening tools don't overlap, integration gap is the opportunity
 - [Claude Code hook lifecycle and event system](notes/claude-code/claude-code-hook-lifecycle-and-event-system.md) - 21 hook events with exit code 2 as the only real enforcement; hooks beat CLAUDE.md rules
 - [Claude Code hook schema decision values per event type](notes/claude-code/claude-code-hook-schema-decision-values-per-event-type.md) - Stop hooks need "approve"/"block", not "allow"/"deny"; mixing causes silent validation errors
+- [Claude Code surfaces - CLI vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md) - Four surfaces, three runtimes; desktop Electron costs ~2x RAM and runs hot, CLI + web is the leaner pattern
 - [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md) - If skipping it causes irreversible damage, use a hook; if output degrades, use a skill
 - [Compaction defense patterns for Claude Code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md) - Two-layer defense: PreCompact backup + post-compaction re-injection of critical rules
+
+## comp-fin
+
+- [Optimization as the bridge to computational finance](notes/comp-fin/optimization-as-the-bridge-to-computational-finance.md) - Comp-fin rests on three pillars (stochastic calculus, numerical methods, optimization); convex opt + DP + stochastic control are the workhorses, not MILP
 
 ## crypto
 
@@ -108,6 +117,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 ### engineering/architecture
 
 - [10 tips to improve application performance](notes/engineering/architecture/10-tips-application-performance.md) - NGINX guide: reverse proxy, load balancing, caching, compression, and HTTP/2 for 10x gains
+- [age and 1password as complementary encryption tiers](notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md) - Two-tier backup: 1P for availability, age for offline recovery; key-separation principle (key and ciphertext must have different failure modes)
 - [Apache ZooKeeper for distributed coordination](notes/engineering/architecture/apache-zookeeper-distributed-coordination.md) - Znodes, watches, sessions for leader election, service discovery, and distributed locks
 - [Benefits of continuous delivery](notes/engineering/architecture/benefits-of-continuous-delivery.md) - Small deploys mean lower risk, fresher context, faster feedback, and features reaching users sooner
 - [Cloudflare Workers as a monitoring backend for self-hosted Linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md) - Agent + Worker + D1/KV free tier beats Kuma/Netdata/Prometheus for the 1-20 host solo operator
@@ -331,10 +341,18 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [Why we lie about being retired](notes/life/why-we-lie-about-being-retired.md) - Retirement is an identity crisis, not just a financial event; work provides meaning most can't replace
 - [Working attitude principles](notes/life/working-attitude-principles.md) - Seven work ethic principles and ten anti-patterns; no industry is easy money, always harvest something
 
+## macos
+
+- [macOS Input Method Kit (IMK) architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md) - Out-of-process IM model, Mach IPC keystroke routing, IMKInputController lifecycle, and why Secure Input breaks every IME
+
 ## mcp
 
 - [MCP tool schema caching in Claude.ai connectors](notes/mcp/mcp-tool-schema-caching-in-claude-ai-connectors.md) - Claude.ai caches MCP schemas per session; disconnect+reconnect to force refresh
 - [Security gates for MCP tools that bridge private to public](notes/mcp/security-gates-for-mcp-tools-that-bridge-private-to-public.md) - Server-side security gates: context-anchored secret scan, path traversal, cost-ordered pipeline
+
+## optimization
+
+- [Operations Research and MILP for software engineers](notes/optimization/operations-research-and-milp-for-software-engineers.md) - OR is declarative problem solving with a solver (SQL planner / Z3 family); MILP is one technique inside mathematical optimization
 
 ## patterns
 

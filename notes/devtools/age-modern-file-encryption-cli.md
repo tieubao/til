@@ -60,5 +60,6 @@ You need to put a secret into a place that should not see it in plaintext (git r
 
 ## Related
 
+- [[age-and-1password-complementary-encryption-tiers]] - architectural pattern that runs age alongside 1Password as a two-tier encryption stack
 - [[saas-cto-security-checklist]] - secret management is one of the checklist items age operationalizes at the file level
 - [[xdg-base-directory-specification]] - where the age key file should live (`$XDG_CONFIG_HOME/age/keys.txt`) if you care about dotfile hygiene
