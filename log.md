@@ -6,6 +6,30 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-04-29] ingest | Compile 5 notes pushed via Claude.ai (2026-04-28)
+
+Five notes arrived on `origin/master` from Claude.ai pushes covering local-LLM economics. Pulled, squashed the messy 13-commit ingest sequence (raw add + em-dash cleanup pass) into a single compile commit (`96c8261`), then ran the compilation step.
+
+**Notes compiled:**
+- `notes/ai-tooling/hermes-agent-fixed-overhead-13-9k-tokens-per-api-call.md` - 73% of every Hermes call is fixed overhead (tools + system prompt); cost scales with call count, not session count
+- `notes/ai-tooling/llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2.md` - provider matrix per model with Hermes-tier cost projections; flags May 5 V4-Pro promo cliff
+- `notes/local-llm/local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent.md` - architecture decision for a 64 GB M4 Pro: local Qwen default with Ollama Cloud and OpenRouter escalation tiers
+- `notes/local-llm/ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint.md` - the `:cloud` suffix proxies through `localhost:11434`; same daemon serves both routes
+- `notes/local-llm/qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing.md` - hybrid DeltaNet/attention means 128k context fits in ~26 GB on 64 GB Apple Silicon; prefill is the real ceiling
+
+**New folder created:** `notes/local-llm/` (3 notes). Below the 4-note synthesis threshold; revisit when a fourth note lands.
+
+**Cross-cluster pairings (cost-mechanics theme):** `hermes-agent-fixed-overhead` and `llm-api-pricing-comparison` are companion notes (per-call overhead × per-token pricing = $/call); both also link cross-folder to `claude-code-cost-mechanics-corrected-for-opus-4-7-april-2026` as a parallel cost-reckoning in the Claude Code surface.
+
+**Backlinks added on existing notes:**
+- `notes/ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md` - linked to fixed-overhead and pricing notes (the comprehensive briefing now points to the concrete cost data backing it)
+
+**Synthesis pages:** none updated. The existing `ai-tooling-stack-synthesis-april-2026.md` is about the eval rubric, not runtime economics; the cost dimension would warrant a small extension if a fourth cost-mechanics note lands.
+
+**Provenance note:** the original 13-commit sequence (5 notes added with R2 image URLs, then re-committed after em-dash cleanup, plus 2 SVG assets and an index update) was squashed into commit `96c8261`. Backup tag `pre-squash-backup` → `92edcd4` retained locally for recovery. Force-pushed master with `--force-with-lease`.
+
+---
+
 ## [2026-04-27] ingest | Compile 6 notes pushed via Claude.ai (2026-04-24 to 2026-04-27)
 
 Six notes arrived on `origin/master` from Claude.ai pushes that bypassed the local Claude Code compilation step. Pulled, fixed two structural issues, added Related sections, cross-linked to existing notes, and stripped em dashes that violated the repo's hard style rule.

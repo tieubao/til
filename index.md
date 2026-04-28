@@ -28,7 +28,9 @@
 - [Context Hub vs Context7 vs the context layer ecosystem](notes/ai-tooling/context-hub-vs-context7-vs-the-context-layer-ecosystem.md) - Context Hub = curated API docs with feedback loop; Context7 = 9k+ library docs via MCP
 - [deepagents vs OpenClaw vs Hermes: category positioning](notes/ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md) - Library vs runtime distinction; deepagents stacks under runtimes, doesn't compete with them
 - [Hermes Agent comprehensive briefing April 2026](notes/ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md) - Nous Research's self-hosted agent with auto-generated skills; 0 to 95.6K stars in seven weeks
+- [Hermes Agent fixed overhead: 13.9K tokens per API call](notes/ai-tooling/hermes-agent-fixed-overhead-13-9k-tokens-per-api-call.md) - 73% of every Hermes call is fixed overhead (tools + system prompt); cost scales with call count, not session count
 - [Hermes vs OpenClaw competitive scene April 2026](notes/ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md) - OpenClaw wins on metrics, Hermes wins the narrative; realistic equilibrium is to run both
+- [LLM API pricing comparison: DeepSeek direct vs Ollama Cloud vs OpenRouter (April 2026)](notes/ai-tooling/llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2.md) - Provider matrix per model, cost projections by Hermes usage tier, May 5 promo cliff, decision framework
 - [OpenClaw multi-persona dev team setup playbook](notes/ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md) - End-to-end JSON5 config + SOUL/AGENTS/TOOLS files for a Telegram-led PM/Engineer/QA team
 - [OpenClaw virtual company pattern](notes/ai-tooling/openclaw-virtual-company-pattern.md) - "CEO/CTO/PM" multi-agent idiom is a convention, not a feature; six failure modes most writeups skip
 - [Prompt improvement as a learning technique](notes/ai-tooling/prompt-improvement-as-a-learning-technique.md) - Sharpening vague prompts into structured ones is a thinking tool, not just better answers
@@ -340,6 +342,12 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [Why explore space - Stuhlinger's letter](notes/life/why-explore-space-stuhlinger-letter.md) - NASA scientist's 1970 defense of space spending: the microscope parable and satellites fighting hunger
 - [Why we lie about being retired](notes/life/why-we-lie-about-being-retired.md) - Retirement is an identity crisis, not just a financial event; work provides meaning most can't replace
 - [Working attitude principles](notes/life/working-attitude-principles.md) - Seven work ethic principles and ten anti-patterns; no industry is easy money, always harvest something
+
+## local-llm
+
+- [Local LLM hybrid stack: Ollama + Ollama Cloud + OpenRouter for Hermes Agent](notes/local-llm/local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent.md) - Local-first three-tier escalation (Qwen local → Ollama Cloud → OpenRouter); routing rules and cost reasoning
+- [Ollama Cloud :cloud suffix: hosted inference via local endpoint](notes/local-llm/ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint.md) - The `:cloud` suffix proxies through `localhost:11434`; same daemon serves local + hosted, switching is just a model name change
+- [Qwen3.6-35B-A3B on M4 Pro: memory budget and context sizing](notes/local-llm/qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing.md) - Hybrid DeltaNet/attention architecture means 128k context fits in ~26 GB on 64 GB Apple Silicon; prefill cost is the real ceiling
 
 ## macos
 

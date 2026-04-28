@@ -92,3 +92,11 @@ Hermes Agent fires ~13.9K tokens of fixed overhead per call. Implications:
 5. Otherwise stay on pay-per-token via OpenRouter with a $50/month spending cap as hard ceiling
 
 Source: OpenRouter pricing pages, DeepSeek API docs, Ollama pricing page, all verified April 28, 2026.
+
+## Related
+
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - companion: per-call overhead × this pricing = $/call; "cheap-input dominates" follows directly
+- [[ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint]] - the `:cloud` suffix mechanism behind one of the three pricing options
+- [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] - the routing decision this pricing table feeds into
+- [[claude-code-cost-mechanics-corrected-for-opus-4-7-april-2026]] - parallel pricing reckoning in the Claude Code domain
+- [[hermes-agent-comprehensive-briefing-april-2026]] - the runtime that consumes these prices

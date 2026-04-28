@@ -39,3 +39,11 @@ Real-world burn from one user's monitoring dashboard:
 **The bigger lesson:** before optimizing model choice, measure actual token consumption. The hermes-dashboard utility (built into v0.11) uses `/usage` and `/insights` to surface real numbers. Optimize what you measure, not what you guess.
 
 Source: GitHub issue NousResearch/hermes-agent#4379, monitoring dashboard analysis April 2026.
+
+## Related
+
+- [[llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2]] - companion: this note is per-call overhead, that one is per-provider pricing; multiply for $/call
+- [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] - this overhead is the load-bearing fact driving the cheap-input model choice
+- [[hermes-agent-comprehensive-briefing-april-2026]] - architectural context for why Hermes packs this much in every call
+- [[claude-code-cost-mechanics-corrected-for-opus-4-7-april-2026]] - parallel cost-mechanics framing in the Claude Code surface
+- [[qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing]] - prefill cost on local: 13.9K of fixed overhead becomes ~55s prefill on Apple Silicon

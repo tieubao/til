@@ -83,3 +83,9 @@ set -gx OLLAMA_CONTEXT_LENGTH 131072    # 128k default
 - **q8_0 KV cache, not f16.** Halves memory at near-zero quality cost.
 - **Single model loaded at a time.** Memory math forbids two large chat models on 64 GB.
 - **Don't touch llama.cpp directly.** Ollama 0.19+ runs MLX natively; switching backends loses vision support and tool-call reliability.
+
+## Related
+
+- [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] - the broader stack this Qwen tier slots into as the local default
+- [[ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint]] - the escalation path when 128k local context isn't enough or tool calls fail
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - why context size matters: 13.9K of fixed prefill on every Hermes call
