@@ -72,3 +72,11 @@ Stay on local default unless one of these triggers fires:
 - **Sensitive code**: stay on local regardless of other factors
 
 Principle: escalate early, escalate decisively. Don't fight local for 20 minutes when escalating after 5 minutes was the right call.
+
+## Related
+
+- [[qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing]] - the local default tier: memory math, context sizing, prefill cost
+- [[ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint]] - the escalation mechanism: same `localhost:11434` endpoint serves both routes
+- [[llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2]] - the cost reasoning behind the three-tier choice
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - the overhead figure that makes input-cost the dominant variable
+- [[hermes-agent-comprehensive-briefing-april-2026]] - the runtime consuming this stack

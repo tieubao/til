@@ -71,3 +71,5 @@ The research flywheel is the real long-term bet. Nous Research is an open-weight
 - [[ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026]] - where Hermes sits in the broader dev-tool stack
 - [[llm-agent-memory-systems-landscape-2026]] - three-layer memory context for Hermes's architecture
 - [[deepagents-vs-openclaw-vs-hermes-category-positioning]] - category-positioning note clarifying that Hermes is a runtime platform, not a library like deepagents
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - measured 13.9K-token fixed overhead per call; the load-bearing fact for any cost or routing analysis
+- [[llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2]] - provider pricing matrix that the overhead figure feeds into

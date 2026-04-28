@@ -60,3 +60,10 @@ This pattern means you can A/B between local and cloud routes without changing a
 - Need provider-specific features (function calling parsers, JSON mode, prefix caching)
 
 Source: Ollama documentation, ollama.com/pricing, model library pages on ollama.com, verified April 28, 2026.
+
+## Related
+
+- [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] - the architecture decision where this `:cloud` suffix is the escalation lever
+- [[llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2]] - where Ollama Cloud sits in the broader pricing matrix
+- [[qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing]] - the local-side counterpart: same daemon, no `:cloud` suffix
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - the workload pattern that values flat-rate over per-token
