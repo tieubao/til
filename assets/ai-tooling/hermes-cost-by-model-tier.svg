@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="500" fill="#2C2C2A">Hermes Agent monthly cost by model and usage tier</text>
+  <text x="400" y="50" text-anchor="middle" font-size="11" fill="#888780">~17K input + 1K output per call · 40/150/500 calls per day</text>
+
+  <!-- Legend -->
+  <g transform="translate(180, 70)">
+    <rect x="0" y="0" width="12" height="12" fill="#1D9E75"/>
+    <text x="18" y="10" font-size="11" fill="#444441">Light (40/day)</text>
+    <rect x="120" y="0" width="12" height="12" fill="#BA7517"/>
+    <text x="138" y="10" font-size="11" fill="#444441">Moderate (150/day)</text>
+    <rect x="270" y="0" width="12" height="12" fill="#A32D2D"/>
+    <text x="288" y="10" font-size="11" fill="#444441">Heavy (500/day)</text>
+  </g>
+
+  <!-- Y-axis -->
+  <line x1="220" y1="110" x2="220" y2="430" stroke="#D3D1C7" stroke-width="1"/>
+  <line x1="220" y1="430" x2="780" y2="430" stroke="#D3D1C7" stroke-width="1"/>
+
+  <!-- X axis tick labels for cost (0, 100, 200, 300) -->
+  <g font-size="10" fill="#888780">
+    <line x1="220" y1="430" x2="220" y2="434" stroke="#D3D1C7"/>
+    <text x="220" y="446" text-anchor="middle">$0</text>
+    <line x1="360" y1="430" x2="360" y2="434" stroke="#D3D1C7"/>
+    <text x="360" y="446" text-anchor="middle">$100</text>
+    <line x1="500" y1="430" x2="500" y2="434" stroke="#D3D1C7"/>
+    <text x="500" y="446" text-anchor="middle">$200</text>
+    <line x1="640" y1="430" x2="640" y2="434" stroke="#D3D1C7"/>
+    <text x="640" y="446" text-anchor="middle">$300</text>
+    <line x1="780" y1="430" x2="780" y2="434" stroke="#D3D1C7"/>
+    <text x="780" y="446" text-anchor="middle">$400+</text>
+  </g>
+  <text x="500" y="464" text-anchor="middle" font-size="11" fill="#5F5E5A">USD per month</text>
+
+  <!-- Each model: 3 bars, 9px tall, 1px gap. Row height = 38. Scale: $1 = 1.4px -->
+  <g font-size="11" fill="#444441">
+    <!-- Local (free) -->
+    <text x="215" y="135" text-anchor="end">Local Ollama</text>
+    <rect x="220" y="121" width="0.5" height="9" fill="#1D9E75"/>
+    <rect x="220" y="131" width="0.5" height="9" fill="#BA7517"/>
+    <rect x="220" y="141" width="0.5" height="9" fill="#A32D2D"/>
+    <text x="226" y="148" font-size="10" fill="#1D9E75">$0 free</text>
+
+    <!-- Ollama Cloud Pro flat -->
+    <text x="215" y="173" text-anchor="end">Ollama Cloud Pro</text>
+    <rect x="220" y="159" width="28" height="9" fill="#1D9E75"/>
+    <rect x="220" y="169" width="28" height="9" fill="#BA7517"/>
+    <rect x="220" y="179" width="28" height="9" fill="#A32D2D"/>
+    <text x="252" y="186" font-size="10" fill="#444441">$20 flat</text>
+
+    <!-- DeepSeek-V4-Flash via OpenRouter -->
+    <text x="215" y="211" text-anchor="end">V4-Flash (OpenRouter)</text>
+    <rect x="220" y="197" width="4" height="9" fill="#1D9E75"/>
+    <rect x="220" y="207" width="17" height="9" fill="#BA7517"/>
+    <rect x="220" y="217" width="56" height="9" fill="#A32D2D"/>
+    <text x="280" y="224" font-size="10" fill="#444441">$3 / $12 / $40</text>
+
+    <!-- Gemma 4 26B-A4B via OpenRouter -->
+    <text x="215" y="249" text-anchor="end">Gemma 4 26B-A4B</text>
+    <rect x="220" y="235" width="3" height="9" fill="#1D9E75"/>
+    <rect x="220" y="245" width="15" height="9" fill="#BA7517"/>
+    <rect x="220" y="255" width="49" height="9" fill="#A32D2D"/>
+    <text x="273" y="262" font-size="10" fill="#444441">$2 / $11 / $35</text>
+
+    <!-- Qwen3.6-35B-A3B via OpenRouter -->
+    <text x="215" y="287" text-anchor="end">Qwen3.6-35B-A3B</text>
+    <rect x="220" y="273" width="6" height="9" fill="#1D9E75"/>
+    <rect x="220" y="283" width="22" height="9" fill="#BA7517"/>
+    <rect x="220" y="293" width="78" height="9" fill="#A32D2D"/>
+    <text x="302" y="300" font-size="10" fill="#444441">$4 / $16 / $56</text>
+
+    <!-- DeepSeek-V4-Pro via OpenRouter (promo until May 5) -->
+    <text x="215" y="325" text-anchor="end">V4-Pro promo (OpenRouter)</text>
+    <rect x="220" y="311" width="14" height="9" fill="#1D9E75"/>
+    <rect x="220" y="321" width="52" height="9" fill="#BA7517"/>
+    <rect x="220" y="331" width="171" height="9" fill="#A32D2D"/>
+    <text x="395" y="338" font-size="10" fill="#444441">$10 / $37 / $122 (until May 5)</text>
+
+    <!-- DeepSeek-V4-Pro via OpenRouter (regular) -->
+    <text x="215" y="363" text-anchor="end">V4-Pro regular (OpenRouter)</text>
+    <rect x="220" y="349" width="55" height="9" fill="#1D9E75"/>
+    <rect x="220" y="359" width="207" height="9" fill="#BA7517"/>
+    <rect x="220" y="369" width="556" height="9" fill="#A32D2D"/>
+    <text x="431" y="356" font-size="10" fill="#5F5E5A">$39</text>
+    <text x="431" y="366" font-size="10" fill="#5F5E5A">$148</text>
+    <text x="780" y="376" font-size="10" fill="#A32D2D" text-anchor="end">$497 →</text>
+
+    <!-- Claude Sonnet 4.6 (reference) -->
+    <text x="215" y="401" text-anchor="end">Claude Sonnet 4.6</text>
+    <rect x="220" y="387" width="111" height="9" fill="#1D9E75"/>
+    <rect x="220" y="397" width="410" height="9" fill="#BA7517"/>
+    <rect x="220" y="407" width="556" height="9" fill="#A32D2D"/>
+    <text x="335" y="394" font-size="10" fill="#5F5E5A">$79</text>
+    <text x="635" y="404" font-size="10" fill="#5F5E5A">$293</text>
+    <text x="780" y="414" font-size="10" fill="#A32D2D" text-anchor="end">$978 →</text>
+  </g>
+</svg>
