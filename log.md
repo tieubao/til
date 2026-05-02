@@ -6,6 +6,15 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-02] ingest | Vibe-Trading evaluation (HKUDS multi-agent finance research workspace)
+
+Public eval of [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading), authored from a private Claude Code research session evaluating it as a candidate research-agent layer for a semi-pro crypto trading workflow. Score 11/15 on the 5-question rubric, verdict BOOKMARK. Re-evaluate 30 days from now.
+
+**Note added:**
+- `notes/finance-tooling/vibe-trading-evaluation.md`: research-only multi-agent workspace; LangChain + LangGraph + FastAPI + React 19; 6 data sources (heavy CN / HK lean); 13 LLM provider support; published `vibe-trading-mcp` MCP server is the highest-leverage entry point for Claude-Code-native users; explicit "no live execution" disclaimer; 1-month-old codebase with high star velocity but no benchmarks. Compares against `ai-hedge-fund`, `OpenBB`, `FinceptTerminal`, `nautilus_trader`, `Freqtrade` on the same axes.
+
+**Companion (private)**: applied private memo + 6 imported crypto-derivatives lenses + tracer-bullet code lift (Black-Scholes options pricing) shipped in [tieubao/trading PR #79](https://github.com/tieubao/trading/pull/79).
+
 ## [2026-04-29] ingest | Compile 5 notes pushed via Claude.ai (2026-04-28)
 
 Five notes arrived on `origin/master` from Claude.ai pushes covering local-LLM economics. Pulled, squashed the messy 13-commit ingest sequence (raw add + em-dash cleanup pass) into a single compile commit (`96c8261`), then ran the compilation step.
