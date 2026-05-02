@@ -221,6 +221,7 @@
 - [Oss trading stack survey april 2026](notes/finance-tooling/oss-trading-stack-survey-april-2026.md)
 - [README](notes/finance-tooling/README.md)
 - [Static ip solutions compared for trading bots](notes/finance-tooling/static-ip-solutions-compared-for-trading-bots.md)
+- [Vibe trading evaluation](notes/finance-tooling/vibe-trading-evaluation.md)
 - [Wireguard static ip exchange whitelist](notes/finance-tooling/wireguard-static-ip-exchange-whitelist.md)
 - [Financial knowledge as compound information advantage](notes/finance/financial-knowledge-as-compound-information-advantage.md)
 - [How the bond market controls housing stocks and jobs](notes/finance/how-the-bond-market-controls-housing-stocks-and-jobs.md)
