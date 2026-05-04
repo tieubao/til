@@ -1,333 +1,99 @@
 # Learned
 
-> Auto-generated index of 302 note(s). Last updated: 2026-05-04
+A personal knowledge base following the [Zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) methodology, maintained by LLMs using the [LLM Wiki](https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285) pattern.
 
-## _docs
+Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/) for graph view and backlinks, or read the [full index](index.md).
 
-- [Architecture](_docs/architecture.md)
-- [Changelog](_docs/changelog.md)
-- [Guide](_docs/guide.md)
-- [Requirements](_docs/requirements.md)
+## Recent additions
 
-## _inbox
+- `2026-05-04` [Opt-in beats all-in for coding-agent sandboxing on a developer laptop](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md) - Wrap-every-call sandboxing kills adoption; per-trigger opt-in survives because the host integrations Claude Code relies on are exactly what doesn't work in a sandbox
+- `2026-05-04` [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation
+- `2026-05-04` [Apple Containers: the macOS-native microVM runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md) - apple/container runs each container as its own Linux VM via the Apple Virtualization framework; OCI-compatible, macOS 26+ Apple Silicon only, pre-1.0
+- `2026-05-04` [agentkernel --no-network, --dir, --secret-file silently no-op on Apple Containers](notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md) - Three documented isolation flags accept input and have zero effect on v0.16.0/v0.18.1 with Apple Containers backend; default isolation still works
+- `2026-05-04` [macOS multi-user cost myth: it's the GUI session that's heavy, not the user](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md) - 161 system service users coexist on one laptop for ~935 MB; multi-user GUI is heavy, multi-user services is essentially free
+- `2026-05-02` [Vibe-Trading evaluation](notes/finance-tooling/vibe-trading-evaluation.md) - HKUDS multi-agent finance research workspace; 11/15 BOOKMARK; published vibe-trading-mcp is the highest-leverage entry point for Claude-Code-native users
+- `2026-04-30` [portless competitive landscape: no exact 1-to-1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md) - Quadrant map across reverse proxies, tunnels, and Tailscale; portless wins by being the only tool that explicitly aimed at the monorepo .localhost niche
+- `2026-04-29` [Tailscale VPN On Demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md) - iOS/macOS-only auto-connect on network change; "Except On home_wifi" + Cellular "Always" eliminates the "is Tailscale on?" cognitive overhead
+- `2026-04-29` [Radicle network: peer-to-peer git collaboration](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md) - Cryptographic-quorum canonical branch (no merge button on a server); CRDT-based Collaborative Objects store issues and patches in plain Git
+- `2026-04-29` [chezmoi source vs target two-layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md) - Source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs traverse the gap
 
-- [README](_inbox/README.md)
+## How it works
 
-## _templates
+```
+Obsidian Clipper (raw) ──┐
+Claude Code (refined) ───┤──► this repo ──► Obsidian reads/lints/links
+Claude AI skill (refined)┘
+```
 
-- [Article](_templates/article.md)
-- [Atomic note](_templates/atomic-note.md)
-- [Definition](_templates/definition.md)
-- [Synthesis](_templates/synthesis.md)
-- [Til](_templates/til.md)
+- **Ingest**: new knowledge arrives from web clips, coding sessions, or research conversations
+- **Compile**: the LLM checks for overlaps, flags contradictions, updates cross-references and synthesis pages
+- **Query**: ask questions against the compiled wiki; good answers get filed back as new notes
+- **Lint**: periodic health checks for orphans, broken links, stale claims
 
-## notes
+The human thinks and curates. The LLM handles the bookkeeping.
 
-- [Agentkernel broken flags on apple containers](notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md)
-- [Agentkernel plugin install defaults to cwd not user global](notes/agentkernel/agentkernel-plugin-install-defaults-to-cwd-not-user-global.md)
-- [Ai dev stack 8 layer model with tool evaluations march 2026](notes/ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md)
-- [Ai tooling stack synthesis april 2026](notes/ai-tooling/ai-tooling-stack-synthesis-april-2026.md)
-- [Autoresearch the karpathy loop pattern](notes/ai-tooling/autoresearch-the-karpathy-loop-pattern.md)
-- [Claudekit deep dive session recovery red team and gaps](notes/ai-tooling/claudekit-deep-dive-session-recovery-red-team-and-gaps.md)
-- [Claudekit evaluation and unique features](notes/ai-tooling/claudekit-evaluation-and-unique-features.md)
-- [Code graph context tools for token reduction](notes/ai-tooling/code-graph-context-tools-for-token-reduction.md)
-- [Context hub vs context7 vs the context layer ecosystem](notes/ai-tooling/context-hub-vs-context7-vs-the-context-layer-ecosystem.md)
-- [Deepagents vs openclaw vs hermes category positioning](notes/ai-tooling/deepagents-vs-openclaw-vs-hermes-category-positioning.md)
-- [Hermes agent comprehensive briefing april 2026](notes/ai-tooling/hermes-agent-comprehensive-briefing-april-2026.md)
-- [Hermes agent fixed overhead 13 9k tokens per api call](notes/ai-tooling/hermes-agent-fixed-overhead-13-9k-tokens-per-api-call.md)
-- [Hermes vs openclaw competitive scene april 2026](notes/ai-tooling/hermes-vs-openclaw-competitive-scene-april-2026.md)
-- [Llm api pricing comparison deepseek direct vs ollama cloud vs openrouter april 2](notes/ai-tooling/llm-api-pricing-comparison-deepseek-direct-vs-ollama-cloud-vs-openrouter-april-2.md)
-- [Openclaw multi persona dev team setup playbook](notes/ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md)
-- [Openclaw virtual company pattern](notes/ai-tooling/openclaw-virtual-company-pattern.md)
-- [Prompt improvement as a learning technique](notes/ai-tooling/prompt-improvement-as-a-learning-technique.md)
-- [Tool evaluation 5 question rubric](notes/ai-tooling/tool-evaluation-5-question-rubric.md)
-- [Why developers migrate to hermes ranked real vs hype](notes/ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md)
-- [Claude dispatch workflows and async ai orchestration from mobile](notes/ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md)
-- [Complete guide to claude code features workflows and ecosystem](notes/ai/complete-guide-to-claude-code-features-workflows-and-ecosystem.md)
-- [Grand unified theory of ai hype cycle](notes/ai/grand-unified-theory-of-ai-hype-cycle.md)
-- [How llm agents do web research the react loop](notes/ai/how-llm-agents-do-web-research-the-react-loop.md)
-- [Llm agent memory synthesis april 2026](notes/ai/llm-agent-memory-synthesis-april-2026.md)
-- [Llm agent memory systems landscape 2026](notes/ai/llm-agent-memory-systems-landscape-2026.md)
-- [Llm memory benchmarks and evaluation crisis](notes/ai/llm-memory-benchmarks-and-evaluation-crisis.md)
-- [Llm memory systems three competitive battlegrounds](notes/ai/llm-memory-systems-three-competitive-battlegrounds.md)
-- [Memory systems as agent harness plugins](notes/ai/memory-systems-as-agent-harness-plugins.md)
-- [Multi agent coding brain rot scan design externalized state clean handoffs](notes/ai/multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs.md)
-- [Transformer internals for software engineers ffn as graph database larql](notes/ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md)
-- [Turboquant kv cache compression](notes/ai/turboquant-kv-cache-compression.md)
-- [How to win at office politics businesscringe](notes/career/how-to-win-at-office-politics-businesscringe.md)
-- [Claude code cost mechanics corrected for opus 4 7 april 2026](notes/claude-code/claude-code-cost-mechanics-corrected-for-opus-4-7-april-2026.md)
-- [Claude code ecosystem repo evaluations for kit building](notes/claude-code/claude-code-ecosystem-repo-evaluations-for-kit-building.md)
-- [Claude code hook lifecycle and event system](notes/claude-code/claude-code-hook-lifecycle-and-event-system.md)
-- [Claude code hook schema decision values per event type](notes/claude-code/claude-code-hook-schema-decision-values-per-event-type.md)
-- [Claude code surfaces cli vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md)
-- [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md)
-- [Compaction defense patterns for claude code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md)
-- [Opt in beats all in for coding agent sandboxing](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md)
-- [Optimization as the bridge to computational finance](notes/comp-fin/optimization-as-the-bridge-to-computational-finance.md)
-- [Asynchronous byzantine fault tolerance](notes/crypto/asynchronous-byzantine-fault-tolerance.md)
-- [Bitcoin investment paradox](notes/crypto/bitcoin-investment-paradox.md)
-- [Cobie on 33 and crypto incentives](notes/crypto/cobie-on-33-and-crypto-incentives.md)
-- [Double spending](notes/crypto/double-spending.md)
-- [Ethereum token standards and security tokens](notes/crypto/ethereum-token-standards-and-security-tokens.md)
-- [Ray dalio on bitcoin](notes/crypto/ray-dalio-on-bitcoin.md)
-- [Runtime verification for blockchain security](notes/crypto/runtime-verification-for-blockchain-security.md)
-- [Stellar vs nano comparison](notes/crypto/stellar-vs-nano-comparison.md)
-- [Stripe on bitcoin](notes/crypto/stripe-on-bitcoin.md)
-- [Token emission models](notes/crypto/token-emission-models.md)
-- [Undercollateralized loans in defi](notes/crypto/undercollateralized-loans-in-defi.md)
-- [Brief totally accurate history of programming languages](notes/cs/brief-totally-accurate-history-of-programming-languages.md)
-- [Comparing algorithm textbooks](notes/cs/comparing-algorithm-textbooks.md)
-- [Goto considered harmful](notes/cs/goto-considered-harmful.md)
-- [History of regular expressions](notes/cs/history-of-regular-expressions.md)
-- [History of software resources](notes/cs/history-of-software-resources.md)
-- [Immutability of math for programmers](notes/cs/immutability-of-math-for-programmers.md)
-- [Syntactic sugar salt saccharin](notes/cs/syntactic-sugar-salt-saccharin.md)
-- [Tcp ip tutorial rfc1180](notes/cs/tcp-ip-tutorial-rfc1180.md)
-- [The actor model](notes/cs/the-actor-model.md)
-- [The next century of computing](notes/cs/the-next-century-of-computing.md)
-- [Turing completeness](notes/cs/turing-completeness.md)
-- [Whats next in computing](notes/cs/whats-next-in-computing.md)
-- [Why linked list interview questions](notes/cs/why-linked-list-interview-questions.md)
-- [Why vim uses hjkl](notes/cs/why-vim-uses-hjkl.md)
-- [Radicle network peer to peer git collaboration explained](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md)
-- [Age modern file encryption cli](notes/devtools/age-modern-file-encryption-cli.md)
-- [Chezmoi source vs target two layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md)
-- [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md)
-- [Xdg base directory specification](notes/devtools/xdg-base-directory-specification.md)
-- [Four asian diasporas in 2055 projected trajectories](notes/diaspora/four-asian-diasporas-in-2055-projected-trajectories.md)
-- [The bridge builder model highest value position for the next vietnamese generati](notes/diaspora/the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati.md)
-- [Vietnamese diaspora synthesis](notes/diaspora/vietnamese-diaspora-synthesis.md)
-- [Vietnamese vs chinese diaspora a structural analysis of divergent outcomes](notes/diaspora/vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes.md)
-- [Why little saigons hollow out the success driven exit problem](notes/diaspora/why-little-saigons-hollow-out-the-success-driven-exit-problem.md)
-- [Why vietnamese built nail salons instead of trade empires the subsistence busine](notes/diaspora/why-vietnamese-built-nail-salons-instead-of-trade-empires-the-subsistence-busine.md)
-- [Building dwarves kit from extracted patterns](notes/dwarves-kit/building-dwarves-kit-from-extracted-patterns.md)
-- [Dwarves kit design philosophy and architecture](notes/dwarves-kit/dwarves-kit-design-philosophy-and-architecture.md)
-- [Dwarves kit self assessment against philosophy](notes/dwarves-kit/dwarves-kit-self-assessment-against-philosophy.md)
-- [Dwarves kit v1 2 agent roster and cdp](notes/dwarves-kit/dwarves-kit-v1-2-agent-roster-and-cdp.md)
-- [Dwarves kit v1 2 claudekit patterns adopted](notes/dwarves-kit/dwarves-kit-v1-2-claudekit-patterns-adopted.md)
-- [Dwarves kit v1 2 five open decisions](notes/dwarves-kit/dwarves-kit-v1-2-five-open-decisions.md)
-- [Dwarves kit v1 2 verification pipeline architecture](notes/dwarves-kit/dwarves-kit-v1-2-verification-pipeline-architecture.md)
-- [Sdd landscape and dwarves kit v1 2 reference map](notes/dwarves-kit/sdd-landscape-and-dwarves-kit-v1-2-reference-map.md)
-- [Sdd multi agent verification architecture](notes/dwarves-kit/sdd-multi-agent-verification-architecture.md)
-- [10 tips application performance](notes/engineering/architecture/10-tips-application-performance.md)
-- [Age and 1password complementary encryption tiers](notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md)
-- [Apache zookeeper distributed coordination](notes/engineering/architecture/apache-zookeeper-distributed-coordination.md)
-- [Benefits of continuous delivery](notes/engineering/architecture/benefits-of-continuous-delivery.md)
-- [Cloudflare workers as monitoring backend for self hosted linux](notes/engineering/architecture/cloudflare-workers-as-monitoring-backend-for-self-hosted-linux.md)
-- [Creating a microservice ten questions](notes/engineering/architecture/creating-a-microservice-ten-questions.md)
-- [Css architecture first steps](notes/engineering/architecture/css-architecture-first-steps.md)
-- [Devops team topologies](notes/engineering/architecture/devops-team-topologies.md)
-- [Hidden dividends of microservices](notes/engineering/architecture/hidden-dividends-of-microservices.md)
-- [Hids lite rule set for single operator vps](notes/engineering/architecture/hids-lite-rule-set-for-single-operator-vps.md)
-- [History of hadoop](notes/engineering/architecture/history-of-hadoop.md)
-- [Http caching guide](notes/engineering/architecture/http-caching-guide.md)
-- [Microservice testing strategies](notes/engineering/architecture/microservice-testing-strategies.md)
-- [Monorepo advantages](notes/engineering/architecture/monorepo-advantages.md)
-- [Saas cto security checklist](notes/engineering/architecture/saas-cto-security-checklist.md)
-- [Software architecture guide fowler](notes/engineering/architecture/software-architecture-guide-fowler.md)
-- [The sre model](notes/engineering/architecture/the-sre-model.md)
-- [Asking for help at work](notes/engineering/careers/asking-for-help-at-work.md)
-- [Chin thoi quen xau nganh cntt](notes/engineering/careers/chin-thoi-quen-xau-nganh-cntt.md)
-- [Discipline doesnt scale](notes/engineering/careers/discipline-doesnt-scale.md)
-- [Egoless engineering](notes/engineering/careers/egoless-engineering.md)
-- [Five problem solving skills](notes/engineering/careers/five-problem-solving-skills.md)
-- [Heisenberg developers](notes/engineering/careers/heisenberg-developers.md)
-- [How to learn software design](notes/engineering/careers/how-to-learn-software-design.md)
-- [How to read research papers](notes/engineering/careers/how-to-read-research-papers.md)
-- [How to succeed as a poor programmer](notes/engineering/careers/how-to-succeed-as-a-poor-programmer.md)
-- [Lessons from a senior developer](notes/engineering/careers/lessons-from-a-senior-developer.md)
-- [Lessons learned in software dev](notes/engineering/careers/lessons-learned-in-software-dev.md)
-- [Leveraging poor memory in engineering](notes/engineering/careers/leveraging-poor-memory-in-engineering.md)
-- [Programmer competency matrix](notes/engineering/careers/programmer-competency-matrix.md)
-- [Purple developer 10x myth](notes/engineering/careers/purple-developer-10x-myth.md)
-- [So you want to be senior](notes/engineering/careers/so-you-want-to-be-senior.md)
-- [Software engineering code of ethics](notes/engineering/careers/software-engineering-code-of-ethics.md)
-- [Software engineering vs computer science](notes/engineering/careers/software-engineering-vs-computer-science.md)
-- [Twelve lessons at thoughtworks](notes/engineering/careers/twelve-lessons-at-thoughtworks.md)
-- [Working as a software developer](notes/engineering/careers/working-as-a-software-developer.md)
-- [Agile documentation best practices](notes/engineering/code-quality/agile-documentation-best-practices.md)
-- [Antipattern scripting language](notes/engineering/code-quality/antipattern-scripting-language.md)
-- [Code for readability](notes/engineering/code-quality/code-for-readability.md)
-- [Code review basics](notes/engineering/code-quality/code-review-basics.md)
-- [Debating type systems](notes/engineering/code-quality/debating-type-systems.md)
-- [Deleting code](notes/engineering/code-quality/deleting-code.md)
-- [Effective code reviews](notes/engineering/code-quality/effective-code-reviews.md)
-- [Mastering programming](notes/engineering/code-quality/mastering-programming.md)
-- [No primitives domain modeling](notes/engineering/code-quality/no-primitives-domain-modeling.md)
-- [Programming practices principles](notes/engineering/code-quality/programming-practices-principles.md)
-- [Software over engineering mistakes](notes/engineering/code-quality/software-over-engineering-mistakes.md)
-- [Swifty code](notes/engineering/code-quality/swifty-code.md)
-- [Type wars](notes/engineering/code-quality/type-wars.md)
-- [Write code easy to delete](notes/engineering/code-quality/write-code-easy-to-delete.md)
-- [Writing conference proposals](notes/engineering/code-quality/writing-conference-proposals.md)
-- [Writing good commit messages](notes/engineering/code-quality/writing-good-commit-messages.md)
-- [Writing great documentation](notes/engineering/code-quality/writing-great-documentation.md)
-- [Writing perfect pull requests](notes/engineering/code-quality/writing-perfect-pull-requests.md)
-- [Building web apps with functional programming](notes/engineering/functional/building-web-apps-with-functional-programming.md)
-- [Elm language overview](notes/engineering/functional/elm-language-overview.md)
-- [Fp for the rest of us](notes/engineering/functional/fp-for-the-rest-of-us.md)
-- [Functional thinking](notes/engineering/functional/functional-thinking.md)
-- [Functional vs imperative vs declarative](notes/engineering/functional/functional-vs-imperative-vs-declarative.md)
-- [Good and bad elixir](notes/engineering/functional/good-and-bad-elixir.md)
-- [Goodbye object oriented programming](notes/engineering/functional/goodbye-object-oriented-programming.md)
-- [Pragmatic functional programming](notes/engineering/functional/pragmatic-functional-programming.md)
-- [Railway oriented programming](notes/engineering/functional/railway-oriented-programming.md)
-- [What is functional programming](notes/engineering/functional/what-is-functional-programming.md)
-- [Which programming languages are functional](notes/engineering/functional/which-programming-languages-are-functional.md)
-- [Why oo sucks](notes/engineering/functional/why-oo-sucks.md)
-- [Between golang and elixir](notes/engineering/go/between-golang-and-elixir.md)
-- [Building worker pool in go](notes/engineering/go/building-worker-pool-in-go.md)
-- [Channels in golang](notes/engineering/go/channels-in-golang.md)
-- [Comparing elixir and go](notes/engineering/go/comparing-elixir-and-go.md)
-- [Effective error handling in go](notes/engineering/go/effective-error-handling-in-go.md)
-- [Elixir concepts for go developers](notes/engineering/go/elixir-concepts-for-go-developers.md)
-- [Error handling in upspin](notes/engineering/go/error-handling-in-upspin.md)
-- [Four days of go](notes/engineering/go/four-days-of-go.md)
-- [Go best practices for production](notes/engineering/go/go-best-practices-for-production.md)
-- [Go best practices six years in](notes/engineering/go/go-best-practices-six-years-in.md)
-- [Go concurrency through illustrations](notes/engineering/go/go-concurrency-through-illustrations.md)
-- [Go context should go away](notes/engineering/go/go-context-should-go-away.md)
-- [Go performance optimization guide](notes/engineering/go/go-performance-optimization-guide.md)
-- [Go proverbs](notes/engineering/go/go-proverbs.md)
-- [Go rest apis and pointers](notes/engineering/go/go-rest-apis-and-pointers.md)
-- [Go testing principles dave cheney](notes/engineering/go/go-testing-principles-dave-cheney.md)
-- [Go the little language that could](notes/engineering/go/go-the-little-language-that-could.md)
-- [Go type system closer look](notes/engineering/go/go-type-system-closer-look.md)
-- [Go vs swift comparison](notes/engineering/go/go-vs-swift-comparison.md)
-- [Go2 error handling draft design](notes/engineering/go/go2-error-handling-draft-design.md)
-- [Idiomatic go](notes/engineering/go/idiomatic-go.md)
-- [Million websockets and go](notes/engineering/go/million-websockets-and-go.md)
-- [The generic dilemma in go](notes/engineering/go/the-generic-dilemma-in-go.md)
-- [Typed nils in go](notes/engineering/go/typed-nils-in-go.md)
-- [Understanding nil in go](notes/engineering/go/understanding-nil-in-go.md)
-- [Why go is poorly designed](notes/engineering/go/why-go-is-poorly-designed.md)
-- [Zen of go](notes/engineering/go/zen-of-go.md)
-- [Bit twiddling hacks](notes/engineering/principles/bit-twiddling-hacks.md)
-- [Choose boring technology](notes/engineering/principles/choose-boring-technology.md)
-- [Conways law](notes/engineering/principles/conways-law.md)
-- [Data drives code structure](notes/engineering/principles/data-drives-code-structure.md)
-- [Intro to compilers](notes/engineering/principles/intro-to-compilers.md)
-- [Papers i like part 1](notes/engineering/principles/papers-i-like-part-1.md)
-- [Rob pike five rules of programming](notes/engineering/principles/rob-pike-five-rules-of-programming.md)
-- [Rust is not a good c replacement](notes/engineering/principles/rust-is-not-a-good-c-replacement.md)
-- [Stack overflow technical deconstruction](notes/engineering/principles/stack-overflow-technical-deconstruction.md)
-- [Swift pattern matching case let](notes/engineering/principles/swift-pattern-matching-case-let.md)
-- [Technical debt as a city](notes/engineering/principles/technical-debt-as-a-city.md)
-- [The 80x24 rule](notes/engineering/principles/the-80x24-rule.md)
-- [Uml as communication tool](notes/engineering/principles/uml-as-communication-tool.md)
-- [What if github is the devil](notes/engineering/principles/what-if-github-is-the-devil.md)
-- [Why big tech is slow](notes/engineering/principles/why-big-tech-is-slow.md)
-- [Wisdom of programming quotes](notes/engineering/principles/wisdom-of-programming-quotes.md)
-- [Zen of python](notes/engineering/principles/zen-of-python.md)
-- [README](notes/engineering/README.md)
-- [Fincept terminal evaluation](notes/finance-tooling/fincept-terminal-evaluation.md)
-- [Geckoterminal evaluation](notes/finance-tooling/geckoterminal-evaluation.md)
-- [Openbb evaluation](notes/finance-tooling/openbb-evaluation.md)
-- [Oss trading stack survey april 2026](notes/finance-tooling/oss-trading-stack-survey-april-2026.md)
-- [README](notes/finance-tooling/README.md)
-- [Static ip solutions compared for trading bots](notes/finance-tooling/static-ip-solutions-compared-for-trading-bots.md)
-- [Vibe trading evaluation](notes/finance-tooling/vibe-trading-evaluation.md)
-- [Wireguard static ip exchange whitelist](notes/finance-tooling/wireguard-static-ip-exchange-whitelist.md)
-- [Financial knowledge as compound information advantage](notes/finance/financial-knowledge-as-compound-information-advantage.md)
-- [How the bond market controls housing stocks and jobs](notes/finance/how-the-bond-market-controls-housing-stocks-and-jobs.md)
-- [Australias washminster government structure](notes/geopolitics/australias-washminster-government-structure.md)
-- [How the 2026 strait of hormuz crisis impacts australia](notes/geopolitics/how-the-2026-strait-of-hormuz-crisis-impacts-australia.md)
-- [Measuring oil supply disruption severity 2026 hormuz vs historical crises](notes/geopolitics/measuring-oil-supply-disruption-severity-2026-hormuz-vs-historical-crises.md)
-- [Alkaline water health claims vs reality](notes/health/alkaline-water-health-claims-vs-reality.md)
-- [Vitamins and longevity stack](notes/health/vitamins-and-longevity-stack.md)
-- [40 best questions to ask in an interview](notes/hiring/40-best-questions-to-ask-in-an-interview.md)
-- [Assessing software engineering candidates](notes/hiring/assessing-software-engineering-candidates.md)
-- [Company culture is who you hire fire promote](notes/hiring/company-culture-is-who-you-hire-fire-promote.md)
-- [Developer happiness index](notes/hiring/developer-happiness-index.md)
-- [Developers guide to interviewing](notes/hiring/developers-guide-to-interviewing.md)
-- [Dont hire 0x engineers](notes/hiring/dont-hire-0x-engineers.md)
-- [Facebook hiring strengths builders learners](notes/hiring/facebook-hiring-strengths-builders-learners.md)
-- [How to hire programmers](notes/hiring/how-to-hire-programmers.md)
-- [How to hire](notes/hiring/how-to-hire.md)
-- [China as a civilization state not a nation state](notes/history/china-as-a-civilization-state-not-a-nation-state.md)
-- [Imperial examinations how china replaced religion with meritocracy](notes/history/imperial-examinations-how-china-replaced-religion-with-meritocracy.md)
-- [Israel palestine va jerusalem](notes/history/israel-palestine-va-jerusalem.md)
-- [Predictive history and the ambition of psycho history](notes/history/predictive-history-and-the-ambition-of-psycho-history.md)
-- [Sinicization how china absorbs its conquerors](notes/history/sinicization-how-china-absorbs-its-conquerors.md)
-- [The tainter trap why complexity kills empires and chinas reset mechanism](notes/history/the-tainter-trap-why-complexity-kills-empires-and-chinas-reset-mechanism.md)
-- [Compound interest levels and lifestyle progression](notes/investing/compound-interest-levels-and-lifestyle-progression.md)
-- [How and why i invest in startups](notes/investing/how-and-why-i-invest-in-startups.md)
-- [A decade of remote work](notes/leadership/a-decade-of-remote-work.md)
-- [Consulting secret ask the ics](notes/leadership/consulting-secret-ask-the-ics.md)
-- [Cto vs vp engineering](notes/leadership/cto-vs-vp-engineering.md)
-- [How to charge clients](notes/leadership/how-to-charge-clients.md)
-- [Hr evaluation unique value](notes/leadership/hr-evaluation-unique-value.md)
-- [In pursuit of excellence](notes/leadership/in-pursuit-of-excellence.md)
-- [Lam an kieu cu ho](notes/leadership/lam-an-kieu-cu-ho.md)
-- [Leadership in the agentic era](notes/leadership/leadership-in-the-agentic-era.md)
-- [Managing people smarter than you](notes/leadership/managing-people-smarter-than-you.md)
-- [Masayoshi son softbank vision](notes/leadership/masayoshi-son-softbank-vision.md)
-- [Nguyen tac truc giac](notes/leadership/nguyen-tac-truc-giac.md)
-- [Note to new design managers](notes/leadership/note-to-new-design-managers.md)
-- [Rise of the interim cto](notes/leadership/rise-of-the-interim-cto.md)
-- [Steve jobs negotiation tactics](notes/leadership/steve-jobs-negotiation-tactics.md)
-- [Tips on working with talents](notes/leadership/tips-on-working-with-talents.md)
-- [Why soldiers and chefs make best pms](notes/leadership/why-soldiers-and-chefs-make-best-pms.md)
-- [Why you need engineering managers](notes/leadership/why-you-need-engineering-managers.md)
-- [100 little ideas](notes/life/100-little-ideas.md)
-- [Always be quitting](notes/life/always-be-quitting.md)
-- [Average joe](notes/life/average-joe.md)
-- [Be dispassionate about software careers](notes/life/be-dispassionate-about-software-careers.md)
-- [Chon nguoi hop tac va ket giao](notes/life/chon-nguoi-hop-tac-va-ket-giao.md)
-- [Dang le nguyen vu nhan tinh the thai](notes/life/dang-le-nguyen-vu-nhan-tinh-the-thai.md)
-- [Great minds discuss ideas](notes/life/great-minds-discuss-ideas.md)
-- [Hygge danish concept of cosiness](notes/life/hygge-danish-concept-of-cosiness.md)
-- [John vu on world class quality](notes/life/john-vu-on-world-class-quality.md)
-- [Laziness does not exist](notes/life/laziness-does-not-exist.md)
-- [Learning to say no](notes/life/learning-to-say-no.md)
-- [Munger operating system](notes/life/munger-operating-system.md)
-- [Navagraha nine celestial bodies](notes/life/navagraha-nine-celestial-bodies.md)
-- [Pavel durov secrets for success](notes/life/pavel-durov-secrets-for-success.md)
-- [Simple burnout triage](notes/life/simple-burnout-triage.md)
-- [Tieu chuan cua ban la gi](notes/life/tieu-chuan-cua-ban-la-gi.md)
-- [Time is the only real currency](notes/life/time-is-the-only-real-currency.md)
-- [To chat lanh dao kinh doanh](notes/life/to-chat-lanh-dao-kinh-doanh.md)
-- [Vipassana for hackers](notes/life/vipassana-for-hackers.md)
-- [We used to just live](notes/life/we-used-to-just-live.md)
-- [What it feels like to become poor](notes/life/what-it-feels-like-to-become-poor.md)
-- [When and how to ask for help](notes/life/when-and-how-to-ask-for-help.md)
-- [Why explore space stuhlinger letter](notes/life/why-explore-space-stuhlinger-letter.md)
-- [Why we lie about being retired](notes/life/why-we-lie-about-being-retired.md)
-- [Working attitude principles](notes/life/working-attitude-principles.md)
-- [Local llm hybrid stack ollama ollama cloud openrouter for hermes agent](notes/local-llm/local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent.md)
-- [Ollama cloud cloud suffix hosted inference via local endpoint](notes/local-llm/ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint.md)
-- [Qwen3 6 35b a3b on m4 pro memory budget and context sizing](notes/local-llm/qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing.md)
-- [Apple containers overview the macos native microvm runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md)
-- [Firecracker microvms do not run on macos](notes/macos/firecracker-microvms-do-not-run-on-macos.md)
-- [Macos input method kit imk architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md)
-- [Macos multi user cost myth gui vs service users](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md)
-- [Mcp tool schema caching in claude ai connectors](notes/mcp/mcp-tool-schema-caching-in-claude-ai-connectors.md)
-- [Security gates for mcp tools that bridge private to public](notes/mcp/security-gates-for-mcp-tools-that-bridge-private-to-public.md)
-- [Portless competitive landscape no exact 1 to 1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md)
-- [Portless vs tailscale magicdns not equivalent](notes/networking/portless-vs-tailscale-magicdns-not-equivalent.md)
-- [Tailscale plus nordvpn plus icloud private relay coexistence on ios and macos](notes/networking/tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos.md)
-- [Tailscale vpn on demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md)
-- [When to add tailscale to a personal dev surface](notes/networking/when-to-add-tailscale-to-a-personal-dev-surface.md)
-- [Operations research and milp for software engineers](notes/optimization/operations-research-and-milp-for-software-engineers.md)
-- [Backend for frontend pattern](notes/patterns/backend-for-frontend-pattern.md)
-- [Redundant api pre checks in wrapper functions](notes/patterns/redundant-api-pre-checks-in-wrapper-functions.md)
-- [Tao te ching i ching on timing and hidden preparation](notes/philosophy/tao-te-ching-i-ching-on-timing-and-hidden-preparation.md)
-- [Llm wiki pattern compilation over retrieval](notes/pkm/llm-wiki-pattern-compilation-over-retrieval.md)
-- [Why knowledge notes need context not just facts](notes/pkm/why-knowledge-notes-need-context-not-just-facts.md)
-- [Threat model split cross tenant isolation vs per agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md)
-- [Anatomy of software frauds](notes/startup/anatomy-of-software-frauds.md)
-- [Tap trung vao san pham](notes/startup/tap-trung-vao-san-pham.md)
-- [Tesla gm founders vs managers](notes/startup/tesla-gm-founders-vs-managers.md)
-- [Anti patterns that destroy trust permanently](notes/wealth/anti-patterns-that-destroy-trust-permanently.md)
-- [Enterprise trust ladder vendor to strategic partner](notes/wealth/enterprise-trust-ladder-vendor-to-strategic-partner.md)
-- [How to sit at the table the thesis](notes/wealth/how-to-sit-at-the-table-the-thesis.md)
-- [The 12 month progression deposit to partnership](notes/wealth/the-12-month-progression-deposit-to-partnership.md)
-- [The three gates what elders screen for](notes/wealth/the-three-gates-what-elders-screen-for.md)
-- [Youtube transcript extraction from cloud containers](notes/youtube/youtube-transcript-extraction-from-cloud-containers.md)
-- [Zed global agent rules live in the rules library not agents md](notes/zed/zed-global-agent-rules-live-in-the-rules-library-not-agents-md.md)
+## Commands
 
-## uncategorized
+Type these to Claude in this repo (exact wording doesn't matter, intent does):
 
-- [CLAUDE](CLAUDE.md)
-- [Index](index.md)
-- [Log](log.md)
+| Command | What it does |
+|---------|--------------|
+| `process inbox` | Refine raw `_inbox/` captures into the right folder with links |
+| `capture this as a note: ...` | Save a learning moment from the current chat |
+| `compile recent commits` / `re-ingest` | Run compilation on notes pushed directly to GitHub (backlinks, index, README, log) |
+| `answer from the wiki: ...` | Synthesize across notes, cite with `[[wikilinks]]` |
+| `file that answer as a wiki page` | Commit a synthesis from chat as a new note |
+| `reorganize the wiki` | Clean up orphans, folders, backlinks |
+| `lint the wiki` | Health check: orphans, broken links, raw stragglers |
+
+Full reference: [commands cheatsheet in the usage guide](_docs/guide.md#commands-cheatsheet).
+
+## Topics
+
+| Folder | Domain |
+|--------|--------|
+| [engineering/](notes/engineering/) | Software engineering practices, principles, languages |
+| [life/](notes/life/) | Life philosophy, habits, mindset, career wisdom |
+| [leadership/](notes/leadership/) | Management, negotiation, business leadership |
+| [cs/](notes/cs/) | Computer science fundamentals |
+| [dwarves-kit/](notes/dwarves-kit/) | Dwarves Kit architecture and design |
+| [hiring/](notes/hiring/) | Candidate assessment and hiring |
+| [ai-tooling/](notes/ai-tooling/) | AI developer tools and evaluations |
+| [ai/](notes/ai/) | AI concepts, memory systems, agent patterns |
+| [diaspora/](notes/diaspora/) | Vietnamese and Asian diaspora analysis |
+| [history/](notes/history/) | History, civilizations, geopolitical patterns |
+| [claude-code/](notes/claude-code/) | Claude Code hooks, skills, workflows |
+| [coding-agents/](notes/coding-agents/) | Agent-laptop ergonomics: sandboxing, opt-in design, integration tradeoffs |
+| [agentkernel/](notes/agentkernel/) | agentkernel CLI gotchas and operational notes |
+| [crypto/](notes/crypto/) | Cryptocurrency, blockchain, DeFi, tokenomics |
+| [wealth/](notes/wealth/) | Trust-building, business relationships |
+| [geopolitics/](notes/geopolitics/) | Oil crises, government structures |
+| [startup/](notes/startup/) | Startup strategy, product focus |
+| [health/](notes/health/) | Wellness, nutrition |
+| [investing/](notes/investing/) | Compound interest, startup investing |
+| [mcp/](notes/mcp/) | Model Context Protocol |
+| [pkm/](notes/pkm/) | Personal knowledge management |
+| [devtools/](notes/devtools/) | Developer tools and config |
+| [patterns/](notes/patterns/) | Software patterns and anti-patterns |
+| [philosophy/](notes/philosophy/) | Taoism, I Ching, timing and preparation |
+| [finance/](notes/finance/) | Bond markets, capital structure, compounding knowledge |
+| [finance-tooling/](notes/finance-tooling/) | Financial tool evaluations: terminals, data providers, broker platforms, frameworks |
+| [comp-fin/](notes/comp-fin/) | Computational finance: optimization, stochastic control, learning paths |
+| [optimization/](notes/optimization/) | Operations research, MILP, mathematical optimization fundamentals |
+| [career/](notes/career/) | Career strategy, workplace dynamics, office politics |
+| [macos/](notes/macos/) | macOS frameworks and platform-specific architecture |
+| [local-llm/](notes/local-llm/) | Local LLM economics, Ollama Cloud, Qwen on Apple Silicon |
+| [networking/](notes/networking/) | Tailscale, WireGuard, portless, mesh VPN ergonomics |
+| [security/](notes/security/) | Threat modeling for AI agents, sandboxing trade-offs |
+| [decentralized/](notes/decentralized/) | Decentralized git collaboration, p2p protocols |
+| [youtube/](notes/youtube/) | YouTube tooling |
+| [zed/](notes/zed/) | Zed editor agent rules and configuration |
+
+## Documentation
+
+- [Full note index](index.md) - catalog of all notes with one-line summaries
+- [Usage guide](_docs/guide.md) - how to add notes, use Obsidian, work with Claude
+- [Architecture](_docs/architecture.md) - system design, folder conventions, operations model
+- [Requirements](_docs/requirements.md) - feature tracker, design principles, scaling triggers
+- [Changelog](_docs/changelog.md) - project decisions log
+- [Operations log](log.md) - chronological record of ingests, queries, lints
