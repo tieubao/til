@@ -117,3 +117,4 @@ The trap is thinking "static IP" is a product you buy. It isn't. Static IPs are 
 - [[finance-tooling/oss-trading-stack-survey-april-2026]] - where the engine that hits these exchanges gets built
 - [[crypto/double-spending]] - why exchanges need key hardening in the first place
 - [[hids-lite-rule-set-for-single-operator-vps]] - the tunnel VPS becomes a monitored host; `wg show` is part of its signal set
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - if you need a control plane on top of WireGuard rather than a single static peer, Tailscale is the friendlier abstraction

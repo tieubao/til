@@ -46,7 +46,7 @@ agentkernel run --no-network -i python:3-alpine -- python3 -c "
 
 **Actual:** `FAIL: status 200`
 
-Tested twice — once with the default `--profile moderate`, once with `--profile restrictive --no-network`. Both reach example.com and return HTTP 200. The flag is parsed (no error message) but the network namespace inside the sandbox is unchanged.
+Tested twice - once with the default `--profile moderate`, once with `--profile restrictive --no-network`. Both reach example.com and return HTTP 200. The flag is parsed (no error message) but the network namespace inside the sandbox is unchanged.
 
 ## Bug 2: `--dir <host-path>` does not bind-mount
 
@@ -62,7 +62,7 @@ agentkernel exec ak-test-mount -- find / -name 'safe.txt'
 
 **Expected:** at least one match for `safe.txt` somewhere in the sandbox filesystem.
 
-**Actual:** empty output. `find` returns no hits. Inside the sandbox, `mount` shows only kernel mounts — `/dev/vdb on /`, `/proc`, `/sys`, etc. There is no bind-mount of the host directory.
+**Actual:** empty output. `find` returns no hits. Inside the sandbox, `mount` shows only kernel mounts - `/dev/vdb on /`, `/proc`, `/sys`, etc. There is no bind-mount of the host directory.
 
 The smoking gun is in `agentkernel sandbox info`:
 
@@ -86,7 +86,7 @@ agentkernel run --secret-file TEST_SECRET sh -c '
   env | grep -i SECRET'
 ```
 
-**Expected:** the secret available somewhere inside the sandbox — file under `/run/secrets/`, env var, or similar.
+**Expected:** the secret available somewhere inside the sandbox - file under `/run/secrets/`, env var, or similar.
 
 **Actual:** no file matches the find; `/run/secrets/` and `/agentkernel/secrets/` do not exist; no `SECRET` env var present. The vault stores the secret correctly (`agentkernel secret list` shows it) but the injection step is a no-op.
 
@@ -130,8 +130,8 @@ Treat this as a 90-day decay rule. A boundary that worked when you tested it but
 
 ## Related
 
-- [[agentkernel-plugin-install-defaults-to-cwd-not-user-global]] — adjacent agentkernel gotcha; install with `--global`
-- [[apple-containers-overview-the-macos-native-microvm-runtime]] — the underlying framework agentkernel wraps; its primitive flags work
-- [[firecracker-microvms-do-not-run-on-macos]] — context for why agentkernel uses Apple Containers on macOS instead of Firecracker
-- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] — operational context: when to reach for agentkernel-style sandboxing in the first place
-- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] — agentkernel solves the damage-containment threat; this article is about how reliably it does so on the macOS backend
+- [[agentkernel-plugin-install-defaults-to-cwd-not-user-global]] - adjacent agentkernel gotcha; install with `--global`
+- [[apple-containers-overview-the-macos-native-microvm-runtime]] - the underlying framework agentkernel wraps; its primitive flags work
+- [[firecracker-microvms-do-not-run-on-macos]] - context for why agentkernel uses Apple Containers on macOS instead of Firecracker
+- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] - operational context: when to reach for agentkernel-style sandboxing in the first place
+- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] - agentkernel solves the damage-containment threat; this article is about how reliably it does so on the macOS backend

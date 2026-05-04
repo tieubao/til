@@ -10,9 +10,9 @@ status: refined
 
 **macOS is a multi-user UNIX with one shared kernel. A user is a UID + home dir + permissions context, not a separate OS instance.** The folk-belief that "running 3 macOS users at once costs 3x the OS overhead" is wrong, and it leads people to architect around containers / VMs when plain multi-user POSIX would have been ~3-5x cheaper.
 
-What people actually remember when they say "multi-user is heavy" is the GUI session — WindowServer, Finder, Dock, login items, autostart apps. Those are heavy (~500 MB-1 GB per active GUI session). They are not the cost of having multiple users; they are the cost of having multiple users **logged into the desktop concurrently**.
+What people actually remember when they say "multi-user is heavy" is the GUI session - WindowServer, Finder, Dock, login items, autostart apps. Those are heavy (~500 MB-1 GB per active GUI session). They are not the cost of having multiple users; they are the cost of having multiple users **logged into the desktop concurrently**.
 
-For the common case of "I want to run several daemons under different UIDs via LaunchDaemon `UserName=foo`, no one ever logs into the desktop as foo" — the cost per user is essentially zero beyond the daemon process itself.
+For the common case of "I want to run several daemons under different UIDs via LaunchDaemon `UserName=foo`, no one ever logs into the desktop as foo" - the cost per user is essentially zero beyond the daemon process itself.
 
 ## The empirical evidence
 
@@ -77,7 +77,7 @@ The cheapest isolation you don't need is the most overengineered. POSIX multi-us
 
 ## Related
 
-- [[apple-containers-overview-the-macos-native-microvm-runtime]] — when you DO need hardware-VM isolation, Apple Containers is the macOS-native answer
-- [[firecracker-microvms-do-not-run-on-macos]] — the Linux-equivalent isolation primitive doesn't apply on Mac
-- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] — when multi-user POSIX is enough vs when you need stronger
-- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] — adjacent design pattern: pick the right boundary for the actual threat
+- [[apple-containers-overview-the-macos-native-microvm-runtime]] - when you DO need hardware-VM isolation, Apple Containers is the macOS-native answer
+- [[firecracker-microvms-do-not-run-on-macos]] - the Linux-equivalent isolation primitive doesn't apply on Mac
+- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] - when multi-user POSIX is enough vs when you need stronger
+- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] - adjacent design pattern: pick the right boundary for the actual threat

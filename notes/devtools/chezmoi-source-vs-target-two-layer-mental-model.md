@@ -106,4 +106,9 @@ You are working on or thinking about chezmoi if:
 
 Chezmoi is two layers and four verbs. Source holds the spec with prefixed filenames; target is what programs read; `add` and `re-add` flow target to source; `apply` flows source to target; `diff` shows the gap. Cross-machine portability is a separate problem solved by treating the source as a git repo with a remote. Once you internalize the layer split, the tool stops being magic.
 
-#chezmoi #dotfiles #cli #macos
+## Related
+
+- [[age-modern-file-encryption-cli]] - chezmoi's `encrypted_` prefix uses age (or gpg) under the hood; same key model, same `~/.config/age/keys.txt` location
+- [[xdg-base-directory-specification]] - the source dir defaults to `~/.local/share/chezmoi`, which IS the XDG data dir
+- [[age-and-1password-complementary-encryption-tiers]] - where the age key itself should live (1Password-stewarded, replicated to fresh machines on bootstrap)
+- [[starship-prompt-configuration-best-practices]] - typical neighbor in a chezmoi-managed dotfiles repo

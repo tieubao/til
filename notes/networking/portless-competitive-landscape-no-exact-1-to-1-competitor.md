@@ -82,3 +82,10 @@ Selection guide:
 - Already have a Caddy setup or want full control -> **Caddy** with a 5-line Caddyfile
 - Want the dev URL accessible from a phone or other device -> **portless --tailscale**
 - Contractors need to hit each other's dev servers across machines -> **Tailscale**, not portless. That's a different infra question.
+
+## Related
+
+- [[portless-vs-tailscale-magicdns-not-equivalent]] - companion note: why portless and Tailscale MagicDNS occupy different layers, not the same niche
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - the cross-machine path portless intentionally does not solve; reach for Tailscale when scope > one machine
+- [[tailscale-vpn-on-demand-feature-overview-and-rule-semantics]] - if you stack portless `--funnel` on top of Tailscale, the on-demand rule semantics shape the mobile-access UX
+- [[wireguard-static-ip-exchange-whitelist]] - adjacent infra pattern: when you DO need a public addressable endpoint, WireGuard plus a cheap VPS beats every "static IP as a service" reseller

@@ -6,6 +6,58 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-04] ingest | Compile 14 notes pushed via Claude.ai (2026-04-29 to 2026-05-04)
+
+Fourteen notes accumulated on `master` from Claude.ai pushes that bypassed the local Claude Code compilation step. Pulled, fixed two structural issues, stripped em dashes (60+ across 10 files), added `## Related` sections to 7 notes that lacked them, added cross-folder backlinks on 4 existing notes, and built the index/README sections for the 5 new folders the cluster introduced.
+
+**Notes compiled, by cluster:**
+
+*Sandboxing / containers cluster (2026-05-04, 7 notes, all heavily cross-linked at write time):*
+- `notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md` - per-trigger opt-in beats wrap-every-call sandboxing on a developer laptop because the host integrations Claude Code needs are exactly what doesn't work in a sandbox
+- `notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md` - "isolate from whom?" splits two threats people conflate; cross-tenant (multi-user POSIX) vs per-agent damage containment (microVM)
+- `notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md` - 161 service users on one laptop for ~935 MB; multi-user GUI is heavy, service-only users essentially free, daemon-per-UID beats containers when tenants are mutually trusted
+- `notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md` - `apple/container` runs each container as its own Linux VM; OCI-compatible, macOS 26+ Apple Silicon only, pre-1.0 with documented gaps (no `--restart`, no documented `--network none`)
+- `notes/macos/firecracker-microvms-do-not-run-on-macos.md` - Firecracker requires Linux + KVM; reach for Apple Containers on Apple Silicon, otherwise you stack two layers of virtualization and pay the cost up front
+- `notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md` - three documented isolation flags (`--no-network`, `--dir`, `--secret-file`) accept input and silently no-op on v0.16.0/v0.18.1 with the Apple Containers backend; default isolation still works
+- `notes/agentkernel/agentkernel-plugin-install-defaults-to-cwd-not-user-global.md` - first-time gotcha: `plugin install claude` writes `.claude/` and `.mcp.json` into your repo unless you pass `--global`
+
+*Networking / Tailscale + portless cluster (2026-04-29 to 2026-04-30, 5 notes):*
+- `notes/networking/when-to-add-tailscale-to-a-personal-dev-surface.md` - mesh VPN over WireGuard with proprietary control plane; collapses "reach my machine from anywhere" into a 5-minute SSO login
+- `notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md` - iOS/macOS-only auto-connect on network change; "Except On home_wifi" + Cellular "Always" eliminates the "is Tailscale on?" cognitive overhead
+- `notes/networking/tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos.md` - per-device design across Mac mini / Air / iPhone; Mullvad-as-exit-node as the cleaner Nord replacement
+- `notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md` - quadrant map across reverse proxies, tunnels, and Tailscale; portless wins the monorepo `.localhost` niche by being the only tool that explicitly aimed at it
+- `notes/networking/portless-vs-tailscale-magicdns-not-equivalent.md` - portless is L7 application routing for one machine; MagicDNS is L3 cross-machine addressing; the naming overlap is superficial
+
+*Other (2 notes):*
+- `notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md` - cryptographic-quorum canonical branch (no merge button on a server); CRDT-based Collaborative Objects store issues and patches in plain Git
+- `notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md` - source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs (add, re-add, apply, diff) traverse the gap
+
+**Structural fixes:**
+- Moved `devtools/chezmoi-source-vs-target-two-layer-mental-model.md` (root) to `notes/devtools/` and `networking/when-to-add-tailscale-to-a-personal-dev-surface.md` (root) to `notes/networking/`. The 2026-04-21 framework-vs-content move had relocated content under `notes/`, but two Claude.ai pushes wrote to the pre-move paths.
+- Stripped em dashes from 10 of the 14 new notes (the sandboxing cluster all had `—` in tables, prose, and Related sections; the Tailscale notes had it in tables; Radicle had one). Hard repo style rule.
+- The 1744d47 commit (delete `networking/tailscale-ping-test.md`) plus 52cb3db (add it) net out: no `tailscale-ping-test` note exists and none was added to the index.
+
+**Backlinks added on existing notes:**
+- `notes/finance-tooling/wireguard-static-ip-exchange-whitelist.md` - linked to `when-to-add-tailscale-to-a-personal-dev-surface` (Tailscale = WireGuard + control plane)
+- `notes/devtools/age-modern-file-encryption-cli.md` - linked to `chezmoi-source-vs-target-two-layer-mental-model` (chezmoi's `encrypted_` prefix uses age)
+- `notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md` - linked to chezmoi (the daily consumer of the age identity stewarded by the two-tier pattern)
+- `notes/devtools/xdg-base-directory-specification.md` - linked to chezmoi (whose source dir defaults to the XDG data dir)
+
+**Related sections added (notes that arrived without one):**
+The 7 networking + decentralized + chezmoi notes had no `## Related` section. Added one to each, linking primarily within their cluster and one or two cross-folder bridges (e.g. Radicle to `double-spending`, chezmoi to `age-and-1password-complementary-encryption-tiers`).
+
+**New folders created (5):** `notes/coding-agents/`, `notes/security/`, `notes/agentkernel/`, `notes/networking/`, `notes/decentralized/`. All five added to `index.md` with new top-level sections; entries also added to `README.md` in alphabetical position.
+
+**Cross-cluster pairings:**
+- The sandboxing cluster forms a tight 7-note network. The two pivot notes are `threat-model-split` (the conceptual split) and `opt-in-beats-all-in` (the operational pattern). Already 4-note synthesis-eligible; consider a synthesis page if a damage-containment-vs-cross-tenant clarification surfaces again.
+- The networking cluster is 6 notes with the older `wireguard-static-ip-exchange-whitelist` and `static-ip-solutions-compared-for-trading-bots` (in `finance-tooling/`). Synthesis would pull these three folders together around "private endpoints in 2026"; defer until a seventh note lands.
+
+**Synthesis pages:** none updated. `coding-agents/` + `security/` cluster is now 7 notes if you count the macOS notes that bridge in; eligible for synthesis. Defer until next ingest.
+
+**Provenance note:** the 7 sandboxing notes were authored in the same brainstorm session (2026-05-04, source: "agentkernel + Hermes brainstorm") and arrived already cross-linked. They needed em-dash strip and nothing else structurally. The networking notes arrived as Claude.ai chat captures (Hermes-adjacent) and needed Related-section additions plus em-dash strip on two of them.
+
+---
+
 ## [2026-05-02] ingest | Vibe-Trading evaluation (HKUDS multi-agent finance research workspace)
 
 Public eval of [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading), authored from a private Claude Code research session evaluating it as a candidate research-agent layer for a semi-pro crypto trading workflow. Score 11/15 on the 5-question rubric, verdict BOOKMARK. Re-evaluate 30 days from now.

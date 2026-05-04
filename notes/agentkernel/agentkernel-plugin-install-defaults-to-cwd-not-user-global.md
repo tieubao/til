@@ -39,9 +39,9 @@ trash <repo>/.mcp.json <repo>/.claude/skills/agentkernel <repo>/.claude/commands
 agentkernel plugin install --global claude
 ```
 
-`agentkernel plugin install --help` documents the `--global` flag, but the default behavior surprises people the first time. The convention in many CLI tools is the opposite — `npm install` is local by default and `-g` is the override; in agentkernel you also need `-g`/`--global`, but the surprise is that "plugin install" reads as a configuration action that intuitively belongs at user scope.
+`agentkernel plugin install --help` documents the `--global` flag, but the default behavior surprises people the first time. The convention in many CLI tools is the opposite - `npm install` is local by default and `-g` is the override; in agentkernel you also need `-g`/`--global`, but the surprise is that "plugin install" reads as a configuration action that intuitively belongs at user scope.
 
 ## Related
 
-- [[agentkernel-broken-flags-on-apple-containers]] — once installed, you also need to know which agentkernel flags actually work on macOS
-- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] — context for why you would install the agentkernel claude plugin in the first place
+- [[agentkernel-broken-flags-on-apple-containers]] - once installed, you also need to know which agentkernel flags actually work on macOS
+- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] - context for why you would install the agentkernel claude plugin in the first place

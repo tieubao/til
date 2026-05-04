@@ -34,4 +34,9 @@ Multiple machines you own. One needs to be reachable from outside its local netw
 
 Tailscale collapses "reach my machine from anywhere" from a router-config plus dynamic-DNS plus firewall-tuning project into a 5-minute SSO login. The cost is trusting Tailscale Inc with metadata about your device topology. For a personal dev surface managing a personal prod box, that is a trade I would make every time.
 
-#tailscale #vpn #wireguard #homelab
+## Related
+
+- [[tailscale-vpn-on-demand-feature-overview-and-rule-semantics]] - the iOS/macOS auto-connect mechanic that makes daily use ergonomic
+- [[tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos]] - what to do when Tailscale shares the OS VPN slot with Nord and Private Relay
+- [[wireguard-static-ip-exchange-whitelist]] - the bare-WireGuard alternative when you want a fixed egress IP and don't need a control plane
+- [[portless-vs-tailscale-magicdns-not-equivalent]] - Tailscale solves cross-machine; portless solves single-machine dev URLs; pick based on scope

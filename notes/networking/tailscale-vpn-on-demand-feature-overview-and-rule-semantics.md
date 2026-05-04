@@ -11,7 +11,7 @@ VPN On Demand is an iOS/macOS-only Tailscale feature that auto-connects or disco
 
 - iOS: Tailscale 1.48+
 - macOS: Tailscale 1.60+
-- **Not available on Android, Windows, Linux** — uses Apple's NetworkExtension framework.
+- **Not available on Android, Windows, Linux** - uses Apple's NetworkExtension framework.
 
 ## How it works
 
@@ -26,10 +26,10 @@ Each interface (Wi-Fi, Cellular, Ethernet) supports five rules:
 | Rule | Behavior |
 |------|----------|
 | **Always** | Connect on any active connection |
-| **Only On** | Connect only on listed networks (allowlist) — Wi-Fi only, by SSID |
-| **Except On** | Connect on any network except listed (blocklist) — Wi-Fi only |
+| **Only On** | Connect only on listed networks (allowlist) - Wi-Fi only, by SSID |
+| **Except On** | Connect on any network except listed (blocklist) - Wi-Fi only |
 | **Never** | Always disconnect on this interface |
-| **Do Nothing** | No auto behavior — manual control, but enables MagicDNS triggers |
+| **Do Nothing** | No auto behavior - manual control, but enables MagicDNS triggers |
 
 ## MagicDNS auto-trigger
 
@@ -55,3 +55,10 @@ This is the "lazy connect" pattern: useful when you want the VPN up only when so
 ## Key takeaway
 
 VPN On Demand is the right default for **mobile homelab/personal infrastructure access**. The "Except On home_wifi" Wi-Fi rule + Cellular "Always" combination eliminates the constant "is Tailscale on?" cognitive overhead while preserving local network functionality at home.
+
+## Related
+
+- [[tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos]] - the per-device design that uses these rule semantics
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - the prior decision; once you adopt Tailscale, On Demand is how you live with it on iOS without battery pain
+- [[portless-vs-tailscale-magicdns-not-equivalent]] - MagicDNS triggers ("Do Nothing" + auto-resolve) are part of the On Demand surface
+- [[wireguard-static-ip-exchange-whitelist]] - what Tailscale's WireGuard transport looks like outside the Apple-only NetworkExtension features

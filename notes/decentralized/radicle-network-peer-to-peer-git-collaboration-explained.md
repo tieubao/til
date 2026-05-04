@@ -58,7 +58,7 @@ How it works:
 - Each COB is a DAG of Git commits, disjoint from the source code branches
 - Issues point to the identity document graph (so you can see who had write access at the time)
 - Patches point to both the identity document and source code commits
-- Edits don't conflict because the data structure is a CRDT — concurrent operations always converge to the same state when peers gossip their refs
+- Edits don't conflict because the data structure is a CRDT - concurrent operations always converge to the same state when peers gossip their refs
 
 This is the durable lesson from Radicle, even if the network itself stays niche: CRDTs in Git is a powerful pattern for any decentralized collaboration tool that wants to keep Git's content-addressed durability while adding mutable social state on top.
 
@@ -110,3 +110,10 @@ It does NOT make sense for typical product teams whose bottleneck is CI velocity
 The thing worth tracking is the **Collaborative Objects pattern**. CRDT-based social artifacts stored in Git is a durable architectural pattern. Even if Radicle itself stays niche, the COB approach is going to influence how decentralized collaboration tools get built for the next decade.
 
 Radicle's specific innovation: making "what is canonical?" a function of cryptographic quorum rather than server access. That removes the central trust point entirely without sacrificing the ability to have an authoritative branch.
+
+## Related
+
+- [[double-spending]] - the same cryptographic-quorum primitive applied to value (Bitcoin) instead of code (Radicle)
+- [[age-modern-file-encryption-cli]] - lightweight modern crypto in the same spirit (small surface, opinionated, X25519); both rely on key pairs as identity
+- [[chezmoi-source-vs-target-two-layer-mental-model]] - dotfiles via plain Git; Radicle is what "plain Git plus identity plus social state" could look like end to end
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - the proprietary-control-plane critique that applies to Tailscale also applies (in reverse) to GitHub; Radicle is what "all clients, no operator" looks like

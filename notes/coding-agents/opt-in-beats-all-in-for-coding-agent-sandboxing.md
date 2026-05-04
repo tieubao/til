@@ -10,7 +10,7 @@ status: refined
 
 **Wrapping every coding-agent invocation in a sandbox sounds safer but kills adoption within weeks. Per-trigger opt-in is the design that survives daily use.** This is the lesson from designing how to integrate `agentkernel` (microVM sandbox via Apple Containers) with Claude Code on a developer laptop in May 2026.
 
-The naive impulse is "always sandbox; safer is better." On a daily-driver laptop, the host integrations Claude Code has — IDE plugins, browser automation MCPs, ssh-agent, 1Password biometric unlock, wrangler / op / gh creds — are exactly the things that don't work inside a sandbox. Wrapping every call by default means losing 70% of what makes the agent useful.
+The naive impulse is "always sandbox; safer is better." On a daily-driver laptop, the host integrations Claude Code has - IDE plugins, browser automation MCPs, ssh-agent, 1Password biometric unlock, wrangler / op / gh creds - are exactly the things that don't work inside a sandbox. Wrapping every call by default means losing 70% of what makes the agent useful.
 
 ## The two variants laid out
 
@@ -53,7 +53,7 @@ The trigger criteria that justify opting in:
 | Long autonomous loops where you step away mid-session | Reduce blast radius if attention drifts |
 | Explicit `/sandbox <cmd>` invocation | Conscious opt-in for any case the above don't cover |
 
-Default = host. Sandbox = the conscious choice you make for the risky case. The discipline cost is real but contained — it's a 5-second decision per session, not a 5-hour setup tax.
+Default = host. Sandbox = the conscious choice you make for the risky case. The discipline cost is real but contained - it's a 5-second decision per session, not a 5-hour setup tax.
 
 ## The recovery layer
 
@@ -65,7 +65,7 @@ That recovery layer is where the security spec goes when the prevention layer is
 
 1. **You forget to opt in for a genuinely risky task and the agent hits the host.** Recovery layer (Time Machine, branch protection) catches it. Reviewable in the post-incident retro; the trigger criteria gain a new entry if the failure was preventable.
 2. **You opt in too aggressively (sandbox routine work) and lose productivity.** Trigger criteria get tightened. Easier to relax restrictions than to expand them.
-3. **The sandbox tool itself is buggy.** This is real. agentkernel v0.16.0 + v0.18.1's Apple Containers backend has three documented isolation flags that silently no-op (per [[agentkernel-broken-flags-on-apple-containers]]). Variant 2 makes this less catastrophic — you weren't relying on those flags for routine work, only for the ones you opted into. Variant 1 would have built daily ops on top of broken flags.
+3. **The sandbox tool itself is buggy.** This is real. agentkernel v0.16.0 + v0.18.1's Apple Containers backend has three documented isolation flags that silently no-op (per [[agentkernel-broken-flags-on-apple-containers]]). Variant 2 makes this less catastrophic - you weren't relying on those flags for routine work, only for the ones you opted into. Variant 1 would have built daily ops on top of broken flags.
 
 ## When variant 1 might still be right
 
@@ -87,7 +87,7 @@ Watch for these signals in the first month after deploying variant 1:
 - Velocity drops measurably on routine tasks
 - The wrapper's documentation grows a "common workarounds" section that's actually "things that don't work"
 
-If you see two of those signals, flip to variant 2 and document the trigger criteria. Sunk cost on the variant 1 setup is real but short — most of the bind-mount config translates directly into "what gets bind-mounted when the user opts in" for variant 2.
+If you see two of those signals, flip to variant 2 and document the trigger criteria. Sunk cost on the variant 1 setup is real but short - most of the bind-mount config translates directly into "what gets bind-mounted when the user opts in" for variant 2.
 
 ## The bigger lesson
 
@@ -97,7 +97,7 @@ The cheapest security posture you don't follow is worth less than the medium sec
 
 ## Related
 
-- [[agentkernel-broken-flags-on-apple-containers]] — concrete example of why "always sandbox" can build on broken assumptions
-- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] — variant 2 is a damage-containment design; understand the threat before picking the architecture
-- [[macos-multi-user-cost-myth-gui-vs-service-users]] — adjacent design lesson: pick the boundary that fits the actual threat, not the most aggressive available
-- [[apple-containers-overview-the-macos-native-microvm-runtime]] — the underlying tool variant 2 builds on, on macOS
+- [[agentkernel-broken-flags-on-apple-containers]] - concrete example of why "always sandbox" can build on broken assumptions
+- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] - variant 2 is a damage-containment design; understand the threat before picking the architecture
+- [[macos-multi-user-cost-myth-gui-vs-service-users]] - adjacent design lesson: pick the boundary that fits the actual threat, not the most aggressive available
+- [[apple-containers-overview-the-macos-native-microvm-runtime]] - the underlying tool variant 2 builds on, on macOS

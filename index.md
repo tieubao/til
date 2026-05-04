@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of all notes, grouped by folder. Last updated: 2026-04-22
+> Full catalog of all notes, grouped by folder. Last updated: 2026-05-04
 
 ## ai
 
@@ -37,6 +37,11 @@
 - [Tool evaluation 5-question rubric](notes/ai-tooling/tool-evaluation-5-question-rubric.md) - 5 questions in 10 min; the kill question: what past failure would this have prevented?
 - [Why developers migrate to Hermes, ranked real vs hype](notes/ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (OpenClaw CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
 
+## agentkernel
+
+- [agentkernel --no-network, --dir, --secret-file silently no-op on Apple Containers](notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md) - Three documented isolation flags accept input and have zero effect on v0.16.0/v0.18.1 with Apple Containers backend; default isolation still works
+- [agentkernel plugin install defaults to CWD, not user-global](notes/agentkernel/agentkernel-plugin-install-defaults-to-cwd-not-user-global.md) - First-time gotcha: `plugin install claude` writes `.claude/` and `.mcp.json` into your repo unless you pass `--global`
+
 ## career
 
 - [How to win at office politics (BusinessCringe)](notes/career/how-to-win-at-office-politics-businesscringe.md) - The invisible scoreboard runs on perception, not performance; can't opt out, three offensive tactics to defend against, three defensive plays to run
@@ -49,6 +54,10 @@
 - [Claude Code surfaces - CLI vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md) - Four surfaces, three runtimes; desktop Electron costs ~2x RAM and runs hot, CLI + web is the leaner pattern
 - [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md) - If skipping it causes irreversible damage, use a hook; if output degrades, use a skill
 - [Compaction defense patterns for Claude Code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md) - Two-layer defense: PreCompact backup + post-compaction re-injection of critical rules
+
+## coding-agents
+
+- [Opt-in beats all-in for coding-agent sandboxing on a developer laptop](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md) - Wrap-every-call sandboxing kills adoption; per-trigger opt-in survives daily use because the host integrations Claude Code relies on are exactly what doesn't work in a sandbox
 
 ## comp-fin
 
@@ -85,9 +94,14 @@
 - [Why interviewers ask linked list questions](notes/cs/why-linked-list-interview-questions.md) - Linked list interviews are a cultural artifact of 1980s C pointer manipulation, not a timeless test
 - [Why Vim uses hjkl for navigation](notes/cs/why-vim-uses-hjkl.md) - Chain of accidents from 1967 ASCII table to ADM-3A terminal to Bill Joy's vi
 
+## decentralized
+
+- [Radicle network: peer-to-peer git collaboration](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md) - Cryptographic-quorum canonical branch (no merge button on a server); CRDT-based Collaborative Objects store issues and patches in plain Git
+
 ## devtools
 
 - [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; X25519 + ChaCha20-Poly1305, native SSH-key identities, the default backend for SOPS
+- [chezmoi source vs target two-layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md) - Source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs (add, re-add, apply, diff) traverse the gap; portability is a separate git layer
 - [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md) - Start from a preset, use $fill for right-alignment, disable 90% of modules
 - [XDG base directory specification](notes/devtools/xdg-base-directory-specification.md) - XDG separates config/data/state/cache into standard dirs; simplifies dotfile management
 
@@ -352,12 +366,23 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 ## macos
 
+- [Apple Containers: the macOS-native microVM runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md) - `apple/container` runs each container as its own Linux VM via the Apple Virtualization framework; OCI-compatible, macOS 26+ Apple Silicon only, what AWS Lambda would look like on a Mac
+- [Firecracker microVMs do not run on macOS](notes/macos/firecracker-microvms-do-not-run-on-macos.md) - Firecracker requires Linux + KVM; reach for Apple Containers on Apple Silicon instead, otherwise you stack two layers of virtualization and pay the cost up front
 - [macOS Input Method Kit (IMK) architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md) - Out-of-process IM model, Mach IPC keystroke routing, IMKInputController lifecycle, and why Secure Input breaks every IME
+- [macOS multi-user cost myth: it's the GUI session that's heavy, not the user](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md) - 161 system service users coexist on one laptop for ~935 MB; multi-user GUI is heavy, multi-user services is essentially free, daemon-per-UID beats containers for mutually-trusted tenants
 
 ## mcp
 
 - [MCP tool schema caching in Claude.ai connectors](notes/mcp/mcp-tool-schema-caching-in-claude-ai-connectors.md) - Claude.ai caches MCP schemas per session; disconnect+reconnect to force refresh
 - [Security gates for MCP tools that bridge private to public](notes/mcp/security-gates-for-mcp-tools-that-bridge-private-to-public.md) - Server-side security gates: context-anchored secret scan, path traversal, cost-ordered pipeline
+
+## networking
+
+- [portless competitive landscape: no exact 1-to-1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md) - Quadrant map across reverse proxies, tunnels, and Tailscale; portless wins by being the only tool that explicitly aimed at the monorepo `.localhost` niche
+- [portless vs Tailscale MagicDNS: not equivalent](notes/networking/portless-vs-tailscale-magicdns-not-equivalent.md) - portless is L7 application routing for one machine; MagicDNS is L3 cross-machine addressing; the naming overlap is superficial, the layer separation is what matters
+- [Tailscale + NordVPN + iCloud Private Relay coexistence on iOS and macOS](notes/networking/tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos.md) - Per-device design across Mac mini / Air / iPhone; conflict matrix and recovery paths; Mullvad-as-exit-node as the cleaner replacement for Nord
+- [Tailscale VPN On Demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md) - iOS/macOS-only auto-connect on network change; "Except On home_wifi" + Cellular "Always" eliminates the "is Tailscale on?" cognitive overhead
+- [When to add Tailscale to a personal dev surface](notes/networking/when-to-add-tailscale-to-a-personal-dev-surface.md) - Mesh VPN over WireGuard with proprietary control plane; collapses "reach my machine from anywhere" into a 5-minute SSO login; trade is metadata about device topology
 
 ## optimization
 
@@ -376,6 +401,10 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 - [LLM Wiki pattern: compilation over retrieval](notes/pkm/llm-wiki-pattern-compilation-over-retrieval.md) - LLM compiles raw sources into interlinked wiki instead of re-deriving via RAG each time
 - [Why knowledge notes need context, not just facts](notes/pkm/why-knowledge-notes-need-context-not-just-facts.md) - Default capture depth was TIL (shallow); changing default to Atomic Note fixed quality
+
+## security
+
+- [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation that produces wrong architectures
 
 ## startup
 

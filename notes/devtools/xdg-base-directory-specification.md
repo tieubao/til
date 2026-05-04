@@ -80,3 +80,4 @@ The practical benefit: XDG-compliant tools cluster their configs under one direc
 
 - [[starship-prompt-configuration-best-practices]] - Starship is a good example of an XDG-compliant tool, config lives at `~/.config/starship.toml`
 - [[age-and-1password-complementary-encryption-tiers]] - the age identity used in that pattern lives at `$XDG_CONFIG_HOME/age/keys.txt`, the XDG-correct location for personal encryption keys
+- [[chezmoi-source-vs-target-two-layer-mental-model]] - chezmoi's source dir defaults to `~/.local/share/chezmoi`, which IS the XDG data dir; a daily-use example of the spec in practice

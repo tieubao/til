@@ -9,9 +9,9 @@ source: "Claude.ai chat"
 
 Three-device personal setup needs to coexist with two opt-in privacy/anonymity tools that fight for the OS's single VPN slot:
 
-- **iPhone** — primary mobile, sometimes uses NordVPN, rarely uses iCloud Private Relay
-- **MacBook Air** — remote work terminal across various networks (home, cafes, travel)
-- **Mac mini** — homelab server at home, always on
+- **iPhone** - primary mobile, sometimes uses NordVPN, rarely uses iCloud Private Relay
+- **MacBook Air** - remote work terminal across various networks (home, cafes, travel)
+- **Mac mini** - homelab server at home, always on
 
 The constraint: iOS allows only one active VPN at a time. NordVPN and Tailscale will fight. iCloud Private Relay also conflicts with anything that intercepts Safari traffic.
 
@@ -59,9 +59,9 @@ The constraint: iOS allows only one active VPN at a time. NordVPN and Tailscale 
 | Tailscale + NordVPN on iOS | Tailscale silently disabled (single VPN slot) | Reopen Tailscale app, toggle on |
 | Tailscale + NordVPN on macOS (kernel mode) | Nord's aggressive firewall blackholes tailnet packets | Quit Nord, OR run Tailscale in userspace mode (SOCKS5 proxy) |
 | Tailscale (no exit node) + Private Relay | **Coexists fine** | Tailscale routes only 100.64/10, Safari traffic untouched |
-| Tailscale exit node + Private Relay | Conflict — exit node makes Tailscale full-tunnel | Disable exit node when using Private Relay |
+| Tailscale exit node + Private Relay | Conflict - exit node makes Tailscale full-tunnel | Disable exit node when using Private Relay |
 | Tailscale MAS build + Private Relay | Silent break even when "not connected" | Use standalone .pkg build |
-| Tailscale + Mullvad (as exit node) | Single tunnel, no conflict, Private Relay still works | N/A — recommended replacement |
+| Tailscale + Mullvad (as exit node) | Single tunnel, no conflict, Private Relay still works | N/A - recommended replacement |
 
 ## Alternatives considered
 
@@ -88,7 +88,7 @@ The constraint: iOS allows only one active VPN at a time. NordVPN and Tailscale 
 - **At home, working on Air**: Tailscale on, no exit node, no Nord. SSH to mini works as `ssh han@homelab`. Internet direct via home Wi-Fi. Private Relay (if on) works for Safari.
 - **At a cafe, working on Air**: Tailscale always-on, exit node = Mac mini (or Mullvad). Traffic tunnels through home or Mullvad. SSH/homelab still work.
 - **iPhone away from home, accessing homelab**: Out of home Wi-Fi → On Demand auto-connects → Bitwarden/dashboards/SSH all work. Zero manual action.
-- **iPhone with geo-bypass need**: With Mullvad — tap "exit node → Mullvad US" in Tailscale app. With Nord — toggle Nord, lose Tailscale, re-enable Tailscale after.
+- **iPhone with geo-bypass need**: With Mullvad - tap "exit node → Mullvad US" in Tailscale app. With Nord - toggle Nord, lose Tailscale, re-enable Tailscale after.
 - **Rare Private Relay session on Air**: Disable exit node. Base Tailscale tunnel coexists fine.
 - **Family AirPlays at home**: iPhone Tailscale OFF (home_wifi in Except On). mDNS/AirPlay works.
 
@@ -103,7 +103,7 @@ The constraint: iOS allows only one active VPN at a time. NordVPN and Tailscale 
 - Private Relay coexists when not using exit node
 
 **Losses:**
-- Small purity loss: at-home homelab access uses LAN IPs (192.168.x.x via subnet router) instead of tailnet IPs — functionally identical for 99% of cases
+- Small purity loss: at-home homelab access uses LAN IPs (192.168.x.x via subnet router) instead of tailnet IPs - functionally identical for 99% of cases
 - If keeping Nord: still need to manage occasional conflicts manually
 - If switching to Mullvad: monthly add-on cost, fewer countries
 
@@ -113,7 +113,14 @@ Install standalone .pkg build of Tailscale on Mac mini and Air (not App Store). 
 
 ## How we'll know this was wrong
 
-- iPhone tunnel keeps reconnecting/disconnecting at home (rule misconfigured — debug with the OS Wi-Fi history)
-- AirPlay still broken at home (Tailscale not actually disconnecting on home_wifi join — verify SSID match exactly)
-- Cafe browsing slow despite exit node (Mac mini upload bandwidth from home is the bottleneck — switch to Mullvad)
+- iPhone tunnel keeps reconnecting/disconnecting at home (rule misconfigured - debug with the OS Wi-Fi history)
+- AirPlay still broken at home (Tailscale not actually disconnecting on home_wifi join - verify SSID match exactly)
+- Cafe browsing slow despite exit node (Mac mini upload bandwidth from home is the bottleneck - switch to Mullvad)
 - Need Nord weekly (Mullvad-as-exit-node is the right move; cancel Nord)
+
+## Related
+
+- [[tailscale-vpn-on-demand-feature-overview-and-rule-semantics]] - the rule semantics this design relies on (Except On home_wifi, Cellular Always)
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - the smaller "should I bother with Tailscale at all" decision; this note assumes you already said yes
+- [[portless-vs-tailscale-magicdns-not-equivalent]] - Tailscale and portless cover different layers; this note covers the Tailscale layer's privacy-tool conflicts
+- [[wireguard-static-ip-exchange-whitelist]] - how the underlying WireGuard transport works without a proprietary control plane (Headscale path implied)

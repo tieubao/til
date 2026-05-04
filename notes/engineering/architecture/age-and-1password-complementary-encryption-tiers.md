@@ -167,3 +167,4 @@ second one.
 - [[age-modern-file-encryption-cli]] - reference card for the age CLI itself
 - [[saas-cto-security-checklist]] - secret-management hygiene at the org level
 - [[xdg-base-directory-specification]] - where the age key file belongs on disk
+- [[chezmoi-source-vs-target-two-layer-mental-model]] - chezmoi is the daily consumer of the age identity stewarded by this two-tier pattern

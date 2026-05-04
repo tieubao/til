@@ -105,11 +105,11 @@ The most common practical surface is via wrappers, not direct CLI:
 
 Apple Containers is the closest thing macOS has to "Linux-microVM isolation as a first-class primitive." Until Apple ships v1.0, treat it as a useful but pre-stable tool: build with awareness of the gaps, don't put production workloads on it without redundancy, and keep an eye on the release notes (every 3-5 weeks based on current cadence).
 
-For most macOS sandboxing use cases (untrusted code, multi-tenant daemons, per-task isolation), check first whether you actually need VM-level isolation. POSIX multi-user is enough for many cases at far lower cost. Reach for Apple Containers when the tenants don't trust each other at the kernel level — that's the threshold where hardware-VM separation starts paying for itself.
+For most macOS sandboxing use cases (untrusted code, multi-tenant daemons, per-task isolation), check first whether you actually need VM-level isolation. POSIX multi-user is enough for many cases at far lower cost. Reach for Apple Containers when the tenants don't trust each other at the kernel level - that's the threshold where hardware-VM separation starts paying for itself.
 
 ## Related
 
-- [[agentkernel-broken-flags-on-apple-containers]] — concrete wrapper-bug case for the macOS Apple Containers backend
-- [[firecracker-microvms-do-not-run-on-macos]] — Apple Containers is what Firecracker would be if Firecracker ran on a Mac
-- [[macos-multi-user-cost-myth-gui-vs-service-users]] — multi-user vs Apple Containers cost comparison; multi-user is cheaper when tenants are mutually trusted
-- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] — Apple Containers serves both threat models depending on configuration
+- [[agentkernel-broken-flags-on-apple-containers]] - concrete wrapper-bug case for the macOS Apple Containers backend
+- [[firecracker-microvms-do-not-run-on-macos]] - Apple Containers is what Firecracker would be if Firecracker ran on a Mac
+- [[macos-multi-user-cost-myth-gui-vs-service-users]] - multi-user vs Apple Containers cost comparison; multi-user is cheaper when tenants are mutually trusted
+- [[threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment]] - Apple Containers serves both threat models depending on configuration

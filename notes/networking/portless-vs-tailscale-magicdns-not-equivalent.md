@@ -82,3 +82,10 @@ If portless is "nginx + .localhost trick + auto cert generation", then MagicDNS 
 ## Key Takeaway
 
 portless and Tailscale MagicDNS aren't competitors - they're different layers of the same stack. portless is L7 application routing for one machine; MagicDNS is L3 network addressing across many. The naming overlap is superficial; the layer separation is what matters when picking one.
+
+## Related
+
+- [[portless-competitive-landscape-no-exact-1-to-1-competitor]] - full landscape map across reverse proxies, tunnels, and VPN-adjacent tools
+- [[when-to-add-tailscale-to-a-personal-dev-surface]] - when MagicDNS-style cross-machine access is the actual problem you have
+- [[tailscale-vpn-on-demand-feature-overview-and-rule-semantics]] - the iOS/macOS-only auto-connect logic that makes Tailscale ergonomic enough to coexist with portless
+- [[wireguard-static-ip-exchange-whitelist]] - what Tailscale's underlying transport (WireGuard) looks like without the proprietary control plane

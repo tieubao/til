@@ -1,6 +1,6 @@
 # Learned
 
-> Auto-generated index of 300 note(s). Last updated: 2026-04-28
+> Auto-generated index of 302 note(s). Last updated: 2026-05-04
 
 ## _docs
 
@@ -23,6 +23,8 @@
 
 ## notes
 
+- [Agentkernel broken flags on apple containers](notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md)
+- [Agentkernel plugin install defaults to cwd not user global](notes/agentkernel/agentkernel-plugin-install-defaults-to-cwd-not-user-global.md)
 - [Ai dev stack 8 layer model with tool evaluations march 2026](notes/ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md)
 - [Ai tooling stack synthesis april 2026](notes/ai-tooling/ai-tooling-stack-synthesis-april-2026.md)
 - [Autoresearch the karpathy loop pattern](notes/ai-tooling/autoresearch-the-karpathy-loop-pattern.md)
@@ -60,6 +62,7 @@
 - [Claude code surfaces cli vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md)
 - [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md)
 - [Compaction defense patterns for claude code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md)
+- [Opt in beats all in for coding agent sandboxing](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md)
 - [Optimization as the bridge to computational finance](notes/comp-fin/optimization-as-the-bridge-to-computational-finance.md)
 - [Asynchronous byzantine fault tolerance](notes/crypto/asynchronous-byzantine-fault-tolerance.md)
 - [Bitcoin investment paradox](notes/crypto/bitcoin-investment-paradox.md)
@@ -86,7 +89,9 @@
 - [Whats next in computing](notes/cs/whats-next-in-computing.md)
 - [Why linked list interview questions](notes/cs/why-linked-list-interview-questions.md)
 - [Why vim uses hjkl](notes/cs/why-vim-uses-hjkl.md)
+- [Radicle network peer to peer git collaboration explained](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md)
 - [Age modern file encryption cli](notes/devtools/age-modern-file-encryption-cli.md)
+- [Chezmoi source vs target two layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md)
 - [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md)
 - [Xdg base directory specification](notes/devtools/xdg-base-directory-specification.md)
 - [Four asian diasporas in 2055 projected trajectories](notes/diaspora/four-asian-diasporas-in-2055-projected-trajectories.md)
@@ -292,15 +297,24 @@
 - [Local llm hybrid stack ollama ollama cloud openrouter for hermes agent](notes/local-llm/local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent.md)
 - [Ollama cloud cloud suffix hosted inference via local endpoint](notes/local-llm/ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint.md)
 - [Qwen3 6 35b a3b on m4 pro memory budget and context sizing](notes/local-llm/qwen3-6-35b-a3b-on-m4-pro-memory-budget-and-context-sizing.md)
+- [Apple containers overview the macos native microvm runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md)
+- [Firecracker microvms do not run on macos](notes/macos/firecracker-microvms-do-not-run-on-macos.md)
 - [Macos input method kit imk architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md)
+- [Macos multi user cost myth gui vs service users](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md)
 - [Mcp tool schema caching in claude ai connectors](notes/mcp/mcp-tool-schema-caching-in-claude-ai-connectors.md)
 - [Security gates for mcp tools that bridge private to public](notes/mcp/security-gates-for-mcp-tools-that-bridge-private-to-public.md)
+- [Portless competitive landscape no exact 1 to 1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md)
+- [Portless vs tailscale magicdns not equivalent](notes/networking/portless-vs-tailscale-magicdns-not-equivalent.md)
+- [Tailscale plus nordvpn plus icloud private relay coexistence on ios and macos](notes/networking/tailscale-plus-nordvpn-plus-icloud-private-relay-coexistence-on-ios-and-macos.md)
+- [Tailscale vpn on demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md)
+- [When to add tailscale to a personal dev surface](notes/networking/when-to-add-tailscale-to-a-personal-dev-surface.md)
 - [Operations research and milp for software engineers](notes/optimization/operations-research-and-milp-for-software-engineers.md)
 - [Backend for frontend pattern](notes/patterns/backend-for-frontend-pattern.md)
 - [Redundant api pre checks in wrapper functions](notes/patterns/redundant-api-pre-checks-in-wrapper-functions.md)
 - [Tao te ching i ching on timing and hidden preparation](notes/philosophy/tao-te-ching-i-ching-on-timing-and-hidden-preparation.md)
 - [Llm wiki pattern compilation over retrieval](notes/pkm/llm-wiki-pattern-compilation-over-retrieval.md)
 - [Why knowledge notes need context not just facts](notes/pkm/why-knowledge-notes-need-context-not-just-facts.md)
+- [Threat model split cross tenant isolation vs per agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md)
 - [Anatomy of software frauds](notes/startup/anatomy-of-software-frauds.md)
 - [Tap trung vao san pham](notes/startup/tap-trung-vao-san-pham.md)
 - [Tesla gm founders vs managers](notes/startup/tesla-gm-founders-vs-managers.md)

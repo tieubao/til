@@ -21,9 +21,9 @@ Both feel like "isolate the agent." Both reach for the word "sandbox." The menta
 
 ## Concrete examples
 
-**A friend recommended `agentkernel`** (microVM-per-task wrapper around Apple Containers / Firecracker) framed as "prevent the coding agent from destroying my computer." That's threat 2 for one agent — Claude Code or similar. Solving it well: ephemeral microVM per task, default-isolated filesystem, default-isolated network. The agent gets its job done in a short-lived sandbox; the blast radius if it goes wrong is the sandbox's bind-mounts.
+**A friend recommended `agentkernel`** (microVM-per-task wrapper around Apple Containers / Firecracker) framed as "prevent the coding agent from destroying my computer." That's threat 2 for one agent - Claude Code or similar. Solving it well: ephemeral microVM per task, default-isolated filesystem, default-isolated network. The agent gets its job done in a short-lived sandbox; the blast radius if it goes wrong is the sandbox's bind-mounts.
 
-**My problem the same week** was three Hermes Agent daemons on a Mac mini (one for ops, one for family, one for IP work), each scoped to different data. That's threat 1 — multiple agents, each individually trusted, but the boundary is between them, not around any one of them. Solving it well: separate macOS users (UID + POSIX), or separate VMs / containers if the trust model goes beyond POSIX.
+**My problem the same week** was three Hermes Agent daemons on a Mac mini (one for ops, one for family, one for IP work), each scoped to different data. That's threat 1 - multiple agents, each individually trusted, but the boundary is between them, not around any one of them. Solving it well: separate macOS users (UID + POSIX), or separate VMs / containers if the trust model goes beyond POSIX.
 
 If I'd taken the friend's recommendation literally and put each Hermes inside an agentkernel sandbox, I'd have failed:
 
@@ -39,7 +39,7 @@ When someone proposes a security tool for "your agent problem," ask one sentence
 
 If you can't articulate this in one sentence, you might be conflating the two threats. If the proposer can't either, the tool recommendation is operating on vibes.
 
-The same tool can sometimes serve both threats with different configurations. Apple Containers per tenant can give you cross-tenant isolation (each tenant in its own VM) AND per-agent damage containment (each agent's actions confined to its container's mounts) simultaneously. But that's a deliberate choice to over-pay for isolation, not a free win — multi-user POSIX would solve the cross-tenant threat at ~3-5x lower cost if your tenants are mutually trusted.
+The same tool can sometimes serve both threats with different configurations. Apple Containers per tenant can give you cross-tenant isolation (each tenant in its own VM) AND per-agent damage containment (each agent's actions confined to its container's mounts) simultaneously. But that's a deliberate choice to over-pay for isolation, not a free win - multi-user POSIX would solve the cross-tenant threat at ~3-5x lower cost if your tenants are mutually trusted.
 
 ## Layering
 
@@ -82,7 +82,7 @@ In design discussions about AI-agent security, the word "sandbox" is almost alwa
 
 ## Related
 
-- [[agentkernel-broken-flags-on-apple-containers]] — concrete example of agentkernel as a damage-containment tool (and its current limitations)
-- [[apple-containers-overview-the-macos-native-microvm-runtime]] — one tool that can serve either threat depending on how you configure it
-- [[macos-multi-user-cost-myth-gui-vs-service-users]] — when cross-tenant isolation is the right threat, multi-user POSIX is usually enough
-- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] — practical example of damage-containment design (variant 2 = opt-in sandbox)
+- [[agentkernel-broken-flags-on-apple-containers]] - concrete example of agentkernel as a damage-containment tool (and its current limitations)
+- [[apple-containers-overview-the-macos-native-microvm-runtime]] - one tool that can serve either threat depending on how you configure it
+- [[macos-multi-user-cost-myth-gui-vs-service-users]] - when cross-tenant isolation is the right threat, multi-user POSIX is usually enough
+- [[opt-in-beats-all-in-for-coding-agent-sandboxing]] - practical example of damage-containment design (variant 2 = opt-in sandbox)
