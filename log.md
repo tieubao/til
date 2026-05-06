@@ -6,6 +6,12 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-07] ingest | SSH and Mosh, when each one wins
+
+New article in `notes/networking/`. Distilled from a Claude Code session in `tieubao/ops-toolkit` where I went from zero Mosh to a working laptop-to-Mac-Mini setup over Tailscale and wanted a public-facing primer. Source-side specifics (hostnames, tailnet IPs, SSH config aliases) were stripped per the privacy gate; the private companion lives at `ops-toolkit/research/2026-05-07-ssh-mosh-mini-setup-snapshot.md`.
+
+Compilation actions: added entry to `index.md` under `## networking` (alphabetical, between portless-vs-Tailscale and Tailscale+NordVPN). Inserted at top of `README.md` "Recent additions"; dropped `chezmoi-source-vs-target-two-layer-mental-model` to keep the list at 10. Added `## Related` section linking to `when-to-add-tailscale-to-a-personal-dev-surface`, `tailscale-vpn-on-demand-feature-overview-and-rule-semantics`, `portless-competitive-landscape-no-exact-1-to-1-competitor`. No contradictions with existing notes; no synthesis page needed (networking cluster is at 6 notes but the angles are distinct: VPN ergonomics, application routing, remote shell).
+
 ## [2026-05-04] ingest | Compile 14 notes pushed via Claude.ai (2026-04-29 to 2026-05-04)
 
 Fourteen notes accumulated on `master` from Claude.ai pushes that bypassed the local Claude Code compilation step. Pulled, fixed two structural issues, stripped em dashes (60+ across 10 files), added `## Related` sections to 7 notes that lacked them, added cross-folder backlinks on 4 existing notes, and built the index/README sections for the 5 new folders the cluster introduced.

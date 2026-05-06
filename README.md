@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-05-07` [SSH and Mosh, when each one wins](notes/networking/ssh-and-mosh-when-each-one-wins.md) - Why SSH dies on a wifi switch and Mosh does not; TCP-vs-UDP+SSP transport story, pick-each guide, two-side install recipe, UTF-8 + Apple Silicon PATH gotchas
 - `2026-05-04` [Opt-in beats all-in for coding-agent sandboxing on a developer laptop](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md) - Wrap-every-call sandboxing kills adoption; per-trigger opt-in survives because the host integrations Claude Code relies on are exactly what doesn't work in a sandbox
 - `2026-05-04` [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation
 - `2026-05-04` [Apple Containers: the macOS-native microVM runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md) - apple/container runs each container as its own Linux VM via the Apple Virtualization framework; OCI-compatible, macOS 26+ Apple Silicon only, pre-1.0
@@ -15,7 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-04-30` [portless competitive landscape: no exact 1-to-1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md) - Quadrant map across reverse proxies, tunnels, and Tailscale; portless wins by being the only tool that explicitly aimed at the monorepo .localhost niche
 - `2026-04-29` [Tailscale VPN On Demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md) - iOS/macOS-only auto-connect on network change; "Except On home_wifi" + Cellular "Always" eliminates the "is Tailscale on?" cognitive overhead
 - `2026-04-29` [Radicle network: peer-to-peer git collaboration](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md) - Cryptographic-quorum canonical branch (no merge button on a server); CRDT-based Collaborative Objects store issues and patches in plain Git
-- `2026-04-29` [chezmoi source vs target two-layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md) - Source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs traverse the gap
 
 ## How it works
 
