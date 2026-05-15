@@ -113,3 +113,11 @@ Release notes: https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5
 
 Release date: May 7, 2026
 Stats: 864 commits, 588 merged PRs, 829 files changed, 282 issues closed (13 P0, 36 P1).
+
+## Related
+
+- [[hermes-agent-comprehensive-briefing-april-2026]] - the prior baseline; what Hermes was before v0.13.0
+- [[hermes-agent-fixed-overhead-13-9k-tokens-per-api-call]] - cost analysis that makes the "cron no_agent mode = highest ROI" verdict concrete
+- [[ralph-loop-pattern-explained-persistent-goals-via-file-based-state]] - foundational pattern behind the `/goal` feature; implement first
+- [[hermes-vs-openclaw-competitive-scene-april-2026]] - competitive context for the selective-adoption stance
+- [[why-developers-migrate-to-hermes-ranked-real-vs-hype]] - adoption framing; aligns with "do not migrate wholesale"

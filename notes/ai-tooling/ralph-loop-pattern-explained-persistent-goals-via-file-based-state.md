@@ -91,6 +91,12 @@ Without an external verifier, Ralph loop runs forever and burns tokens.
 
 ## References
 
-- Geoffrey Huntley, "everything is a ralph loop" — https://ghuntley.com/loop/
+- Geoffrey Huntley, "everything is a ralph loop" - https://ghuntley.com/loop/
 - Original Ralph Wiggum Loop technique
 - Vercel Labs reference implementation: https://github.com/vercel-labs/ralph-loop-agent
+
+## Related
+
+- [[hermes-agent-v0-13-0-release-evaluation-top-features-ranked-for-3-tier-ecosystem]] - Hermes `/goal` feature is a direct productization of this pattern
+- [[hermes-agent-comprehensive-briefing-april-2026]] - parent context for how Hermes adopted the loop
+- [[autoresearch-the-karpathy-loop-pattern]] - adjacent loop pattern (three-file contract); same "progress survives in files" bet

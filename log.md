@@ -6,6 +6,12 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-15] ingest | Hermes Agent v0.13.0 release evaluation
+
+New article in `notes/ai-tooling/`: `hermes-agent-v0-13-0-release-evaluation-top-features-ranked-for-3-tier-ecosystem.md`. Pushed via Claude.ai on 2026-05-09 without a `## Related` section; compilation added one with five cross-links inside the ai-tooling cluster: `hermes-agent-comprehensive-briefing-april-2026` (parent), `hermes-agent-fixed-overhead-13-9k-tokens-per-api-call` (cost analysis behind the cron-no_agent verdict), `ralph-loop-pattern-explained-persistent-goals-via-file-based-state` (foundation pattern under `/goal`), `hermes-vs-openclaw-competitive-scene-april-2026` (competitive context), `why-developers-migrate-to-hermes-ranked-real-vs-hype` (adoption framing). No contradictions with existing Hermes notes; the selective-adoption verdict aligns with both `why-developers-migrate-to-hermes` and the fixed-overhead cost lens.
+
+Reciprocal backlink added on `ralph-loop-pattern-explained-persistent-goals-via-file-based-state` (which itself arrived without a `## Related` section from a parallel Claude.ai push; same Related section bootstrapped). Added entry to `index.md` under `## ai-tooling` (alphabetical, between `hermes-agent-fixed-overhead` and `hermes-vs-openclaw`). Inserted in `README.md` "Recent additions" between the 2026-05-15 entry and SSH (2026-05-07); dropped Tailscale VPN On Demand (2026-04-29) to keep at 10.
+
 ## [2026-05-15] ingest | iCloud Advanced Data Protection coverage and recovery model
 
 New article in `notes/security/`. Distilled from a family-office session where I was deciding whether to enable ADP on my Apple ID with sensitive PII in iCloud Drive. Source-side specifics (vault path, family members, specific document types, recovery contact identity) were stripped per the privacy gate; the private companion lives at `ops-toolkit/research/2026-05-15-macos-advanced-data-protection-evaluation.md`.
