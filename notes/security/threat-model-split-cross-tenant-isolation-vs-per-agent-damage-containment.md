@@ -86,3 +86,4 @@ In design discussions about AI-agent security, the word "sandbox" is almost alwa
 - [[apple-containers-overview-the-macos-native-microvm-runtime]] - one tool that can serve either threat depending on how you configure it
 - [[macos-multi-user-cost-myth-gui-vs-service-users]] - when cross-tenant isolation is the right threat, multi-user POSIX is usually enough
 - [[opt-in-beats-all-in-for-coding-agent-sandboxing]] - practical example of damage-containment design (variant 2 = opt-in sandbox)
+- [[macos-icloud-advanced-data-protection-coverage-and-recovery]] - same decomposition pattern in a different domain: "should I turn on ADP?" splits into three independent axes (coverage / recovery / operations)

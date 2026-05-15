@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-05-15` [iCloud Advanced Data Protection: coverage, exclusions, and recovery model](notes/security/macos-icloud-advanced-data-protection-coverage-and-recovery.md) - ADP extends E2EE to almost everything in iCloud, but Mail/Contacts/Calendar stay Apple-readable forever; three-axis decision (coverage, recovery, operations) instead of one binary switch
 - `2026-05-07` [SSH and Mosh, when each one wins](notes/networking/ssh-and-mosh-when-each-one-wins.md) - Why SSH dies on a wifi switch and Mosh does not; TCP-vs-UDP+SSP transport story, pick-each guide, two-side install recipe, UTF-8 + Apple Silicon PATH gotchas
 - `2026-05-04` [Opt-in beats all-in for coding-agent sandboxing on a developer laptop](notes/coding-agents/opt-in-beats-all-in-for-coding-agent-sandboxing.md) - Wrap-every-call sandboxing kills adoption; per-trigger opt-in survives because the host integrations Claude Code relies on are exactly what doesn't work in a sandbox
 - `2026-05-04` [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation
@@ -15,7 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-05-02` [Vibe-Trading evaluation](notes/finance-tooling/vibe-trading-evaluation.md) - HKUDS multi-agent finance research workspace; 11/15 BOOKMARK; published vibe-trading-mcp is the highest-leverage entry point for Claude-Code-native users
 - `2026-04-30` [portless competitive landscape: no exact 1-to-1 competitor](notes/networking/portless-competitive-landscape-no-exact-1-to-1-competitor.md) - Quadrant map across reverse proxies, tunnels, and Tailscale; portless wins by being the only tool that explicitly aimed at the monorepo .localhost niche
 - `2026-04-29` [Tailscale VPN On Demand feature overview and rule semantics](notes/networking/tailscale-vpn-on-demand-feature-overview-and-rule-semantics.md) - iOS/macOS-only auto-connect on network change; "Except On home_wifi" + Cellular "Always" eliminates the "is Tailscale on?" cognitive overhead
-- `2026-04-29` [Radicle network: peer-to-peer git collaboration](notes/decentralized/radicle-network-peer-to-peer-git-collaboration-explained.md) - Cryptographic-quorum canonical branch (no merge button on a server); CRDT-based Collaborative Objects store issues and patches in plain Git
 
 ## How it works
 

@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of all notes, grouped by folder. Last updated: 2026-05-04
+> Full catalog of all notes, grouped by folder. Last updated: 2026-05-15
 
 ## ai
 
@@ -405,6 +405,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 ## security
 
+- [iCloud Advanced Data Protection: coverage, exclusions, and recovery model](notes/security/macos-icloud-advanced-data-protection-coverage-and-recovery.md) - ADP extends E2EE to almost everything in iCloud, but Mail/Contacts/Calendar stay Apple-readable forever; three-axis decision (coverage, recovery, operations)
 - [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation that produces wrong architectures
 
 ## startup

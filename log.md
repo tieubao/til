@@ -6,6 +6,12 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-15] ingest | iCloud Advanced Data Protection coverage and recovery model
+
+New article in `notes/security/`. Distilled from a family-office session where I was deciding whether to enable ADP on my Apple ID with sensitive PII in iCloud Drive. Source-side specifics (vault path, family members, specific document types, recovery contact identity) were stripped per the privacy gate; the private companion lives at `ops-toolkit/research/2026-05-15-macos-advanced-data-protection-evaluation.md`.
+
+Compilation actions: added entry to `index.md` under `## security` (alphabetical, before threat-model-split). Bumped `index.md` "Last updated" to 2026-05-15. Two cross-folder backlinks: `macos-multi-user-cost-myth-gui-vs-service-users` (macOS surface), `threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment` (security threat-model framing). No contradictions with existing security notes. The three-axis framing (coverage / recovery / operations) is the transferable lesson and worth keeping evergreen as more people ask the "should I turn on ADP" question.
+
 ## [2026-05-07] ingest | SSH and Mosh, when each one wins
 
 New article in `notes/networking/`. Distilled from a Claude Code session in `tieubao/ops-toolkit` where I went from zero Mosh to a working laptop-to-Mac-Mini setup over Tailscale and wanted a public-facing primer. Source-side specifics (hostnames, tailnet IPs, SSH config aliases) were stripped per the privacy gate; the private companion lives at `ops-toolkit/research/2026-05-07-ssh-mosh-mini-setup-snapshot.md`.
