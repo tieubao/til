@@ -7,18 +7,18 @@ source: "Claude session on quantum computing fundamentals, CLIMB framework (Clas
 ---
 # Why Quantum Computing Talks About Decision Problems
 
-> **Core insight**: Quantum computing didn't choose decision problems — it inherited them. Decision problems are the **assembly language of complexity theory**, the one shape every other problem can be compiled down to. To say anything mathematically precise about "is this problem hard?", you need a common reference frame. YES/NO is that frame.
+> **Core insight**: Quantum computing didn't choose decision problems, it inherited them. Decision problems are the **assembly language of complexity theory**, the one shape every other problem can be compiled down to. To say anything mathematically precise about "is this problem hard?", you need a common reference frame. YES/NO is that frame.
 
-![Decision Problems: The Common Language of Complexity Theory](../assets/notes-quantum-computing/decision-problem-quantum.svg)
+![Decision Problems: The Common Language of Complexity Theory](../../assets/notes-quantum/decision-problem-quantum.svg)
 
 ## TL;DR
 
-A **decision problem** is a problem with a YES/NO answer (1 bit of output). Every major complexity class — `P`, `NP`, `BPP`, `BQP`, `QMA` — is defined as a *set of decision problems* solvable under some resource constraint. Quantum computing uses this same language for four reasons:
+A **decision problem** is a problem with a YES/NO answer (1 bit of output). Every major complexity class (`P`, `NP`, `BPP`, `BQP`, `QMA`) is defined as a *set of decision problems* solvable under some resource constraint. Quantum computing uses this same language for four reasons:
 
-1. **Mathematical normalization** — decision problems are the simplest output shape, so they're the cleanest unit for comparing difficulty
-2. **Complexity class definitions** — `BQP` literally means "decision problems solvable by a quantum machine in poly-time with bounded error"
-3. **Physical fit** — measuring a qubit yields a bit, so YES/NO output is the natural endpoint of a quantum circuit
-4. **Apples-to-apples comparison** — to say "quantum beats classical", both sides must speak the same output language
+1. **Mathematical normalization**: decision problems are the simplest output shape, so they're the cleanest unit for comparing difficulty
+2. **Complexity class definitions**: `BQP` literally means "decision problems solvable by a quantum machine in poly-time with bounded error"
+3. **Physical fit**: measuring a qubit yields a bit, so YES/NO output is the natural endpoint of a quantum circuit
+4. **Apples-to-apples comparison**: to say "quantum beats classical", both sides must speak the same output language
 
 In practice, quantum algorithms (Shor, Grover) solve more than decision problems. But when we *analyze* them, we reduce them to decision form.
 
@@ -74,9 +74,9 @@ So when a quantum circuit terminates, its output is a bitstring sampled from a p
 - If it's `1` more than 2/3 of the time, the answer is YES.
 - If it's `0` more than 2/3 of the time, the answer is NO.
 
-This is exactly the `BQP` definition. The YES/NO framing isn't imposed from outside — it falls out of the physics.
+This is exactly the `BQP` definition. The YES/NO framing isn't imposed from outside; it falls out of the physics.
 
-Compare to the **Deutsch-Jozsa algorithm**, the first quantum algorithm to provably beat classical: it asks "is f constant or balanced?" — a decision problem, by construction, because that's what fits the measurement model.
+Compare to the **Deutsch-Jozsa algorithm**, the first quantum algorithm to provably beat classical: it asks "is f constant or balanced?", a decision problem by construction because that's what fits the measurement model.
 
 ## 4. Apples-to-apples comparison
 
@@ -93,7 +93,7 @@ This is why proofs of quantum supremacy / advantage are always stated in terms o
 
 ## Nuance: in practice, quantum solves more than decision problems
 
-**Shor's algorithm** finds the period of a function — a function problem. But when people prove "factoring is in BQP", they technically prove that the **decision version** ("does N have a factor < k?") is in BQP. The function version follows via the search-to-decision reduction.
+**Shor's algorithm** finds the period of a function (a function problem). But when people prove "factoring is in BQP", they technically prove that the **decision version** ("does N have a factor < k?") is in BQP. The function version follows via the search-to-decision reduction.
 
 **Grover's algorithm** is a search algorithm, not a decision algorithm. But its analysis is done in terms of "promise problems" (a slight generalization of decision problems), and its complexity is stated as O(√N) decision-oracle queries.
 
@@ -165,9 +165,11 @@ Quantum complexity classes sit in this same tree, with `BQP` and `QMA` being the
 
 ---
 
-## Related notes
+## Related
 
-- [[notes/quantum-computing/bqp-structure]] (to be written)
-- [[notes/quantum-computing/function-to-decision-reduction]] (to be written)
-- [[notes/quantum-computing/promise-problems]] (to be written)
-- [[notes/computational-finance/]] (CLIMB framework reference)
+- [[complexity-classes-p-np-bqp-qma-explained]] - formal definitions of the classes this note frames around
+- [[what-polynomial-time-actually-means]] - the resource constraint that makes BQP / BPP / P meaningful
+- [[history-and-motivation-of-major-quantum-algorithms]] - Shor and Grover, the algorithms whose analysis pushed decision-problem framing into the field
+- [[state-preparation-is-half-the-quantum-algorithm]] - how decision-problem framing shapes the measurement step
+- [[vietnamese-terminology-for-quantum-computing]] - Vietnamese names for the complexity-class vocabulary used here
+- [[optimization-as-the-bridge-to-computational-finance]] - CLIMB framework reference, where this note sits in the Classify phase

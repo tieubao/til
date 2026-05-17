@@ -113,3 +113,10 @@ When reading Vietnamese math/QC material, mentally substitute:
 - `đa thức` → "polynomial" (many terms)
 
 If Vietnamese terminology causes friction, read QC material directly in English. Vietnamese math translation is sparse and sometimes ambiguous, and you already read technical English fluently.
+
+## Related
+
+- [[vietnamese-terminology-for-quantum-computing]] - quantum-side companion glossary; pair these two when reading Vietnamese QC material
+- [[what-polynomial-time-actually-means]] - polynomial-time as a complexity-class threshold, the QC application of "đa thức"
+- [[complexity-classes-p-np-bqp-qma-explained]] - where "polynomial" shows up in BQP / BPP / P
+- [[history-and-motivation-of-major-quantum-algorithms]] - Shor's `O((log N)^3)` is the canonical "polynomial-time quantum" example

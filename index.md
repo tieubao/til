@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of all notes, grouped by folder. Last updated: 2026-05-15
+> Full catalog of all notes, grouped by folder. Last updated: 2026-05-17
 
 ## ai
 
@@ -372,6 +372,10 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [macOS Input Method Kit (IMK) architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md) - Out-of-process IM model, Mach IPC keystroke routing, IMKInputController lifecycle, and why Secure Input breaks every IME
 - [macOS multi-user cost myth: it's the GUI session that's heavy, not the user](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md) - 161 system service users coexist on one laptop for ~935 MB; multi-user GUI is heavy, multi-user services is essentially free, daemon-per-UID beats containers for mutually-trusted tenants
 
+## math
+
+- [Monomial polynomial term Vietnamese terminology breakdown](notes/math/monomial-polynomial-term-vietnamese-terminology-breakdown.md) - `thức` in `đơn thức` is NOT `công thức`; `-nomial` from Latin `nomen`; Vietnamese math vocab with QC tie-back to BQP and Ising Hamiltonians as degree-2 polynomials in Pauli operators
+
 ## mcp
 
 - [MCP tool schema caching in Claude.ai connectors](notes/mcp/mcp-tool-schema-caching-in-claude-ai-connectors.md) - Claude.ai caches MCP schemas per session; disconnect+reconnect to force refresh
@@ -403,6 +407,16 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 - [LLM Wiki pattern: compilation over retrieval](notes/pkm/llm-wiki-pattern-compilation-over-retrieval.md) - LLM compiles raw sources into interlinked wiki instead of re-deriving via RAG each time
 - [Why knowledge notes need context, not just facts](notes/pkm/why-knowledge-notes-need-context-not-just-facts.md) - Default capture depth was TIL (shallow); changing default to Atomic Note fixed quality
+
+## quantum
+
+- [Complexity classes P NP BQP QMA explained](notes/quantum/complexity-classes-p-np-bqp-qma-explained.md) - Classical hierarchy (P, NP, NP-Complete, NP-Hard) extended for quantum with BQP and QMA; Shor lands factoring in BQP, BQP ⊆ NP is open
+- [History and motivation of major quantum algorithms](notes/quantum/history-and-motivation-of-major-quantum-algorithms.md) - Shor / Grover / HHL / VQE-QAOA as a story of outsiders importing intuition from other fields; speedup requires structure; caveats are the whole story
+- [Quantum superposition state and QFT for beginners](notes/quantum/quantum-superposition-state-and-qft-for-beginners.md) - Superposition is not "try all options in parallel"; speedup comes from interference canceling wrong answers; QFT is the engine inside Shor
+- [State preparation is half the quantum algorithm](notes/quantum/state-preparation-is-half-the-quantum-algorithm.md) - Every algorithm has three stages; preparation is where exponential speedup claims die; HHL's dequantization was a preparation-cost story
+- [Vietnamese terminology for quantum computing](notes/quantum/vietnamese-terminology-for-quantum-computing.md) - Working glossary: chồng chập for superposition, vướng víu for entanglement, when to keep English (algorithm names, acronyms)
+- [What polynomial time actually means](notes/quantum/what-polynomial-time-actually-means.md) - Polynomial = highest exponent is fixed; n^10 is polynomial, 2^n is not; the threshold complexity theory draws between tractable and not
+- [Why Quantum Computing Talks About Decision Problems](notes/quantum/why-quantum-computing-talks-about-decision-problems.md) - Decision problems are the assembly language of complexity theory; YES/NO falls out of the Born rule, makes apples-to-apples quantum-vs-classical comparison possible
 
 ## security
 

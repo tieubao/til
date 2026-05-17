@@ -60,3 +60,11 @@ These class names are kept in English in Vietnamese-language technical writing b
 - Exponential time → thời gian mũ
 - Bounded-error → sai số giới hạn
 - Tractable / Intractable → khả thi / không khả thi
+
+## Related
+
+- [[what-polynomial-time-actually-means]] - the resource bound that defines P, BPP, BQP
+- [[why-quantum-computing-talks-about-decision-problems]] - why every class here is defined over decision problems
+- [[history-and-motivation-of-major-quantum-algorithms]] - Shor's algorithm is the reason BQP gets its own definition
+- [[state-preparation-is-half-the-quantum-algorithm]] - why the BQP runtime claim is load-bearing on preparation cost
+- [[vietnamese-terminology-for-quantum-computing]] - Vietnamese names for these classes and the resource adjectives

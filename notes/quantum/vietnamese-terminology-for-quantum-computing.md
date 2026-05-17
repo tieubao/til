@@ -106,3 +106,12 @@ A working glossary for quantum computing terms in Vietnamese. Most specialized l
 - Acronyms: QFT, QPE, BQP, NISQ
 
 **Safe convention when writing.** On first mention, give both forms: "chồng chập lượng tử (quantum superposition)" or "thuật toán Shor (Shor's algorithm)". Afterwards, pick one and stay consistent.
+
+## Related
+
+- [[monomial-polynomial-term-vietnamese-terminology-breakdown]] - companion glossary for the math foundations (đơn thức, đa thức, số hạng) underlying complexity-class language
+- [[quantum-superposition-state-and-qft-for-beginners]] - the concepts (chồng chập, giao thoa, biên độ) defined here in working context
+- [[state-preparation-is-half-the-quantum-algorithm]] - "chuẩn bị trạng thái" applied across four algorithms
+- [[complexity-classes-p-np-bqp-qma-explained]] - the English class names this note glosses
+- [[what-polynomial-time-actually-means]] - "thời gian đa thức" as the threshold this glossary inherits
+- [[history-and-motivation-of-major-quantum-algorithms]] - the algorithm names (Shor, Grover, VQE, QAOA, HHL) the glossary mostly leaves in English

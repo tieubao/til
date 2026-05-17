@@ -6,6 +6,42 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-17] ingest | 8-note quantum-computing cluster, plus folder consolidation and README restore
+
+Eight new notes pushed via Claude.ai over 2026-05-17, all part of the quantum-computing study track Han is building (CLIMB framework Classify phase). Compiled in one batch.
+
+**Notes compiled:**
+
+*Quantum cluster (7 notes, all in `notes/quantum/`):*
+- `why-quantum-computing-talks-about-decision-problems.md` - decision problems as the assembly language of complexity theory; YES/NO falls out of the Born rule
+- `complexity-classes-p-np-bqp-qma-explained.md` - classical hierarchy extended with BQP and QMA; Shor lands factoring in BQP
+- `history-and-motivation-of-major-quantum-algorithms.md` - Shor / Grover / HHL / VQE-QAOA as outsiders importing intuition; speedup requires structure; HHL dequantization is the cautionary tale
+- `state-preparation-is-half-the-quantum-algorithm.md` - three-stage skeleton; preparation is where exponential speedup claims die
+- `quantum-superposition-state-and-qft-for-beginners.md` - speedup is interference canceling wrong answers, not parallel evaluation; QFT inside Shor
+- `what-polynomial-time-actually-means.md` - polynomial = highest exponent is a fixed constant; threshold between tractable and intractable
+- `vietnamese-terminology-for-quantum-computing.md` - working glossary; when to keep English (algorithm names, acronyms)
+
+*Math (1 note, in `notes/math/`):*
+- `monomial-polynomial-term-vietnamese-terminology-breakdown.md` - `thức` in `đơn thức` is NOT `công thức`; `-nomial` from Latin `nomen`; Ising Hamiltonians as polynomials in Pauli operators
+
+**Structural fixes:**
+- **Folder split resolved.** The first quantum note (2026-05-17 04:47Z, `why-quantum-computing-talks-about-decision-problems.md`) was filed under `notes/quantum-computing/` by Claude.ai; the next six (12:24Z onward) were filed under `notes/quantum/`. Consolidated to `notes/quantum/` (the larger folder, simpler name). Asset folder renamed `assets/notes-quantum-computing/` → `assets/notes-quantum/`; the only image reference (decision-problem-quantum.svg) was updated. Image path was `../assets/...` (wrong depth, would resolve outside notes); fixed to `../../assets/notes-quantum/decision-problem-quantum.svg`.
+- **README restore.** The 2026-05-17 19:27 Claude.ai push (`docs: update note index`) overwrote the curated README.md with an auto-generated flat dump of 330 notes, abandoning the curated Recent additions + Topics + Documentation structure. Restored from 83bed23 and added the 8 new entries (dropped the 2026-05-07 SSH/Mosh entry and everything older to keep at 10).
+- **Em-dash strip.** 37 em dashes across 5 of the 8 new notes (history-and-motivation 12, decision-problems 9, what-polynomial-time 6, state-preparation 6, superposition+QFT 4). All replaced with `:`, `,`, `;`, or parenthetical based on local grammar. The other 3 notes (complexity-classes, vietnamese-terminology, monomial) arrived clean.
+- **Dead Related links replaced.** `why-quantum-computing-talks-about-decision-problems.md` arrived with three `(to be written)` placeholders pointing to `notes/quantum-computing/{bqp-structure,function-to-decision-reduction,promise-problems}` (note: full paths, not Obsidian convention). Replaced with five real cross-cluster wikilinks plus comp-fin tie-back.
+
+**Related sections added (all 8 notes).** None of the 8 arrived with a usable `## Related` section. Built a tight 7-note network inside the quantum cluster (each note links 4-5 siblings) plus three external bridges:
+- `[[optimization-as-the-bridge-to-computational-finance]]` (comp-fin): reciprocal backlink added; VQE/QAOA = variational optimization, Black-Scholes called out as a "Shor moment" in the history note
+- `[[hermes-agent-comprehensive-briefing-april-2026]]` (ai-tooling): one-way from history note for the "Hermes constraint pattern mirrors VQE hybrid" analogy; Hermes briefing's existing Related is already dense, no reverse backlink
+
+**New folders created (2):** `notes/math/`, `notes/quantum/`. Added to `index.md` (math between macos and mcp; quantum between pkm and security) and `README.md` Topics table.
+
+**Synthesis page:** 7-note quantum cluster is past the 4+ threshold. Per the spec rule ("always discuss the synthesis with the user before writing"), flagging for next conversation: a worthwhile synthesis would weave the cluster around the load-bearing claim that quantum speedup requires exploitable structure (periodicity → Shor, search structure → Grover, eigenstructure → HHL/VQE), and that the operation stage gets headlines while the preparation/measurement stages are where the engineering reality lives. Defer until Han confirms the thesis.
+
+**Provenance:** All 8 notes were authored in Claude.ai chat sessions on 2026-05-17, sourced as "Claude.ai chat" or "Claude session on quantum computing fundamentals, CLIMB framework (Classify phase)". The structural issues (folder split, dead links, em-dash habit, README regression) are characteristic of multi-session Claude.ai pushes that bypass the local Claude Code compilation step.
+
+---
+
 ## [2026-05-15] ingest | Hermes Agent v0.13.0 release evaluation
 
 New article in `notes/ai-tooling/`: `hermes-agent-v0-13-0-release-evaluation-top-features-ranked-for-3-tier-ecosystem.md`. Pushed via Claude.ai on 2026-05-09 without a `## Related` section; compilation added one with five cross-links inside the ai-tooling cluster: `hermes-agent-comprehensive-briefing-april-2026` (parent), `hermes-agent-fixed-overhead-13-9k-tokens-per-api-call` (cost analysis behind the cron-no_agent verdict), `ralph-loop-pattern-explained-persistent-goals-via-file-based-state` (foundation pattern under `/goal`), `hermes-vs-openclaw-competitive-scene-april-2026` (competitive context), `why-developers-migrate-to-hermes-ranked-real-vs-hype` (adoption framing). No contradictions with existing Hermes notes; the selective-adoption verdict aligns with both `why-developers-migrate-to-hermes` and the fixed-overhead cost lens.

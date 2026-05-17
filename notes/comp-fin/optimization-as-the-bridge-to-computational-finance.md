@@ -134,3 +134,5 @@ If the goal is computational finance, **prioritize convex optimization and dynam
 - [[operations-research-and-milp-for-software-engineers]] - the OR/MILP foundation this note bridges from; engineers' mental model for declarative problem solving with a solver
 - [[financial-knowledge-as-compound-information-advantage]] - why the comp-fin learning investment compounds over a career
 - [[how-the-bond-market-controls-housing-stocks-and-jobs]] - macro context for the kinds of decisions stochastic control gets aimed at
+- [[history-and-motivation-of-major-quantum-algorithms]] - VQE / QAOA are quant-flavored variational optimization on quantum hardware; Black-Scholes is called out as a "Shor moment" for finance
+- [[why-quantum-computing-talks-about-decision-problems]] - CLIMB Classify-phase framing that sits at the top of the quantum complexity tree

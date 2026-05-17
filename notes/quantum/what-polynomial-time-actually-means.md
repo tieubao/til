@@ -21,8 +21,8 @@ The key property: **the highest exponent k is a fixed constant**, not a function
 
 | Class | Examples | Character |
 |---|---|---|
-| Polynomial | n, n², n³, n^10 | "tractable" — grows gracefully |
-| Exponential | 2^n, 3^n, n! | "intractable" — explodes quickly |
+| Polynomial | n, n², n³, n^10 | "tractable", grows gracefully |
+| Exponential | 2^n, 3^n, n! | "intractable", explodes quickly |
 
 ## Concrete numbers (1 op = 1 nanosecond)
 
@@ -41,16 +41,16 @@ The age of the universe is roughly 1.4 × 10^10 years. O(2^100) is *trillions* o
 ## The intuition in code
 
 ```python
-# O(n) — linear, polynomial
+# O(n): linear, polynomial
 for i in range(n):
     do_thing(i)
 
-# O(n²) — quadratic, polynomial
+# O(n²): quadratic, polynomial
 for i in range(n):
     for j in range(n):
         do_thing(i, j)
 
-# O(2^n) — exponential, NOT polynomial
+# O(2^n): exponential, NOT polynomial
 def subsets(arr):
     if not arr:
         return [[]]
@@ -58,7 +58,7 @@ def subsets(arr):
     return rest + [[arr[0]] + s for s in rest]
 ```
 
-Three nested for-loops gives n³ — polynomial. Recursion that doubles on each step gives 2^n — exponential. The difference is whether n appears as the *base* of the exponent (polynomial) or as the *exponent itself* (exponential).
+Three nested for-loops gives n³, polynomial. Recursion that doubles on each step gives 2^n, exponential. The difference is whether n appears as the *base* of the exponent (polynomial) or as the *exponent itself* (exponential).
 
 ## Why "polynomial" is the threshold
 
@@ -82,3 +82,11 @@ In practice, "polynomial" usually means O(n²) or O(n³). Anything worse and peo
 - Intractable → không khả thi / khó giải
 
 These are stable translations in Vietnamese academic writing.
+
+## Related
+
+- [[complexity-classes-p-np-bqp-qma-explained]] - the P / BPP / BQP classes that all rest on this polynomial-time threshold
+- [[why-quantum-computing-talks-about-decision-problems]] - decision problems are the unit on which polynomial-time bounds are stated
+- [[history-and-motivation-of-major-quantum-algorithms]] - Shor's polynomial-time factoring (O((log N)³)) is the bridge case
+- [[monomial-polynomial-term-vietnamese-terminology-breakdown]] - the Vietnamese math vocabulary (đa thức / đơn thức) behind "polynomial"
+- [[vietnamese-terminology-for-quantum-computing]] - quantum-side Vietnamese glossary

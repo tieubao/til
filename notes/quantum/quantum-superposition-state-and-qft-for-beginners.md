@@ -13,7 +13,7 @@ The three concepts that make quantum speedup possible: quantum state, superposit
 
 A classical bit is one of two values: 0 or 1. Like a light switch, definitively in one state.
 
-A qubit can be 0, 1, or **both at once** — a state called superposition. Written in Dirac notation:
+A qubit can be 0, 1, or **both at once**, a state called superposition. Written in Dirac notation:
 
 |ψ⟩ = α|0⟩ + β|1⟩
 
@@ -26,7 +26,7 @@ Where α and β are complex numbers (the "amplitudes") with α² + β² = 1.
 
 The "ket" notation |ψ⟩ is a way to write the state of a quantum system. For a qubit, it's a 2D vector. For n qubits, it's a vector in 2^n-dimensional space.
 
-A useful analogy: a spinning coin. While in the air, it's not heads, not tails — it's both, with some probability distribution. The moment you catch it, it collapses to one outcome. Before that catch, the spinning coin is genuinely in both states.
+A useful analogy: a spinning coin. While in the air, it's not heads, not tails; it's both, with some probability distribution. The moment you catch it, it collapses to one outcome. Before that catch, the spinning coin is genuinely in both states.
 
 ## 3. Superposition scales exponentially
 
@@ -68,7 +68,7 @@ The QFT is the quantum version of the discrete Fourier transform. Classical FFT 
 In Shor's algorithm, QFT is the engine that extracts the hidden period r from a superposition of f(x) = a^x mod N values:
 
 1. Build a superposition of all (x, f(x)) pairs.
-2. The values of f repeat with period r — so the superposition has a hidden periodic structure.
+2. The values of f repeat with period r, so the superposition has a hidden periodic structure.
 3. Apply QFT. States whose x is not a multiple of (something related to) r interfere destructively. States that are interfere constructively.
 4. Measure. With high probability, the result reveals r.
 
@@ -84,7 +84,7 @@ This is why quantum only helps with problems that have the right kind of structu
 
 > "A quantum computer with 300 qubits explores 2^300 paths in parallel."
 
-This is half-true and half-wrong. The 2^300 superposition exists, but you cannot extract 2^300 answers from it. You extract *one* measurement. The art is making sure that one measurement is meaningful — which only works when interference can be set up correctly. For most problems, it can't.
+This is half-true and half-wrong. The 2^300 superposition exists, but you cannot extract 2^300 answers from it. You extract *one* measurement. The art is making sure that one measurement is meaningful, which only works when interference can be set up correctly. For most problems, it can't.
 
 ## Vietnamese
 
@@ -93,3 +93,11 @@ This is half-true and half-wrong. The 2^300 superposition exists, but you cannot
 - Interference → giao thoa lượng tử
 - Amplitude → biên độ
 - Quantum Fourier Transform → biến đổi Fourier lượng tử
+
+## Related
+
+- [[state-preparation-is-half-the-quantum-algorithm]] - how the superposition you build here is the actual design problem
+- [[history-and-motivation-of-major-quantum-algorithms]] - Shor (uses QFT) and Grover (uses interference) shown in context
+- [[why-quantum-computing-talks-about-decision-problems]] - measurement collapse is why we frame everything as decision problems
+- [[complexity-classes-p-np-bqp-qma-explained]] - the BQP class that captures this measurement model
+- [[vietnamese-terminology-for-quantum-computing]] - extended Vietnamese vocabulary for these concepts

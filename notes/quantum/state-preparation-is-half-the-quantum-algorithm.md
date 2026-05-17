@@ -12,7 +12,7 @@ Every quantum algorithm has the same three-stage skeleton: state preparation, qu
 ## The three-stage skeleton
 
 1. **State preparation.** Encode the problem into a quantum state. This is where the bottleneck usually is.
-2. **Quantum operations.** Apply gates, oracles, QFT, amplification — the part that gets the speedup.
+2. **Quantum operations.** Apply gates, oracles, QFT, amplification: the part that gets the speedup.
 3. **Measurement.** Collapse to a classical result and post-process.
 
 The operation stage is generic across many algorithms. The preparation stage is where each algorithm has to invent something custom for its problem.
@@ -27,7 +27,7 @@ The operation stage is generic across many algorithms. The preparation stage is 
 
 ### Grover (search)
 
-- **Preparation.** Just Hadamard on every qubit — uniform superposition of all N possibilities. Simplest preparation of any major algorithm.
+- **Preparation.** Just Hadamard on every qubit: uniform superposition of all N possibilities. Simplest preparation of any major algorithm.
 - **Operation.** Repeat (oracle + diffusion) ~√N times.
 - **Bottleneck.** Designing the oracle for the specific search criterion. The oracle itself is the algorithm's hidden complexity.
 
@@ -39,9 +39,9 @@ The operation stage is generic across many algorithms. The preparation stage is 
 
 ### VQE (quantum chemistry)
 
-- **Preparation.** Parameterized ansatz circuit — a variational form where parameters are tuned by a classical optimizer. Uses encodings like Jordan-Wigner to map molecular orbitals to qubits.
+- **Preparation.** Parameterized ansatz circuit: a variational form where parameters are tuned by a classical optimizer. Uses encodings like Jordan-Wigner to map molecular orbitals to qubits.
 - **Operation.** Hybrid quantum-classical loop. Quantum measures expectation, classical optimizer adjusts parameters.
-- **Bottleneck.** Barren plateau problem — the loss landscape becomes exponentially flat, gradient descent cannot find a direction.
+- **Bottleneck.** Barren plateau problem: the loss landscape becomes exponentially flat, gradient descent cannot find a direction.
 
 ## Why state preparation is the hard part
 
@@ -53,7 +53,7 @@ The operation stage is generic across many algorithms. The preparation stage is 
 - Quantum physics → physically-motivated wavefunction encoding (VQE)
 - Graph optimization → vertex/edge encoded as qubit interactions (QAOA)
 
-**3. The quantum-data input problem.** Most real-world data is classical (databases, CSV files, logs). Loading it into a quantum register requires either qRAM (which doesn't exist at scale) or per-call encoding (which is slow). This is the biggest practical reason quantum hasn't displaced classical ML — loading the data is slower than training the classical model.
+**3. The quantum-data input problem.** Most real-world data is classical (databases, CSV files, logs). Loading it into a quantum register requires either qRAM (which doesn't exist at scale) or per-call encoding (which is slow). This is the biggest practical reason quantum hasn't displaced classical ML: loading the data is slower than training the classical model.
 
 ## Code mental model
 
@@ -89,4 +89,12 @@ When you read "exponential quantum speedup", ask three questions:
 2. What does the algorithm assume about data access? Does it need qRAM?
 3. How much information does the measurement give? If it's a single scalar, that may already be possible classically.
 
-The headlines focus on the operation stage, but the engineering reality lives in the preparation stage. Half the design work for a useful quantum algorithm is figuring out how to encode the problem efficiently — and most candidate algorithms fail at this step before they ever get to the "exciting" quantum part.
+The headlines focus on the operation stage, but the engineering reality lives in the preparation stage. Half the design work for a useful quantum algorithm is figuring out how to encode the problem efficiently, and most candidate algorithms fail at this step before they ever get to the "exciting" quantum part.
+
+## Related
+
+- [[history-and-motivation-of-major-quantum-algorithms]] - origin story for Shor, Grover, HHL, VQE; this note slices them by preparation cost instead
+- [[quantum-superposition-state-and-qft-for-beginners]] - the superposition primitive that all four preparations build on
+- [[why-quantum-computing-talks-about-decision-problems]] - the measurement model that determines what preparation has to achieve
+- [[complexity-classes-p-np-bqp-qma-explained]] - why the BQP claim depends on preparation cost being poly(log N)
+- [[vietnamese-terminology-for-quantum-computing]] - "chuẩn bị trạng thái" and related vocabulary
