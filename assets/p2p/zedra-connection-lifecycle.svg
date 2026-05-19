@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family="-apple-system, system-ui, sans-serif">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow-indigo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3730A3"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#D97706"/>
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#E11D48"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="700" fill="#FAFAFB"/>
+
+  <!-- Title + subtitle -->
+  <text x="550" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1E1B4B">Zedra connection lifecycle</text>
+  <text x="550" y="60" text-anchor="middle" font-size="12" fill="#4B5563">12 phases collapse to 3 UI stages. The auth stage has three shapes: first pair (3 RPCs), PKI reconnect (2), token resume (1).</text>
+
+  <!-- Stage labels (top) -->
+  <text x="120" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#3730A3" letter-spacing="1">CONNECT</text>
+  <line x1="50" y1="108" x2="190" y2="108" stroke="#3730A3" stroke-width="2"/>
+
+  <text x="550" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#3730A3" letter-spacing="1">AUTH</text>
+  <line x1="240" y1="108" x2="860" y2="108" stroke="#3730A3" stroke-width="2"/>
+
+  <text x="970" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#3730A3" letter-spacing="1">SYNC</text>
+  <line x1="900" y1="108" x2="1040" y2="108" stroke="#3730A3" stroke-width="2"/>
+
+  <!-- ============= Connect column ============= -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="130" width="140" height="50" rx="6" fill="white" stroke="#A5B4FC" stroke-width="1.4"/>
+    <rect x="50" y="130" width="140" height="3" fill="#3730A3"/>
+    <text x="120" y="153" text-anchor="middle" font-size="12" font-weight="700" fill="#1E1B4B">BindingEndpoint</text>
+    <text x="120" y="170" text-anchor="middle" font-size="9" fill="#4B5563">iroh::Endpoint::bind()</text>
+  </g>
+
+  <line x1="120" y1="180" x2="120" y2="205" stroke="#3730A3" stroke-width="1.6" marker-end="url(#arrow-indigo)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="50" y="210" width="140" height="50" rx="6" fill="white" stroke="#A5B4FC" stroke-width="1.4"/>
+    <rect x="50" y="210" width="140" height="3" fill="#3730A3"/>
+    <text x="120" y="233" text-anchor="middle" font-size="12" font-weight="700" fill="#1E1B4B">HolePunching</text>
+    <text x="120" y="250" text-anchor="middle" font-size="9" fill="#4B5563">pkarr + path race</text>
+  </g>
+
+  <line x1="190" y1="235" x2="245" y2="235" stroke="#3730A3" stroke-width="1.6" marker-end="url(#arrow-indigo)"/>
+
+  <!-- ============= Auth column (three lanes) ============= -->
+  <text x="380" y="135" text-anchor="middle" font-size="10" font-weight="700" fill="#9F1239">FIRST PAIRING (3 RPCs)</text>
+  <text x="550" y="135" text-anchor="middle" font-size="10" font-weight="700" fill="#3730A3">PKI RECONNECT (2 RPCs)</text>
+  <text x="730" y="135" text-anchor="middle" font-size="10" font-weight="700" fill="#3730A3">TOKEN RESUME (1 RPC)</text>
+
+  <!-- Lane: first pairing -->
+  <g filter="url(#shadow)">
+    <rect x="260" y="150" width="240" height="200" rx="8" fill="#FFE4E6" stroke="#F4A0A0" stroke-width="1.2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="280" y="170" width="200" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="380" y="187" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Registering</text>
+    <text x="380" y="203" text-anchor="middle" font-size="9" fill="#4B5563">HMAC proves QR scan</text>
+  </g>
+  <line x1="380" y1="212" x2="380" y2="223" stroke="#3730A3" stroke-width="1.4" marker-end="url(#arrow-indigo)"/>
+  <g filter="url(#shadow)">
+    <rect x="280" y="226" width="200" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="380" y="243" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Authenticating</text>
+    <text x="380" y="259" text-anchor="middle" font-size="9" fill="#4B5563">Connect → Challenge</text>
+  </g>
+  <line x1="380" y1="268" x2="380" y2="279" stroke="#3730A3" stroke-width="1.4" marker-end="url(#arrow-indigo)"/>
+  <g filter="url(#shadow)">
+    <rect x="280" y="282" width="200" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="380" y="299" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Proving</text>
+    <text x="380" y="315" text-anchor="middle" font-size="9" fill="#4B5563">AuthProve (client sig)</text>
+  </g>
+
+  <!-- Lane: PKI reconnect -->
+  <g filter="url(#shadow)">
+    <rect x="510" y="150" width="160" height="200" rx="8" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1.2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="525" y="200" width="130" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="590" y="217" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Authenticating</text>
+    <text x="590" y="233" text-anchor="middle" font-size="9" fill="#4B5563">Connect (token=None)</text>
+  </g>
+  <line x1="590" y1="242" x2="590" y2="253" stroke="#3730A3" stroke-width="1.4" marker-end="url(#arrow-indigo)"/>
+  <g filter="url(#shadow)">
+    <rect x="525" y="256" width="130" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="590" y="273" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Proving</text>
+    <text x="590" y="289" text-anchor="middle" font-size="9" fill="#4B5563">AuthProve</text>
+  </g>
+
+  <!-- Lane: token resume -->
+  <g filter="url(#shadow)">
+    <rect x="680" y="150" width="160" height="200" rx="8" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1.2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="695" y="230" width="130" height="42" rx="5" fill="white" stroke="#A5B4FC" stroke-width="1.2"/>
+    <text x="760" y="247" text-anchor="middle" font-size="11" font-weight="700" fill="#1E1B4B">Authenticating</text>
+    <text x="760" y="263" text-anchor="middle" font-size="9" fill="#4B5563">Connect (token=Some)</text>
+  </g>
+
+  <!-- Converging arrows to Sync -->
+  <path d="M 480 305 Q 870 305 870 285 L 905 285" stroke="#3730A3" stroke-width="1.6" fill="none" marker-end="url(#arrow-indigo)"/>
+  <path d="M 655 278 Q 870 278 870 285" stroke="#3730A3" stroke-width="1.6" fill="none"/>
+  <path d="M 825 252 Q 870 252 870 285" stroke="#3730A3" stroke-width="1.6" fill="none"/>
+
+  <!-- ============= Sync column ============= -->
+  <g filter="url(#shadow)">
+    <rect x="910" y="260" width="140" height="50" rx="6" fill="white" stroke="#A5B4FC" stroke-width="1.4"/>
+    <rect x="910" y="260" width="140" height="3" fill="#3730A3"/>
+    <text x="980" y="283" text-anchor="middle" font-size="12" font-weight="700" fill="#1E1B4B">Sync</text>
+    <text x="980" y="300" text-anchor="middle" font-size="9" fill="#4B5563">terminals + drawer refresh</text>
+  </g>
+
+  <!-- Arrow Sync -> Connected -->
+  <line x1="980" y1="310" x2="980" y2="345" stroke="#3730A3" stroke-width="2" marker-end="url(#arrow-indigo)"/>
+
+  <!-- ============= Connected (the goal) ============= -->
+  <g filter="url(#shadow)">
+    <rect x="830" y="350" width="240" height="62" rx="8" fill="#3730A3" stroke="#1E1B4B" stroke-width="1.6"/>
+    <text x="950" y="377" text-anchor="middle" font-size="14" font-weight="700" fill="white">Connected</text>
+    <text x="950" y="395" text-anchor="middle" font-size="10" fill="#A5B4FC">ping 2s · idle watcher · 60s path stats</text>
+  </g>
+
+  <!-- ============= Post-Connected loops ============= -->
+  <!-- Idle (right side, close to Connected) -->
+  <g filter="url(#shadow)">
+    <rect x="830" y="470" width="240" height="50" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+    <rect x="830" y="470" width="240" height="3" fill="#D97706"/>
+    <text x="950" y="492" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Idle</text>
+    <text x="950" y="507" text-anchor="middle" font-size="9" fill="#92400E">no rx, conn still alive; UI badge only</text>
+  </g>
+  <!-- Connected <-> Idle, two arrows side by side -->
+  <line x1="910" y1="412" x2="910" y2="465" stroke="#D97706" stroke-width="1.6" marker-end="url(#arrow-amber)"/>
+  <text x="868" y="442" font-size="9" fill="#92400E">ConnectionIdle</text>
+  <line x1="990" y1="465" x2="990" y2="415" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#arrow-amber)"/>
+  <text x="996" y="445" font-size="9" fill="#92400E">ConnectionActive</text>
+
+  <!-- Reconnecting -->
+  <g filter="url(#shadow)">
+    <rect x="500" y="470" width="240" height="50" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1.4"/>
+    <rect x="500" y="470" width="240" height="3" fill="#D97706"/>
+    <text x="620" y="492" text-anchor="middle" font-size="12" font-weight="700" fill="#92400E">Reconnecting</text>
+    <text x="620" y="507" text-anchor="middle" font-size="9" fill="#92400E">attempt N/3 · backoff 1/2/4s</text>
+  </g>
+  <!-- Connected → Reconnecting (curve out and back) -->
+  <path d="M 830 395 Q 760 430 740 470" stroke="#D97706" stroke-width="1.6" fill="none" marker-end="url(#arrow-amber)"/>
+  <text x="752" y="430" font-size="9" fill="#92400E" text-anchor="end">ConnectionClosed</text>
+  <!-- Reconnecting → Connected (back path, dashed) -->
+  <path d="M 740 495 Q 800 495 820 460 Q 825 425 870 412" stroke="#D97706" stroke-width="1.6" stroke-dasharray="4,3" fill="none" marker-end="url(#arrow-amber)"/>
+  <text x="815" y="466" font-size="9" fill="#92400E">ReconnectSuccess</text>
+
+  <!-- Failed -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="470" width="220" height="50" rx="6" fill="#FEE2E2" stroke="#E11D48" stroke-width="1.4"/>
+    <rect x="240" y="470" width="220" height="3" fill="#E11D48"/>
+    <text x="350" y="492" text-anchor="middle" font-size="12" font-weight="700" fill="#9F1239">Failed</text>
+    <text x="350" y="507" text-anchor="middle" font-size="9" fill="#9F1239">user actionable: Retry or Remove pairing</text>
+  </g>
+  <line x1="500" y1="495" x2="465" y2="495" stroke="#E11D48" stroke-width="1.6" marker-end="url(#arrow-rose)"/>
+  <text x="482" y="487" font-size="9" fill="#9F1239" text-anchor="middle">3 spent</text>
+
+  <!-- Failed → BindingEndpoint (user taps Retry) -->
+  <path d="M 240 495 Q 100 495 100 200 L 100 180" stroke="#E11D48" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#arrow-rose)"/>
+  <text x="50" y="350" font-size="9" fill="#9F1239" transform="rotate(-90, 50, 350)">user taps Retry</text>
+
+  <!-- Annotations (left side, away from main flow) -->
+  <line x1="380" y1="245" x2="80" y2="375" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="20" y="345" width="170" height="62" rx="6" fill="white" stroke="#F4A0A0" stroke-width="1.2"/>
+  <rect x="20" y="345" width="170" height="3" fill="#9F1239"/>
+  <text x="105" y="363" text-anchor="middle" font-size="10" font-weight="700" fill="#9F1239">3 crypto checkpoints</text>
+  <text x="105" y="378" text-anchor="middle" font-size="9" fill="#4B5563">HMAC (QR), host sig (MITM),</text>
+  <text x="105" y="390" text-anchor="middle" font-size="9" fill="#4B5563">client sig (device). See</text>
+  <text x="105" y="401" text-anchor="middle" font-size="9" fill="#4B5563">next diagram.</text>
+
+  <!-- Takeaway band -->
+  <rect x="80" y="615" width="940" height="42" rx="6" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="550" y="634" text-anchor="middle" font-size="11" font-weight="600" fill="#3730A3">Bounded reconnect (3 attempts) means transient failures self-heal.</text>
+  <text x="550" y="648" text-anchor="middle" font-size="11" font-weight="600" fill="#3730A3">Permanent failures bubble to a user-actionable Failed state with explicit Retry or Remove.</text>
+</svg>
