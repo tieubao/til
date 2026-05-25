@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" role="img" aria-label="Compounding staircase vs treadmill comparison">
+<title>Compounding vs treadmill</title>
+<desc>Left side shows a rising staircase representing compounding work. Right side shows a circular treadmill representing motion without progress.</desc>
+<style>
+.t-th { font: 500 14px sans-serif; fill: #2C2C2A; }
+.t-ts { font: 400 12px sans-serif; fill: #5F5E5A; }
+.t-title { font: 500 16px sans-serif; fill: #2C2C2A; }
+</style>
+
+<text class="t-title" x="170" y="32" text-anchor="middle">Compounding</text>
+<text class="t-ts" x="170" y="50" text-anchor="middle">Year 6 easier than year 1</text>
+
+<text class="t-title" x="510" y="32" text-anchor="middle">Treadmill</text>
+<text class="t-ts" x="510" y="50" text-anchor="middle">Every year starts over</text>
+
+<line x1="40" y1="290" x2="320" y2="290" stroke="#5F5E5A" stroke-width="0.5"/>
+
+<rect x="50" y="270" width="40" height="20" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<rect x="100" y="250" width="40" height="40" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<rect x="150" y="220" width="40" height="70" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<rect x="200" y="180" width="40" height="110" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<rect x="250" y="130" width="40" height="160" rx="2" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+
+<text class="t-ts" x="70" y="306" text-anchor="middle">y1</text>
+<text class="t-ts" x="120" y="306" text-anchor="middle">y2</text>
+<text class="t-ts" x="170" y="306" text-anchor="middle">y3</text>
+<text class="t-ts" x="220" y="306" text-anchor="middle">y4</text>
+<text class="t-ts" x="270" y="306" text-anchor="middle">y5</text>
+
+<text class="t-th" x="170" y="332" text-anchor="middle">Trust deposits, IP, reputation, network</text>
+<text class="t-ts" x="170" y="352" text-anchor="middle">Build on yesterday. Year 5 is worth ten year 1s.</text>
+
+<circle cx="510" cy="220" r="65" fill="none" stroke="#5F5E5A" stroke-width="0.5"/>
+<circle cx="510" cy="220" r="50" fill="none" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+<rect x="503" y="155" width="14" height="14" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<rect x="568" y="213" width="14" height="14" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<rect x="503" y="271" width="14" height="14" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<rect x="438" y="213" width="14" height="14" rx="2" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+
+<text class="t-th" x="510" y="332" text-anchor="middle">New trend, new tool, new pitch</text>
+<text class="t-ts" x="510" y="352" text-anchor="middle">Spinning hard, going nowhere</text>
+</svg>
