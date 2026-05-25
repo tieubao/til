@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" role="img" aria-label="Trust capital account ledger">
+<title>Trust capital account</title>
+<desc>Bank ledger metaphor showing deposits and withdrawals flowing into a central trust balance.</desc>
+<style>
+.t-th { font: 500 14px sans-serif; fill: #2C2C2A; }
+.t-ts { font: 400 12px sans-serif; fill: #5F5E5A; }
+.t-title { font: 500 16px sans-serif; fill: #2C2C2A; }
+</style>
+
+<text class="t-title" x="340" y="32" text-anchor="middle">Trust capital account</text>
+<text class="t-ts" x="340" y="52" text-anchor="middle">Your actual balance sheet, not your bank account</text>
+
+<rect x="240" y="80" width="200" height="80" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="t-th" x="340" y="115" text-anchor="middle">Trust balance</text>
+<text class="t-ts" x="340" y="138" text-anchor="middle">Compounds when positive</text>
+
+<text class="t-th" x="120" y="200" text-anchor="middle">Deposits</text>
+<text class="t-ts" x="120" y="218" text-anchor="middle">Things that fill it up</text>
+
+<rect x="40" y="240" width="160" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-ts" x="120" y="263" text-anchor="middle">Delivering on time</text>
+
+<rect x="40" y="286" width="160" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-ts" x="120" y="309" text-anchor="middle">Paying contractors promptly</text>
+
+<rect x="40" y="332" width="160" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-ts" x="120" y="355" text-anchor="middle">Solving hard problems</text>
+
+<rect x="40" y="378" width="160" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-ts" x="120" y="401" text-anchor="middle">Showing up when others don't</text>
+
+<rect x="40" y="424" width="160" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-ts" x="120" y="447" text-anchor="middle">Publishing your judgment</text>
+
+<path d="M 200 258 Q 240 200 240 130" stroke="#1D9E75" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 200 304 Q 240 220 240 138" stroke="#1D9E75" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 200 350 Q 240 240 240 146" stroke="#1D9E75" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 200 396 Q 240 260 240 154" stroke="#1D9E75" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 200 442 Q 240 280 240 158" stroke="#1D9E75" stroke-width="1" fill="none" opacity="0.5"/>
+
+<text class="t-th" x="560" y="200" text-anchor="middle">Withdrawals</text>
+<text class="t-ts" x="560" y="218" text-anchor="middle">Things that drain it</text>
+
+<rect x="480" y="240" width="160" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-ts" x="560" y="263" text-anchor="middle">Shiny new side ventures</text>
+
+<rect x="480" y="286" width="160" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-ts" x="560" y="309" text-anchor="middle">Cousin hires you regret</text>
+
+<rect x="480" y="332" width="160" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-ts" x="560" y="355" text-anchor="middle">Missed promises, broken word</text>
+
+<rect x="480" y="378" width="160" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-ts" x="560" y="401" text-anchor="middle">Going dark on slow weeks</text>
+
+<rect x="480" y="424" width="160" height="36" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-ts" x="560" y="447" text-anchor="middle">Chasing prestige over depth</text>
+
+<path d="M 480 258 Q 440 200 440 130" stroke="#D85A30" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 480 304 Q 440 220 440 138" stroke="#D85A30" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 480 350 Q 440 240 440 146" stroke="#D85A30" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 480 396 Q 440 260 440 154" stroke="#D85A30" stroke-width="1" fill="none" opacity="0.5"/>
+<path d="M 480 442 Q 440 280 440 158" stroke="#D85A30" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
