@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" role="img" aria-label="Opportunity matrix: defensibility versus personal fit">
+<title>Opportunity matrix</title>
+<desc>Two by two matrix plotting defensibility against personal fit with examples placed in four quadrants.</desc>
+<style>
+.t-th { font: 500 14px sans-serif; fill: #2C2C2A; }
+.t-ts { font: 400 12px sans-serif; fill: #5F5E5A; }
+.t-title { font: 500 16px sans-serif; fill: #2C2C2A; }
+.t-q { font: 500 15px sans-serif; }
+</style>
+
+<text class="t-title" x="340" y="30" text-anchor="middle">Where to spend your next decade</text>
+<text class="t-ts" x="340" y="50" text-anchor="middle">Defensibility (vertical) against personal fit (horizontal)</text>
+
+<line x1="340" y1="80" x2="340" y2="500" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3"/>
+<line x1="80" y1="290" x2="600" y2="290" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+<text class="t-ts" x="60" y="180" text-anchor="middle">High</text>
+<text class="t-ts" x="60" y="400" text-anchor="middle">Low</text>
+<text class="t-ts" x="35" y="290" text-anchor="middle">Defensibility</text>
+
+<text class="t-ts" x="200" y="525" text-anchor="middle">Wrong for you</text>
+<text class="t-ts" x="480" y="525" text-anchor="middle">Right for you</text>
+<text class="t-ts" x="340" y="545" text-anchor="middle">Personal fit</text>
+
+<rect x="360" y="100" width="220" height="170" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-q" x="470" y="130" text-anchor="middle" fill="#04342C">Gold mine</text>
+<text class="t-ts" x="470" y="158" text-anchor="middle">Build aggressively</text>
+<text class="t-ts" x="470" y="190" text-anchor="middle">Diaspora bridge services</text>
+<text class="t-ts" x="470" y="208" text-anchor="middle">Family wealth IP</text>
+<text class="t-ts" x="470" y="226" text-anchor="middle">Specialized firm version of core</text>
+<text class="t-ts" x="470" y="244" text-anchor="middle">Long-hold real estate</text>
+
+<rect x="100" y="100" width="220" height="170" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-q" x="210" y="130" text-anchor="middle" fill="#412402">Stranger's game</text>
+<text class="t-ts" x="210" y="158" text-anchor="middle">Defensible but not yours</text>
+<text class="t-ts" x="210" y="190" text-anchor="middle">Deep-tech research</text>
+<text class="t-ts" x="210" y="208" text-anchor="middle">Biotech or hardware</text>
+<text class="t-ts" x="210" y="226" text-anchor="middle">B2G defense work</text>
+<text class="t-ts" x="210" y="244" text-anchor="middle">Skip or invest passively</text>
+
+<rect x="360" y="310" width="220" height="170" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-q" x="470" y="340" text-anchor="middle" fill="#26215C">Expensive hobby</text>
+<text class="t-ts" x="470" y="368" text-anchor="middle">Fun but doesn't compound</text>
+<text class="t-ts" x="470" y="400" text-anchor="middle">Agent tooling experiments</text>
+<text class="t-ts" x="470" y="418" text-anchor="middle">Computational finance</text>
+<text class="t-ts" x="470" y="436" text-anchor="middle">Homelab projects</text>
+<text class="t-ts" x="470" y="454" text-anchor="middle">Keep small, call it learning</text>
+
+<rect x="100" y="310" width="220" height="170" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text class="t-q" x="210" y="340" text-anchor="middle" fill="#4A1B0C">Race to the bottom</text>
+<text class="t-ts" x="210" y="368" text-anchor="middle">Walk away</text>
+<text class="t-ts" x="210" y="400" text-anchor="middle">Generic consumer apps</text>
+<text class="t-ts" x="210" y="418" text-anchor="middle">Crypto trading product</text>
+<text class="t-ts" x="210" y="436" text-anchor="middle">Me-too SaaS for SEA</text>
+<text class="t-ts" x="210" y="454" text-anchor="middle">Vendor-style dev shop scale</text>
+</svg>
