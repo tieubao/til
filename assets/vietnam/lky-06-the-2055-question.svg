@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" role="img" aria-label="The 2055 question as the overriding decision filter">
+<title>The 2055 question</title>
+<desc>Large central card with the question: will I be proud of this in 2055.</desc>
+<style>
+.t-q { font: 500 22px sans-serif; fill: #04342C; }
+.t-ts { font: 400 13px sans-serif; fill: #085041; }
+</style>
+
+<rect x="60" y="60" width="560" height="140" rx="12" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-q" x="340" y="110" text-anchor="middle">Will I be proud of this in 2055?</text>
+<text class="t-ts" x="340" y="140" text-anchor="middle">If you have to convince yourself, the answer is no.</text>
+<text class="t-ts" x="340" y="165" text-anchor="middle">If you don't hesitate, build it. Everything else is noise.</text>
+</svg>
