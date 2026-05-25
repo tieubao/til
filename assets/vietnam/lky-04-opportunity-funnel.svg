@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600" role="img" aria-label="Opportunity filtering funnel with five sequential questions">
+<title>The 5-question funnel</title>
+<desc>Vertical funnel where many ideas enter at top, get filtered by five questions, and only one or two emerge worth building.</desc>
+<style>
+.t-th { font: 500 14px sans-serif; fill: #2C2C2A; }
+.t-ts { font: 400 12px sans-serif; fill: #5F5E5A; }
+.t-title { font: 500 16px sans-serif; fill: #2C2C2A; }
+</style>
+
+<text class="t-title" x="340" y="32" text-anchor="middle">The 5-question funnel</text>
+<text class="t-ts" x="340" y="52" text-anchor="middle">Default to no. Each filter is meant to kill most ideas.</text>
+
+<rect x="40" y="80" width="600" height="50" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="t-th" x="340" y="103" text-anchor="middle">Many ideas enter</text>
+<text class="t-ts" x="340" y="121" text-anchor="middle">Shiny pitches, FOMO bets, requests from friends, AI hype, market trends</text>
+
+<rect x="100" y="155" width="480" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-th" x="340" y="178" text-anchor="middle">1. Will this still matter in 2055?</text>
+<text class="t-ts" x="340" y="196" text-anchor="middle">If no, kill it now. Saves you a year.</text>
+
+<rect x="140" y="230" width="400" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-th" x="340" y="253" text-anchor="middle">2. Does it compound or treadmill?</text>
+<text class="t-ts" x="340" y="271" text-anchor="middle">Year 6 must be easier than year 1.</text>
+
+<rect x="180" y="305" width="320" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-th" x="340" y="328" text-anchor="middle">3. Does it use my trust capital?</text>
+<text class="t-ts" x="340" y="346" text-anchor="middle">Existing clients become first customers.</text>
+
+<rect x="220" y="380" width="240" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-th" x="340" y="403" text-anchor="middle">4. Survives without me 3 months?</text>
+<text class="t-ts" x="340" y="421" text-anchor="middle">Or am I just buying a new job?</text>
+
+<rect x="260" y="455" width="160" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text class="t-th" x="340" y="478" text-anchor="middle">5. Right or new?</text>
+<text class="t-ts" x="340" y="496" text-anchor="middle">Hype check.</text>
+
+<rect x="280" y="525" width="120" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-th" x="340" y="548" text-anchor="middle">Build this</text>
+<text class="t-ts" x="340" y="566" text-anchor="middle">1-2 per year max</text>
+</svg>
