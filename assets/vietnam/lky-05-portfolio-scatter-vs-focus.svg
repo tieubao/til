@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 540" role="img" aria-label="Current scattered portfolio versus focused future state">
+<title>Portfolio scatter vs focus</title>
+<desc>Top half shows many small scattered dots representing scattered current attention. Bottom half shows three large concentrated circles representing focused future state.</desc>
+<style>
+.t-th { font: 500 14px sans-serif; fill: #2C2C2A; }
+.t-ts { font: 400 12px sans-serif; fill: #5F5E5A; }
+.t-title { font: 500 16px sans-serif; fill: #2C2C2A; }
+</style>
+
+<text class="t-title" x="340" y="32" text-anchor="middle">Concentration beats portfolio at your stage</text>
+
+<text class="t-th" x="170" y="80" text-anchor="middle">Current state</text>
+<text class="t-ts" x="170" y="98" text-anchor="middle">Scattered, all individually good</text>
+
+<circle cx="80" cy="140" r="14" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="80" y="170" text-anchor="middle">books</text>
+
+<circle cx="135" cy="170" r="12" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="135" y="200" text-anchor="middle">agents</text>
+
+<circle cx="195" cy="140" r="16" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="195" y="170" text-anchor="middle">core firm</text>
+
+<circle cx="255" cy="175" r="10" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="255" y="200" text-anchor="middle">dotfiles</text>
+
+<circle cx="80" cy="220" r="11" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="80" y="248" text-anchor="middle">homelab</text>
+
+<circle cx="135" cy="245" r="13" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="135" y="275" text-anchor="middle">skills</text>
+
+<circle cx="195" cy="215" r="11" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="195" y="245" text-anchor="middle">comp finance</text>
+
+<circle cx="255" cy="235" r="10" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="255" y="265" text-anchor="middle">real estate</text>
+
+<circle cx="295" cy="160" r="9" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="295" y="190" text-anchor="middle">crypto</text>
+
+<circle cx="50" cy="180" r="9" fill="#CECBF6" stroke="#534AB7" stroke-width="0.5"/>
+<text class="t-ts" x="50" y="210" text-anchor="middle">til repo</text>
+
+<text class="t-ts" x="170" y="305" text-anchor="middle">Each one good. The set is too wide.</text>
+
+<line x1="40" y1="335" x2="640" y2="335" stroke="#888780" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+<text class="t-th" x="510" y="80" text-anchor="middle">Focused target</text>
+<text class="t-ts" x="510" y="98" text-anchor="middle">Three bets, each compounding</text>
+
+<circle cx="430" cy="170" r="38" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-th" x="430" y="172" text-anchor="middle">Core firm</text>
+<text class="t-ts" x="430" y="192" text-anchor="middle">Runs without you</text>
+
+<circle cx="540" cy="200" r="38" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-th" x="540" y="202" text-anchor="middle">Family IP</text>
+<text class="t-ts" x="540" y="222" text-anchor="middle">Books, skills, bridge</text>
+
+<circle cx="490" cy="265" r="38" fill="#9FE1CB" stroke="#0F6E56" stroke-width="0.5"/>
+<text class="t-th" x="490" y="267" text-anchor="middle">Wealth stack</text>
+<text class="t-ts" x="490" y="287" text-anchor="middle">Real estate, holdco</text>
+
+<text class="t-ts" x="510" y="325" text-anchor="middle">Everything else: background research only</text>
+
+<rect x="60" y="360" width="560" height="160" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text class="t-th" x="340" y="390" text-anchor="middle">The hard move</text>
+<text class="t-ts" x="340" y="418" text-anchor="middle">Pick the 3. Demote everything else to "background process" or "kill".</text>
+<text class="t-ts" x="340" y="440" text-anchor="middle">Not "do later". Actively reduce time and attention.</text>
+<text class="t-ts" x="340" y="468" text-anchor="middle">Pre-commit: 90-day no-list before saying yes to anything new.</text>
+<text class="t-ts" x="340" y="496" text-anchor="middle">Most things look worse after 90 days of sitting. That's the test.</text>
+</svg>
