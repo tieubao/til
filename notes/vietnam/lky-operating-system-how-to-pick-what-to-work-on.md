@@ -1,7 +1,7 @@
 ---
 title: "LKY operating system: how to pick what to work on"
-date: 2026-05-25
-captured: 2026-05-25T19:53:29.039Z
+date: 2026-05-26
+captured: 2026-05-26T01:42:09.991Z
 tags: ["lky", "decision-making", "strategy", "founder-philosophy", "personal-operating-system", "vietnam"]
 source: "Claude.ai chat session, synthesis from LKY framework applied to personal operating decisions"
 ---
@@ -13,7 +13,7 @@ Most strategic advice is written for 22-year-old founders. This is the opposite.
 
 LKY's whole framework reduces to one question: are you climbing a staircase or running on a wheel? Most work in tech is a wheel that feels like a staircase. The discipline is telling the difference.
 
-![Compounding staircase rising in green bars vs circular treadmill in coral, comparing work that builds on itself with work that resets every year](../assets/vietnam/lky-01-compounding-vs-treadmill.svg)
+![Compounding staircase rising in green bars vs circular treadmill in coral, comparing work that builds on itself with work that resets every year](https://assets.han-ws.workers.dev/i/2026/05/lky-01-compounding-vs-treadmill.svg)
 
 ## The six mental models
 
@@ -41,7 +41,7 @@ This is your actual moat. Not your skills. Not your tooling. The fact that peopl
 
 **Anything you build should either deposit into the trust capital account or be funded by withdrawals from it.**
 
-![Trust capital account ledger with green deposit arrows on the left (delivering on time, paying contractors, solving hard problems) and coral withdrawal arrows on the right (shiny ventures, broken word, going dark)](../assets/vietnam/lky-02-trust-capital-account.svg)
+![Trust capital account ledger with green deposit arrows on the left (delivering on time, paying contractors, solving hard problems) and coral withdrawal arrows on the right (shiny ventures, broken word, going dark)](https://assets.han-ws.workers.dev/i/2026/05/lky-02-trust-capital-account.svg)
 
 - **Deposits**: delivering on time, paying contractors on time, taking on hard problems and solving them, being the person who shows up when others don't, publishing your judgment publicly.
 - **Withdrawals**: shiny new ventures that distract you from core obligations, cousin-hires that embarrass you, missed payroll, broken promises, going dark on slow weeks, chasing prestige over depth.
@@ -68,7 +68,7 @@ For anything you're considering, ask: will I care that I did this in 2055? If yo
 
 Plot any new opportunity on these two axes. The lower-left is where time goes to die.
 
-![Two by two opportunity matrix with defensibility on vertical axis and personal fit on horizontal. Top-right gold mine in teal, top-left stranger's game in amber, bottom-right expensive hobby in purple, bottom-left race to the bottom in coral](../assets/vietnam/lky-03-opportunity-matrix.svg)
+![Two by two opportunity matrix with defensibility on vertical axis and personal fit on horizontal. Top-right gold mine in teal, top-left stranger's game in amber, bottom-right expensive hobby in purple, bottom-left race to the bottom in coral](https://assets.han-ws.workers.dev/i/2026/05/lky-03-opportunity-matrix.svg)
 
 - **Gold mine** (top-right, defensible + right for you): build aggressively. Diaspora bridge services, family wealth IP, specialized firm version of your core, long-hold real estate.
 - **Stranger's game** (top-left, defensible but wrong for you): skip or invest passively. Deep-tech research, biotech/hardware, B2G defense work.
@@ -96,7 +96,7 @@ The single most predictive question is #5 (the 2055 question). If you fail that 
 
 Most ideas should die in the filter. If 80% of ideas survive, the filter is broken.
 
-![Vertical opportunity filtering funnel with many ideas entering at top, narrowing through five sequential filter questions in amber, with only one or two surviving to the green build zone at the bottom](../assets/vietnam/lky-04-opportunity-funnel.svg)
+![Vertical opportunity filtering funnel with many ideas entering at top, narrowing through five sequential filter questions in amber, with only one or two surviving to the green build zone at the bottom](https://assets.han-ws.workers.dev/i/2026/05/lky-04-opportunity-funnel.svg)
 
 ## The do and don't list
 
@@ -149,7 +149,7 @@ When evaluating any niche, score on six dimensions (0-4 each). Below 18/24 means
 
 This is the hardest visual to look at. Most ambitious founders accumulate too many simultaneous bets. Each is individually good. The set is too wide.
 
-![Top panel shows ten small scattered purple dots labeled with various projects representing scattered current attention. Bottom panel shows three large concentrated teal circles labeled core firm, family IP, and wealth stack representing the focused future state](../assets/vietnam/lky-05-portfolio-scatter-vs-focus.svg)
+![Top panel shows ten small scattered purple dots labeled with various projects representing scattered current attention. Bottom panel shows three large concentrated teal circles labeled core firm, family IP, and wealth stack representing the focused future state](https://assets.han-ws.workers.dev/i/2026/05/lky-05-portfolio-scatter-vs-focus.svg)
 
 LKY's lesson, applied to someone in early consolidation phase: **concentration beats portfolio**. Singapore's success was not optionality. It was a 30-year bet on a single positioning. You have the talent to compound in many categories. You will not have the years to compound in all of them.
 
@@ -163,7 +163,7 @@ You have limited additional swings. The opportunity cost of saying yes to the wr
 
 ## The one rule that overrides all others
 
-![Single large teal card asking the question 'Will I be proud of this in 2055?' with the subtitle that if you have to convince yourself, the answer is no](../assets/vietnam/lky-06-the-2055-question.svg)
+![Single large teal card asking the question 'Will I be proud of this in 2055?' with the subtitle that if you have to convince yourself, the answer is no](https://assets.han-ws.workers.dev/i/2026/05/lky-06-the-2055-question.svg)
 
 If you have to convince yourself, the answer is no. If you don't hesitate, build it. Everything else is noise.
 
