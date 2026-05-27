@@ -67,3 +67,11 @@ Transcripts auto-delete after `cleanupPeriodDays` (default 30) at startup. `clau
 ## Bottom line
 
 Do not micromanage the list. The design assumes many sessions. Spend effort on two habits: name jobs at dispatch so the list is greppable, and push work out of worktrees before deleting. Everything else auto-handles. The only time to actively clean is when `.claude/worktrees/` grows large, since orphaned worktrees are what actually accumulate.
+
+## Related
+
+- [[claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage]] - the surfaces this session list shows up on
+- [[claude-code-hook-lifecycle-and-event-system]] - how hooks fire across the session stages this note walks through
+- [[compaction-defense-patterns-for-claude-code-sessions]] - companion long-session-management technique
+- [[commands-vs-hooks-vs-skills-decision-framework]] - choosing the right primitive when configuring a background-session workflow
+- [[claude-integration-with-jupyter-notebooks]] - Jupyter-side workflow that pairs with managing Claude Code background sessions

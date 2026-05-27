@@ -7,7 +7,7 @@ source: "Claude.ai chat"
 ---
 ## When to use
 
-You want Claude or Claude Code to help with notebook work — refactoring, exploration, debugging, conversion to scripts. There are three real ways to wire them together in 2026, each best for different things.
+You want Claude or Claude Code to help with notebook work: refactoring, exploration, debugging, conversion to scripts. There are three real ways to wire them together in 2026, each best for different things.
 
 ![Three ways to use Claude with Jupyter](https://assets.han-ws.workers.dev/i/2026/05/jupyter-claude-integration.svg)
 
@@ -41,8 +41,8 @@ Refactor this cell to use polars instead of pandas.
 ```
 
 Commands:
-- `/generate` — creates a whole notebook from a prompt
-- `/learn` — builds a local FAISS vector index from your files for RAG-style querying
+- `/generate`: creates a whole notebook from a prompt
+- `/learn`: builds a local FAISS vector index from your files for RAG-style querying
 
 ### notebook-intelligence (NBI, third-party, more capable)
 
@@ -120,4 +120,12 @@ Skip Option B unless you specifically want chat-in-the-Lab-UI as a working mode.
 
 ## Key takeaway
 
-The capability hierarchy is: edit-only (A) → chat-in-UI (B) → full kernel control (C). Option C is what turns Claude into a real notebook agent that can hit errors, install packages, re-run, and self-correct. The `CLAUDE.md` rules are not optional — without them Claude will make stateful mistakes that look fine in the file but break on Restart & Run All.
+The capability hierarchy is: edit-only (A) → chat-in-UI (B) → full kernel control (C). Option C is what turns Claude into a real notebook agent that can hit errors, install packages, re-run, and self-correct. The `CLAUDE.md` rules are not optional. Without them Claude will make stateful mistakes that look fine in the file but break on Restart & Run All.
+
+## Related
+
+- [[jupyter-architecture-kernel-server-frontend]] - the three processes each integration option plugs into
+- [[jupyter-usage-patterns-and-friction-points]] - the friction points Claude can solve (refactor, narrative) or amplify (hidden state)
+- [[notebook-landscape-2026-jupyter-alternatives-and-competitors]] - Marimo's plain-`.py` format is dramatically easier for Claude than `.ipynb` JSON
+- [[managing-claude-codes-agent-view-background-sessions]] - companion workflow note for managing the Claude side of the loop
+- [[commands-vs-hooks-vs-skills-decision-framework]] - how to wire Claude Code into a project, applied to notebook contexts

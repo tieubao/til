@@ -146,3 +146,13 @@ LKY's most useful sentence: *"How often can we produce a Bill Gates? We are 3 mi
 The Vietnamese version of this: build something that works, that's yours, that compounds, that doesn't depend on hype cycles. Don't measure yourself against TechCrunch headlines. Measure yourself against whether your company will exist and matter in 10 years.
 
 That's a higher bar than most Vietnamese founders set for themselves. It's also the only bar LKY would respect.
+
+## Related
+
+- [[lky-on-why-singapore-can-never-build-a-google-vietnam-comparison]] - the diagnostic foundation these prescriptions sit on
+- [[lky-operating-system-how-to-pick-what-to-work-on]] - what comes after the first 10 years
+- [[the-capital-portfolio-framework-beyond-money]] - the capital theory behind "build trust capital, keep your word"
+- [[vietnamese-diaspora-synthesis]] - the diaspora context Vietnamese founders need to position against
+- [[be-dispassionate-about-software-careers]] - companion advice on detaching identity from the founder narrative
+- [[always-be-quitting]] - the optionality stance LKY's "default no" prescription extends
+- [[munger-operating-system]] - parallel framework on default-no and concentrated bets

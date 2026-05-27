@@ -6,16 +6,16 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
-- `2026-05-17` [Why Quantum Computing Talks About Decision Problems](notes/quantum/why-quantum-computing-talks-about-decision-problems.md) - Decision problems are the assembly language of complexity theory; YES/NO falls out of the Born rule; apples-to-apples quantum-vs-classical comparison requires shared output shape
-- `2026-05-17` [History and motivation of major quantum algorithms](notes/quantum/history-and-motivation-of-major-quantum-algorithms.md) - Shor / Grover / HHL / VQE-QAOA as a story of outsiders importing intuition from other fields; speedup requires structure; HHL dequantization shows caveats are the whole story
-- `2026-05-17` [State preparation is half the quantum algorithm](notes/quantum/state-preparation-is-half-the-quantum-algorithm.md) - Every algorithm has three stages; preparation is where exponential speedup claims die; the headlines focus on operations, the engineering reality lives in encoding
-- `2026-05-17` [Quantum superposition state and QFT for beginners](notes/quantum/quantum-superposition-state-and-qft-for-beginners.md) - Quantum speedup is not "try all options in parallel"; it's interference canceling wrong answers; QFT is the engine inside Shor that extracts hidden periods
-- `2026-05-17` [Complexity classes P NP BQP QMA explained](notes/quantum/complexity-classes-p-np-bqp-qma-explained.md) - Classical P/NP hierarchy extended with BQP and QMA; Shor lands factoring in BQP, P vs NP and BQP ⊆ NP both open; RSA's safety rests on empirical P ≠ NP
-- `2026-05-17` [What polynomial time actually means](notes/quantum/what-polynomial-time-actually-means.md) - Polynomial = highest exponent is a fixed constant; n^10 is polynomial, 2^n is not; the threshold complexity theory draws between tractable and intractable
-- `2026-05-17` [Vietnamese terminology for quantum computing](notes/quantum/vietnamese-terminology-for-quantum-computing.md) - Working glossary: chồng chập for superposition, vướng víu vs rối for entanglement, when to keep English (algorithm names, acronyms)
-- `2026-05-17` [Monomial polynomial term Vietnamese terminology breakdown](notes/math/monomial-polynomial-term-vietnamese-terminology-breakdown.md) - `thức` in `đơn thức` is NOT `công thức`; etymology of `-nomial` from Latin `nomen`; Ising Hamiltonians as degree-2 polynomials in Pauli operators
-- `2026-05-15` [iCloud Advanced Data Protection: coverage, exclusions, and recovery model](notes/security/macos-icloud-advanced-data-protection-coverage-and-recovery.md) - ADP extends E2EE to almost everything in iCloud, but Mail/Contacts/Calendar stay Apple-readable forever; three-axis decision (coverage, recovery, operations) instead of one binary switch
-- `2026-05-09` [Hermes Agent v0.13.0 release evaluation: top features ranked for 3-tier ecosystem](notes/ai-tooling/hermes-agent-v0-13-0-release-evaluation-top-features-ranked-for-3-tier-ecosystem.md) - Selective adoption verdict; CLONE Kanban + cron no_agent, ADOPT /goal + session resume, STUDY security wave; skip i18n / Google Chat / video tool hype
+- `2026-05-26` [LKY operating system: how to pick what to work on](notes/vietnam/lky-operating-system-how-to-pick-what-to-work-on.md) - Mid-career operating system applied to Vietnamese founder: six mental models, eight-question filter, concentration over portfolio; the 2055 question overrides everything
+- `2026-05-26` [The capital portfolio framework: beyond money](notes/vietnam/the-capital-portfolio-framework-beyond-money.md) - Seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality); time is the only irreplaceable input; mid-career work is mostly withdrawal-prevention
+- `2026-05-26` [The Greek prefix para- means beside](notes/etymology/the-greek-prefix-para-means-beside.md) - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block; "beside what?" unlocks paramedic / paranormal / paradox / parasite
+- `2026-05-25` [LKY on why Singapore can never build a Google: Vietnam comparison](notes/vietnam/lky-on-why-singapore-can-never-build-a-google-vietnam-comparison.md) - LKY's five constraints (size, brain drain, Confucian culture, comfort, takeovers); Vietnam inverts market size and risk culture, mirrors brain drain and scholar pull, lacks rule of law and capital
+- `2026-05-25` [What young Vietnamese entrepreneurs should learn from LKY](notes/vietnam/what-young-vietnamese-entrepreneurs-should-learn-from-lky.md) - LKY-flavored founder advice for VN 20s-30s; drop the billion-dollar framing, pick a defensible niche, Singapore as legal venue, plan for acquisition exit
+- `2026-05-24` [Managing Claude Code's agent view (background sessions)](notes/claude-code/managing-claude-codes-agent-view-background-sessions.md) - TUI lifecycle, 30-day retention, the worktree-delete gotcha; do not micromanage, name jobs at dispatch and sweep orphaned worktrees
+- `2026-05-23` [Da Nang's historical names: Tourane and Dogpatch](notes/history/da-nangs-historical-names-tourane-and-dogpatch.md) - Two outsider names, neither used by locals; Tourane was the French transliteration of Cửa Hàn, Dogpatch was GI slang from Al Capp's Li'l Abner
+- `2026-05-18` [Claude integration with Jupyter notebooks](notes/jupyter/claude-integration-with-jupyter-notebooks.md) - Three integration paths (NotebookEdit / jupyter-ai or NBI / Jupyter MCP); MCP turns Claude into a real notebook agent that can hit errors, install packages, and re-run
+- `2026-05-18` [Notebook landscape 2026: Jupyter alternatives and competitors](notes/jupyter/notebook-landscape-2026-jupyter-alternatives-and-competitors.md) - Three camps (Jupyter family, commercial cloud, post-Jupyter reactive); Marimo is the post-Jupyter answer worth migrating to for new work
+- `2026-05-18` [Jupyter architecture: kernel, server, frontend](notes/jupyter/jupyter-architecture-kernel-server-frontend.md) - Three processes (frontend/server/kernel) over HTTP+WebSocket and ZeroMQ; kernel state plus arbitrary cell order is Jupyter's reproducibility footgun
 
 ## How it works
 
@@ -88,6 +88,9 @@ Full reference: [commands cheatsheet in the usage guide](_docs/guide.md#commands
 | [decentralized/](notes/decentralized/) | Decentralized git collaboration, p2p protocols |
 | [math/](notes/math/) | Math vocabulary and notation, Vietnamese-English mapping for QC and comp-fin |
 | [quantum/](notes/quantum/) | Quantum computing fundamentals: complexity classes, algorithms, state preparation, Vietnamese terms |
+| [jupyter/](notes/jupyter/) | Jupyter architecture, usage patterns, Claude integration paths, post-Jupyter reactive notebooks |
+| [vietnam/](notes/vietnam/) | LKY framework applied to Vietnamese founders and operators; capital portfolio across seven forms |
+| [etymology/](notes/etymology/) | Word origins and prefix decompositions |
 | [youtube/](notes/youtube/) | YouTube tooling |
 | [zed/](notes/zed/) | Zed editor agent rules and configuration |
 

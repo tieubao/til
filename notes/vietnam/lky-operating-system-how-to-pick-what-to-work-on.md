@@ -176,3 +176,13 @@ LKY built a country with this framework. You will build a family enterprise. The
 ## Key takeaway
 
 The version of you in 2055 is the audience for every decision you make now. He is not asking what you achieved. He is asking what you stayed faithful to.
+
+## Related
+
+- [[lky-on-why-singapore-can-never-build-a-google-vietnam-comparison]] - the LKY framework this operating system is derived from
+- [[what-young-vietnamese-entrepreneurs-should-learn-from-lky]] - the early-career companion to this mid-career playbook
+- [[the-capital-portfolio-framework-beyond-money]] - explicit vocabulary for the "trust capital" and "time capital" this OS protects
+- [[munger-operating-system]] - sister framework: default no, concentration, multi-decade horizons
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the specific diaspora-bridge bet the OS surfaces
+- [[compound-interest-levels-and-lifestyle-progression]] - the compounding mechanics behind the staircase-vs-wheel test
+- [[time-is-the-only-real-currency]] - the time-capital axis as the irreplaceable input

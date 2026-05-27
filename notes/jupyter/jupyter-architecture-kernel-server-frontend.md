@@ -17,7 +17,7 @@ Jupyter is not one program. It's three processes talking to each other over a ne
 
 **Jupyter Server (Python process on your machine).** Serves the frontend, manages files on disk, and starts/stops kernels. This is what `jupyter notebook` or `jupyter lab` actually launches.
 
-**Kernel (separate process per notebook).** The thing that actually executes your code. For Python it's `ipykernel`. There are kernels for R, Julia, Rust, Go, Bash — roughly 100 languages. The kernel is language-specific. The server is language-agnostic.
+**Kernel (separate process per notebook).** The thing that actually executes your code. For Python it's `ipykernel`. There are kernels for R, Julia, Rust, Go, Bash, roughly 100 languages. The kernel is language-specific. The server is language-agnostic.
 
 ## Wire protocol
 
@@ -150,3 +150,9 @@ The **Extension Manager** in Lab's sidebar (puzzle-piece icon) is a GUI for brow
 ## Key takeaway
 
 Frontend, server, kernel are three independent processes. The kernel-server split (using ZeroMQ) is what enables remote kernels, Docker kernels, and alternate frontends. The kernel's stateful namespace combined with arbitrary cell execution order is the root cause of Jupyter's reproducibility problem.
+
+## Related
+
+- [[jupyter-usage-patterns-and-friction-points]] - the hidden-state problem flowing from this kernel design, plus the team patterns that work around it
+- [[notebook-landscape-2026-jupyter-alternatives-and-competitors]] - the reactive notebook camp's case that the kernel-state model itself needs replacing
+- [[claude-integration-with-jupyter-notebooks]] - the three integration options Claude exposes, mapped onto this architecture

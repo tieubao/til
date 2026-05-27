@@ -1,6 +1,6 @@
 # Index
 
-> Full catalog of all notes, grouped by folder. Last updated: 2026-05-17
+> Full catalog of all notes, grouped by folder. Last updated: 2026-05-27
 
 ## ai
 
@@ -55,6 +55,7 @@
 - [Claude Code surfaces - CLI vs web vs desktop and resource usage](notes/claude-code/claude-code-surfaces-cli-vs-web-vs-desktop-and-resource-usage.md) - Four surfaces, three runtimes; desktop Electron costs ~2x RAM and runs hot, CLI + web is the leaner pattern
 - [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md) - If skipping it causes irreversible damage, use a hook; if output degrades, use a skill
 - [Compaction defense patterns for Claude Code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md) - Two-layer defense: PreCompact backup + post-compaction re-injection of critical rules
+- [Managing Claude Code's agent view (background sessions)](notes/claude-code/managing-claude-codes-agent-view-background-sessions.md) - TUI lifecycle, 30-day retention, the worktree-delete gotcha; do not micromanage, name jobs and sweep orphaned worktrees
 
 ## coding-agents
 
@@ -259,6 +260,10 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [Wisdom of programming quotes](notes/engineering/principles/wisdom-of-programming-quotes.md) - Henrik Warne's curated quotes on complexity, debugging, teams, and the nature of programming
 - [The Zen of Python](notes/engineering/principles/zen-of-python.md) - PEP 20: beautiful over ugly, explicit over implicit, simple over complex, readability counts
 
+## etymology
+
+- [The Greek prefix para- means beside](notes/etymology/the-greek-prefix-para-means-beside.md) - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block
+
 ## finance
 
 - [Financial knowledge as compound information advantage](notes/finance/financial-knowledge-as-compound-information-advantage.md) - Bille Finance narrative: information compounds like capital; the gap between Tier 1 and Tier 2 is learnable
@@ -300,6 +305,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 ## history
 
 - [China as a civilization state, not a nation state](notes/history/china-as-a-civilization-state-not-a-nation-state.md) - China is a 2,000-year civilization wearing nation-state clothing; continuity and order trump liberty
+- [Da Nang's historical names: Tourane and Dogpatch](notes/history/da-nangs-historical-names-tourane-and-dogpatch.md) - Two outsider names; Tourane (French transliteration of Cửa Hàn) and Dogpatch (GI slang from Li'l Abner), neither used by locals
 - [Imperial examinations: how China replaced religion with meritocracy](notes/history/imperial-examinations-how-china-replaced-religion-with-meritocracy.md) - 1,300-year exam system created cultural unity and loyal bureaucracy without a holy book
 - [Israel, Palestine va Jerusalem](notes/history/israel-palestine-va-jerusalem.md) - History of the Israel-Palestine conflict from shared Abrahamic origins to modern territorial disputes
 - [Predictive history and the ambition of psycho-history](notes/history/predictive-history-and-the-ambition-of-psycho-history.md) - Prof Jiang aims to build Asimov's psycho-history: connect past, explain present, predict future
@@ -310,6 +316,13 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 - [Compound interest levels and lifestyle progression](notes/investing/compound-interest-levels-and-lifestyle-progression.md) - Six wealth levels from $200/mo saver to $200M foundation; instruments change at each threshold
 - [How and why I invest in startups](notes/investing/how-and-why-i-invest-in-startups.md) - Fund the best people on the hardest problems; measure both LP returns and happiness
+
+## jupyter
+
+- [Claude integration with Jupyter notebooks](notes/jupyter/claude-integration-with-jupyter-notebooks.md) - Three integration paths (NotebookEdit / jupyter-ai or NBI / Jupyter MCP); MCP is the agentic answer
+- [Jupyter architecture: kernel, server, frontend](notes/jupyter/jupyter-architecture-kernel-server-frontend.md) - Three processes (frontend/server/kernel) over HTTP+WebSocket and ZeroMQ; kernel state plus arbitrary cell order is Jupyter's reproducibility footgun
+- [Jupyter usage patterns and friction points](notes/jupyter/jupyter-usage-patterns-and-friction-points.md) - Six personas, one shared workflow, four mature team patterns; hidden state and unreadable diffs drive people out
+- [Notebook landscape 2026: Jupyter alternatives and competitors](notes/jupyter/notebook-landscape-2026-jupyter-alternatives-and-competitors.md) - Three camps (Jupyter family, commercial cloud, reactive); Marimo is the post-Jupyter answer worth migrating to
 
 ## leadership
 
@@ -428,6 +441,13 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [Anatomy of software frauds](notes/startup/anatomy-of-software-frauds.md) - Three-layer fraud architecture: unlimited scapegoats, sales-driven culture, deceptive founding
 - [Tap trung vao san pham](notes/startup/tap-trung-vao-san-pham.md) - When product is broken, sales and marketing accelerate failure; fix the product first
 - [Tesla and GM - founders vs professional managers](notes/startup/tesla-gm-founders-vs-managers.md) - Steve Blank parallels Musk/Durant (visionary founders) vs Sloan (professional management)
+
+## vietnam
+
+- [The capital portfolio framework: beyond money](notes/vietnam/the-capital-portfolio-framework-beyond-money.md) - Seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality); time is the only irreplaceable input
+- [LKY on why Singapore can never build a Google: Vietnam comparison](notes/vietnam/lky-on-why-singapore-can-never-build-a-google-vietnam-comparison.md) - LKY's five constraints (size, brain drain, Confucian culture, comfort, takeovers); Vietnam inverts market size and risk culture, mirrors brain drain and scholar pull
+- [LKY operating system: how to pick what to work on](notes/vietnam/lky-operating-system-how-to-pick-what-to-work-on.md) - Mid-career operating system: six mental models, eight-question filter, concentration over portfolio; 2055 question overrides everything
+- [What young Vietnamese entrepreneurs should learn from LKY](notes/vietnam/what-young-vietnamese-entrepreneurs-should-learn-from-lky.md) - LKY-flavored founder advice for VN 20s-30s; drop billion-dollar framing, build defensible niches, Singapore as legal venue, plan for acquisition exit
 
 ## wealth
 

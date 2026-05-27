@@ -1,5 +1,5 @@
 ---
-title: "Da Nang's historical names — Tourane and Dogpatch"
+title: "Da Nang's historical names: Tourane and Dogpatch"
 date: 2026-05-23
 captured: 2026-05-23T10:13:34.710Z
 tags: ["vietnam", "da-nang", "etymology"]
@@ -15,18 +15,18 @@ Da Nang has been called several different names by outsiders. Two stick in popul
 
 **Timeline:**
 
-- **September 1858** — A Franco-Spanish invasion force under Admiral Rigault de Genouilly landed and captured the port. French officials began calling it Tourane immediately.
-- **October 1887** — French Indochina formally established (Union de l'Indochine Française).
-- **1889** — The French colonial administration formally renamed the city Tourane and placed it under direct authority of the Governor General of Indochina. It became one of Indochina's five major cities alongside Hanoi, Saigon–Cholon, Haiphong, and Huế.
-- **1945** — The name fell out of use with the end of the colonial period.
+- **September 1858**: A Franco-Spanish invasion force under Admiral Rigault de Genouilly landed and captured the port. French officials began calling it Tourane immediately.
+- **October 1887**: French Indochina formally established (Union de l'Indochine Française).
+- **1889**: The French colonial administration formally renamed the city Tourane and placed it under direct authority of the Governor General of Indochina. It became one of Indochina's five major cities alongside Hanoi, Saigon–Cholon, Haiphong, and Huế.
+- **1945**: The name fell out of use with the end of the colonial period.
 
 **Who used it:** Mainly the French and Vietnamese officials working under colonial administration. The local population continued to use *Da Nang* and *Cửa Hàn* throughout the entire period.
 
 ## Dogpatch (American GI slang, ~1965–1973)
 
-This one is pure American pop culture. "Dogpatch" comes from **Li'l Abner**, Al Capp's satirical comic strip that ran from 1934 to 1977. The strip was set in a fictional impoverished hillbilly mountain village called Dogpatch, populated by lazy and ramshackle characters in log cabin hovels. At its peak, Li'l Abner had 60 million readers across 900+ American newspapers — every GI grew up reading it. "Dogpatch" became instant shorthand for any poor, backwater, ramshackle place.
+This one is pure American pop culture. "Dogpatch" comes from **Li'l Abner**, Al Capp's satirical comic strip that ran from 1934 to 1977. The strip was set in a fictional impoverished hillbilly mountain village called Dogpatch, populated by lazy and ramshackle characters in log cabin hovels. At its peak, Li'l Abner had 60 million readers across 900+ American newspapers; every GI grew up reading it. "Dogpatch" became instant shorthand for any poor, backwater, ramshackle place.
 
-GIs applied the nickname specifically to a shantytown that sprang up next to **Da Nang Air Base**. Marine memoirs describe it as a small village at a crossroads due east of the airport, near Hill 327 and Camp Hoover. Another vet describes it more bluntly as "an artificial suburb created by the U.S. military on the outskirts of the true Da Nang City" — the kind of place that grew up around any large American base: bars, brothels, black-market stalls, laundry shacks, vendors selling to GIs on liberty.
+GIs applied the nickname specifically to a shantytown that sprang up next to **Da Nang Air Base**. Marine memoirs describe it as a small village at a crossroads due east of the airport, near Hill 327 and Camp Hoover. Another vet describes it more bluntly as "an artificial suburb created by the U.S. military on the outskirts of the true Da Nang City", the kind of place that grew up around any large American base: bars, brothels, black-market stalls, laundry shacks, vendors selling to GIs on liberty.
 
 **Lifespan:** ~1965 (US ground combat troops arrive at Da Nang) to 1973 (US withdrawal). The name survives only in veterans' memoirs and oral histories. Locals never used it, and it never appeared on any official map.
 
@@ -44,3 +44,10 @@ Both names share the same structure: outsiders renaming the place rather than le
 | Survives in | Old maps, French archives, history books | Vietnam War memoirs, oral history |
 
 The French at least tried to transliterate the actual Vietnamese name, even if the result was distorted. The Americans skipped that step entirely and reached for a comic strip.
+
+## Related
+
+- [[the-greek-prefix-para-means-beside]] - companion language note on how words migrate across languages, transliterations included
+- [[sinicization-how-china-absorbs-its-conquerors]] - parallel "outsiders renaming" pattern at civilizational scale, with the opposite outcome (assimilation rather than imposed name)
+- [[china-as-a-civilization-state-not-a-nation-state]] - how naming and identity work in a civilization that absorbs rather than relabels
+- [[vietnamese-diaspora-synthesis]] - the Vietnam-from-outside lens this place-naming history sits inside

@@ -80,3 +80,5 @@ Building the bridge early preserves the option to cross in either direction. Don
 - [[why-little-saigons-hollow-out-the-success-driven-exit-problem]] - the "escape through education" trap that the bridge-builder model aims to replace
 - [[compound-interest-levels-and-lifestyle-progression]] - the financial compounding logic that applies to institutional knowledge transfer across generations
 - [[enterprise-trust-ladder-vendor-to-strategic-partner]] - trust-building progression that mirrors how bridge-builders earn credibility on both sides
+- [[lky-operating-system-how-to-pick-what-to-work-on]] - mid-career operating system explicitly identifying the diaspora-bridge as the highest-fit niche
+- [[the-capital-portfolio-framework-beyond-money]] - capital-form vocabulary for what the bridge-builder actually accumulates and transfers

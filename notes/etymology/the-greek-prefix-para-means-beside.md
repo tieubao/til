@@ -19,9 +19,9 @@ The "beside what?" question unlocks most of these:
 
 | Word | Construction | Literal meaning |
 |------|--------------|-----------------|
-| **paragraph** | para + graphē (writing) | "written beside" — originally a margin stroke, not the text block |
+| **paragraph** | para + graphē (writing) | "written beside"; originally a margin stroke, not the text block |
 | **parallel** | para + allēlois (one another) | "beside one another" |
-| **parasite** | para + sitos (food/grain) | "beside the food" — one who eats at another's table |
+| **parasite** | para + sitos (food/grain) | "beside the food"; one who eats at another's table |
 | **paramedic** | para + medic | beside/auxiliary to a medic, not the main one |
 | **paranormal** | para + normal | beside/beyond the normal |
 | **paradox** | para + doxa (opinion) | beside/contrary to opinion |
@@ -41,3 +41,8 @@ When you see `para-`, ask: **"beside what?"** The answer almost always unlocks t
 ## Footnote on "graph"
 
 `graph` on its own does not etymologically mean "diagram." It comes from Greek **graphē** meaning "writing" or "drawing," from the verb *graphein* (to write, to scratch, to draw). The "chart/diagram" sense is a much later English specialization. So *paragraph* is "beside the writing," which fits the marginal-stroke origin exactly. If you carry "graph = diagram" into the etymology, the word stops making sense.
+
+## Related
+
+- [[da-nangs-historical-names-tourane-and-dogpatch]] - another note about how names migrate through languages, with Tourane as transliteration of Cửa Hàn
+- [[monomial-polynomial-term-vietnamese-terminology-breakdown]] - companion etymology piece on `-nomial` from Latin `nomen`, and how Vietnamese coinages map Greek/Latin roots

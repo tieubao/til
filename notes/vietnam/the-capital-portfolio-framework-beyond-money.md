@@ -12,7 +12,7 @@ source: "Claude.ai chat session synthesizing Bourdieu's forms of capital with Ta
 The expansion of "capital" beyond financial capital traces back to a specific intellectual lineage. Pierre Bourdieu's 1986 essay "The Forms of Capital" is the foundational work. He argued that money isn't the only thing that compounds and gets inherited. **Three other forms of capital exist that are just as real, just as transferable, and often more determinative of outcomes than money itself.**
 
 Bourdieu identified:
-- **Economic capital** (money, assets, financial wealth — the conventional form)
+- **Economic capital** (money, assets, financial wealth; the conventional form)
 - **Cultural capital** (knowledge, taste, education, credentials)
 - **Social capital** (networks, relationships, trust, who you know)
 - **Symbolic capital** (reputation, prestige, honor, recognition)
@@ -35,7 +35,7 @@ Coleman's framing: trust is a form of social capital that reduces transaction co
 
 **Key property:** trust capital takes years to build and minutes to destroy. The asymmetry is brutal. A client who's worked with you for 5 years has accumulated substantial trust. One missed delivery commitment can destroy a meaningful chunk of it. The compounding is real but the fragility is also real.
 
-For a mid-career operator: ten years of delivery is trust capital. A team's tenure is trust capital. A spouse's belief that you'll execute the strategy you describe is trust capital. **Strategic pivots succeed or fail based on whether trust capital survives the transition.** Off-thesis revenue temptation isn't just about money — it's about whether the team and market still trust you to mean what you say.
+For a mid-career operator: ten years of delivery is trust capital. A team's tenure is trust capital. A spouse's belief that you'll execute the strategy you describe is trust capital. **Strategic pivots succeed or fail based on whether trust capital survives the transition.** Off-thesis revenue temptation isn't just about money; it's about whether the team and market still trust you to mean what you say.
 
 ### 3. Time capital
 
@@ -94,7 +94,7 @@ This is the part most people miss. The seven capital forms aren't independent. T
 
 **The middle row (knowledge, trust, network) is where most active investment goes.** This is the layer controlled through daily and weekly choices. Writing builds knowledge capital, delivering builds trust capital, outreach builds network capital.
 
-**The third row (symbolic, economic, optionality) is mostly downstream.** Economic capital isn't directly built — it accumulates from the middle row paying off. Symbolic capital isn't directly built — it emerges from publishing the work. Optionality is the meta-result of having all the others in good standing.
+**The third row (symbolic, economic, optionality) is mostly downstream.** Economic capital isn't directly built; it accumulates from the middle row paying off. Symbolic capital isn't directly built; it emerges from publishing the work. Optionality is the meta-result of having all the others in good standing.
 
 ## The Conversion Rates and Friction
 
@@ -181,8 +181,18 @@ Of everything in this note, the single most important takeaway is this:
 
 **You're not building wealth. You're building capital portfolios across multiple forms, with time capital as the irreplaceable input.**
 
-The LKY framework, the three-pillar model, the strategic pivots, the visibility plan — all of these are mechanisms for converting time capital into compounding portfolios of trust, knowledge, network, symbolic, economic, and optionality capital.
+The LKY framework, the three-pillar model, the strategic pivots, the visibility plan, all of these are mechanisms for converting time capital into compounding portfolios of trust, knowledge, network, symbolic, economic, and optionality capital.
 
 **Wealth is what gets measured. Capital portfolios are what actually exist.** The tycoon who has $500M but no symbolic capital, no integrated knowledge, no successor with capability, and no optionality outside his business is poor in a way that doesn't show on a balance sheet. The operator who has $10M in assets, deep trust capital, a recognized intellectual position, robust network, full optionality, and a child being deliberately prepared for stewardship is wealthy in ways that compound for 50+ years.
 
 The capital framework gives explicit vocabulary to manage that compounding.
+
+## Related
+
+- [[lky-operating-system-how-to-pick-what-to-work-on]] - direct application of the seven capital forms to mid-career decisions
+- [[lky-on-why-singapore-can-never-build-a-google-vietnam-comparison]] - LKY's diagnosis read through the capital-form lens
+- [[what-young-vietnamese-entrepreneurs-should-learn-from-lky]] - capital-portfolio framing for early-career founders
+- [[time-is-the-only-real-currency]] - the time-capital primacy this framework restates
+- [[compound-interest-levels-and-lifestyle-progression]] - financial-capital compounding mechanics, one dimension of the portfolio
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the bridge thesis as a capital-conversion strategy
+- [[how-and-why-i-invest-in-startups]] - capital allocation under uncertainty, applied to a single capital form

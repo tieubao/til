@@ -115,3 +115,7 @@ The open question: what would the modern institutional equivalent of the kongsi 
 - [[the-three-gates-what-elders-screen-for]] - community gatekeeping patterns relevant to institutional entry
 - [[china-as-a-civilization-state-not-a-nation-state]] - the civilizational continuity that gives Chinese diaspora its institutional depth
 - [[sinicization-how-china-absorbs-its-conquerors]] - how Chinese cultural persistence works at civilizational scale
+- [[lky-on-why-singapore-can-never-build-a-google-vietnam-comparison]] - LKY's structural diagnosis applied to Vietnam, supplies the homeland-side analysis this synthesis pairs with
+- [[what-young-vietnamese-entrepreneurs-should-learn-from-lky]] - founder-level prescription drawing from LKY for Vietnamese entrepreneurs at home or in the diaspora
+- [[lky-operating-system-how-to-pick-what-to-work-on]] - mid-career operator framework that explicitly surfaces the diaspora-bridge bet
+- [[the-capital-portfolio-framework-beyond-money]] - seven-capital theory clarifying what diaspora institutions must transfer beyond money

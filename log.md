@@ -6,6 +6,52 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-05-27] ingest | 11 notes across 3 new folders (jupyter, vietnam, etymology), plus quantum glossary expansion
+
+Eleven notes pushed via Claude.ai between 2026-05-18 and 2026-05-26 had accumulated on `master` without compilation. Pulled, stripped em dashes, added `## Related` sections to all 11, added reciprocal backlinks on 2 existing diaspora notes, built three new index sections, and rebuilt `Recent additions` around the new batch. The quantum glossary edit is a separate working-tree change, committed alongside but not part of this batch.
+
+**Notes compiled, by cluster:**
+
+*Jupyter cluster (4 notes, all in new `notes/jupyter/`, dated 2026-05-18, sourced as "Claude.ai chat"):*
+- `jupyter-architecture-kernel-server-frontend.md` - three independent processes (frontend, server, kernel) over HTTP+WebSocket and ZeroMQ; the stateful kernel namespace combined with arbitrary cell execution order is the root cause of Jupyter's reproducibility problem
+- `jupyter-usage-patterns-and-friction-points.md` - six personas, one shared "load then mess around" workflow, four mature team patterns (script-from-notebook, papermill, scheduled `nbconvert`, restart-and-run-all)
+- `claude-integration-with-jupyter-notebooks.md` - three integration paths (built-in `NotebookEdit`, jupyter-ai or NBI extensions, Jupyter MCP server); MCP is the agentic answer, the in-repo `CLAUDE.md` rules are load-bearing
+- `notebook-landscape-2026-jupyter-alternatives-and-competitors.md` - three camps (Jupyter family, commercial cloud, post-Jupyter reactive); Marimo is the credible structural answer to the kernel-state problem
+
+*Vietnam/LKY cluster (4 notes, all in new `notes/vietnam/`, dated 2026-05-25 to 2026-05-26):*
+- `lky-on-why-singapore-can-never-build-a-google-vietnam-comparison.md` - the analytical foundation: LKY's five constraints (size, brain drain, Confucian culture, comfort, takeovers) read against Vietnam, which inverts market size and risk culture while mirroring brain drain and scholar pull. Sourced from a Borderless Asia YouTube video.
+- `what-young-vietnamese-entrepreneurs-should-learn-from-lky.md` - founder-level prescription for VN 20s-30s; defensible niches over billion-dollar framing, Singapore as legal venue, plan for acquisition exit
+- `lky-operating-system-how-to-pick-what-to-work-on.md` - mid-career operating system: six mental models (compounding moat, acquisition trap, trust capital, "I am the bottleneck" test, diaspora bridge, the 30-year question), eight-question filter, concentration over portfolio
+- `the-capital-portfolio-framework-beyond-money.md` - theoretical layer: seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality) from Bourdieu + Taleb; time is the only irreplaceable input, mid-career work is dominated by withdrawal-prevention
+
+*Singletons (3 notes):*
+- `notes/claude-code/managing-claude-codes-agent-view-background-sessions.md` (2026-05-24, "Claude Code session") - the `claude agents` TUI: four-stage lifecycle, on-disk paths, 30-day auto-purge, the `Ctrl+X Ctrl+X` worktree-delete gotcha, and the discipline that the design assumes many sessions so name jobs and sweep orphaned worktrees rather than micromanage the list
+- `notes/history/da-nangs-historical-names-tourane-and-dogpatch.md` (2026-05-23, "Claude.ai chat") - two outsider names neither used by locals; Tourane as French transliteration of Cửa Hàn (backed by 1650 de Rhodes maps), Dogpatch as 1965-1973 GI slang from Al Capp's Li'l Abner comic strip
+- `notes/etymology/the-greek-prefix-para-means-beside.md` (2026-05-26, "Claude.ai chat") - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block; "graph = writing", not "graph = diagram"
+
+**Structural fixes:**
+
+- **Em dashes stripped (25 across 6 files).** Title field in the da-nang note had `—` in the YAML title (`"Da Nang's historical names — Tourane and Dogpatch"`); replaced with `:` so it renders cleanly in Obsidian. The other 24 em dashes were in tables, bullet lists, and parenthetical asides across `jupyter/jupyter-architecture` (1), `jupyter/claude-integration` (4), `jupyter/notebook-landscape` (7), `vietnam/the-capital-portfolio` (4), `history/da-nang` (7 including the title and date bullets), `etymology/the-greek-prefix-para` (2). All replaced with `:`, `;`, `,`, or sentence split per local grammar. Same hard repo rule that bit the 2026-05-04 batch and the 2026-05-17 quantum batch; this is now a stable pattern of Claude.ai pushes arriving with em dashes that the local compilation has to strip.
+- **`## Related` sections added (all 11 notes).** None of the 11 arrived with a Related section. Built tight internal networks inside the two clusters (jupyter's four notes link three-or-four siblings each; the vietnam/LKY cluster links all four siblings on each node) plus cross-cluster bridges: jupyter -> claude-code (`managing-claude-codes-agent-view-background-sessions`, `commands-vs-hooks-vs-skills-decision-framework`); vietnam -> diaspora (`vietnamese-diaspora-synthesis`, `the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati`, `vietnamese-vs-chinese-diaspora-a-structural-analysis-of-divergent-outcomes`), life (`munger-operating-system`, `time-is-the-only-real-currency`, `always-be-quitting`, `be-dispassionate-about-software-careers`), leadership (`lam-an-kieu-cu-ho`), investing (`compound-interest-levels-and-lifestyle-progression`, `how-and-why-i-invest-in-startups`); etymology -> history (`da-nangs-historical-names-tourane-and-dogpatch`) and math (`monomial-polynomial-term-vietnamese-terminology-breakdown`); history/da-nang -> etymology and to `sinicization-how-china-absorbs-its-conquerors`, `china-as-a-civilization-state-not-a-nation-state` (parallel "outsiders renaming" pattern at civilizational scale).
+- **Reciprocal backlinks (2 existing notes).** Added LKY cluster links to `notes/diaspora/vietnamese-diaspora-synthesis.md` (the synthesis is the main bridge between homeland-side LKY analysis and diaspora-side analysis; all four new vietnam notes link in, so the synthesis links back) and to `notes/diaspora/the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati.md` (the diaspora-bridge thesis the LKY operating-system note explicitly elevates to the highest-fit niche).
+- **Quantum glossary expansion (separate commit, not part of this batch).** `notes/quantum/vietnamese-terminology-for-quantum-computing.md` had a working-tree edit adding 19 entries (Bell states, Bell basis, ebit, non-local correlation, Born rule, amplitude interference, phase flip, reflection/rotation/self-inverse/anticommute as quantum gate categories, CCNOT/Toffoli, Fredkin/CSWAP, Pauli matrices as observables, Bell-state measurement, Bell test, CHSH inequality, Tsirelson bound, loophole-free Bell test, DiVincenzo criteria), an `updated:` frontmatter field, and a pointer-section to the private symbol-pronunciation guide. Committed alongside but as its own `learned:` commit because it predates this compilation and stands on its own.
+
+**Orphan SVGs (flag, no action):** Three zedra SVGs landed in `assets/p2p/` via 2026-05-23/24 commits (`zedra-topology-and-trust.svg`, `zedra-connection-lifecycle.svg`, `zedra-first-pairing-crypto.svg`) but no zedra note exists yet to reference them. Likely the accompanying note (or notes) for a Zedra architecture writeup that hasn't been pushed. Left in place per the no-delete rule; flagged here so the next ingest pass can wire them up if the note arrives.
+
+**New folders (3):** `notes/jupyter/`, `notes/vietnam/`, `notes/etymology/`. All three added to `index.md` (jupyter between investing and leadership; vietnam between startup and wealth; etymology between engineering/principles and finance) and to `README.md` Topics table. `notes/p2p/` is NOT a new folder despite the new SVG path; `assets/p2p/` is asset-side only and the existing `notes/decentralized/` already covers peer-to-peer git work via the radicle note.
+
+**README:** Bumped `Recent additions` to the 10 newest entries (3 dated 2026-05-26, 2 dated 2026-05-25, 1 each on 2026-05-24 and 2026-05-23, 3 jupyter notes from 2026-05-18). Dropped `jupyter-usage-patterns-and-friction-points` from `Recent additions` to hold the line at 10 (it stays in the index.md `jupyter` section). Pre-2026-05-18 entries all fell off; the 2026-05-17 quantum cluster is one full compilation cycle old.
+
+**Index:** Bumped `Last updated` to 2026-05-27.
+
+**Synthesis page candidates (flag for next conversation):**
+- *jupyter cluster (4 notes).* A worthwhile synthesis would weave the cluster around the load-bearing claim that Jupyter's hidden-state model is the architecture's original sin: it surfaces in personas as a friction map, in Claude integration as the reason `CLAUDE.md` rules are not optional, and in the landscape as the structural opening Marimo is reaching for. Defer until user confirms the thesis.
+- *vietnam/LKY cluster (4 notes).* A worthwhile synthesis would weave the cluster around the load-bearing claim that LKY's "build defensible niches" prescription, applied to Vietnam, converges with the diaspora-bridge thesis from the existing diaspora cluster. The capital-portfolio note supplies the theoretical vocabulary, the lky-singapore note supplies the diagnostic, the operating-system note supplies the personal-allocation framework, and the young-vietnamese note supplies the early-career prescription. Cross-cluster synthesis between `notes/vietnam/` and `notes/diaspora/` is the bigger potential move once the user is ready; defer to that conversation.
+
+**Provenance:** Of the 11 new notes, 9 are sourced as "Claude.ai chat" (including 4 dated 2026-05-26 that explicitly cite synthesis work, signaling longer multi-session iteration on LKY + capital theory), 1 from a YouTube video transcription, 1 from a Claude Code session (the agent-view note, which is operational and dogfooded). All 11 lacked Related sections at write time and 6 carried em dashes; consistent pattern with prior Claude.ai-pushed batches that bypass the local Claude Code compilation step.
+
+---
+
 ## [2026-05-17] ingest | 8-note quantum-computing cluster, plus folder consolidation and README restore
 
 Eight new notes pushed via Claude.ai over 2026-05-17, all part of the quantum-computing study track Han is building (CLIMB framework Classify phase). Compiled in one batch.

@@ -64,3 +64,9 @@ Before committing, run `Kernel → Restart & Run All` and verify the notebook ex
 ## Key takeaway
 
 Notebooks are fantastic for exploration and terrible for production. The mature pattern is: explore in notebook, refactor into modules, run via papermill or schedulers, enforce restart-and-run-all in code review. If you can't enforce that discipline, the notebook is a write-only scratchpad.
+
+## Related
+
+- [[jupyter-architecture-kernel-server-frontend]] - kernel-server split that makes hidden state possible
+- [[notebook-landscape-2026-jupyter-alternatives-and-competitors]] - Marimo and the reactive camp as a structural fix for hidden state
+- [[claude-integration-with-jupyter-notebooks]] - restart-and-run-all is the same discipline a Claude-driven notebook needs

@@ -41,7 +41,7 @@ These are real products with real prices. Pricing as of 2026:
 
 **Hex vs Deepnote vs Databricks:**
 - Deepnote and Hex are Jupyter-compatible (upload `.ipynb`, just works)
-- Databricks is its own thing — the notebook is incidental, you're buying the lakehouse
+- Databricks is its own thing: the notebook is incidental, you're buying the lakehouse
 - Colab is the viral default, useful for free GPU but not really collaboration-focused
 
 ## Camp 3: Post-Jupyter reactive notebooks
@@ -50,12 +50,12 @@ The thesis: Jupyter's hidden state problem isn't fixable. You need a new executi
 
 ### Marimo (the one to actually watch)
 
-- **`.py` file format** — readable git diffs, no merge hell on JSON
-- **Reactive execution** — change a cell, dependent cells re-run or are flagged stale. The "I changed x but forgot to re-run cell 7" bug is gone by construction.
-- **No duplicate variables** — Marimo forbids defining the same variable in two cells. Catches a class of bugs but breaks plenty of Jupyter habits.
-- **Native interactive widgets** — sliders, dropdowns, tables, no callbacks
-- **Deployable as web apps** — `marimo run notebook.py` serves it like Streamlit
-- **AI-native** — explicitly designed for Claude Code to work on. Plain Python is dramatically easier for AI agents than `.ipynb` JSON.
+- **`.py` file format**: readable git diffs, no merge hell on JSON
+- **Reactive execution**: change a cell, dependent cells re-run or are flagged stale. The "I changed x but forgot to re-run cell 7" bug is gone by construction.
+- **No duplicate variables**: Marimo forbids defining the same variable in two cells. Catches a class of bugs but breaks plenty of Jupyter habits.
+- **Native interactive widgets**: sliders, dropdowns, tables, no callbacks
+- **Deployable as web apps**: `marimo run notebook.py` serves it like Streamlit
+- **AI-native**: explicitly designed for Claude Code to work on. Plain Python is dramatically easier for AI agents than `.ipynb` JSON.
 
 **Honest critique of Marimo:**
 - No-redefinition rule will trip you up at first
@@ -90,3 +90,9 @@ For a Claude Code + Mac Mini homelab + CLI-comfortable solo operator:
 ## Key takeaway
 
 Jupyter won the last decade on inertia and ecosystem, not technical merit. The reactive notebook camp (Marimo most credibly) has the better technical answer. Path of least resistance is still Jupyter. Path of least future regret is probably Marimo for new work.
+
+## Related
+
+- [[jupyter-architecture-kernel-server-frontend]] - architectural baseline the alternatives are reacting against
+- [[jupyter-usage-patterns-and-friction-points]] - the friction reactive notebooks aim to fix
+- [[claude-integration-with-jupyter-notebooks]] - integration story shifts dramatically between `.ipynb` JSON and Marimo's `.py`

@@ -143,3 +143,12 @@ For Vietnam, the equivalent question is not "where is our Google" but where is o
 ## Key takeaway
 
 Singapore's playbook is not Vietnam's playbook. Vietnam has the population scale Singapore lacks but lacks the institutional bedrock Singapore built. The honest strategic position for Vietnam is: use Singapore as legal venue, build niches that exploit Vietnam's domestic depth and cost structure, expect acquisition rather than IPO-led independence, and accept that "next Google" framing is the wrong target. The right target is durable mid-cap companies that survive the global takeover machine LKY described.
+
+## Related
+
+- [[what-young-vietnamese-entrepreneurs-should-learn-from-lky]] - founder-level prescriptions from this diagnosis
+- [[lky-operating-system-how-to-pick-what-to-work-on]] - mid-career application of the same framework
+- [[the-capital-portfolio-framework-beyond-money]] - the seven-capital theory underpinning LKY's "build defensible niches"
+- [[vietnamese-diaspora-synthesis]] - the structural Vietnam analysis these prescriptions plug into
+- [[the-bridge-builder-model-highest-value-position-for-the-next-vietnamese-generati]] - the diaspora-bridge thesis these notes converge with
+- [[lam-an-kieu-cu-ho]] - the Vietnamese family-business mode LKY's framework critiques and extends
