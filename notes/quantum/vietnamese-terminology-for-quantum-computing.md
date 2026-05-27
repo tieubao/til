@@ -132,7 +132,7 @@ A working glossary for quantum computing terms in Vietnamese. Most specialized l
 
 ## Symbol pronunciation (Greek, ket/bra, operators)
 
-This note covers term translations (English ↔ Vietnamese). For **how to pronounce** individual math symbols out loud (ψ as "pờ-sai", ⊗ as "ten-sơ", † as "đa-gơ", $\ket{\Phi^+}$ as "kết phi-cộng", etc.), see the symbol pronunciation guide in the working track (`learning/quantum-computing/docs/references/notation-pronunciation.md` in the private ops-toolkit repo).
+This note covers term translations (English ↔ Vietnamese). For **how to pronounce** individual math symbols out loud (ψ as "pờ-sai", ⊗ as "ten-sơ", † as "đa-gơ", $\ket{\Phi^+}$ as "kết phi-cộng", etc.), see the symbol pronunciation guide in the private working-track companion.
 
 ## Related
 
