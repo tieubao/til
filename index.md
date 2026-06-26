@@ -35,6 +35,7 @@
 - [OpenClaw multi-persona dev team setup playbook](notes/ai-tooling/openclaw-multi-persona-dev-team-setup-playbook.md) - End-to-end JSON5 config + SOUL/AGENTS/TOOLS files for a Telegram-led PM/Engineer/QA team
 - [OpenClaw virtual company pattern](notes/ai-tooling/openclaw-virtual-company-pattern.md) - "CEO/CTO/PM" multi-agent idiom is a convention, not a feature; six failure modes most writeups skip
 - [Prompt improvement as a learning technique](notes/ai-tooling/prompt-improvement-as-a-learning-technique.md) - Sharpening vague prompts into structured ones is a thinking tool, not just better answers
+- [Secret resolution for pi agent providers via 1Password op read](notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md) - `!op read` and `$ENV_VAR` keep provider API keys out of plaintext `auth.json`/`models.json`; service-account auth makes it headless
 - [Tool evaluation 5-question rubric](notes/ai-tooling/tool-evaluation-5-question-rubric.md) - 5 questions in 10 min; the kill question: what past failure would this have prevented?
 - [Why developers migrate to Hermes, ranked real vs hype](notes/ai-tooling/why-developers-migrate-to-hermes-ranked-real-vs-hype.md) - Push factor (OpenClaw CVEs + subscription cliff) beats pull factor; steal the auto-skill pattern
 

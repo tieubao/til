@@ -767,3 +767,9 @@ Triaged 100 GitHub issues with `better dev` label. Result: 44 body-ingest, 31 ur
 **Dead URLs (skipped):** #285 (pragprog 404), #284 (framer blog removed), #272 (SSL error), #263 (SE blocked), #212 (rosettacode 403), #206 (Google Docs JS), #200 (DNS gone)
 
 Wiki: 91 -> 168 notes. Synthesis page: engineering/ now has 64 notes, sub-cluster synthesis recommended (code quality, career growth, language philosophy, system design).
+
+## [2026-06-26] ingest | Secret resolution for pi agent providers via 1Password op read
+
+Added to `ai-tooling/`. Documents the `!op read` command-execution and `$ENV_VAR` interpolation forms pi accepts in `auth.json`/`models.json` so provider API keys never sit as plaintext on disk, plus the service-account (`OP_SERVICE_ACCOUNT_TOKEN`) prerequisite for headless resolution. Includes the failure mode the indirection prevents (file-read and inline-probe leaks into transcripts) and the `/v1/models` discovery pattern for populating a custom OpenAI-compatible provider's model list. Triggered by an ops-toolkit session that exposed this exact leak.
+
+Updated links on: [[age-and-1password-complementary-encryption-tiers]] (reciprocal backlink added, credential-tier downstream use). Backlinks to [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] and [[ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint]] added one-direction from the new note. Synthesis page: none (cluster under threshold).
