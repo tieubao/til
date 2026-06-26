@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-06-26` [Secret resolution for pi agent providers via 1Password op read](notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md) - `!op read` and `$ENV_VAR` keep provider API keys out of plaintext `auth.json`/`models.json`; service-account auth makes the resolution headless and transcript-safe
 - `2026-05-26` [LKY operating system: how to pick what to work on](notes/vietnam/lky-operating-system-how-to-pick-what-to-work-on.md) - Mid-career operating system applied to Vietnamese founder: six mental models, eight-question filter, concentration over portfolio; the 2055 question overrides everything
 - `2026-05-26` [The capital portfolio framework: beyond money](notes/vietnam/the-capital-portfolio-framework-beyond-money.md) - Seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality); time is the only irreplaceable input; mid-career work is mostly withdrawal-prevention
 - `2026-05-26` [The Greek prefix para- means beside](notes/etymology/the-greek-prefix-para-means-beside.md) - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block; "beside what?" unlocks paramedic / paranormal / paradox / parasite
