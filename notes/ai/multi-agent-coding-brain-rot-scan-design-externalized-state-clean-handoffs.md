@@ -91,3 +91,4 @@ Scan design. Externalized state. Clean handoffs that let your brain let go. That
 - [[why-knowledge-notes-need-context-not-just-facts]] - externalized state for agents mirrors the principle that knowledge needs context to be useful
 - [[openclaw-virtual-company-pattern]] - the "watching agents chat" failure mode this framework prevents
 - [[openclaw-multi-persona-dev-team-setup-playbook]] - concrete multi-agent setup where these scan/handoff disciplines matter
+- [[finding-your-unknowns-agentic-coding]] - deviation logging and clean handoffs are the same externalized-state discipline applied to the operator's unknowns

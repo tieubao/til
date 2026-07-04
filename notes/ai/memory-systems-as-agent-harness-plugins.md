@@ -111,3 +111,4 @@ OpenClaw is the dominant harness (9k to 157k GitHub stars in 60 days as of early
 - [[llm-memory-systems-three-competitive-battlegrounds]] - the technical competition driving these plugin implementations
 - [[claude-code-hook-lifecycle-and-event-system]] - Claude Code's hook system follows the same lifecycle pattern (before/after events) described here
 - [[dwarves-kit-design-philosophy-and-architecture]] - dwarves-kit's hook architecture that this note explicitly connects to ("same architecture as dwarves-kit's hook system")
+- [[scaling-the-harness-six-components]] - the full six-component harness decomposition this note's M component belongs to; the before/after-turn hooks are how M plugs into the O loop

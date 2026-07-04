@@ -81,3 +81,4 @@ For system comparison: be skeptical of any single-benchmark claims. Look for pap
 - [[llm-agent-memory-systems-landscape-2026]] - the production systems and research systems whose benchmark claims this note scrutinizes
 - [[llm-memory-systems-three-competitive-battlegrounds]] - the retrieval strategy battleground where latency vs accuracy numbers from benchmarks actually matter
 - [[tool-evaluation-5-question-rubric]] - a practical evaluation framework that sidesteps benchmark gaming by asking "what failure would this have prevented?"
+- [[scaling-the-harness-six-components]] - the harness paper's longitudinal evaluation agenda (memory hygiene, retrieval precision) targets exactly this benchmark gap
