@@ -6,6 +6,7 @@
 
 - [Claude dispatch workflows and async AI orchestration from mobile](notes/ai/claude-dispatch-workflows-and-async-ai-orchestration-from-mobile.md) - Orchestrate 60+ parallel AI sessions from your phone; knowledge layer compounds across surfaces
 - [Complete guide to Claude Code features workflows and ecosystem](notes/ai/complete-guide-to-claude-code-features-workflows-and-ecosystem.md) - Practitioner's guide: agentic loop, CLAUDE.md under 200 lines, Sonnet for 90% of tasks
+- [Finding your unknowns: the bottleneck in agentic coding](notes/ai/finding-your-unknowns-agentic-coding.md) - Quality is bottlenecked by how fast the operator clarifies unknowns; a 2x2 with a distinct technique per quadrant (blindspot pass, interview, prototype-and-react)
 - [Grand unified theory of the AI hype cycle](notes/ai/grand-unified-theory-of-ai-hype-cycle.md) - Seven decades of AI hype follow the same arc: novel mechanism gets labeled AI, boom, bust, rename
 - [How LLM agents do web research: the ReAct loop](notes/ai/how-llm-agents-do-web-research-the-react-loop.md) - Agent research is a ReAct loop, not an algorithm; biggest failure is over-weighting official sources
 - [LLM agent memory synthesis April 2026](notes/ai/llm-agent-memory-synthesis-april-2026.md) - Synthesis: 5-stage pipeline + 3 battlegrounds + harness hooks form one stack with a broken evaluation floor
@@ -14,6 +15,7 @@
 - [LLM memory systems three competitive battlegrounds](notes/ai/llm-memory-systems-three-competitive-battlegrounds.md) - Write/update loop absorbs 80% of innovation; all systems delegate conflict resolution to LLMs
 - [Memory systems as agent harness plugins](notes/ai/memory-systems-as-agent-harness-plugins.md) - Memory integrates via two lifecycle hooks: before-turn recall, after-turn capture
 - [Multi-agent coding brain rot scan design](notes/ai/multi-agent-coding-brain-rot-scan-design-externalized-state-clean-handoffs.md) - Fighter pilot scan patterns fix the brain rot of running 5+ AI agents in parallel
+- [Scaling the harness: six components of an agentic system](notes/ai/scaling-the-harness-six-components.md) - P = f(R,M,C,S,O,G); three named failure modes (exposure-without-access, stale-but-confident, confident-but-unchecked) and the process-metrics evaluation agenda
 - [Transformer internals for software engineers, FFN as graph database (LARQL)](notes/ai/transformer-internals-for-software-engineers-ffn-as-graph-database-larql.md) - FFN as sparse KNN lookup over ~348K "edges"; graph-DB reframe makes factual knowledge editable without retraining
 - [TurboQuant KV cache compression](notes/ai/turboquant-kv-cache-compression.md) - Random rotation + two-stage quantizer cuts KV cache to 3-4 bits with unbiased inner products; ICLR 2026
 

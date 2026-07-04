@@ -6,6 +6,8 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-07-04` [Scaling the harness: six components of an agentic system](notes/ai/scaling-the-harness-six-components.md) - P = f(R,M,C,S,O,G); three named failure modes (exposure-without-access, stale-but-confident, confident-but-unchecked) and the process-metrics evaluation agenda
+- `2026-07-04` [Finding your unknowns: the bottleneck in agentic coding](notes/ai/finding-your-unknowns-agentic-coding.md) - Quality is bottlenecked by how fast the operator clarifies unknowns; a 2x2 with a distinct technique per quadrant (blindspot pass, interview, prototype-and-react)
 - `2026-06-26` [Secret resolution for pi agent providers via 1Password op read](notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md) - `!op read` and `$ENV_VAR` keep provider API keys out of plaintext `auth.json`/`models.json`; service-account auth makes the resolution headless and transcript-safe
 - `2026-05-26` [LKY operating system: how to pick what to work on](notes/vietnam/lky-operating-system-how-to-pick-what-to-work-on.md) - Mid-career operating system applied to Vietnamese founder: six mental models, eight-question filter, concentration over portfolio; the 2055 question overrides everything
 - `2026-05-26` [The capital portfolio framework: beyond money](notes/vietnam/the-capital-portfolio-framework-beyond-money.md) - Seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality); time is the only irreplaceable input; mid-career work is mostly withdrawal-prevention
@@ -14,9 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-05-25` [What young Vietnamese entrepreneurs should learn from LKY](notes/vietnam/what-young-vietnamese-entrepreneurs-should-learn-from-lky.md) - LKY-flavored founder advice for VN 20s-30s; drop the billion-dollar framing, pick a defensible niche, Singapore as legal venue, plan for acquisition exit
 - `2026-05-24` [Managing Claude Code's agent view (background sessions)](notes/claude-code/managing-claude-codes-agent-view-background-sessions.md) - TUI lifecycle, 30-day retention, the worktree-delete gotcha; do not micromanage, name jobs at dispatch and sweep orphaned worktrees
 - `2026-05-23` [Da Nang's historical names: Tourane and Dogpatch](notes/history/da-nangs-historical-names-tourane-and-dogpatch.md) - Two outsider names, neither used by locals; Tourane was the French transliteration of Cửa Hàn, Dogpatch was GI slang from Al Capp's Li'l Abner
-- `2026-05-18` [Claude integration with Jupyter notebooks](notes/jupyter/claude-integration-with-jupyter-notebooks.md) - Three integration paths (NotebookEdit / jupyter-ai or NBI / Jupyter MCP); MCP turns Claude into a real notebook agent that can hit errors, install packages, and re-run
-- `2026-05-18` [Notebook landscape 2026: Jupyter alternatives and competitors](notes/jupyter/notebook-landscape-2026-jupyter-alternatives-and-competitors.md) - Three camps (Jupyter family, commercial cloud, post-Jupyter reactive); Marimo is the post-Jupyter answer worth migrating to for new work
-- `2026-05-18` [Jupyter architecture: kernel, server, frontend](notes/jupyter/jupyter-architecture-kernel-server-frontend.md) - Three processes (frontend/server/kernel) over HTTP+WebSocket and ZeroMQ; kernel state plus arbitrary cell order is Jupyter's reproducibility footgun
 
 ## How it works
 
