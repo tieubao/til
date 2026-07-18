@@ -6,6 +6,8 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-07-18` [macOS LaunchAgent/LaunchDaemon authoring for a BTM-friendly identity](notes/macos/macos-launchagent-launchdaemon-btm-friendly-plists.md) - `ProgramArguments[0]` must be the launcher's own path, no `.sh` extension on the entry point, `#!/bin/bash` not `env bash` so TCC grants survive a bash upgrade
+- `2026-07-18` [1Password backup pattern for Apple developer signing certs](notes/macos/1password-backup-pattern-for-apple-dev-certs.md) - Split a codesigning `.p12` + its passphrase into two tagged 1Password items (Document + Password) so a lost keychain doesn't lose the cert; restore flow and the `security export -t identities` scoping caveat
 - `2026-07-04` [Scaling the harness: six components of an agentic system](notes/ai/scaling-the-harness-six-components.md) - P = f(R,M,C,S,O,G); three named failure modes (exposure-without-access, stale-but-confident, confident-but-unchecked) and the process-metrics evaluation agenda
 - `2026-07-04` [Finding your unknowns: the bottleneck in agentic coding](notes/ai/finding-your-unknowns-agentic-coding.md) - Quality is bottlenecked by how fast the operator clarifies unknowns; a 2x2 with a distinct technique per quadrant (blindspot pass, interview, prototype-and-react)
 - `2026-06-26` [Secret resolution for pi agent providers via 1Password op read](notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md) - `!op read` and `$ENV_VAR` keep provider API keys out of plaintext `auth.json`/`models.json`; service-account auth makes the resolution headless and transcript-safe
@@ -14,8 +16,6 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 - `2026-05-26` [The Greek prefix para- means beside](notes/etymology/the-greek-prefix-para-means-beside.md) - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block; "beside what?" unlocks paramedic / paranormal / paradox / parasite
 - `2026-05-25` [LKY on why Singapore can never build a Google: Vietnam comparison](notes/vietnam/lky-on-why-singapore-can-never-build-a-google-vietnam-comparison.md) - LKY's five constraints (size, brain drain, Confucian culture, comfort, takeovers); Vietnam inverts market size and risk culture, mirrors brain drain and scholar pull, lacks rule of law and capital
 - `2026-05-25` [What young Vietnamese entrepreneurs should learn from LKY](notes/vietnam/what-young-vietnamese-entrepreneurs-should-learn-from-lky.md) - LKY-flavored founder advice for VN 20s-30s; drop the billion-dollar framing, pick a defensible niche, Singapore as legal venue, plan for acquisition exit
-- `2026-05-24` [Managing Claude Code's agent view (background sessions)](notes/claude-code/managing-claude-codes-agent-view-background-sessions.md) - TUI lifecycle, 30-day retention, the worktree-delete gotcha; do not micromanage, name jobs at dispatch and sweep orphaned worktrees
-- `2026-05-23` [Da Nang's historical names: Tourane and Dogpatch](notes/history/da-nangs-historical-names-tourane-and-dogpatch.md) - Two outsider names, neither used by locals; Tourane was the French transliteration of Cửa Hàn, Dogpatch was GI slang from Al Capp's Li'l Abner
 
 ## How it works
 
