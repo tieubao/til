@@ -383,9 +383,11 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 ## macos
 
+- [1Password backup pattern for Apple developer signing certs](notes/macos/1password-backup-pattern-for-apple-dev-certs.md) - Split a codesigning `.p12` + its passphrase into two tagged 1Password items (Document + Password) so a lost keychain doesn't lose the cert; restore flow and the `security export -t identities` scoping caveat
 - [Apple Containers: the macOS-native microVM runtime](notes/macos/apple-containers-overview-the-macos-native-microvm-runtime.md) - `apple/container` runs each container as its own Linux VM via the Apple Virtualization framework; OCI-compatible, macOS 26+ Apple Silicon only, what AWS Lambda would look like on a Mac
 - [Firecracker microVMs do not run on macOS](notes/macos/firecracker-microvms-do-not-run-on-macos.md) - Firecracker requires Linux + KVM; reach for Apple Containers on Apple Silicon instead, otherwise you stack two layers of virtualization and pay the cost up front
 - [macOS Input Method Kit (IMK) architecture and lifecycle](notes/macos/macos-input-method-kit-imk-architecture-and-lifecycle.md) - Out-of-process IM model, Mach IPC keystroke routing, IMKInputController lifecycle, and why Secure Input breaks every IME
+- [macOS LaunchAgent/LaunchDaemon authoring for a BTM-friendly identity](notes/macos/macos-launchagent-launchdaemon-btm-friendly-plists.md) - `ProgramArguments[0]` must be the launcher's own path, no `.sh` extension on the entry point, `#!/bin/bash` not `env bash` so TCC grants survive a bash upgrade
 - [macOS multi-user cost myth: it's the GUI session that's heavy, not the user](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md) - 161 system service users coexist on one laptop for ~935 MB; multi-user GUI is heavy, multi-user services is essentially free, daemon-per-UID beats containers for mutually-trusted tenants
 
 ## math
