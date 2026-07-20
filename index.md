@@ -414,6 +414,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 - [Pattern - Backends for Frontends (BFF)](notes/patterns/backend-for-frontend-pattern.md) - Dedicated backend per client type; avoids API bloat from serving diverse frontends
 - [Redundant API pre-checks in wrapper functions](notes/patterns/redundant-api-pre-checks-in-wrapper-functions.md) - Wrapper checks file existence, then library re-checks internally; doubled API calls
+- [Scope-boundary bugs, when the gate guards the wrong set](notes/patterns/scope-boundary-bugs.md) - A dedup, permission record, conformance gate, or metrics ledger consults a set that does not match the invariant's set; every error direction looks like a good outcome
 
 ## philosophy
 
