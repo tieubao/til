@@ -783,3 +783,9 @@ Added `macos/macos-launchagent-launchdaemon-btm-friendly-plists.md` (the three B
 Added to `patterns/`. Distilled from four independent defects found across unrelated projects in one week and paid down together as deferred understanding debt: a dedup anchored to one surface out of many (measured 23% precision, the loss traced to visibility scope rather than model hallucination), a permission log keyed globally instead of per-project, a quality gate that recorded nothing and so could not be evaluated, and a connection fast path that consulted "am I connected" instead of "connected to what was asked for". The unifying claim: the bug is never in the answer, it is in the set the code consults, and every direction of the error (too narrow, too wide, empty) is disguised as a good outcome, which is why all four passed review. Includes the two-set check that catches them pre-ship.
 
 Privacy strip applied: internal repo names, PR numbers, agent-profile containment details, and board IDs removed; the private full version with all sources stays in ops-toolkit research. No synthesis page (cluster under threshold). Related link added to [[redundant-api-pre-checks-in-wrapper-functions]].
+
+## [2026-09-03] ingest | Sandboxed agent git checkout: bundle hand-back
+
+Added to `security/`. Distilled from a design review of a VM boundary for a headless coding agent: bind-mounting a checkout read-write makes `.git` agent-controlled, and every host-side git command on that directory becomes a host code-execution path (config keys, attribute filters, a gitfile redirect, `gh` target resolution). The note records the structural fix (bundle out, fsck fetch into a host-owned clone, PR target from a pre-session value) and the scan channels that come with it.
+
+Privacy strip applied: host names, tool names, spec and board IDs, and the private runner's file paths removed; the full design with its review fold map stays in ops-toolkit. `index.md` updated under `security`.
