@@ -789,3 +789,9 @@ Privacy strip applied: internal repo names, PR numbers, agent-profile containmen
 Added to `security/`. Distilled from a design review of a VM boundary for a headless coding agent: bind-mounting a checkout read-write makes `.git` agent-controlled, and every host-side git command on that directory becomes a host code-execution path (config keys, attribute filters, a gitfile redirect, `gh` target resolution). The note records the structural fix (bundle out, fsck fetch into a host-owned clone, PR target from a pre-session value) and the scan channels that come with it.
 
 Privacy strip applied: host names, tool names, spec and board IDs, and the private runner's file paths removed; the full design with its review fold map stays in ops-toolkit. `index.md` updated under `security`.
+
+## [2026-09-09] ingest | Quick Look preview extensions cannot read sibling files
+
+Added to `macos/`. Distilled from a debugging session on a markdown Quick Look extension whose local images all rendered broken: the sandbox extension covers only the previewed file, and a hardening CSP of `default-src 'none'` blocks the `data:` URI workaround, so the two failures look identical and stack into a false "the panel cannot render images" conclusion. The note records the kernel log line that names the denial, the temporary-exception entitlement, the working CSP, and the general lesson that a control run outside the real sandbox proves nothing.
+
+Privacy strip applied: home paths anonymized, no repo or tool internals beyond the extension name. `index.md` updated under `macos`.
