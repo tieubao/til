@@ -170,3 +170,4 @@ second one.
 - [[chezmoi-source-vs-target-two-layer-mental-model]] - chezmoi is the daily consumer of the age identity stewarded by this two-tier pattern
 - [[secret-resolution-for-pi-agent-providers-via-1password-op-read]] - the `!op read` indirection that keeps pi agent provider keys out of plaintext config files, a concrete downstream use of the credential tier
 - [[1password-backup-pattern-for-apple-dev-certs]] - same key-separation principle applied to a codesigning cert: passphrase and `.p12` archive split into two 1Password items so neither alone is useful
+- [[oauth-refresh-token-rotation-one-grant-one-store]] - the same principle broken the other way: copying a single-holder OAuth grant into several stores instead of keeping it separate
