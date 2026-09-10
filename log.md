@@ -6,6 +6,10 @@ For project/structural decisions, see `_docs/changelog.md`.
 
 ---
 
+## [2026-09-10] ingest | OAuth refresh tokens die when a grant is copied into several stores
+
+Added to `notes/security/`. Updated links on: `notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md`, `notes/engineering/architecture/age-and-1password-complementary-encryption-tiers.md`. Also links to `notes/security/rpc-provider-api-keys-leak-through-error-messages.md` (no Related section there yet, one-way link). Synthesis page: none.
+
 ## [2026-05-27] ingest | 11 notes across 3 new folders (jupyter, vietnam, etymology), plus quantum glossary expansion
 
 Eleven notes pushed via Claude.ai between 2026-05-18 and 2026-05-26 had accumulated on `master` without compilation. Pulled, stripped em dashes, added `## Related` sections to all 11, added reciprocal backlinks on 2 existing diaspora notes, built three new index sections, and rebuilt `Recent additions` around the new batch. The quantum glossary edit is a separate working-tree change, committed alongside but not part of this batch.

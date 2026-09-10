@@ -79,3 +79,4 @@ Then map the response into the pi schema fields: `id`, `name`, `reasoning` (caps
 - [[age-and-1password-complementary-encryption-tiers] - the two-tier secret model this pattern lives inside (age for file-level, 1Password for credential-level)
 - [[local-llm-hybrid-stack-ollama-ollama-cloud-openrouter-for-hermes-agent]] - same family of provider config for a different agent
 - [[ollama-cloud-cloud-suffix-hosted-inference-via-local-endpoint]] - companion note on endpoint discovery for custom providers
+- [[oauth-refresh-token-rotation-one-grant-one-store]] - same domain, agent-fleet provider credentials, but the failure mode is a rotating OAuth grant copied into several stores rather than a static key

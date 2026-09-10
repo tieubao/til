@@ -441,6 +441,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 ## security
 
 - [iCloud Advanced Data Protection: coverage, exclusions, and recovery model](notes/security/macos-icloud-advanced-data-protection-coverage-and-recovery.md) - ADP extends E2EE to almost everything in iCloud, but Mail/Contacts/Calendar stay Apple-readable forever; three-axis decision (coverage, recovery, operations)
+- [OAuth refresh tokens die when a grant is copied into several stores](notes/security/oauth-refresh-token-rotation-one-grant-one-store.md) - a rotating refresh token is a single-holder credential; copying one grant into ten agent-profile stores staggered a nine-day die-off as each copy replayed a rotated-away token
 - [Threat-model split: cross-tenant isolation vs per-agent damage containment](notes/security/threat-model-split-cross-tenant-isolation-vs-per-agent-damage-containment.md) - Two threats around AI-agent sandboxing look similar and need different solutions; "isolate from whom?" splits the conflation that produces wrong architectures
 - [A git checkout mounted into an agent sandbox makes .git attacker-controlled; hand commits back as a bundle](notes/security/sandboxed-agent-git-checkout-bundle-handback.md) - Host git on an agent-writable checkout executes agent-chosen config (sshCommand, diff.external, filters, gitfile redirect, gh target); fix is a bundle fetched with fsck into a host-owned clone, never git inside the mount
 
