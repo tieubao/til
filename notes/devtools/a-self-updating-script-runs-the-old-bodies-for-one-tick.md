@@ -29,3 +29,7 @@ Two rules:
 ## Key takeaway
 
 Code that is already parsed does not change when its file does. Split update from verify across two runs.
+
+## Related
+
+- [[checks-that-report-success-while-verifying-nothing]] - the general family: a check written from the same run as the thing it checks tends to agree with it either way

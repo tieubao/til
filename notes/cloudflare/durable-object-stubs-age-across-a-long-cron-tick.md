@@ -28,3 +28,7 @@ The trap is stub age. A tick that obtains one stub at the start and reuses it mi
 ## Key Takeaway
 
 A stub is a connection, not a handle. Reacquire it per call and keep every hop short.
+
+## Related
+
+- [[wrangler-env-flag-deploys-a-second-worker]] - another Workers runtime behaviour that only shows up on the scheduled path, this one at deploy time instead of run time

@@ -98,3 +98,10 @@ The tell is uniform: the assertion's outcome depends on something other than the
 Traps 1 and 2 were caught by negative controls: revert the mechanism, confirm red, restore. Trap 3 was caught by running the real command instead of the convenient one. Trap 4 was caught only when someone who knew the system asked "are you sure?". Trap 5 was caught by an adversarial probe whose only brief was to find an input the tests do not constrain, after coverage and review had both come back green.
 
 The first three are mechanical and a negative control finds all of them. The fourth is not mechanical: the defence is naming the layer your evidence covers, and saying what it is silent about. The fifth needs a different move again, because a negative control written by the same author who wrote the bug tends to inherit its blind spot: someone, or something, has to go looking for the input nobody thought to write a fixture for.
+
+## Related
+
+- [[matrix-context-is-empty-in-a-job-level-if]] - same family, a check that reports a clean result while verifying nothing
+- [[an-escaped-delimiter-is-still-the-delimiter-byte]] - the general form: any delimiter expressible as content needs positional parsing, not a check that assumes the split held
+- [[a-self-updating-script-runs-the-old-bodies-for-one-tick]] - a control written in the same run as the change it checks tends to agree with it either way
+- [[a-prompt-constraint-is-a-request-not-an-enforcement]] - same shape one layer over: a validator is the guarantee only if something other than the producer runs it

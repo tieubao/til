@@ -126,3 +126,5 @@ Scope follows the author's cursor unless someone writes the set down first.
 
 - [[redundant-api-pre-checks-in-wrapper-functions]] - another anti-pattern where the check
   and the thing being checked drift apart
+- [[an-incremental-job-must-record-confirmed-absent]] - one instance: collapsing "absent" into "failed" is the wrong set hiding inside a job's stored results
+- [[an-upstream-identifier-can-be-duplicated]] - another instance: keying dedup on a non-unique upstream number silently collapses the wrong set of records

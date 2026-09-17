@@ -30,3 +30,8 @@ Two compounding faults hid it for a day:
 ## Key Takeaway
 
 Any field that is usually a transaction hash needs a type at the boundary, not a naming convention. When a new producer mints a different shape, every reader that assumed the old shape breaks quietly.
+
+## Related
+
+- [[push-plus-reconcile-beats-polling-an-address-pool]] - the same ledger's other half: a reconcile sweep that must key by transaction hash so a double detection collapses instead of double-crediting
+- [[an-upstream-identifier-can-be-duplicated]] - the opposite failure, a real identifier treated as unique when it is not

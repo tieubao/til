@@ -33,3 +33,7 @@ For "alert me on ERROR-level events from these Workers", polling wins today, for
 3. Push needs its own token scopes (Logpush read and edit, or Observability write). An account token minted for other work will 403 on both `GET /accounts/{id}/logpush/jobs` and the telemetry query endpoint while still passing on unrelated endpoints, which is easy to misread as a dead token.
 
 Revisit push when OTel export documents a severity filter, or when you hold a token with Logpush read and `workers_trace_events` fields confirm a level or outcome field usable in a `filter`. The latency win (minutes instead of a 5 to 15 minute window) is real but rarely what an error-alert flow needs.
+
+## Related
+
+- [[push-plus-reconcile-beats-polling-an-address-pool]] - the same push versus poll tradeoff in a deposit-detection pipeline; there push wins on cost, here polling wins because neither push path speaks the alert format yet

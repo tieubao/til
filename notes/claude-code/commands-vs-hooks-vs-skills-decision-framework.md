@@ -52,3 +52,4 @@ When you need conditional strictness. Example: "block push to main on production
 - [[claude-code-hook-lifecycle-and-event-system]] - detailed reference for hook events and exit code semantics
 - [[dwarves-kit-design-philosophy-and-architecture]] - the "guardrails over guidance" principle that drives hook-vs-CLAUDE.md decisions
 - [[complete-guide-to-claude-code-features-workflows-and-ecosystem]] - broader Claude Code feature landscape including hooks, skills, and commands
+- [[skill-selection-runs-on-the-description-text-alone]] - the routing mechanic behind the skills leg of this framework: only the description text is read when a skill competes with a command
