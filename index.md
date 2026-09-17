@@ -21,6 +21,7 @@
 
 ## ai-tooling
 
+- [A prompt constraint is a request, not an enforcement](notes/ai-tooling/a-prompt-constraint-is-a-request-not-an-enforcement.md) - A rule in the prompt sets a probability; only a validator on the output sets a floor, with a bounded retry that names the failure
 - [AI dev stack 8-layer model with tool evaluations](notes/ai-tooling/ai-dev-stack-8-layer-model-with-tool-evaluations-march-2026.md) - 8-layer stack model with SDD framework comparisons, tool scores, and 6-phase workflow
 - [AI tooling stack synthesis April 2026](notes/ai-tooling/ai-tooling-stack-synthesis-april-2026.md) - Synthesis: 3 layers wired through one rubric; growth and adoption-readiness are inversely correlated
 - [AutoResearch: the Karpathy loop pattern](notes/ai-tooling/autoresearch-the-karpathy-loop-pattern.md) - Three-file contract (goal + artifact + frozen eval) ratchets quality via automated experiments
@@ -46,9 +47,17 @@
 - [agentkernel --no-network, --dir, --secret-file silently no-op on Apple Containers](notes/agentkernel/agentkernel-broken-flags-on-apple-containers.md) - Three documented isolation flags accept input and have zero effect on v0.16.0/v0.18.1 with Apple Containers backend; default isolation still works
 - [agentkernel plugin install defaults to CWD, not user-global](notes/agentkernel/agentkernel-plugin-install-defaults-to-cwd-not-user-global.md) - First-time gotcha: `plugin install claude` writes `.claude/` and `.mcp.json` into your repo unless you pass `--global`
 
+## browser-automation
+
+- [A scripted click carries no user activation](notes/browser-automation/a-scripted-click-carries-no-user-activation.md) - `element.click()` over CDP fires the handler but carries no transient user activation, so `window.open` and similar gated calls fail silently; dispatch at the input layer with coordinates instead
+
 ## career
 
 - [How to win at office politics (BusinessCringe)](notes/career/how-to-win-at-office-politics-businesscringe.md) - The invisible scoreboard runs on perception, not performance; can't opt out, three offensive tactics to defend against, three defensive plays to run
+
+## ci
+
+- [Matrix context is empty in a job-level if](notes/ci/matrix-context-is-empty-in-a-job-level-if.md) - A job-level `if:` runs before the matrix expands, so `matrix.*` is always false there and never filters a leg; select the matrix itself instead
 
 ## claude-code
 
@@ -59,6 +68,11 @@
 - [Commands vs hooks vs skills decision framework](notes/claude-code/commands-vs-hooks-vs-skills-decision-framework.md) - If skipping it causes irreversible damage, use a hook; if output degrades, use a skill
 - [Compaction defense patterns for Claude Code sessions](notes/claude-code/compaction-defense-patterns-for-claude-code-sessions.md) - Two-layer defense: PreCompact backup + post-compaction re-injection of critical rules
 - [Managing Claude Code's agent view (background sessions)](notes/claude-code/managing-claude-codes-agent-view-background-sessions.md) - TUI lifecycle, 30-day retention, the worktree-delete gotcha; do not micromanage, name jobs and sweep orphaned worktrees
+- [Skill selection runs on the description text alone](notes/claude-code/skill-selection-runs-on-the-description-text-alone.md) - Only the description text is read when a skill competes with a command; write it as a router entry with verbatim trigger phrases, not a label
+
+## cloudflare
+
+- [wrangler --env deploys a second worker when no env block exists](notes/cloudflare/wrangler-env-flag-deploys-a-second-worker.md) - Wrangler synthesises and deploys a stray `<name>-<env>` Worker instead of erroring; dry-run and read the resolved script name back against the config
 
 ## coding-agents
 
@@ -75,6 +89,7 @@
 - [Cobie on (3,3) and crypto incentives](notes/crypto/cobie-on-33-and-crypto-incentives.md) - Time horizon determines VC behavior; mercenary capital erodes trust in bull markets
 - [Double spending in cryptocurrency](notes/crypto/double-spending.md) - The fundamental digital currency problem: race attacks, 51% attacks, and confirmation defenses
 - [Ethereum token standards and security tokens](notes/crypto/ethereum-token-standards-and-security-tokens.md) - From ERC-20 to security tokens; STOs bring SEC-compliant equity and dividends on-chain
+- [Push plus reconcile beats polling an address pool](notes/crypto/push-plus-reconcile-beats-polling-an-address-pool.md) - Deposit detection over a permanent address pool costs O(addresses x ticks) on a poll; an address-activity webhook plus a slow idempotent reconcile sweep costs O(real deposits)
 - [Ray Dalio on Bitcoin as digital gold](notes/crypto/ray-dalio-on-bitcoin.md) - Dalio's 2021 assessment: Bitcoin is "one hell of an invention" but risks remain
 - [Runtime verification for blockchain security](notes/crypto/runtime-verification-for-blockchain-security.md) - K Framework proves smart contract correctness mathematically; stronger than manual audits
 - [Stellar vs Nano comparison](notes/crypto/stellar-vs-nano-comparison.md) - Both fast and cheap; Nano is currency-only, Stellar is a platform with tokens and DEX
@@ -105,7 +120,9 @@
 
 ## devtools
 
+- [A self-updating script runs the old bodies for one tick](notes/devtools/a-self-updating-script-runs-the-old-bodies-for-one-tick.md) - A script that rewrites its own file mid-run keeps executing the parsed version; split update from verify across two separate invocations
 - [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; X25519 + ChaCha20-Poly1305, native SSH-key identities, the default backend for SOPS
+- [Cargo and rustup directories are not caches](notes/devtools/cargo-and-rustup-directories-are-not-caches.md) - `~/.cargo/bin` and `~/.rustup` hold installs, not caches; check for a `bin/` and PATH resolution before a size-ranked cleanup deletes them
 - [chezmoi source vs target two-layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md) - Source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs (add, re-add, apply, diff) traverse the gap; portability is a separate git layer
 - [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md) - Start from a preset, use $fill for right-alignment, disable 90% of modules
 - [XDG base directory specification](notes/devtools/xdg-base-directory-specification.md) - XDG separates config/data/state/cache into standard dirs; simplifies dotfile management
@@ -179,6 +196,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 ### engineering/code-quality
 
+- [An escaped delimiter is still the delimiter byte](notes/engineering/code-quality/an-escaped-delimiter-is-still-the-delimiter-byte.md) - `\|` in a markdown cell is a rendering convention, not a transformation; a byte-level `IFS` split still splits on it and shifts every later field by one
 - [Best practices for agile documentation](notes/engineering/code-quality/agile-documentation-best-practices.md) - Prefer executable specs, document stable concepts, keep it simple; fewer docs done well
 - [The antipattern scripting language](notes/engineering/code-quality/antipattern-scripting-language.md) - Antipatterns are contextual; in throwaway scripts, they become good ideas that speed completion
 - [Code for readability](notes/engineering/code-quality/code-for-readability.md) - Code as if the maintainer is a violent psychopath who knows where you live
@@ -390,6 +408,7 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 - [macOS LaunchAgent/LaunchDaemon authoring for a BTM-friendly identity](notes/macos/macos-launchagent-launchdaemon-btm-friendly-plists.md) - `ProgramArguments[0]` must be the launcher's own path, no `.sh` extension on the entry point, `#!/bin/bash` not `env bash` so TCC grants survive a bash upgrade
 - [A Quick Look preview extension can read the previewed file and nothing beside it](notes/macos/quick-look-preview-extensions-cannot-read-sibling-files.md) - The sandbox extension covers one file, so a sibling image is denied with no visible error; `default-src 'none'` blocks the `data:` URI workaround too, and the two together read as "the panel cannot render images"
 - [macOS multi-user cost myth: it's the GUI session that's heavy, not the user](notes/macos/macos-multi-user-cost-myth-gui-vs-service-users.md) - 161 system service users coexist on one laptop for ~935 MB; multi-user GUI is heavy, multi-user services is essentially free, daemon-per-UID beats containers for mutually-trusted tenants
+- [Optimize Mac Storage turns disk pressure into an iCloud loop](notes/macos/optimize-mac-storage-turns-disk-pressure-into-an-icloud-loop.md) - Disk pressure evicts iCloud files to dataless stubs; a periodic job that walks and materializes them re-downloads the same bytes forever, and it presents as a sync problem
 
 ## math
 
@@ -415,6 +434,8 @@ Reorganized into 6 sub-folders on 2026-04-19 (was 107 notes flat). See `engineer
 
 ## patterns
 
+- [An incremental job must record confirmed absent](notes/patterns/an-incremental-job-must-record-confirmed-absent.md) - A fetch that returned nothing is a result, not a non-event; collapsing "confirmed absent" into "not yet done" makes a job rescan its finished backlog forever
+- [An upstream identifier can be duplicated](notes/patterns/an-upstream-identifier-can-be-duplicated.md) - A source's own printed identifier is not a uniqueness guarantee; keying dedup on it silently collapses distinct records, prefer a key the traversal itself produces
 - [Pattern - Backends for Frontends (BFF)](notes/patterns/backend-for-frontend-pattern.md) - Dedicated backend per client type; avoids API bloat from serving diverse frontends
 - [Redundant API pre-checks in wrapper functions](notes/patterns/redundant-api-pre-checks-in-wrapper-functions.md) - Wrapper checks file existence, then library re-checks internally; doubled API calls
 - [Scope-boundary bugs, when the gate guards the wrong set](notes/patterns/scope-boundary-bugs.md) - A dedup, permission record, conformance gate, or metrics ledger consults a set that does not match the invariant's set; every error direction looks like a good outcome

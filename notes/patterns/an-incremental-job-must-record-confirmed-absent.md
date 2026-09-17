@@ -25,3 +25,8 @@ Give the absent marker a re-check interval rather than making it permanent. Sour
 ## Key takeaway
 
 Store negative results, and only the ones a successful request produced. An absent marker with no distinction from failure just hides the retries.
+
+## Related
+
+- [[an-upstream-identifier-can-be-duplicated]] - same ingestion-job family: a stored identity that trusts the wrong signal, keying on the source's number instead of on the traversal
+- [[scope-boundary-bugs]] - the general form: the bug is in the set the code consults, not the answer it computes; collapsing "absent" into "failed" is one instance

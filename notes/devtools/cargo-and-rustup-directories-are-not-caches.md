@@ -29,3 +29,8 @@ If either answers yes, it is an installation with a cache inside it, not a cache
 ## Key takeaway
 
 Size plus a familiar-looking name is not evidence that a directory is disposable. Look for a `bin/` and for PATH resolution before deleting.
+
+## Related
+
+- [[xdg-base-directory-specification]] - the spec that defines which dotfolder subtree is actually meant to be a cache
+- [[optimize-mac-storage-turns-disk-pressure-into-an-icloud-loop]] - the other half of a disk cleanup pass: free-space pressure eviction versus a size-ranked sweep that deletes installs

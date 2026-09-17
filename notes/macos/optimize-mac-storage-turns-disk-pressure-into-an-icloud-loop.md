@@ -23,3 +23,7 @@ The fix is either half of the loop: free enough disk that eviction stops, or pin
 ## Key takeaway
 
 An automated reader and an automatic evictor pointed at the same tree form a loop. Look at free space before you look at sync.
+
+## Related
+
+- [[cargo-and-rustup-directories-are-not-caches]] - the other half of a disk cleanup pass: a size-ranked sweep that deletes installs, versus free-space pressure that evicts iCloud files

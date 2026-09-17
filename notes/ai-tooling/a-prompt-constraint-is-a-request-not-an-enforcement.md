@@ -25,3 +25,7 @@ Two things this buys beyond correctness. The rejection count is a measurement: a
 ## Key takeaway
 
 If a constraint matters, something other than the model has to check it. Prompt text sets a probability; only a validator sets a floor.
+
+## Related
+
+- [[checks-that-report-success-while-verifying-nothing]] - same shape one layer over: a check that reports success while verifying nothing is a validator that quietly stopped being the guarantee

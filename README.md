@@ -6,15 +6,16 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
-- `2026-09-10` [OAuth refresh tokens die when a grant is copied into several stores](notes/security/oauth-refresh-token-rotation-one-grant-one-store.md) - a rotating refresh token is a single-holder credential; copying one grant into ten agent-profile stores staggered a nine-day die-off as each copy replayed a rotated-away token
-- `2026-07-18` [macOS LaunchAgent/LaunchDaemon authoring for a BTM-friendly identity](notes/macos/macos-launchagent-launchdaemon-btm-friendly-plists.md) - `ProgramArguments[0]` must be the launcher's own path, no `.sh` extension on the entry point, `#!/bin/bash` not `env bash` so TCC grants survive a bash upgrade
-- `2026-07-18` [1Password backup pattern for Apple developer signing certs](notes/macos/1password-backup-pattern-for-apple-dev-certs.md) - Split a codesigning `.p12` + its passphrase into two tagged 1Password items (Document + Password) so a lost keychain doesn't lose the cert; restore flow and the `security export -t identities` scoping caveat
-- `2026-07-04` [Scaling the harness: six components of an agentic system](notes/ai/scaling-the-harness-six-components.md) - P = f(R,M,C,S,O,G); three named failure modes (exposure-without-access, stale-but-confident, confident-but-unchecked) and the process-metrics evaluation agenda
-- `2026-07-04` [Finding your unknowns: the bottleneck in agentic coding](notes/ai/finding-your-unknowns-agentic-coding.md) - Quality is bottlenecked by how fast the operator clarifies unknowns; a 2x2 with a distinct technique per quadrant (blindspot pass, interview, prototype-and-react)
-- `2026-06-26` [Secret resolution for pi agent providers via 1Password op read](notes/ai-tooling/secret-resolution-for-pi-agent-providers-via-1password-op-read.md) - `!op read` and `$ENV_VAR` keep provider API keys out of plaintext `auth.json`/`models.json`; service-account auth makes the resolution headless and transcript-safe
-- `2026-05-26` [LKY operating system: how to pick what to work on](notes/vietnam/lky-operating-system-how-to-pick-what-to-work-on.md) - Mid-career operating system applied to Vietnamese founder: six mental models, eight-question filter, concentration over portfolio; the 2055 question overrides everything
-- `2026-05-26` [The capital portfolio framework: beyond money](notes/vietnam/the-capital-portfolio-framework-beyond-money.md) - Seven capital forms (economic, trust, time, knowledge, network, symbolic, optionality); time is the only irreplaceable input; mid-career work is mostly withdrawal-prevention
-- `2026-05-26` [The Greek prefix para- means beside](notes/etymology/the-greek-prefix-para-means-beside.md) - `para-` = beside; paragraph was originally the margin stroke beside the text, not the text block; "beside what?" unlocks paramedic / paranormal / paradox / parasite
+- `2026-09-17` [An upstream identifier can be duplicated](notes/patterns/an-upstream-identifier-can-be-duplicated.md) - A source's own printed identifier is not a uniqueness guarantee; prefer a key the traversal itself produces
+- `2026-09-17` [An incremental job must record confirmed absent](notes/patterns/an-incremental-job-must-record-confirmed-absent.md) - A fetch that returned nothing is a result; collapsing it into "not yet done" makes a job rescan its finished backlog forever
+- `2026-09-17` [A prompt constraint is a request, not an enforcement](notes/ai-tooling/a-prompt-constraint-is-a-request-not-an-enforcement.md) - A rule in the prompt sets a probability; only a validator on the output sets a floor
+- `2026-09-17` [Skill selection runs on the description text alone](notes/claude-code/skill-selection-runs-on-the-description-text-alone.md) - Only the description text is read when a skill competes with a command; write it as a router entry, not a label
+- `2026-09-17` [wrangler --env deploys a second worker when no env block exists](notes/cloudflare/wrangler-env-flag-deploys-a-second-worker.md) - Wrangler synthesises and deploys a stray `<name>-<env>` Worker instead of erroring
+- `2026-09-17` [Push plus reconcile beats polling an address pool](notes/crypto/push-plus-reconcile-beats-polling-an-address-pool.md) - Push handles the normal case at cost proportional to real deposits; a slow idempotent reconcile sweep covers what the push drops
+- `2026-09-17` [A scripted click carries no user activation](notes/browser-automation/a-scripted-click-carries-no-user-activation.md) - `element.click()` over CDP fires the handler but carries no transient user activation; dispatch at the input layer with coordinates instead
+- `2026-09-17` [Optimize Mac Storage turns disk pressure into an iCloud loop](notes/macos/optimize-mac-storage-turns-disk-pressure-into-an-icloud-loop.md) - Disk pressure evicts iCloud files to dataless stubs; a periodic job that reads them re-downloads the same bytes forever
+- `2026-09-17` [Cargo and rustup directories are not caches](notes/devtools/cargo-and-rustup-directories-are-not-caches.md) - `~/.cargo/bin` and `~/.rustup` hold installs, not caches; check for a `bin/` and PATH resolution before deleting
+- `2026-09-17` [An escaped delimiter is still the delimiter byte](notes/engineering/code-quality/an-escaped-delimiter-is-still-the-delimiter-byte.md) - `\|` in a markdown cell is a rendering convention, not a transformation; a byte-level split still splits on it
 - `2026-05-25` [LKY on why Singapore can never build a Google: Vietnam comparison](notes/vietnam/lky-on-why-singapore-can-never-build-a-google-vietnam-comparison.md) - LKY's five constraints (size, brain drain, Confucian culture, comfort, takeovers); Vietnam inverts market size and risk culture, mirrors brain drain and scholar pull, lacks rule of law and capital
 
 ## How it works
@@ -93,6 +94,9 @@ Full reference: [commands cheatsheet in the usage guide](_docs/guide.md#commands
 | [etymology/](notes/etymology/) | Word origins and prefix decompositions |
 | [youtube/](notes/youtube/) | YouTube tooling |
 | [zed/](notes/zed/) | Zed editor agent rules and configuration |
+| [cloudflare/](notes/cloudflare/) | Cloudflare Workers, Durable Objects, wrangler operational gotchas |
+| [browser-automation/](notes/browser-automation/) | CDP and browser-automation debugging |
+| [ci/](notes/ci/) | CI pipeline behavior, GitHub Actions gotchas |
 
 ## Documentation
 

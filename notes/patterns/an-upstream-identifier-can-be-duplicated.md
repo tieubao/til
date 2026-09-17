@@ -26,3 +26,5 @@ Officialness is not a uniqueness guarantee. Verify it in the source, and prefer 
 ## Related
 
 - [[synthetic-ledger-identities-and-receipt-lookups]] - the opposite failure, a synthetic key where a real one was expected
+- [[an-incremental-job-must-record-confirmed-absent]] - same ingestion-job family: a stored result that trusts the wrong signal, collapsing a distinct outcome into one that hides it
+- [[scope-boundary-bugs]] - the general form: the bug is in the set the code consults, not the answer it computes; keying on a non-unique upstream identifier is one instance
