@@ -6,6 +6,7 @@ Interlinked notes organized by topic. Browse in [Obsidian](https://obsidian.md/)
 
 ## Recent additions
 
+- `2026-09-23` [imagemagick 7 compositing gotchas: cutting layers to a mask](notes/devtools/imagemagick-7-compositing-gotchas-cutting-layers-to-a-mask.md) - `-flatten` inherits the current `-compose` setting; overlay operand order plus blend mode can drop alpha; `-rotate` needs `+repage` before a centered crop
 - `2026-09-17` [An upstream identifier can be duplicated](notes/patterns/an-upstream-identifier-can-be-duplicated.md) - A source's own printed identifier is not a uniqueness guarantee; prefer a key the traversal itself produces
 - `2026-09-17` [An incremental job must record confirmed absent](notes/patterns/an-incremental-job-must-record-confirmed-absent.md) - A fetch that returned nothing is a result; collapsing it into "not yet done" makes a job rescan its finished backlog forever
 - `2026-09-17` [A prompt constraint is a request, not an enforcement](notes/ai-tooling/a-prompt-constraint-is-a-request-not-an-enforcement.md) - A rule in the prompt sets a probability; only a validator on the output sets a floor

@@ -30,3 +30,4 @@ Escaping changes what a renderer displays, never what a byte-level splitter sees
 ## Related
 
 - [[checks-that-report-success-while-verifying-nothing]] - the general form: any delimiter expressible as content needs positional parsing
+- [[imagemagick-7-compositing-gotchas-cutting-layers-to-a-mask]] - the same hand-split-without-coercion failure, on `awk` parsing `magick txt:` output
