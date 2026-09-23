@@ -124,6 +124,7 @@
 - [age, a modern file-encryption CLI](notes/devtools/age-modern-file-encryption-cli.md) - Small opinionated replacement for GPG-for-files; X25519 + ChaCha20-Poly1305, native SSH-key identities, the default backend for SOPS
 - [Cargo and rustup directories are not caches](notes/devtools/cargo-and-rustup-directories-are-not-caches.md) - `~/.cargo/bin` and `~/.rustup` hold installs, not caches; check for a `bin/` and PATH resolution before a size-ranked cleanup deletes them
 - [chezmoi source vs target two-layer mental model](notes/devtools/chezmoi-source-vs-target-two-layer-mental-model.md) - Source is the spec (`~/.local/share/chezmoi`), target is the build artifact (`~`); four verbs (add, re-add, apply, diff) traverse the gap; portability is a separate git layer
+- [imagemagick 7 compositing gotchas: cutting layers to a mask](notes/devtools/imagemagick-7-compositing-gotchas-cutting-layers-to-a-mask.md) - `-flatten` uses whatever `-compose` was last set; overlay operand order plus blend mode can drop alpha; `-rotate` needs `+repage` before a centered crop; `awk` needs `+0` on a `txt:` y field
 - [Starship prompt configuration best practices](notes/devtools/starship-prompt-configuration-best-practices.md) - Start from a preset, use $fill for right-alignment, disable 90% of modules
 - [XDG base directory specification](notes/devtools/xdg-base-directory-specification.md) - XDG separates config/data/state/cache into standard dirs; simplifies dotfile management
 
